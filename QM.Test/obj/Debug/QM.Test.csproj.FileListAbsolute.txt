@@ -1,0 +1,14 @@
+E:\ASECode\Test\QM\QM.Test\bin\Debug\QM.Test.exe.config
+E:\ASECode\Test\QM\QM.Test\bin\Debug\QM.Test.exe
+E:\ASECode\Test\QM\QM.Test\bin\Debug\QM.Test.pdb
+E:\ASECode\Test\QM\QM.Test\obj\Debug\QM.Test.exe
+E:\ASECode\Test\QM\QM.Test\obj\Debug\QM.Test.pdb
+E:\ASECode\Test\QM\QM.Test\bin\Debug\log4net.dll
+E:\ASECode\Test\QM\QM.Test\bin\Debug\log4net.xml
+E:\ASECode\Test\QM\QM.Test\obj\Debug\QM.Test.csprojResolveAssemblyReference.cache
+E:\ASECode\Test\QM\QM.Test\bin\Debug\ASEWH.Plugin.Mail.dll
+E:\ASECode\Test\QM\QM.Test\bin\Debug\QM.Core.dll
+E:\ASECode\Test\QM\QM.Test\bin\Debug\ICSharpCode.SharpZipLib.dll
+E:\ASECode\Test\QM\QM.Test\bin\Debug\ASEWH.Plugin.dll
+E:\ASECode\Test\QM\QM.Test\bin\Debug\QM.Core.pdb
+E:\ASECode\Test\QM\QM.Test\bin\Debug\ICSharpCode.SharpZipLib.xml

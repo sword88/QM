@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<sqlMap namespace="ITOnline" xmlns="http://ibatis.apache.org/mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
+  <alias>
+    <typeAlias alias="TasksData" type="QM.Server.Model.Tasks" />
+  </alias>
+  
+<resultMaps>
+  <resultMap id="TasksMap" class="TasksData">
+    <result column="IDX" property="idx"/>
+    <result column="TASKNAME" property="taskname"/>
+    <result column="TASKCATEGORY" property="taskcategory"/>
+    <result column="TASKCRON" property="taskcron"/>
+    <result column="TASKCREATETIME" property="taskcreatetime"/>
+    <result column="TASKLASTSTARTTIME" property="tasklaststarttime"/>
+    <result column="TASKLASTENDTIME" property="tasklastendtime"/>
+    <result column="TASKLASTERRORTIME" property="tasklasterrortime"/>
+    <result column="TASKERRORCOUNT" property="taskerrorcount"/>
+    <result column="TASKCOUNT" property="taskcount"/>
+    <result column="TASKSTATE" property="taskstate"/>
+  </resultMap>
+</resultMaps>
+<statements>
+  <select id="SELECT_TASK" resultMap="TasksMap" parameterClass="System.Collections.Hashtable">
+    <![CDATA[
+			  SELECT * FROM QM_TASK 
+			 ]]>
+    <dynamic prepend="WHERE">
+      <isNotNull prepend="AND" property="idx">
+        <![CDATA[  IDX = #idx#]]>
+      </isNotNull>
+      <isNotNull prepend="AND" property="taskcategory">
+        <![CDATA[  TASKCATEGORY = #taskcategory#]]>
+      </isNotNull>
+      <isNotNull prepend="AND" property="taskstate">
+        <![CDATA[  TASKSTATE = #taskstate#]]>
+      </isNotNull>
+      ORDER BY IDX ASC
+    </dynamic>
+  </select>
+  <insert id="INSERT_TASK"  parameterClass="QM.Server.Model.Tasks">
+      INSERT INTO QM_TASK(IDX,TASKNAME,TASKCATEGORY,TASKCRON,TASKCREATETIME,TASKLASTSTARTTIME,TASKLASTENDTIME,TASKLASTERRORTIME,TASKERRORCOUNT,TASKCOUNT,TASKSTATE)
+      VALUES (#idx#,#taskname#,#taskcategory#,#taskcron#,#taskcreatetime#,#tasklaststarttime#,#tasklastendtime#,#tasklasterrortime#,#taskerrorcount#,#taskcount#,#taskstate#)
+  </insert>
+  <update id="UPDATE_TASK" parameterClass="QM.Server.Model.Tasks">
+      UPDATE QM_TASK
+      SET
+      <isNotNull property="taskname">
+        TASKNAME = #taskname#,
+      </isNotNull>
+      <isNotNull property="taskcategory">
+        TASKCATEGORY = #taskcategory#,
+      </isNotNull>
+      <isNotNull property="taskcron">
+        TASKCRON = #taskcron#,
+      </isNotNull>
+      <isNotNull property="tasklaststarttime">
+        TASKLASTSTARTTIME = #tasklaststarttime#,
+      </isNotNull>
+      <isNotNull property="tasklastendtime">
+        TASKLASTENDTIME = #tasklastendtime#,
+      </isNotNull>
+      <isNotNull property="tasklasterrortime">
+        TASKLASTERRORTIME = #tasklasterrortime#,
+      </isNotNull>
+	    <isNotNull property="taskerrorcount">
+        TASKERRORCOUNT = #taskerrorcount#,
+      </isNotNull>
+    	<isNotNull property="taskerrorcountclearzero">
+        TASKERRORCOUNT = 0,
+      </isNotNull>
+      <isNotNull property="taskcount">
+        TASKCOUNT = #taskcount#,
+      </isNotNull>
+      <isNotNull property="taskruncountplus">
+        TASKCOUNT = TASKCOUNT + 1,
+      </isNotNull>
+      <isNotNull property="taskstate">
+        TASKSTATE = #taskstate#
+      </isNotNull>
+      WHERE IDX = #idx#
+    </update>
+    <delete id="DELETE_TASK" parameterClass="System.Collections.Hashtable">
+      DELETE FROM QM_TASK WHERE IDX = #idx#
+    </delete>
+</statements>
+</sqlMap>
