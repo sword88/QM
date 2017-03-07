@@ -50,15 +50,29 @@ namespace QM.Server
             Tasks t = new Tasks();
             t.idx = "123";
             t.taskName = "123";
+            t.taskType = "DLL";
             t.taskCategory = "Cron";
             t.taskCreateTime = DateTime.Now;
             t.taskCron = "* * * * * ? *";
-            t.taskFile = "E:\\ASECode\\Test\\QM\\QM.Test\\bin\\Debug\\QM.Test.exe";
+            t.taskFile = "E:\\ASECode\\Test\\QM.git\\QM.Test\\bin\\Debug\\QM.Test.exe";
             t.taskClsType = "QM.Test.Program";
             var dll = new QMAppDomainLoader<DllTask>().Load(t.taskFile, t.taskClsType, out a.domain);
             a.task = t;
             a.dllTask = dll;
             AddTask("123", a);
+
+
+            Tasks t1 = new Tasks();
+            t1.idx = "234";
+            t1.taskName = "234";
+            t1.taskType = "SQL";
+            t1.taskCategory = "Cron";
+            t1.taskCreateTime = DateTime.Now;
+            t1.taskCron = "* * * * * ? *";
+            t1.taskFile = "E:\\ASECode\\Test\\QM.git\\QM.Test\\bin\\Debug\\sql\\1.sql";
+            a.task = t1;
+            a.sqlTask = new SqlFileTask(t1.taskFile,"whfront/wh123@whdb");
+            AddTask("234", a);
         }
 
         /// <summary>
@@ -124,11 +138,22 @@ namespace QM.Server
                 if (!_taskPool.ContainsKey(taskid))
                 {
                     //添加任务
-                    IJobDetail jobDetail = JobBuilder.Create()
-                                            .WithIdentity(taskinfo.task.idx, taskinfo.task.taskCategory)
-                                            .OfType(typeof(QMDllTaskJob))
-                                            .Build();
-                    ITrigger trigger = QM.Server.QMCornFactory.CreateTrigger(taskinfo);
+                    JobBuilder jobBuilder = JobBuilder.Create()
+                                            .WithIdentity(taskinfo.task.idx, taskinfo.task.taskCategory);
+
+                    switch (taskinfo.task.taskType) {
+                        case "SQLFILE":
+                            jobBuilder = jobBuilder.OfType(typeof(QMSqlFileTaskJob));
+                            break;
+                        case "DLL":
+                        default:
+                            jobBuilder = jobBuilder.OfType(typeof(QMDllTaskJob));
+                            break;
+                    }
+
+                    IJobDetail jobDetail = jobBuilder.Build();
+
+                   ITrigger trigger = QM.Server.QMCornFactory.CreateTrigger(taskinfo);
                     _scheduler.ScheduleJob(jobDetail, trigger);
                     
                     _taskPool.Add(taskid, taskinfo);

@@ -72,6 +72,7 @@
     <Compile Include="Common\QMSysinfo.cs" />
     <Compile Include="Common\QMThumbnail.cs" />
     <Compile Include="Common\QMVerifyCode.cs" />
+    <Compile Include="Model\SqlFileTask.cs" />
     <Compile Include="Model\DllTask.cs" />
     <Compile Include="Model\TaskLock.cs" />
     <Compile Include="Model\TaskLog.cs" />

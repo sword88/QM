@@ -26,5 +26,10 @@ namespace QM.Core.Model
         /// 应用程序域中任务dll实例引用
         /// </summary>
         public DllTask dllTask;
+
+        /// <summary>
+        /// SQL文件任务
+        /// </summary>
+        public SqlFileTask sqlTask;
     }
 }
