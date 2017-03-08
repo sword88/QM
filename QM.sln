@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QM.Test", "QM.Test\QM.Test.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QM.Core", "QM.Core\QM.Core.csproj", "{786B8217-7715-4137-A4DC-6630664C5A70}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QM.Excel", "QM.Excel\QM.Excel.csproj", "{ADF23710-0198-4168-9138-371409639888}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{786B8217-7715-4137-A4DC-6630664C5A70}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{786B8217-7715-4137-A4DC-6630664C5A70}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{786B8217-7715-4137-A4DC-6630664C5A70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADF23710-0198-4168-9138-371409639888}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADF23710-0198-4168-9138-371409639888}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADF23710-0198-4168-9138-371409639888}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADF23710-0198-4168-9138-371409639888}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

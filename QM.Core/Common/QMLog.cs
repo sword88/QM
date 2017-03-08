@@ -12,22 +12,22 @@ namespace QM.Core.Common
     {
         private static ILog log = LogManager.GetLogger(typeof(QMLog));
 
-        private static void Info(TaskLog tlog)
+        public static void Info(TaskLog tlog)
         {
-            log.Info("");
+            log.Info(tlog.message);
         }
 
-        private static void Debug(TaskLog tlog)
+        public static void Debug(TaskLog tlog)
         {
             log.Debug("");
         }
 
-        private static void Fatal(TaskLog tlog)
+        public static void Fatal(TaskLog tlog)
         {
             log.Fatal("");
         }
 
-        private static void Error(TaskLog tlog)
+        public static void Error(TaskLog tlog)
         {
             log.Error("");
         }

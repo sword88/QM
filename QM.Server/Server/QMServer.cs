@@ -71,8 +71,23 @@ namespace QM.Server
             t1.taskCron = "* * * * * ? *";
             t1.taskFile = "E:\\ASECode\\Test\\QM.git\\QM.Test\\bin\\Debug\\sql\\1.sql";
             a.task = t1;
-            a.sqlTask = new SqlFileTask(t1.taskFile,"whfront/wh123@whdb");
+            a.sqlTask = new SqlFileTask(t1.taskFile, "whfront/wh123@whdb");
             AddTask("234", a);
+
+
+            Tasks t2 = new Tasks();
+            t2.idx = "345";
+            t2.taskName = "345";
+            t2.taskType = "DLL";
+            t2.taskCategory = "Sample";
+            t2.taskCreateTime = DateTime.Now;
+            t2.taskCron = "* * * * * ? *";
+            t2.taskFile = "E:\\ASECode\\Test\\QM.git\\QM.Excel\\bin\\Debug\\QM.Excel.dll";
+            t2.taskClsType = "QM.Excel.Class1";
+            var dll1 = new QMAppDomainLoader<DllTask>().Load(t2.taskFile, t2.taskClsType, out a.domain);
+            a.task = t2;
+            a.dllTask = dll1;
+            AddTask("345", a);
         }
 
         /// <summary>
