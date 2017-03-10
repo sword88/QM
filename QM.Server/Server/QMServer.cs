@@ -47,32 +47,32 @@ namespace QM.Server
             //InitLoadTaskList();
             TaskRuntimeInfo a = new TaskRuntimeInfo();
 
-            Tasks t = new Tasks();
-            t.idx = "123";
-            t.taskName = "123";
-            t.taskType = "DLL";
-            t.taskCategory = "Cron";
-            t.taskCreateTime = DateTime.Now;
-            t.taskCron = "* * * * * ? *";
-            t.taskFile = "E:\\ASECode\\Test\\QM.git\\QM.Test\\bin\\Debug\\QM.Test.exe";
-            t.taskClsType = "QM.Test.Program";
-            var dll = new QMAppDomainLoader<DllTask>().Load(t.taskFile, t.taskClsType, out a.domain);
-            a.task = t;
-            a.dllTask = dll;
-            AddTask("123", a);
+            //Tasks t = new Tasks();
+            //t.idx = "123";
+            //t.taskName = "123";
+            //t.taskType = "DLL";
+            //t.taskCategory = "Cron";
+            //t.taskCreateTime = DateTime.Now;
+            //t.taskCron = "* * * * * ? *";
+            //t.taskFile = "E:\\ASECode\\Test\\QM.git\\QM.Test\\bin\\Debug\\QM.Test.exe";
+            //t.taskClsType = "QM.Test.Program";
+            //var dll = new QMAppDomainLoader<DllTask>().Load(t.taskFile, t.taskClsType, out a.domain);
+            //a.task = t;
+            //a.dllTask = dll;
+            //AddTask("123", a);
 
 
-            Tasks t1 = new Tasks();
-            t1.idx = "234";
-            t1.taskName = "234";
-            t1.taskType = "SQL";
-            t1.taskCategory = "Cron";
-            t1.taskCreateTime = DateTime.Now;
-            t1.taskCron = "* * * * * ? *";
-            t1.taskFile = "E:\\ASECode\\Test\\QM.git\\QM.Test\\bin\\Debug\\sql\\1.sql";
-            a.task = t1;
-            a.sqlTask = new SqlFileTask(t1.taskFile, "whfront/wh123@whdb");
-            AddTask("234", a);
+            //Tasks t1 = new Tasks();
+            //t1.idx = "234";
+            //t1.taskName = "234";
+            //t1.taskType = "SQL";
+            //t1.taskCategory = "Cron";
+            //t1.taskCreateTime = DateTime.Now;
+            //t1.taskCron = "* * * * * ? *";
+            //t1.taskFile = "E:\\ASECode\\Test\\QM.git\\QM.Test\\bin\\Debug\\sql\\1.sql";
+            //a.task = t1;
+            //a.sqlTask = new SqlFileTask(t1.taskFile, "whfront/wh123@whdb");
+            //AddTask("234", a);
 
 
             Tasks t2 = new Tasks();

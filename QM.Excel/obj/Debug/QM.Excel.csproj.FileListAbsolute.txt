@@ -10,3 +10,5 @@ E:\ASECode\Test\QM.git\QM.Excel\bin\Debug\Aspose.Cells.xml
 E:\ASECode\Test\QM.git\QM.Excel\obj\Debug\QM.Excel.csprojResolveAssemblyReference.cache
 E:\ASECode\Test\QM.git\QM.Excel\obj\Debug\QM.Excel.dll
 E:\ASECode\Test\QM.git\QM.Excel\obj\Debug\QM.Excel.pdb
+E:\ASECode\Test\QM.git\QM.Excel\bin\Debug\NPOI.dll
+E:\ASECode\Test\QM.git\QM.Excel\bin\Debug\NPOI.xml

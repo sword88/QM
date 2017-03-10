@@ -14,8 +14,10 @@ namespace QM.Excel
         {
             QMDBHelper db = new QMDBHelper(dbcon);
             DataSet ds = QMDBHelper.ExecuteDataset("select * from AF_LOGIN_HIS");
-            QMExcel ex = new QMExcel();
-            if (ex.DataTableToExcel(ds.Tables[0], @"E:\ASECode\Test\QM.git\QM.Excel\bin\Debug\1.xls", out error) == false)
+            string title = "测试标题";
+            string subject = @"E:\ASECode\Test\QM.git\QM.Excel\bin\Debug\1.xls";
+            QMExcel ex = new QMExcel(title,subject);
+            if (ex.Export(ds.Tables[0],title,subject, out error) == false)
             {
                 TaskLog log = new TaskLog();
                 log.message = error;

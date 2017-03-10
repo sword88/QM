@@ -32,3 +32,8 @@ E:\ASECode\Test\QM.git\QM.Core\obj\Debug\QM.Core.dll
 E:\ASECode\Test\QM.git\QM.Core\obj\Debug\QM.Core.pdb
 E:\ASECode\Test\QM.git\QM.Core\bin\Debug\Aspose.Cells.dll
 E:\ASECode\Test\QM.git\QM.Core\bin\Debug\Aspose.Cells.xml
+E:\ASECode\Test\QM.git\QM.Core\bin\Debug\NPOI.dll
+E:\ASECode\Test\QM.git\QM.Core\bin\Debug\NPOI.OOXML.dll
+E:\ASECode\Test\QM.git\QM.Core\bin\Debug\NPOI.OpenXml4Net.dll
+E:\ASECode\Test\QM.git\QM.Core\bin\Debug\NPOI.OpenXmlFormats.dll
+E:\ASECode\Test\QM.git\QM.Core\bin\Debug\NPOI.xml
