@@ -28,6 +28,11 @@ namespace QM.Core.Model
         public DllTask dllTask;
 
         /// <summary>
+        /// 任务exe/bat实例引用
+        /// </summary>
+        public UnStdDll unStdDllTask;
+
+        /// <summary>
         /// SQL文件任务
         /// </summary>
         public SqlFileTask sqlFileTask;

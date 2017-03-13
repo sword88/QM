@@ -9,7 +9,7 @@ using System.Runtime.Remoting.Lifetime;
 namespace QM.Core.Model
 {
     /// <summary>
-    /// DLL任务
+    /// 标准DLL/exe任务
     /// </summary>
     public abstract class DllTask : MarshalByRefObject, IDisposable
     {

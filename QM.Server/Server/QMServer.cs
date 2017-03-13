@@ -89,17 +89,42 @@ namespace QM.Server
             //a.dllTask = dll1;
             //AddTask("345", a);
 
-            Tasks t3 = new Tasks();
-            t3.idx = "345";
-            t3.taskName = "345";
-            t3.taskType = "SQL";
-            t3.taskCategory = "Sample";
-            t3.taskCreateTime = DateTime.Now;
-            t3.taskCron = "* * * * * ? *";
-            SqlJob s = new SqlJob("Provider=MSDAORA.1;Data Source=WHDB;Password=wh123;User ID=whfront", "select * from AF_LOGIN_HIS", "测试标题", "e:\\1.xls");
-            a.task = t3;
-            a.sqlTask = s;
-            AddTask("345", a);
+            //Tasks t3 = new Tasks();
+            //t3.idx = "345";
+            //t3.taskName = "345";
+            //t3.taskType = "SQL";
+            //t3.taskCategory = "Sample";
+            //t3.taskCreateTime = DateTime.Now;
+            //t3.taskCron = "* * * * * ? *";
+            //SqlJob s = new SqlJob("Provider=MSDAORA.1;Data Source=WHDB;Password=wh123;User ID=whfront", "select * from AF_LOGIN_HIS", "测试标题", "e:\\1.xls");
+            //a.task = t3;
+            //a.sqlTask = s;
+            //AddTask("345", a);
+
+            Tasks t4 = new Tasks();
+            t4.idx = "567";
+            t4.taskName = "567";
+            t4.taskType = "DLL-UNSTD";
+            t4.taskCategory = "Cron";
+            t4.taskCreateTime = DateTime.Now;
+            t4.taskCron = "0/2 * * * * ? *";
+            UnStdDll u = new UnStdDll(@"E:\ASECode\Test\QM.git\QM.BAT\BAT\123.BAT", "");
+            a.task = t4;
+            a.unStdDllTask = u;
+            AddTask("567", a);
+
+            TaskRuntimeInfo a1 = new TaskRuntimeInfo();
+            Tasks t5 = new Tasks();
+            t5.idx = "678";
+            t5.taskName = "678";
+            t5.taskType = "DLL-UNSTD";
+            t5.taskCategory = "Cron";
+            t5.taskCreateTime = DateTime.Now;
+            t5.taskCron = "0 0/1 * * * ? *";
+            UnStdDll u1 = new UnStdDll(@"E:\ASECode\Test\QM.git\QM.BAT\bin\Debug\QM.BAT.exe", "asy");
+            a1.task = t5;
+            a1.unStdDllTask = u1;
+            AddTask("678", a1);
 
         }
 
@@ -173,12 +198,15 @@ namespace QM.Server
                         case "SQLFILE":
                             jobBuilder = jobBuilder.OfType(typeof(QMSqlFileTaskJob));
                             break;
-                        case "SQL":
+                        case "SQL-EXP":
                             jobBuilder = jobBuilder.OfType(typeof(QMSqlTaskJob));
                             break;
-                        case "DLL":
-                        default:
+                        case "DLL-STD":
                             jobBuilder = jobBuilder.OfType(typeof(QMDllTaskJob));
+                            break;
+                        case "DLL-UNSTD":
+                        default:
+                            jobBuilder = jobBuilder.OfType(typeof(QMUnStdDllTaskJob));
                             break;
                     }
 

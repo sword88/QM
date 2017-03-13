@@ -9,24 +9,24 @@ namespace QM.Core.Model
     public class SqlJob
     {
         //数据库连接字符串
-        private static string dbcon = "";
+        private string dbcon = "";
         /// <summary>
         /// 错误信息
         /// </summary>
-        private static string error = "";
+        private string error = "";
         /// <summary>
         /// sql语句
         /// </summary>
-        private static string sql = "";
+        private string sql = "";
         private QMDBHelper db;
         /// <summary>
         /// excel内容表头
         /// </summary>
-        private static string title = "";
+        private string title = "";
         /// <summary>
         /// 文件路径/文件名
         /// </summary>
-        private static string filepath = "";
+        private string filepath = "";
 
         /// <summary>
         /// SQL导出excel初始化
