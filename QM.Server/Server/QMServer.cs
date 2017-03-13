@@ -75,19 +75,32 @@ namespace QM.Server
             //AddTask("234", a);
 
 
-            Tasks t2 = new Tasks();
-            t2.idx = "345";
-            t2.taskName = "345";
-            t2.taskType = "DLL";
-            t2.taskCategory = "Sample";
-            t2.taskCreateTime = DateTime.Now;
-            t2.taskCron = "* * * * * ? *";
-            t2.taskFile = "E:\\ASECode\\Test\\QM.git\\QM.Excel\\bin\\Debug\\QM.Excel.dll";
-            t2.taskClsType = "QM.Excel.Class1";
-            var dll1 = new QMAppDomainLoader<DllTask>().Load(t2.taskFile, t2.taskClsType, out a.domain);
-            a.task = t2;
-            a.dllTask = dll1;
+            //Tasks t2 = new Tasks();
+            //t2.idx = "345";
+            //t2.taskName = "345";
+            //t2.taskType = "SQL";
+            //t2.taskCategory = "Sample";
+            //t2.taskCreateTime = DateTime.Now;
+            //t2.taskCron = "* * * * * ? *";
+            //t2.taskFile = "E:\\ASECode\\Test\\QM.git\\QM.Excel\\bin\\Debug\\QM.Excel.dll";
+            //t2.taskClsType = "QM.Excel.Class1";
+            //var dll1 = new QMAppDomainLoader<DllTask>().Load(t2.taskFile, t2.taskClsType, out a.domain);
+            //a.task = t2;
+            //a.dllTask = dll1;
+            //AddTask("345", a);
+
+            Tasks t3 = new Tasks();
+            t3.idx = "345";
+            t3.taskName = "345";
+            t3.taskType = "SQL";
+            t3.taskCategory = "Sample";
+            t3.taskCreateTime = DateTime.Now;
+            t3.taskCron = "* * * * * ? *";
+            SqlJob s = new SqlJob("Provider=MSDAORA.1;Data Source=WHDB;Password=wh123;User ID=whfront", "select * from AF_LOGIN_HIS", "测试标题", "e:\\1.xls");
+            a.task = t3;
+            a.sqlTask = s;
             AddTask("345", a);
+
         }
 
         /// <summary>
@@ -159,6 +172,9 @@ namespace QM.Server
                     switch (taskinfo.task.taskType) {
                         case "SQLFILE":
                             jobBuilder = jobBuilder.OfType(typeof(QMSqlFileTaskJob));
+                            break;
+                        case "SQL":
+                            jobBuilder = jobBuilder.OfType(typeof(QMSqlTaskJob));
                             break;
                         case "DLL":
                         default:

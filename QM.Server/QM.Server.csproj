@@ -111,6 +111,7 @@
     <Compile Include="Server\QMIsolatedJob.cs" />
     <Compile Include="Server\QMJobFactory.cs" />
     <Compile Include="Server\QMServer.cs" />
+    <Compile Include="Server\QMSqlTaskJob.cs" />
     <Compile Include="Server\QMTaskEnums.cs" />
   </ItemGroup>
   <ItemGroup>

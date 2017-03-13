@@ -97,6 +97,7 @@
     <Compile Include="Common\QMVerifyCode.cs" />
     <Compile Include="Model\SqlFileTask.cs" />
     <Compile Include="Model\DllTask.cs" />
+    <Compile Include="Model\SqlJob.cs" />
     <Compile Include="Model\TaskLock.cs" />
     <Compile Include="Model\TaskLog.cs" />
     <Compile Include="Model\TaskRuntimeInfo.cs" />
@@ -105,6 +106,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="QM.Excel.csproj" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

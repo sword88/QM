@@ -9,7 +9,7 @@ using log4net;
 
 namespace QM.Server
 {
-    public class QMSqlFileTaskJob : IJob
+    public class QMSqlTaskJob : IJob
     {
         private static ILog log = LogManager.GetLogger(typeof(QMDllTaskJob));
 
@@ -24,7 +24,7 @@ namespace QM.Server
                     log.Error(string.Format("当前任务信息为空,taskid：{0} - {1}", taskid, new QMException()));
                     return;       
                 }
-                taskinfo.sqlFileTask.TryRun();
+                taskinfo.sqlTask.TryRun();
             }
             catch (QMException ex)
             {

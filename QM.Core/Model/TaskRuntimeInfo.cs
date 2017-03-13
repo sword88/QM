@@ -30,6 +30,11 @@ namespace QM.Core.Model
         /// <summary>
         /// SQL文件任务
         /// </summary>
-        public SqlFileTask sqlTask;
+        public SqlFileTask sqlFileTask;
+
+        /// <summary>
+        /// SQL任务
+        /// </summary>
+        public SqlJob sqlTask;
     }
 }
