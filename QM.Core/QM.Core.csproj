@@ -34,6 +34,14 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\dll\Aspose.Cells.dll</HintPath>
     </Reference>
+    <Reference Include="Autofac, Version=4.4.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <HintPath>..\packages\Autofac.4.4.0\lib\net45\Autofac.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Autofac.Configuration, Version=4.0.1.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <HintPath>..\packages\Autofac.Configuration.4.0.1\lib\net45\Autofac.Configuration.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Common.Logging, Version=3.3.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
       <HintPath>..\packages\Common.Logging.3.3.1\lib\net40\Common.Logging.dll</HintPath>
       <Private>True</Private>
@@ -48,6 +56,18 @@
     </Reference>
     <Reference Include="log4net, Version=2.0.7.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
       <HintPath>..\packages\log4net.2.0.7\lib\net45-full\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.1.0.0\lib\netstandard1.1\Microsoft.Extensions.Configuration.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Abstractions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.Abstractions.1.0.0\lib\netstandard1.0\Microsoft.Extensions.Configuration.Abstractions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Primitives.1.0.0\lib\netstandard1.0\Microsoft.Extensions.Primitives.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="NPOI, Version=2.2.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
@@ -71,6 +91,8 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
@@ -84,17 +106,22 @@
   <ItemGroup>
     <Compile Include="Common\QMDBHelper.cs" />
     <Compile Include="Common\QMEncrypt.cs" />
-    <Compile Include="Common\QMExcel.cs" />
-    <Compile Include="Common\QMExcelAsponse.cs" />
-    <Compile Include="Common\QMException.cs" />
+    <Compile Include="Environment\QMStarter.cs" />
+    <Compile Include="Excel\QMExcel.cs" />
+    <Compile Include="Excel\QMExcelAsponse.cs" />
+    <Compile Include="Exception\QMException.cs" />
     <Compile Include="Common\QMFile.cs" />
     <Compile Include="Common\QMFtp.cs" />
-    <Compile Include="Common\QMLog.cs" />
-    <Compile Include="Common\QMMail.cs" />
+    <Compile Include="Log\ILogger.cs" />
+    <Compile Include="Log\ILoggerFactory.cs" />
+    <Compile Include="Log\QMLoggerFactory.cs" />
+    <Compile Include="Log\QMLogModule.cs" />
+    <Compile Include="Mail\QMMail.cs" />
     <Compile Include="Common\QMPing.cs" />
     <Compile Include="Common\QMSysinfo.cs" />
     <Compile Include="Common\QMThumbnail.cs" />
     <Compile Include="Common\QMVerifyCode.cs" />
+    <Compile Include="Log\QMLogger.cs" />
     <Compile Include="Model\SqlFileTask.cs" />
     <Compile Include="Model\DllTask.cs" />
     <Compile Include="Model\SqlJob.cs" />
@@ -106,6 +133,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
