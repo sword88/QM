@@ -9,20 +9,23 @@ namespace QM.Core.Mail
     /// <summary>
     /// 邮件发送类
     /// </summary>
-    public class QMMail
+    public class QMMail : IMail
     {
         private string _subject;
         private string _body;
-        private string _from;
+        private string _from = "AllianceWH@xxx.COM";
         private string _fromName;
         private string _recipientName;
-        private string _mailDomain;
-        private int _mailserverport;
+        private string _mailDomain = "10.68.10.8";
+        private int _mailserverport = 25;
         private string _username;
         private string _password;
         private bool _html;
         private string _recipient;
+        private string _recipientCC;
+        private string _recipientBCC;
         private string _priority;
+        private MailMessage myEmail = new MailMessage();
 
         public QMMail()
         { }
@@ -199,6 +202,23 @@ namespace QM.Core.Mail
             return true;
         }
 
+
+        //抄送人的邮箱地址
+        public bool AddRecipientCC(params string[] username)
+        {
+            this._recipientCC = username[0].Trim();
+
+            return true;
+        }
+
+        //密送人的邮箱地址
+        public bool AddRecipientBCC(params string[] username)
+        {
+            this._recipientBCC = username[0].Trim();
+
+            return true;
+        }
+
         /// <summary>
         /// 将字符串编码为Base64字符串
         /// </summary>
@@ -211,15 +231,25 @@ namespace QM.Core.Mail
         }
 
         /// <summary>
+        /// 添加附件
+        /// </summary>
+        /// <param name="path"></param>
+        public void AddAttachment(string path)
+        {
+            Attachment attach = new Attachment(path, MediaTypeNames.Application.Octet);
+            myEmail.Attachments.Add(attach);
+        }
+
+        /// <summary>
         /// 发送
         /// </summary>
         /// <returns></returns>
         public bool Send()
-        {
-            System.Net.Mail.MailMessage myEmail = new System.Net.Mail.MailMessage();
+        {            
             Encoding eEncod = Encoding.GetEncoding("utf-8");
             myEmail.From = new System.Net.Mail.MailAddress(this.From, this.Subject, eEncod);
             myEmail.To.Add(this._recipient);
+            myEmail.CC.Add(this._recipientCC);
             myEmail.Subject = this.Subject;
             myEmail.IsBodyHtml = true;
             myEmail.Body = this.Body;

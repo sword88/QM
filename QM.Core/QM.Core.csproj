@@ -116,6 +116,7 @@
     <Compile Include="Log\ILoggerFactory.cs" />
     <Compile Include="Log\QMLoggerFactory.cs" />
     <Compile Include="Log\QMLogModule.cs" />
+    <Compile Include="Mail\IMail.cs" />
     <Compile Include="Mail\QMMail.cs" />
     <Compile Include="Common\QMPing.cs" />
     <Compile Include="Common\QMSysinfo.cs" />
