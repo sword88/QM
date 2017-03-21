@@ -7,15 +7,21 @@ using Common.Logging;
 using Topshelf;
 using QM.Core;
 using QM.Server.Server;
+using QM.Core.Log;
+using QM.Core.Environments;
 
 namespace QM.Server
 {
     class Program
     {
-        private static ILog log = LogManager.GetLogger(typeof(Program));
+        private static ILogger log;
 
         static void Main(string[] args)
         {
+            QMStarter start = new QMStarter();
+
+            //log.Log(Le  "123");
+
             //异常捕获
             AppDomain.CurrentDomain.UnhandledException += UnKownError;
 

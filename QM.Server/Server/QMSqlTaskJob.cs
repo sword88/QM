@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Quartz;
 using QM.Core.Common;
 using log4net;
+using QM.Core.Exception;
 
 namespace QM.Server
 {

@@ -8,6 +8,7 @@ using log4net;
 using QM.Server;
 using QM.Core.Common;
 using QM.Core.Model;
+using QM.Core.Exception;
 
 namespace QM.Server.Data
 {

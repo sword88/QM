@@ -5,6 +5,7 @@ using System.Runtime.InteropServices;
 using ICSharpCode.SharpZipLib.Zip;
 using System.Text;
 using System.Security.Cryptography;
+using QM.Core.Exception;
 
 namespace QM.Core.Common
 {

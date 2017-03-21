@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
+using QM.Core.Exception;
 
 namespace QM.Core.Common
 {

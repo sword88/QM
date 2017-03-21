@@ -1,5 +1,8 @@
 ﻿using QM.Core.Common;
 using System.Data;
+using QM.Core.Excel;
+using QM.Core.Exception;
+using QM.Core.Log;
 
 namespace QM.Core.Model
 {
@@ -8,6 +11,8 @@ namespace QM.Core.Model
     /// </summary>
     public class SqlJob
     {
+        private static ILogger log;
+
         //数据库连接字符串
         private string dbcon = "";
         /// <summary>
@@ -55,9 +60,7 @@ namespace QM.Core.Model
                 QMExcel ex = new QMExcel(title, filepath);
                 if (ex.Export(ds.Tables[0], title, filepath, out error) == false)
                 {
-                    TaskLog log = new TaskLog();
-                    log.message = error;
-                    QMLog.Debug(log);
+                    log.Debug(error);
                 }
             }
             catch (QMException ex)

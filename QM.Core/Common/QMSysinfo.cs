@@ -2,6 +2,7 @@
 using Microsoft.Win32;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
+using QM.Core.Exception;
 
 namespace QM.Core.Common
 {
@@ -80,7 +81,7 @@ namespace QM.Core.Common
                 {
                     throw e;
                 }
-                catch (Exception e)
+                catch (QMException e)
                 {
                     throw new NotSupportedException("Error while querying the system information.", e);
                 }
@@ -96,7 +97,7 @@ namespace QM.Core.Common
                 {
                     return (int)m_StatData.GetValue(@"KERNEL\CPUUsage");
                 }
-                catch (Exception e)
+                catch (QMException e)
                 {
                     throw new NotSupportedException("Error while querying the system information.", e);
                 }

@@ -106,7 +106,7 @@
   <ItemGroup>
     <Compile Include="Common\QMDBHelper.cs" />
     <Compile Include="Common\QMEncrypt.cs" />
-    <Compile Include="Environment\QMStarter.cs" />
+    <Compile Include="Environments\QMStarter.cs" />
     <Compile Include="Excel\QMExcel.cs" />
     <Compile Include="Excel\QMExcelAsponse.cs" />
     <Compile Include="Exception\QMException.cs" />

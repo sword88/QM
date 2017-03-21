@@ -5,6 +5,7 @@ using System.Net.Sockets;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Collections;
+using QM.Core.Exception;
 
 namespace QM.Core.Common
 {
@@ -369,7 +370,7 @@ namespace QM.Core.Common
             {
                 main_sock.Send(cmd, cmd.Length, 0);
             }
-            catch (Exception ex)
+            catch (QMException ex)
             {
                 try
                 {
@@ -487,7 +488,7 @@ namespace QM.Core.Common
                     i2 = responseStr.IndexOf(')') - i1;
                     pasv = responseStr.Substring(i1, i2).Split(',');
                 }
-                catch (Exception)
+                catch (QMException)
                 {
                     Disconnect();
                     errormessage += "Malformed PASV response: " + responseStr;
@@ -519,7 +520,7 @@ namespace QM.Core.Common
                     data_sock.Connect(server, port);//data_ipEndPoint);
 
                 }
-                catch (Exception ex)
+                catch (QMException ex)
                 {
                     errormessage += "Failed to connect for data transfer: " + ex.Message;
                     return;
@@ -567,7 +568,7 @@ namespace QM.Core.Common
                     if (response != 200)
                         Fail();
                 }
-                catch (Exception ex)
+                catch (QMException ex)
                 {
                     errormessage += "Failed to connect for data transfer: " + ex.Message;
                     return;
@@ -589,11 +590,11 @@ namespace QM.Core.Common
 
                 if (data_sock == null)
                 {
-                    throw new Exception("Winsock error: " +
+                    throw new QMException("Winsock error: " +
                         Convert.ToString(System.Runtime.InteropServices.Marshal.GetLastWin32Error()));
                 }
             }
-            catch (Exception ex)
+            catch (QMException ex)
             {
                 errormessage += "Failed to connect for data transfer: " + ex.Message;
             }
@@ -699,7 +700,7 @@ namespace QM.Core.Common
 
                 main_sock.Connect(server, port);//main_ipEndPoint);
             }
-            catch (Exception ex)
+            catch (QMException ex)
             {
                 errormessage += ex.Message;
                 return false;
@@ -760,7 +761,7 @@ namespace QM.Core.Common
                     break;
                 default:
                     CloseDataSocket();
-                    throw new Exception(responseStr);
+                    throw new QMException(responseStr);
             }
             ConnectDataSocket();
 
@@ -786,7 +787,7 @@ namespace QM.Core.Common
 
             ReadResponse();
             if (response != 226)
-                throw new Exception(responseStr);
+                throw new QMException(responseStr);
 
             foreach (string f in file_list.Split('\n'))
             {
@@ -906,7 +907,7 @@ namespace QM.Core.Common
                 pwd = pwd.Substring(0, pwd.LastIndexOf("\""));
                 pwd = pwd.Replace("\"\"", "\""); // 替换带引号的路径信息符号
             }
-            catch (Exception ex)
+            catch (QMException ex)
             {
                 errormessage += ex.Message;
                 return null;
@@ -1077,7 +1078,7 @@ namespace QM.Core.Common
             {
                 file = new FileStream(filename, FileMode.Open);
             }
-            catch (Exception ex)
+            catch (QMException ex)
             {
                 file = null;
                 errormessage += ex.Message;
@@ -1171,16 +1172,16 @@ namespace QM.Core.Common
                 {
                     file = new FileStream(local_filename, FileMode.Open);
                 }
-                catch (Exception ex)
+                catch (QMException ex)
                 {
                     file = null;
-                    throw new Exception(ex.Message);
+                    throw new QMException(ex.Message);
                 }
 
                 SendCommand("REST " + file.Length);
                 ReadResponse();
                 if (response != 350)
-                    throw new Exception(responseStr);
+                    throw new QMException(responseStr);
                 file.Seek(file.Length, SeekOrigin.Begin);
                 bytes_total = file.Length;
             }
@@ -1190,10 +1191,10 @@ namespace QM.Core.Common
                 {
                     file = new FileStream(local_filename, FileMode.Create);
                 }
-                catch (Exception ex)
+                catch (QMException ex)
                 {
                     file = null;
-                    throw new Exception(ex.Message);
+                    throw new QMException(ex.Message);
                 }
             }
 
@@ -1255,7 +1256,7 @@ namespace QM.Core.Common
                     SetBinaryMode(false);
                 }
             }
-            catch (Exception ex)
+            catch (QMException ex)
             {
                 file.Close();
                 file = null;

@@ -7,6 +7,7 @@ using System.Reflection;
 using System.Runtime.Remoting.Lifetime;
 using System.Diagnostics;
 using log4net;
+using QM.Core.Exception;
 
 namespace QM.Core.Model
 {
@@ -39,7 +40,7 @@ namespace QM.Core.Model
 
                 log.Debug(startinfo.FileName + " " + startinfo.Arguments);
             }
-            catch (Exception ex)
+            catch (QMException ex)
             {
                 throw ex;
             }            

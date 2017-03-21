@@ -8,6 +8,7 @@ using System.IO;
 using System.Text;
 using NPOI.SS.Util;
 using System.Web;
+using QM.Core.Exception;
 
 namespace QM.Core.Excel
 {

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Text;
 using System.Net.NetworkInformation;
+using QM.Core.Exception;
 
 namespace QM.Core.Common
 {

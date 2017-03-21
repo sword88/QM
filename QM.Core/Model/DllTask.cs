@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Reflection;
 using System.Runtime.Remoting.Lifetime;
+using QM.Core.Exception;
 
 namespace QM.Core.Model
 {
@@ -22,7 +23,7 @@ namespace QM.Core.Model
             {
                 Run();
             }
-            catch (Exception ex)
+            catch (QMException ex)
             {
                 throw ex;
             }            

@@ -9,6 +9,8 @@ using System.Drawing.Imaging;
 using Aspose.Cells;
 using Aspose.Cells.Drawing;
 using System.IO;
+using QM.Core.Exception;
+using QM.Core.Common;
 
 namespace QM.Core.Excel
 {
