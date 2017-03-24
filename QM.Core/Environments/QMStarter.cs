@@ -11,15 +11,20 @@ namespace QM.Core.Environments
 {
     public class QMStarter
     {
-        public static IContainer CreateHostContainer(Action<ContainerBuilder> registrations)
+        public static ILogger CreateQMLogger(Type type)
         {
             var builder = new ContainerBuilder();
 
             builder.RegisterModule(new QMLogModule());
+            
+            builder.RegisterType<QMLogger>().As<ILogger>();
+            builder.RegisterType<QMLoggerFactory>().As<ILoggerFactory>();
 
             var container = builder.Build();
+            var logFac = container.Resolve<ILoggerFactory>();
+            var log = logFac.CreateLogger(type);
 
-            return container;
+            return log;
         }    
     }
 }

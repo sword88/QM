@@ -50,9 +50,6 @@ E:\ASECode\Test\QM\QM.Server\obj\Debug\QM.Server.csprojResolveAssemblyReference.
 E:\ASECode\Test\QM\QM.Server\bin\Debug\QM.Core.dll
 E:\ASECode\Test\QM\QM.Server\bin\Debug\QM.Core.pdb
 E:\ASECode\Test\QM.git\QM.Server\bin\Debug\QM.Server.exe.config
-E:\ASECode\Test\QM.git\QM.Server\obj\Debug\QM.Server.exe
-E:\ASECode\Test\QM.git\QM.Server\obj\Debug\QM.Server.pdb
-E:\ASECode\Test\QM.git\QM.Server\obj\Debug\QM.Server.csprojResolveAssemblyReference.cache
 E:\ASECode\Test\QM.git\QM.Server\bin\Debug\QM.Server.exe
 E:\ASECode\Test\QM.git\QM.Server\bin\Debug\QM.Server.pdb
 E:\ASECode\Test\QM.git\QM.Server\bin\Debug\Castle.DynamicProxy.dll
@@ -65,6 +62,8 @@ E:\ASECode\Test\QM.git\QM.Server\bin\Debug\log4net.dll
 E:\ASECode\Test\QM.git\QM.Server\bin\Debug\QM.Core.dll
 E:\ASECode\Test\QM.git\QM.Server\bin\Debug\Quartz.dll
 E:\ASECode\Test\QM.git\QM.Server\bin\Debug\Topshelf.dll
+E:\ASECode\Test\QM.git\QM.Server\bin\Debug\NPOI.dll
+E:\ASECode\Test\QM.git\QM.Server\bin\Debug\Aspose.Cells.dll
 E:\ASECode\Test\QM.git\QM.Server\bin\Debug\QM.Core.pdb
 E:\ASECode\Test\QM.git\QM.Server\bin\Debug\Common.Logging.pdb
 E:\ASECode\Test\QM.git\QM.Server\bin\Debug\Common.Logging.xml
@@ -75,9 +74,9 @@ E:\ASECode\Test\QM.git\QM.Server\bin\Debug\IBatisNet.DataMapper.xml
 E:\ASECode\Test\QM.git\QM.Server\bin\Debug\log4net.xml
 E:\ASECode\Test\QM.git\QM.Server\bin\Debug\Quartz.pdb
 E:\ASECode\Test\QM.git\QM.Server\bin\Debug\Quartz.xml
-E:\ASECode\Test\QM.git\QM.Server\bin\Debug\Aspose.Cells.dll
-E:\ASECode\Test\QM.git\QM.Server\bin\Debug\Aspose.Cells.xml
-E:\ASECode\Test\QM.git\QM.Server\bin\Debug\NPOI.dll
 E:\ASECode\Test\QM.git\QM.Server\bin\Debug\NPOI.xml
-E:\ASECode\Test\QM.git\QM.Server\bin\Debug\Autofac.dll
-E:\ASECode\Test\QM.git\QM.Server\bin\Debug\Autofac.xml
+E:\ASECode\Test\QM.git\QM.Server\bin\Debug\Aspose.Cells.xml
+E:\ASECode\Test\QM.git\QM.Server\obj\Debug\QM.Server.csprojResolveAssemblyReference.cache
+E:\ASECode\Test\QM.git\QM.Server\obj\Debug\QM.Server.exe
+E:\ASECode\Test\QM.git\QM.Server\obj\Debug\QM.Server.pdb
+E:\ASECode\Test\QM.git\QM.Server\bin\Debug\Config\log4net.config

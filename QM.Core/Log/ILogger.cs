@@ -11,7 +11,16 @@ namespace QM.Core.Log
 {
     public interface ILogger : ILog
     {
-        bool IsEnabled(Level level);
-        void Log(Level level, QMException exception, string format, params object[] args);
+        bool IsEnabled(QMLogLevel level);
+        void Log(QMLogLevel level, QMException exception, string format, params object[] args);
+    }
+
+    public enum QMLogLevel
+    {
+        Debug,
+        Info,
+        Warn,
+        Error,
+        Fatal
     }
 }

@@ -17,3 +17,12 @@ E:\ASECode\Test\QM.git\QM.Test\bin\Debug\log4net.xml
 E:\ASECode\Test\QM.git\QM.Test\bin\Debug\Autofac.xml
 E:\ASECode\Test\QM.git\QM.Test\bin\Debug\NPOI.xml
 E:\ASECode\Test\QM.git\QM.Test\bin\Debug\Aspose.Cells.xml
+E:\ASECode\Test\QM.git\QM.Test\bin\Debug\Quartz.dll
+E:\ASECode\Test\QM.git\QM.Test\bin\Debug\Common.Logging.Core.dll
+E:\ASECode\Test\QM.git\QM.Test\bin\Debug\Common.Logging.dll
+E:\ASECode\Test\QM.git\QM.Test\bin\Debug\Quartz.pdb
+E:\ASECode\Test\QM.git\QM.Test\bin\Debug\Quartz.xml
+E:\ASECode\Test\QM.git\QM.Test\bin\Debug\Common.Logging.Core.pdb
+E:\ASECode\Test\QM.git\QM.Test\bin\Debug\Common.Logging.Core.xml
+E:\ASECode\Test\QM.git\QM.Test\bin\Debug\Common.Logging.pdb
+E:\ASECode\Test\QM.git\QM.Test\bin\Debug\Common.Logging.xml

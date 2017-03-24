@@ -1,0 +1,4 @@
+E:\ASECode\Test\QM.git\QM.Task\bin\Debug\QM.Task.dll
+E:\ASECode\Test\QM.git\QM.Task\bin\Debug\QM.Task.pdb
+E:\ASECode\Test\QM.git\QM.Task\obj\Debug\QM.Task.dll
+E:\ASECode\Test\QM.git\QM.Task\obj\Debug\QM.Task.pdb

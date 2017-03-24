@@ -3,6 +3,7 @@ using System.Data;
 using QM.Core.Excel;
 using QM.Core.Exception;
 using QM.Core.Log;
+using QM.Core.DB;
 
 namespace QM.Core.Model
 {

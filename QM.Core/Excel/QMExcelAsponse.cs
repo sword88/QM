@@ -10,7 +10,7 @@ using Aspose.Cells;
 using Aspose.Cells.Drawing;
 using System.IO;
 using QM.Core.Exception;
-using QM.Core.Common;
+using QM.Core.Files;
 
 namespace QM.Core.Excel
 {

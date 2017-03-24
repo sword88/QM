@@ -20,7 +20,8 @@ namespace QM.Core.Log
 
         public ILogger CreateLogger(Type type)
         {
-            return LogManager.GetLogger(type) as ILogger;
+            var log = new QMLogger(LogManager.GetLogger(type).Logger);
+            return log as ILogger;
         }
     }
 }

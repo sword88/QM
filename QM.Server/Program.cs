@@ -3,24 +3,24 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Common.Logging;
 using Topshelf;
 using QM.Core;
-using QM.Server.Server;
+using QM.Server;
 using QM.Core.Log;
 using QM.Core.Environments;
+using QM.Core.QuartzNet;
 
 namespace QM.Server
 {
     class Program
     {
-        private static ILogger log;
 
         static void Main(string[] args)
         {
-            QMStarter start = new QMStarter();
 
-            //log.Log(Le  "123");
+            var host = QMStarter.CreateQMLogger(typeof(Program));
+
+            host.Debug("123");
 
             //异常捕获
             AppDomain.CurrentDomain.UnhandledException += UnKownError;
@@ -51,7 +51,7 @@ namespace QM.Server
         private static void UnKownError(object sender, UnhandledExceptionEventArgs e)
         {
             var ex = ((Exception)e.ExceptionObject).GetBaseException();
-            log.Fatal(string.Format("QMServer未知异常:{0}", ex.Message));
+            //lg.Fatal(string.Format("QMServer未知异常:{0}", ex.Message));
         }
     }
 }

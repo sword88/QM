@@ -243,75 +243,75 @@ namespace QM.Core.Log
             _logger.Log(declaringType, Level.Debug, string.Format(format, arg0, arg1, arg2), null);
         }
 
-        public void Log(Level level, QMException exception, string format, params object[] args)
+        public void Log(QMLogLevel level, QMException exception, string format, params object[] args)
         {
             if (args == null)
             {
-                if (level == Level.Debug)
+                if (level == QMLogLevel.Debug)
                 {
                     Debug(format, exception);
                 }
-                else if (level == Level.Info)
+                else if (level == QMLogLevel.Info)
                 {
                     Info(format, exception);
                 }
-                else if (level == Level.Warn)
+                else if (level == QMLogLevel.Warn)
                 {
                     Warn(format, exception);
                 }
-                else if (level == Level.Error)
+                else if (level == QMLogLevel.Error)
                 {
                     Error(format, exception);
                 }
-                else if (level == Level.Fatal)
+                else if (level == QMLogLevel.Fatal)
                 {
                     Fatal(format, exception);
                 }                
             }
             else
             {
-                if (level == Level.Debug)
+                if (level == QMLogLevel.Debug)
                 {
                     DebugFormat(format, args);
                 }
-                else if (level == Level.Info)
+                else if (level == QMLogLevel.Info)
                 {
                     InfoFormat(format, args);
                 }
-                else if (level == Level.Warn)
+                else if (level == QMLogLevel.Warn)
                 {
                     WarnFormat(format, args);
                 }
-                else if (level == Level.Error)
+                else if (level == QMLogLevel.Error)
                 {
                     ErrorFormat(format, args);
                 }
-                else if (level == Level.Fatal)
+                else if (level == QMLogLevel.Fatal)
                 {
                     FatalFormat(format, args);
                 }
             }
         }
 
-        public bool IsEnabled(Level level)
+        public bool IsEnabled(QMLogLevel level)
         {
-            if (level == Level.Debug)
+            if (level == QMLogLevel.Debug)
             {
                 return IsDebugEnabled;
             }
-            else if (level == Level.Info)
+            else if (level == QMLogLevel.Info)
             {
                 return IsInfoEnabled;
             }
-            else if (level == Level.Warn)
+            else if (level == QMLogLevel.Warn)
             {
                 return IsWarnEnabled;
             }
-            else if (level == Level.Error)
+            else if (level == QMLogLevel.Error)
             {
                 return IsErrorEnabled;
             }
-            else if (level == Level.Fatal)
+            else if (level == QMLogLevel.Fatal)
             {
                 return IsFatalEnabled;
             }

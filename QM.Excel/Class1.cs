@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
-using QM.Core.Common;
+using QM.Core.DB;
 using QM.Core.Model;
 using QM.Core.Excel;
 using QM.Core.Log;
