@@ -40,6 +40,6 @@ namespace QM.Core.Model
         /// <summary>
         /// SQL任务
         /// </summary>
-        public SqlJob sqlTask;
+        public SqlExpJob sqlTask;
     }
 }

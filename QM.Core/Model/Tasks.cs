@@ -72,5 +72,17 @@ namespace QM.Core.Model
         /// 任务路径
         /// </summary>
         public string taskFile { get; set; }
+        /// <summary>
+        /// 任务参数
+        /// </summary>
+        public string taskParm { get; set; }
+        /// <summary>
+        /// 数据库连接信息
+        /// </summary>
+        public string taskDBCon { get; set; }
+        /// <summary>
+        /// 导出文件名
+        /// </summary>
+        public string taskExpFile { get; set; }
     }
 }

@@ -10,7 +10,7 @@ namespace QM.Core.Model
     /// <summary>
     /// sql导出excel
     /// </summary>
-    public class SqlJob
+    public class SqlExpJob
     {
         private static ILogger log;
 
@@ -41,7 +41,7 @@ namespace QM.Core.Model
         /// <param name="sqlstr">sql语句</param>
         /// <param name="titlestr">excel内容表头</param>
         /// <param name="filestr">文件路径/文件名</param>
-        public SqlJob(string dbstr, string sqlstr, string titlestr, string filestr)
+        public SqlExpJob(string dbstr, string sqlstr, string titlestr, string filestr)
         {
             dbcon = dbstr;
             db = new QMDBHelper(dbstr);

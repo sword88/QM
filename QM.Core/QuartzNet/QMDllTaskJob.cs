@@ -25,7 +25,7 @@ namespace QM.Core.QuartzNet
                     log.Error(string.Format("当前任务信息为空,taskid：{0} - {1}", taskid, new QMException()));
                     return;       
                 }
-                taskinfo.dllTask.TryRun();
+                taskinfo.dllTask.TryRun();                
             }
             catch (QMException ex)
             {

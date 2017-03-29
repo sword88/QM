@@ -42,18 +42,18 @@ namespace QM.Core.QuartzNet
             _scheduler = _factory.GetScheduler();
             _scheduler.JobFactory = new QMJobFactory();
             _scheduler.Start();
-            //InitLoadTaskList();
-            TaskRuntimeInfo a = new TaskRuntimeInfo();
+            InitLoadTaskList();
+            //TaskRuntimeInfo a = new TaskRuntimeInfo();
 
             //Tasks t = new Tasks();
             //t.idx = "123";
             //t.taskName = "123";
-            //t.taskType = "DLL";
+            //t.taskType = "DLL-STD";
             //t.taskCategory = "Cron";
             //t.taskCreateTime = DateTime.Now;
-            //t.taskCron = "* * * * * ? *";
-            //t.taskFile = "E:\\ASECode\\Test\\QM.git\\QM.Test\\bin\\Debug\\QM.Test.exe";
-            //t.taskClsType = "QM.Test.Program";
+            //t.taskCron = "0 0 0/1 * * ? ";
+            //t.taskFile = @"E:\ASECode\Test\QM.git\QM.Demo.Quituser\bin\Debug\QM.Demo.Quituser.dll";
+            //t.taskClsType = "QM.Demo.Quituser.Class1";
             //var dll = new QMAppDomainLoader<DllTask>().Load(t.taskFile, t.taskClsType, out a.domain);
             //a.task = t;
             //a.dllTask = dll;
@@ -99,30 +99,30 @@ namespace QM.Core.QuartzNet
             //a.sqlTask = s;
             //AddTask("345", a);
 
-            Tasks t4 = new Tasks();
-            t4.idx = "567";
-            t4.taskName = "567";
-            t4.taskType = "DLL-UNSTD";
-            t4.taskCategory = "Cron";
-            t4.taskCreateTime = DateTime.Now;
-            t4.taskCron = "0/2 * * * * ? *";
-            UnStdDll u = new UnStdDll(@"E:\ASECode\Test\QM.git\QM.BAT\BAT\123.BAT", "");
-            a.task = t4;
-            a.unStdDllTask = u;
-            AddTask("567", a);
+            //Tasks t4 = new Tasks();
+            //t4.idx = "567";
+            //t4.taskName = "567";
+            //t4.taskType = "DLL-UNSTD";
+            //t4.taskCategory = "Cron";
+            //t4.taskCreateTime = DateTime.Now;
+            //t4.taskCron = "0/2 * * * * ? *";
+            //UnStdDll u = new UnStdDll(@"E:\ASECode\Test\QM.git\QM.BAT\BAT\123.BAT", "");
+            //a.task = t4;
+            //a.unStdDllTask = u;
+            //AddTask("567", a);
 
-            TaskRuntimeInfo a1 = new TaskRuntimeInfo();
-            Tasks t5 = new Tasks();
-            t5.idx = "678";
-            t5.taskName = "678";
-            t5.taskType = "DLL-UNSTD";
-            t5.taskCategory = "Cron";
-            t5.taskCreateTime = DateTime.Now;
-            t5.taskCron = "0 0/1 * * * ? *";
-            UnStdDll u1 = new UnStdDll(@"E:\ASECode\Test\QM.git\QM.BAT\bin\Debug\QM.BAT.exe", "asy");
-            a1.task = t5;
-            a1.unStdDllTask = u1;
-            AddTask("678", a1);
+            //TaskRuntimeInfo a1 = new TaskRuntimeInfo();
+            //Tasks t5 = new Tasks();
+            //t5.idx = "678";
+            //t5.taskName = "678";
+            //t5.taskType = "DLL-UNSTD";
+            //t5.taskCategory = "Cron";
+            //t5.taskCreateTime = DateTime.Now;
+            //t5.taskCron = "0 0/1 * * * ? *";
+            //UnStdDll u1 = new UnStdDll(@"E:\ASECode\Test\QM.git\QM.BAT\bin\Debug\QM.BAT.exe", "asy");
+            //a1.task = t5;
+            //a1.unStdDllTask = u1;
+            //AddTask("678", a1);
 
         }
 
@@ -191,10 +191,11 @@ namespace QM.Core.QuartzNet
                                             .WithIdentity(taskinfo.task.idx, taskinfo.task.taskCategory);
 
                     switch (taskinfo.task.taskType) {
-                        case "SQLFILE":
+                        case "SQL-FILE":
                             jobBuilder = jobBuilder.OfType(typeof(QMSqlFileTaskJob));
                             break;
                         case "SQL-EXP":
+                        case "SQL":
                             jobBuilder = jobBuilder.OfType(typeof(QMSqlTaskJob));
                             break;
                         case "DLL-STD":
@@ -281,11 +282,33 @@ namespace QM.Core.QuartzNet
         /// </summary>
         public void InitLoadTaskList()
         {
-            //QM.Server.Data.TaskData task = new Data.TaskData();
-            //var tasklist = task.GetTaskList(null, null, null, null);
-            //foreach(Tasks t in tasklist){
-            //    //AddTask(t.idx, t);
-            //}                     
+
+            DB.TaskData td = new DB.TaskData();
+            var tasklist = td.GetList();
+            TaskRuntimeInfo trun = null;
+            foreach (Tasks t in tasklist)
+            {
+                trun = new TaskRuntimeInfo();
+                switch (t.taskType)
+                {
+                    case "SQL-FILE":                        
+                        trun.sqlFileTask = new SqlFileTask(t.taskFile, t.taskDBCon);
+                        break;
+                    case "SQL-EXP":
+                        trun.sqlTask = new SqlExpJob(t.taskDBCon, t.taskFile, t.taskParm, t.taskExpFile);
+                        break;
+                    case "DLL-STD":
+                        trun.dllTask = new QMAppDomainLoader<DllTask>().Load(t.taskFile, t.taskClsType, out trun.domain);
+                        break;
+                    case "DLL-UNSTD":
+                    default:
+                        trun.unStdDllTask = new UnStdDll(t.taskFile, t.taskParm);
+                        break;
+                }
+                trun.task = t;
+
+                AddTask(t.idx, trun);
+            }
         }
     }
 }

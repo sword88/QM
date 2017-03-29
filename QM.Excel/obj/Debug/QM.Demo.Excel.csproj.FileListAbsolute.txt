@@ -1,4 +1,3 @@
-E:\ASECode\Test\QM.git\QM.Excel\obj\Debug\QM.Demo.Excel.csprojResolveAssemblyReference.cache
 E:\ASECode\Test\QM.git\QM.Excel\obj\Debug\QM.Excel.dll
 E:\ASECode\Test\QM.git\QM.Excel\obj\Debug\QM.Excel.pdb
 E:\ASECode\Test\QM.git\QM.Excel\bin\Debug\QM.Excel.dll.config
@@ -24,3 +23,6 @@ E:\ASECode\Test\QM.git\QM.Excel\bin\Debug\Common.Logging.Core.pdb
 E:\ASECode\Test\QM.git\QM.Excel\bin\Debug\Common.Logging.Core.xml
 E:\ASECode\Test\QM.git\QM.Excel\bin\Debug\Common.Logging.pdb
 E:\ASECode\Test\QM.git\QM.Excel\bin\Debug\Common.Logging.xml
+E:\ASECode\Test\QM.git\QM.Excel\bin\Debug\EntityFramework.dll
+E:\ASECode\Test\QM.git\QM.Excel\bin\Debug\EntityFramework.xml
+E:\ASECode\Test\QM.git\QM.Excel\obj\Debug\QM.Demo.Excel.csprojResolveAssemblyReference.cache

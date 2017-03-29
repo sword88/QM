@@ -80,3 +80,4 @@ E:\ASECode\Test\QM.git\QM.Server\obj\Debug\QM.Server.csprojResolveAssemblyRefere
 E:\ASECode\Test\QM.git\QM.Server\obj\Debug\QM.Server.exe
 E:\ASECode\Test\QM.git\QM.Server\obj\Debug\QM.Server.pdb
 E:\ASECode\Test\QM.git\QM.Server\bin\Debug\Config\log4net.config
+E:\ASECode\Test\QM.git\QM.Server\bin\Debug\Config\database.config
