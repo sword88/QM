@@ -7,6 +7,9 @@ using Quartz;
 using Quartz.Impl;
 using Quartz.Spi;
 using QM.Core.Model;
+using QM.Core.Exception;
+using QM.Core.Log;
+using QM.Core.Environments;
 
 namespace QM.Core.QuartzNet
 {
@@ -32,6 +35,10 @@ namespace QM.Core.QuartzNet
         /// 单实例任务管理
         /// </summary>
         private static QMBaseServer _server = new QMBaseServer();
+        /// <summary>
+        /// log
+        /// </summary>
+        private static ILogger log = QMStarter.CreateQMLogger(typeof(QMBaseServer));
 
         /// <summary>
         /// 初始化
@@ -144,6 +151,7 @@ namespace QM.Core.QuartzNet
             if (_scheduler != null || !_scheduler.IsStarted)
             {
                 _scheduler.Start();
+                log.Info("QM Server 开启服务");
             }
 
             return _scheduler.IsStarted;
@@ -158,9 +166,62 @@ namespace QM.Core.QuartzNet
             if(_scheduler.IsStarted)
             {
                 _scheduler.Shutdown();
+                log.Info("QM Server 停止服务");
             }
 
             return _scheduler.IsShutdown;
+        }
+
+        /// <summary>
+        /// 暂停任务
+        /// </summary>
+        /// <param name="taskid"></param>
+        /// <returns></returns>
+        public bool PauseJob(string taskid)
+        {
+            bool result = false;
+            try
+            {
+                JobKey jk = new JobKey(taskid);
+
+                if (!_scheduler.CheckExists(jk))
+                {                    
+                    _scheduler.PauseJob(jk);
+                    log.Info(string.Format("暂停任务{0}",taskid));
+                }
+
+                result = true;
+            }
+            catch (QMException ex)
+            {
+                log.Fatal(string.Format("暂停任务失败,错误信息{0}", ex.Message));
+            }
+
+            return result;
+        }
+
+        /// <summary>
+        /// 恢复暂时运行的任务
+        /// </summary>
+        /// <param name="taskid"></param>
+        /// <returns></returns>
+        public bool ResumeJob(string taskid)
+        {
+            bool result = false;
+            try
+            {
+                JobKey jk = new JobKey(taskid);
+                if (_scheduler.CheckExists(jk))
+                {
+                    _scheduler.ResumeJob(jk);
+                    log.Info(string.Format("恢复暂时运行的任务{0}", taskid));
+                }
+            }
+            catch (QMException ex)
+            {
+                log.Fatal(string.Format("恢复暂时运行的任务,错误信息{0}", ex.Message));
+            }
+            return result;
         }
 
         /// <summary>
@@ -171,6 +232,7 @@ namespace QM.Core.QuartzNet
             if (!_scheduler.IsShutdown) 
             {
                 _scheduler.Shutdown();
+                log.Info("QM Server 停止服务&资源释放");
             }
         }
 
@@ -209,7 +271,7 @@ namespace QM.Core.QuartzNet
 
                     IJobDetail jobDetail = jobBuilder.Build();
 
-                   ITrigger trigger = QMCornFactory.CreateTrigger(taskinfo);
+                    ITrigger trigger = QMCornFactory.CreateTrigger(taskinfo);
                     _scheduler.ScheduleJob(jobDetail, trigger);
                     
                     _taskPool.Add(taskid, taskinfo);

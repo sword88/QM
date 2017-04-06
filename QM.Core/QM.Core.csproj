@@ -151,6 +151,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QuartzNet\QMAppDomainLoader.cs" />
     <Compile Include="QuartzNet\QMCornFactory.cs" />
+    <Compile Include="QuartzNet\QMCronHelper.cs" />
     <Compile Include="QuartzNet\QMDllTaskJob.cs" />
     <Compile Include="QuartzNet\QMJobFactory.cs" />
     <Compile Include="QuartzNet\QMBaseServer.cs" />

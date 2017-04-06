@@ -7,6 +7,7 @@ using Topshelf;
 using QM.Core.Log;
 using QM.Core.Model;
 using QM.Core.QuartzNet;
+using QM.Core.Environments;
 
 namespace QM.Server
 {
@@ -15,7 +16,7 @@ namespace QM.Server
         /// <summary>
         /// 单实例任务管理
         /// </summary>
-        private static QMBaseServer _server = new QMBaseServer();
+        private static QMBaseServer _server = new QMBaseServer();        
 
         /// <summary>
         /// 初始化
