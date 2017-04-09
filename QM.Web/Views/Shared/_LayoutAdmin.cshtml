@@ -8,7 +8,7 @@
     @Scripts.Render("~/bundles/modernizr")
 
 </head>
-<body class="gray-bg">
+<body class="fixed-sidebar full-height-layout gray-bg" style="overflow:hidden">
     <div id="wrapper">
         <!--左侧导航开始-->
         @Html.Action("Menu")
@@ -21,8 +21,8 @@
         <!--右侧部分结束-->
     </div>
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/scripts")
     @RenderSection("scripts", required: false)
+    <script type="text/javascript" src="@Url.Content("~/Scripts/qm.js")"></script>
 </body>
 </html>

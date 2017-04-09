@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using QM.Core.DB;
 
 namespace QM.Web.Controllers
 {
@@ -13,6 +14,13 @@ namespace QM.Web.Controllers
         public ActionResult Index()
         {
             return View();
+        }
+
+        public ActionResult List()
+        {
+            TaskData td = new TaskData();
+            var task = td.GetList();
+            return View(task);
         }
 
         [ChildActionOnly]
@@ -27,12 +35,12 @@ namespace QM.Web.Controllers
             return PartialView();
         }
 
-        public ActionResult AddTask()
+        public ActionResult Add()
         {
             return View();
         }
 
-        public ActionResult EditTask()
+        public ActionResult Edit()
         {
             return View();
         }
