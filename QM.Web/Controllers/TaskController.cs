@@ -43,6 +43,26 @@ namespace QM.Web.Controllers
             return PartialView();
         }
 
+        /// <summary>
+        /// 时间设置
+        /// </summary>
+        /// <returns></returns>
+        [ChildActionOnly]
+        public ActionResult Time()
+        {
+            return PartialView();
+        }
+
+        /// <summary>
+        /// 邮件设置
+        /// </summary>
+        /// <returns></returns>
+        [ChildActionOnly]
+        public ActionResult Mail()
+        {
+            return PartialView();
+        }
+
         public ActionResult Add()
         {
             return View();

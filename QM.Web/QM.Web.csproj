@@ -291,6 +291,8 @@
     <Content Include="Views\Task\Add.cshtml" />
     <Content Include="Views\Task\List.cshtml" />
     <Content Include="Views\Shared\_LayoutAdminContent.cshtml" />
+    <Content Include="Views\Task\Time.cshtml" />
+    <Content Include="Views\Task\Mail.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
