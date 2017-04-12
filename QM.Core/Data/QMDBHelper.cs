@@ -2,8 +2,9 @@
 using System.Data;
 using System.Collections;
 using System.Data.OleDb;
+using QM.Core.Exception;
 
-namespace QM.Core.DB
+namespace QM.Core.Data
 {
     public class QMDBHelper
     {
@@ -603,9 +604,9 @@ namespace QM.Core.DB
                 //execute the command & return the results
                 retval = cmd.ExecuteNonQuery();
             }
-            catch
+            catch(QMException ex)
             {
-                ;
+                throw ex;
             }
             return retval;
         }

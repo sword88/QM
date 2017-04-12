@@ -345,7 +345,7 @@ namespace QM.Core.QuartzNet
         public void InitLoadTaskList()
         {
 
-            DB.TaskData td = new DB.TaskData();
+            Data.TaskData td = new Data.TaskData();
             var tasklist = td.GetList();
             TaskRuntimeInfo trun = null;
             foreach (Tasks t in tasklist)

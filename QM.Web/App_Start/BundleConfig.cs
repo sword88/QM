@@ -17,7 +17,7 @@ namespace QM.Web
                         "~/Scripts/modernizr-*"));
 
             bundles.Add(new ScriptBundle("~/bundles/scripts").Include(
-                      "~/Scripts/jquery-{version}.min.js",
+                      "~/Scripts/jquery-{version}.js",
                       "~/Scripts/bootstrap.min.js",
                       "~/Scripts/respond.js"));
 

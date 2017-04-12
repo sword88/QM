@@ -7,6 +7,7 @@ using Quartz;
 using QM.Core.Common;
 using log4net;
 using QM.Core.Exception;
+using QM.Core.Data;
 
 namespace QM.Core.QuartzNet
 {
@@ -25,7 +26,12 @@ namespace QM.Core.QuartzNet
                     log.Error(string.Format("当前任务信息为空,taskid：{0} - {1}", taskid, new QMException()));
                     return;       
                 }
-                taskinfo.dllTask.TryRun();                
+                Data.TaskData t = new TaskData();
+                t.UpdateLastStartTime(taskid, DateTime.Now);
+
+                taskinfo.dllTask.TryRun();
+
+                t.UpdateLastEndTime(taskid, DateTime.Now);
             }
             catch (QMException ex)
             {

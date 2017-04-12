@@ -8,7 +8,7 @@ using QM.Core.Environments;
 using QM.Core.Model;
 using QM.Core.Exception;
 using QM.Core.Log;
-using QM.Core.DB;
+using QM.Core.Data;
 
 namespace QM.Demo.Quituser
 {
