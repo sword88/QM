@@ -53,12 +53,23 @@ namespace QM.Web.Controllers
             return PartialView();
         }
 
+        public ActionResult TimePop()
+        {
+            return PartialView();
+        }
+
         /// <summary>
         /// 邮件设置
         /// </summary>
         /// <returns></returns>
         [ChildActionOnly]
         public ActionResult Mail()
+        {
+            return PartialView();
+        }
+
+
+        public ActionResult Ftp()
         {
             return PartialView();
         }

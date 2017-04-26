@@ -200,6 +200,8 @@
     <Content Include="Content\css\qm.css" />
     <Content Include="Content\images\bd_bg.png" />
     <Content Include="Content\images\breadclip.png" />
+    <Content Include="Content\css\metisMenu.css" />
+    <Content Include="Content\css\metisMenu.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="Content\images\mainBg1.png" />
     <Content Include="Content\images\mainBg2.png" />
@@ -258,10 +260,14 @@
     <Content Include="Scripts\jquery-3.1.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.1.1.min.map" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.slimscroll.js" />
+    <Content Include="Scripts\jquery.slimscroll.min.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\metisMenu.js" />
+    <Content Include="Scripts\metisMenu.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\qm.js" />
     <Content Include="Scripts\respond.js" />
@@ -293,6 +299,8 @@
     <Content Include="Views\Shared\_LayoutAdminContent.cshtml" />
     <Content Include="Views\Task\Time.cshtml" />
     <Content Include="Views\Task\Mail.cshtml" />
+    <Content Include="Views\Task\Ftp.cshtml" />
+    <Content Include="Views\Task\TimePop.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

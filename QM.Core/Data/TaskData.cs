@@ -27,7 +27,7 @@ namespace QM.Core.Data
             Tasks t = null;
             try
             {
-                string sql = "select * from qm_task";
+                string sql = "select * from qm_task where taskstate = 'Y'";
                 OleDbDataReader dr = QMDBHelper.ExecuteReader(sql);
                 while (dr.Read())
                 {

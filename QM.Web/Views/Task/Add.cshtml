@@ -45,6 +45,24 @@
                         </div>
                     </div>
 
+
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">
+                            执行计划
+                        </label>
+                        <div class="col-sm-10">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="执行计划">
+                                <span class="input-group-btn">
+                                    <a data-toggle="modal" class="btn btn-primary" href="form_basic.html#modal-form">
+                                        Cron向导
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="hr-line-dashed"></div>
                     <div class="form-group">
                         <label class="col-sm-2 control-label">
@@ -52,8 +70,8 @@
                         </label>
                         <div class="col-sm-10">
                             <select class="form-control m-b" name="account">
-                                <option>选项 1</option>
-                                <option>选项 2</option>
+                                <option>启用</option>
+                                <option>禁用</option>
                             </select>
                         </div>
                     </div>
@@ -75,13 +93,14 @@
             </div>
             <!--基本信息结束-->
             <!--任务计划-->
-            @Html.Action("Time")
+            @Html.Action("TimePop")
             <!--任务计划结束-->
             <!--邮件设置-->
             @Html.Action("Mail")
             <!--邮件设置结束-->
-            <!--自定义sql-->
-            <!--自定义sql结束-->
+            <!--FTP-->
+            @Html.Action("Ftp")
+            <!--FTP结束-->
         </div>
     </div>
 </div>
