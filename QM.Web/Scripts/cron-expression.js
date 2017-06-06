@@ -7,7 +7,7 @@
             },
             submit: function () {
                 $.ajax({
-                    url: "/HOME/NextFireTime",
+                    url: "/Task/NextFireTime",
                     type: "post",
                     dataType: "json",
                     data: { "CronExpression": $("#cron").val() },
@@ -169,6 +169,7 @@ $(function () {
         var the = $(this);
         if (the.is("#generate")) {
             cron.generate();
+            cron.submit();
         }
         if (the.is("#submit")) {
             cron.submit();

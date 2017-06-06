@@ -15,23 +15,21 @@
             <div class="col-sm-10">
 
                 <div class="input-group">
-                    <select class="form-control" multiple="">
-                        <option>选项 1</option>
-                        <option>选项 2</option>
-                        <option>选项 3</option>
-                        <option>选项 4</option>
+                    <select class="form-control" multiple="" id="to_list" name="to_list">
+                        <option value="1">1</option>
+                        <option value="12">12</option>
                     </select>
                     <span class="input-group-btn">
-                        <button type="button" class="btn btn-primary">
+                        <button type="button" class="btn btn-primary" id="to_remove">
                             移除
                         </button>
                     </span>
                 </div>
 
                 <div class="input-group">
-                    <input type="text" class="form-control" placeholder="邮件名称">
+                    <input type="text" class="form-control" placeholder="收件人地址" id="to" name="to">
                     <span class="input-group-btn">
-                        <button type="button" class="btn btn-primary">
+                        <button type="button" class="btn btn-primary" id="to_add">
                             添加
                         </button>
                     </span>
@@ -44,23 +42,19 @@
             <div class="col-sm-10">
 
                 <div class="input-group">
-                    <select class="form-control" multiple="">
-                        <option>选项 1</option>
-                        <option>选项 2</option>
-                        <option>选项 3</option>
-                        <option>选项 4</option>
+                    <select class="form-control" multiple="" id="cc_list" name="cc_list">
                     </select>
                     <span class="input-group-btn">
-                        <button type="button" class="btn btn-primary">
+                        <button type="button" class="btn btn-primary" id="cc_remove">
                             移除
                         </button>
                     </span>
                 </div>
 
                 <div class="input-group">
-                    <input type="text" class="form-control" placeholder="邮件名称">
+                    <input type="text" class="form-control" placeholder="抄送人地址">
                     <span class="input-group-btn">
-                        <button type="button" class="btn btn-primary">
+                        <button type="button" class="btn btn-primary" id="cc_add">
                             添加
                         </button>
                     </span>
@@ -73,23 +67,19 @@
             <div class="col-sm-10">
 
                 <div class="input-group">
-                    <select class="form-control" multiple="">
-                        <option>选项 1</option>
-                        <option>选项 2</option>
-                        <option>选项 3</option>
-                        <option>选项 4</option>
+                    <select class="form-control" multiple="" id="bcc_list" name="bcc_list">
                     </select>
                     <span class="input-group-btn">
-                        <button type="button" class="btn btn-primary">
+                        <button type="button" class="btn btn-primary" id="bcc_remove">
                             移除
                         </button>
                     </span>
                 </div>
 
                 <div class="input-group">
-                    <input type="text" class="form-control" placeholder="邮件名称">
+                    <input type="text" class="form-control" placeholder="密送人地址">
                     <span class="input-group-btn">
-                        <button type="button" class="btn btn-primary">
+                        <button type="button" class="btn btn-primary" id="bcc_add">
                             添加
                         </button>
                     </span>
@@ -105,3 +95,6 @@
         </div>
     </form>
 </div>
+
+
+<script type="text/javascript" src="~/Scripts/mail.js"></script>

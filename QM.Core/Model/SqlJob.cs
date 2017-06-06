@@ -1,9 +1,11 @@
 ﻿using QM.Core.Common;
 using System.Data;
+using QM.Core.Files;
 using QM.Core.Excel;
 using QM.Core.Exception;
 using QM.Core.Log;
 using QM.Core.Data;
+using QM.Core.Environments;
 
 namespace QM.Core.Model
 {
@@ -12,7 +14,7 @@ namespace QM.Core.Model
     /// </summary>
     public class SqlExpJob
     {
-        private static ILogger log;
+        private static ILogger log = QMStarter.CreateQMLogger(typeof(SqlExpJob));
 
         //数据库连接字符串
         private string dbcon = "";
@@ -48,6 +50,8 @@ namespace QM.Core.Model
             sql = sqlstr;
             title = titlestr;
             filepath = filestr;
+
+            QMFile.CreateDir(filepath.Substring(0, filepath.LastIndexOf("\\") + 1));
         }
 
         /// <summary>
@@ -59,10 +63,14 @@ namespace QM.Core.Model
             {
                 DataSet ds = QMDBHelper.ExecuteDataset(sql);
                 QMExcel ex = new QMExcel(title, filepath);
+                log.Debug(string.Format("导出文件{0},{1},{2}",title,filepath,sql));
+
                 if (ex.Export(ds.Tables[0], title, filepath, out error) == false)
                 {
-                    log.Debug(error);
+                    log.Debug(string.Format("导出文件异常{0}",error));
                 }
+
+                log.Debug("导出成功");
             }
             catch (QMException ex)
             {

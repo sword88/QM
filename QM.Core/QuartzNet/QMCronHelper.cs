@@ -29,7 +29,7 @@ namespace QM.Core.QuartzNet
         /// <param name="CronExpressionString">Cron表达式</param>
         /// <param name="numTimes">运行次数</param>
         /// <returns>运行时间段</returns>
-        public static List<DateTime> GetNextFireTime(string CronExpressionString, int numTimes)
+        public static List<string> GetNextFireTime(string CronExpressionString, int numTimes)
         {
             if (numTimes < 0)
             {
@@ -38,11 +38,11 @@ namespace QM.Core.QuartzNet
             //时间表达式
             ITrigger trigger = TriggerBuilder.Create().WithCronSchedule(CronExpressionString).Build();
             IList<DateTimeOffset> dates = TriggerUtils.ComputeFireTimes(trigger as IOperableTrigger, null, numTimes);
-            List<DateTime> list = new List<DateTime>();
+
+            List<string> list = new List<string>();
             foreach (DateTimeOffset dtf in dates)
-            {
-                //list.Add(TimeZoneInfo.ConvertTimeFromUtc(dtf.DateTime, TimeZoneInfo.Local));
-                list.Add(dtf.DateTime);
+            {                 
+                list.Add(TimeZoneInfo.ConvertTimeFromUtc(dtf.DateTime, TimeZoneInfo.Local).ToString());                
             }
             return list;
         }

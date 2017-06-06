@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 using System.Reflection;
 using System.Runtime.Remoting.Lifetime;
 using System.Diagnostics;
-using log4net;
+using QM.Core.Log;
 using QM.Core.Exception;
+using QM.Core.Environments;
 
 namespace QM.Core.Model
 {
@@ -16,7 +17,7 @@ namespace QM.Core.Model
     /// </summary>
     public class UnStdDll
     {
-        private static ILog log = LogManager.GetLogger(typeof(SqlFileTask));
+        private static ILogger log = QMStarter.CreateQMLogger(typeof(SqlExpJob));
         private string filename;
         private string args;
         public UnStdDll(string _filename,string _args)

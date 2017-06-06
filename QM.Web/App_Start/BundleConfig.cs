@@ -17,18 +17,18 @@ namespace QM.Web
                         "~/Scripts/modernizr-*"));
 
             bundles.Add(new ScriptBundle("~/bundles/scripts").Include(
-                      "~/Scripts/jquery-{version}.js",
+                      "~/Scripts/jquery-3.1.1.min.js",
                       "~/Scripts/bootstrap.min.js",
                       "~/Scripts/metisMenu.min.js",
                       "~/Scripts/jquery.slimscroll.min.js",
-                      "~/Scripts/qm.js",
-                      "~/Scripts/respond.js"));
+                      "~/Scripts/qm.js"));
+                      //"~/Scripts/respond.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.min.css",
                       "~/Content/css/font-awesome.min.css",
                       "~/Content/css/animate.css",
-                      "~/Content/css/metisMenu.min.css",
+                      //"~/Content/css/metisMenu.min.css",
                       "~/Content/css/qm.css"
                       ));
         }

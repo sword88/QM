@@ -1,0 +1,55 @@
+DEBUG 2017-04-24 03:09:38  123
+INFO  2017-04-24 03:09:40  QM Server 开启服务
+DEBUG 2017-04-24 03:10:01  E:\ASECode\Test\QM.git\QM.BAT\BAT\123.BAT 
+DEBUG 2017-04-24 03:11:00  E:\ASECode\Test\QM.git\QM.BAT\BAT\123.BAT 
+DEBUG 2017-04-24 03:12:00  E:\ASECode\Test\QM.git\QM.BAT\BAT\123.BAT 
+DEBUG 2017-04-24 03:12:02  E:\ASECode\Test\QM.git\QM.BAT\bin\Debug\QM.BAT.exe asy
+DEBUG 2017-04-24 03:13:00  E:\ASECode\Test\QM.git\QM.BAT\BAT\123.BAT 
+DEBUG 2017-04-24 03:14:00  E:\ASECode\Test\QM.git\QM.BAT\BAT\123.BAT 
+DEBUG 2017-04-24 03:15:00  E:\ASECode\Test\QM.git\QM.BAT\BAT\123.BAT 
+DEBUG 2017-04-24 03:15:00  E:\ASECode\Test\QM.git\QM.BAT\bin\Debug\QM.BAT.exe asy
+DEBUG 2017-04-24 03:16:00  E:\ASECode\Test\QM.git\QM.BAT\BAT\123.BAT 
+DEBUG 2017-04-24 03:16:07  123
+INFO  2017-04-24 03:16:13  QM Server 开启服务
+DEBUG 2017-04-24 03:17:14  123
+INFO  2017-04-24 03:17:21  QM Server 开启服务
+DEBUG 2017-04-24 03:17:54  123
+INFO  2017-04-24 03:18:02  QM Server 开启服务
+DEBUG 2017-04-24 03:23:24  123
+INFO  2017-04-24 03:23:35  QM Server 开启服务
+DEBUG 2017-04-24 03:24:39  SqlPlus Provider=MSDAORA.1;Data Source=MESDB2;Password=fwuser2;User ID=fwuser2 @ C:\QM\File\1.SQL
+DEBUG 2017-04-24 03:25:07  SqlPlus Provider=MSDAORA.1;Data Source=MESDB2;Password=fwuser2;User ID=fwuser2 @ C:\QM\File\1.SQL
+DEBUG 2017-04-24 03:26:00  SqlPlus Provider=MSDAORA.1;Data Source=MESDB2;Password=fwuser2;User ID=fwuser2 @ C:\QM\File\1.SQL
+DEBUG 2017-04-24 03:26:48  123
+INFO  2017-04-24 03:26:53  QM Server 开启服务
+DEBUG 2017-04-24 03:27:04  SqlPlus Provider=MSDAORA.1;Data Source=MESDB2;Password=mesft;User ID=mesft @ C:\QM\File\1.SQL
+DEBUG 2017-04-24 03:28:00  SqlPlus Provider=MSDAORA.1;Data Source=MESDB2;Password=mesft;User ID=mesft @ C:\QM\File\1.SQL
+DEBUG 2017-04-24 03:29:00  SqlPlus Provider=MSDAORA.1;Data Source=MESDB2;Password=mesft;User ID=mesft @ C:\QM\File\1.SQL
+DEBUG 2017-04-24 03:30:00  SqlPlus Provider=MSDAORA.1;Data Source=MESDB2;Password=mesft;User ID=mesft @ C:\QM\File\1.SQL
+DEBUG 2017-04-24 03:31:00  SqlPlus Provider=MSDAORA.1;Data Source=MESDB2;Password=mesft;User ID=mesft @ C:\QM\File\1.SQL
+DEBUG 2017-04-24 03:32:00  SqlPlus Provider=MSDAORA.1;Data Source=MESDB2;Password=mesft;User ID=mesft @ C:\QM\File\1.SQL
+DEBUG 2017-04-24 03:33:00  SqlPlus Provider=MSDAORA.1;Data Source=MESDB2;Password=mesft;User ID=mesft @ C:\QM\File\1.SQL
+DEBUG 2017-04-24 03:33:55  123
+INFO  2017-04-24 03:34:03  QM Server 开启服务
+DEBUG 2017-04-24 03:48:10  SqlPlus mesft/mesft@mesdb2 @ C:\QM\File\1.SQL
+DEBUG 2017-04-24 03:48:53  SqlPlus mesft/mesft@mesdb2 @ C:\QM\File\1.SQL
+DEBUG 2017-04-24 03:48:53  SqlPlus mesft/mesft@mesdb2 @ C:\QM\File\1.SQL
+DEBUG 2017-04-24 03:48:53  SqlPlus mesft/mesft@mesdb2 @ C:\QM\File\1.SQL
+DEBUG 2017-04-24 03:48:53  SqlPlus mesft/mesft@mesdb2 @ C:\QM\File\1.SQL
+DEBUG 2017-04-24 03:48:53  SqlPlus mesft/mesft@mesdb2 @ C:\QM\File\1.SQL
+DEBUG 2017-04-24 03:48:53  SqlPlus mesft/mesft@mesdb2 @ C:\QM\File\1.SQL
+DEBUG 2017-04-24 03:48:53  SqlPlus mesft/mesft@mesdb2 @ C:\QM\File\1.SQL
+DEBUG 2017-04-24 03:48:53  SqlPlus mesft/mesft@mesdb2 @ C:\QM\File\1.SQL
+DEBUG 2017-04-24 03:48:57  SqlPlus mesft/mesft@mesdb2 @ C:\QM\File\1.SQL
+DEBUG 2017-04-24 03:48:58  SqlPlus mesft/mesft@mesdb2 @ C:\QM\File\1.SQL
+DEBUG 2017-04-24 03:49:00  SqlPlus mesft/mesft@mesdb2 @ C:\QM\File\1.SQL
+DEBUG 2017-04-24 03:50:00  SqlPlus mesft/mesft@mesdb2 @ C:\QM\File\1.SQL
+DEBUG 2017-04-24 03:51:00  SqlPlus mesft/mesft@mesdb2 @ C:\QM\File\1.SQL
+DEBUG 2017-04-24 03:52:00  SqlPlus mesft/mesft@mesdb2 @ C:\QM\File\1.SQL
+DEBUG 2017-04-24 03:53:00  SqlPlus mesft/mesft@mesdb2 @ C:\QM\File\1.SQL
+DEBUG 2017-04-24 03:54:00  SqlPlus mesft/mesft@mesdb2 @ C:\QM\File\1.SQL
+DEBUG 2017-04-24 03:55:01  SqlPlus mesft/mesft@mesdb2 @ C:\QM\File\1.SQL
+DEBUG 2017-04-24 03:56:04  SqlPlus mesft/mesft@mesdb2 @ C:\QM\File\1.SQL
+DEBUG 2017-04-24 03:57:00  SqlPlus mesft/mesft@mesdb2 @ C:\QM\File\1.SQL
+DEBUG 2017-04-24 03:58:01  SqlPlus mesft/mesft@mesdb2 @ C:\QM\File\1.SQL
+DEBUG 2017-04-24 05:04:16  123

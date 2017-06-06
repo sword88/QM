@@ -5,15 +5,16 @@ using System.Text;
 using System.Threading.Tasks;
 using Quartz;
 using QM.Core.Common;
-using log4net;
+using QM.Core.Log;
 using QM.Core.Exception;
 using QM.Core.Data;
+using QM.Core.Environments;
 
 namespace QM.Core.QuartzNet
 {
     public class QMSqlTaskJob : IJob
     {
-        private static ILog log = LogManager.GetLogger(typeof(QMDllTaskJob));
+        private static ILogger log = QMStarter.CreateQMLogger(typeof(QMSqlTaskJob));
 
         public void Execute(IJobExecutionContext context)
         {

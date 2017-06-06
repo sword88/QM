@@ -1,0 +1,9 @@
+E:\ASECode\Test\QM.git\QM.Demo.Lieping\bin\Debug\QM.Demo.Lieping.exe.config
+E:\ASECode\Test\QM.git\QM.Demo.Lieping\bin\Debug\QM.Demo.Lieping.exe
+E:\ASECode\Test\QM.git\QM.Demo.Lieping\bin\Debug\QM.Demo.Lieping.pdb
+E:\ASECode\Test\QM.git\QM.Demo.Lieping\obj\Debug\QM.Demo.Lieping.csprojResolveAssemblyReference.cache
+E:\ASECode\Test\QM.git\QM.Demo.Lieping\obj\Debug\QM.Demo.Lieping.Properties.Resources.resources
+E:\ASECode\Test\QM.git\QM.Demo.Lieping\obj\Debug\QM.Demo.Lieping.csproj.GenerateResource.Cache
+E:\ASECode\Test\QM.git\QM.Demo.Lieping\obj\Debug\QM.Demo.Lieping.exe
+E:\ASECode\Test\QM.git\QM.Demo.Lieping\obj\Debug\QM.Demo.Lieping.pdb
+E:\ASECode\Test\QM.git\QM.Demo.Lieping\obj\Debug\QM.Demo.Lieping.Form1.resources

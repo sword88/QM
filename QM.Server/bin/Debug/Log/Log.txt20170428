@@ -1,0 +1,78 @@
+DEBUG 2017-04-28 11:03:55  123
+INFO  2017-04-28 11:04:05  QM Server 开启服务
+DEBUG 2017-04-28 11:05:08  SqlPlus mesft/mesft@mesdb2 @ C:\QM\File\1.SQL
+DEBUG 2017-04-28 11:06:00  SqlPlus mesft/mesft@mesdb2 @ C:\QM\File\1.SQL
+DEBUG 2017-04-28 11:08:33  123
+INFO  2017-04-28 11:08:40  QM Server 开启服务
+DEBUG 2017-04-28 11:09:38  SqlPlus mesft/mesft@mesdb2 @ C:\QM\File\1.SQL
+DEBUG 2017-04-28 11:18:32  SqlPlus mesft/mesft@mesdb2 @ C:\QM\File\1.SQL
+DEBUG 2017-04-28 11:18:46  123
+INFO  2017-04-28 11:18:51  QM Server 开启服务
+DEBUG 2017-04-28 11:19:13  SqlPlus mesft/mesft@mesdb2 @ C:\QM\File\1.SQL
+DEBUG 2017-04-28 11:40:45  SqlPlus mesft/mesft@mesdb2 @ C:\QM\File\1.SQL
+DEBUG 2017-04-28 11:41:27  SqlPlus mesft/mesft@mesdb2 @ C:\QM\File\1.SQL
+DEBUG 2017-04-28 11:41:27  SqlPlus mesft/mesft@mesdb2 @ C:\QM\File\1.SQL
+DEBUG 2017-04-28 11:44:30  SqlPlus mesft/mesft@mesdb2 @ C:\QM\File\1.SQL
+DEBUG 2017-04-28 11:44:42  SqlPlus mesft/mesft@mesdb2 @ C:\QM\File\1.SQL
+DEBUG 2017-04-28 11:44:59  123
+INFO  2017-04-28 11:45:07  QM Server 开启服务
+DEBUG 2017-04-28 11:46:41  SqlPlus mesft/mesft@mesdb2 @ C:\QM\File\1.SQL
+DEBUG 2017-04-28 11:47:36  SqlPlus mesft/mesft@mesdb2 @ C:\QM\File\1.SQL
+DEBUG 2017-04-28 11:49:31  SqlPlus mesft/mesft@mesdb2 @ C:\QM\File\1.SQL
+DEBUG 2017-04-28 11:49:31  SqlPlus mesft/mesft@mesdb2 @ C:\QM\File\1.SQL
+DEBUG 2017-04-28 11:55:41  123
+INFO  2017-04-28 11:55:49  QM Server 开启服务
+DEBUG 2017-04-28 12:00:04  SqlPlus mesft/mesft@mesdb2 @ C:\QM\File\1.SQL
+DEBUG 2017-04-28 12:00:04  SqlPlus mesft/mesft@mesdb2 @ C:\QM\File\1.SQL
+DEBUG 2017-04-28 12:00:52  SqlPlus mesft/mesft@mesdb2 @ C:\QM\File\1.SQL
+DEBUG 2017-04-28 01:07:22  123
+DEBUG 2017-04-28 02:05:46  123
+INFO  2017-04-28 02:05:52  QM Server 开启服务
+DEBUG 2017-04-28 02:06:07  SqlPlus mesft/mesft@mesdb2 @ C:\QM\File\1.SQL
+DEBUG 2017-04-28 02:06:07  导出文件QM 文件清单,C:\QM\File\1.XLS,select * from qm_task where taskstate ='Y'
+DEBUG 2017-04-28 02:06:07  导出成功
+DEBUG 2017-04-28 02:07:00  导出文件QM 文件清单,C:\QM\File\1.XLS,select * from qm_task where taskstate ='Y'
+DEBUG 2017-04-28 02:07:00  导出成功
+DEBUG 2017-04-28 02:07:00  SqlPlus mesft/mesft@mesdb2 @ C:\QM\File\1.SQL
+DEBUG 2017-04-28 02:08:00  导出文件QM 文件清单,C:\QM\File\1.XLS,select * from qm_task where taskstate ='Y'
+DEBUG 2017-04-28 02:08:00  导出成功
+DEBUG 2017-04-28 02:08:00  SqlPlus mesft/mesft@mesdb2 @ C:\QM\File\1.SQL
+DEBUG 2017-04-28 02:09:00  导出文件QM 文件清单,C:\QM\File\1.XLS,select * from qm_task where taskstate ='Y'
+DEBUG 2017-04-28 02:09:00  导出成功
+DEBUG 2017-04-28 02:09:00  SqlPlus mesft/mesft@mesdb2 @ C:\QM\File\1.SQL
+DEBUG 2017-04-28 02:10:00  导出文件QM 文件清单,C:\QM\File\1.XLS,select * from qm_task where taskstate ='Y'
+DEBUG 2017-04-28 02:10:00  导出成功
+DEBUG 2017-04-28 02:10:00  SqlPlus mesft/mesft@mesdb2 @ C:\QM\File\1.SQL
+DEBUG 2017-04-28 02:11:00  导出文件QM 文件清单,C:\QM\File\1.XLS,select * from qm_task where taskstate ='Y'
+DEBUG 2017-04-28 02:11:00  导出成功
+DEBUG 2017-04-28 02:11:00  SqlPlus mesft/mesft@mesdb2 @ C:\QM\File\1.SQL
+DEBUG 2017-04-28 02:12:00  导出文件QM 文件清单,C:\QM\File\1.XLS,select * from qm_task where taskstate ='Y'
+DEBUG 2017-04-28 02:12:00  导出成功
+DEBUG 2017-04-28 02:12:00  SqlPlus mesft/mesft@mesdb2 @ C:\QM\File\1.SQL
+DEBUG 2017-04-28 02:13:00  导出文件QM 文件清单,C:\QM\File\1.XLS,select * from qm_task where taskstate ='Y'
+DEBUG 2017-04-28 02:13:00  导出成功
+DEBUG 2017-04-28 02:13:00  SqlPlus mesft/mesft@mesdb2 @ C:\QM\File\1.SQL
+DEBUG 2017-04-28 02:14:00  导出文件QM 文件清单,C:\QM\File\1.XLS,select * from qm_task where taskstate ='Y'
+DEBUG 2017-04-28 02:14:00  导出成功
+DEBUG 2017-04-28 02:14:00  SqlPlus mesft/mesft@mesdb2 @ C:\QM\File\1.SQL
+DEBUG 2017-04-28 02:15:00  导出文件QM 文件清单,C:\QM\File\1.XLS,select * from qm_task where taskstate ='Y'
+DEBUG 2017-04-28 02:15:00  导出成功
+DEBUG 2017-04-28 02:15:00  SqlPlus mesft/mesft@mesdb2 @ C:\QM\File\1.SQL
+DEBUG 2017-04-28 02:16:00  导出文件QM 文件清单,C:\QM\File\1.XLS,select * from qm_task where taskstate ='Y'
+DEBUG 2017-04-28 02:16:00  导出成功
+DEBUG 2017-04-28 02:16:00  SqlPlus mesft/mesft@mesdb2 @ C:\QM\File\1.SQL
+DEBUG 2017-04-28 02:17:00  导出文件QM 文件清单,C:\QM\File\1.XLS,select * from qm_task where taskstate ='Y'
+DEBUG 2017-04-28 02:17:00  导出成功
+DEBUG 2017-04-28 02:17:00  SqlPlus mesft/mesft@mesdb2 @ C:\QM\File\1.SQL
+DEBUG 2017-04-28 02:18:00  导出文件QM 文件清单,C:\QM\File\1.XLS,select * from qm_task where taskstate ='Y'
+DEBUG 2017-04-28 02:18:00  导出成功
+DEBUG 2017-04-28 02:18:00  SqlPlus mesft/mesft@mesdb2 @ C:\QM\File\1.SQL
+DEBUG 2017-04-28 02:19:00  导出文件QM 文件清单,C:\QM\File\1.XLS,select * from qm_task where taskstate ='Y'
+DEBUG 2017-04-28 02:19:00  导出成功
+DEBUG 2017-04-28 02:19:00  SqlPlus mesft/mesft@mesdb2 @ C:\QM\File\1.SQL
+DEBUG 2017-04-28 02:20:00  导出文件QM 文件清单,C:\QM\File\1.XLS,select * from qm_task where taskstate ='Y'
+DEBUG 2017-04-28 02:20:00  导出成功
+DEBUG 2017-04-28 02:20:00  SqlPlus mesft/mesft@mesdb2 @ C:\QM\File\1.SQL
+DEBUG 2017-04-28 02:33:55  123
+DEBUG 2017-04-28 03:22:04  123
+INFO  2017-04-28 03:31:31  QM Server 开启服务

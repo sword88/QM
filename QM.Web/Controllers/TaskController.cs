@@ -113,15 +113,23 @@ namespace QM.Web.Controllers
             string cronExpressionString = Request.Params["CronExpression"].ToString();
             try
             {
-                var result = QM.Core.QuartzNet.QMCronHelper.GetNextFireTime(cronExpressionString, 5);
-
-                string msg = JsonConvert.SerializeObject(result);
+                string msg;     
+                if (QM.Core.QuartzNet.QMCronHelper.ValidExpression(cronExpressionString))
+                {
+                    var result = QM.Core.QuartzNet.QMCronHelper.GetNextFireTime(cronExpressionString, 5);
+                    msg = JsonConvert.SerializeObject(result);
+                }
+                else
+                {
+                    var result = new List<string> { "CRON表达式不正确" };
+                    msg = JsonConvert.SerializeObject(result);
+                }                
 
                 return Json(new { result = true, msg = msg });
             }
-            catch
+            catch(Exception ex)
             {
-                return Json(new { result = false, msg = "" });
+                return Json(new { result = false, msg = ex.Message });
             }
         }
     }
