@@ -9,6 +9,7 @@ using System.Diagnostics;
 using QM.Core.Log;
 using QM.Core.Exception;
 using QM.Core.Environments;
+using System.ComponentModel;
 
 namespace QM.Core.Model
 {
@@ -42,6 +43,10 @@ namespace QM.Core.Model
                 pro.WaitForExit();
 
                 log.Debug(startinfo.FileName + " " + startinfo.Arguments);
+            }
+            catch (Win32Exception wex)
+            {
+                throw new QMException(wex.Message);
             }
             catch (QMException ex)
             {

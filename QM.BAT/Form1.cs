@@ -35,7 +35,7 @@ namespace QM.BAT
 
         private void test()
         {
-            foreach (string var in Directory.GetFiles(@"E:\ASECode\Test\QM.git\QM.BAT\BAT\","*.txt"))
+            foreach (string var in Directory.GetFiles(@"c:\qm\file\","*.txt"))
             {
                 File.Delete(var);
                 log.Debug(var);

@@ -18,9 +18,10 @@ namespace QM.Core.QuartzNet
 
         public void Execute(IJobExecutionContext context)
         {
+            string taskid = context.JobDetail.Key.Name;
+
             try
-            {
-                string taskid = context.JobDetail.Key.Name;
+            {                
                 var taskinfo = QMBaseServer.CreateInstance().GetTask(taskid);
                 if (taskinfo == null)
                 {
@@ -37,6 +38,8 @@ namespace QM.Core.QuartzNet
             catch (QMException ex)
             {
                 log.Fatal(string.Format("任务回调时发生严重错误，{0}",ex));
+                Data.TaskData t = new TaskData();
+                t.UpdateLastErrorTime(taskid, DateTime.Now);                
             }
         }
     }

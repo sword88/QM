@@ -1,4 +1,4 @@
-﻿
+﻿@using QM.Core.Common;
 @{
     Layout = "~/Views/Shared/_LayoutAdminContent.cshtml";
 }
@@ -11,37 +11,38 @@
                 <h5>基本信息设置 <small>认真填写每项Item</small></h5>
             </div>
             <div class="ibox-content">
-                <form method="get" class="form-horizontal">
+                <form method="post" class="form-horizontal">
                     <div class="form-group">
                         <label class="col-sm-2 control-label">任务名称</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" placeholder="任务名称">
+                            <input type="text" class="form-control" placeholder="任务名称" name="qm_name">
                         </div>
                     </div>
                     <div class="hr-line-dashed"></div>
                     <div class="form-group">
                         <label class="col-sm-2 control-label">任务类型</label>
-                        <div class="col-sm-10">
-                            <select class="form-control m-b" name="account">
-                                <option value="SQL-FILE">SQL文件</option>
-                                <option value="SQL-EXP">SQL导出</option>
-                                <option value="DLL-STD">标准接口程序</option>
-                                <option value="DLL-UNSTD">非标准程序</option>
-                            </select>
+                        <div class="col-sm-5">
+                            @Html.DropDownList("qm_type", QMExtend.GetTaskType(),new { @class = "form-control m-b" })
+                        </div>
+                        <div class="col-sm-5">
+                            @Html.DropDownList("qm_sendby",QMExtend.GetSendBy(),new { @class = "form-control m-b" })
                         </div>
                     </div>
                     <div class="hr-line-dashed"></div>
                     <div class="form-group">
                         <label class="col-sm-2 control-label">任务文件</label>
                         <div class="col-sm-10">
-                            <input type="file" placeholder="任务文件" class="form-control">
+                            <input type="file" placeholder="任务文件" class="form-control" name="qm_file">
                         </div>
                     </div>
                     <div class="hr-line-dashed"></div>
                     <div class="form-group">
                         <label class="col-sm-2 control-label">任务参数</label>
-                        <div class="col-sm-10">
-                            <input type="text"  placeholder="任务参数" class="form-control">
+                        <div class="col-sm-5">
+                            <input type="text"  placeholder="任务参数" class="form-control" name="qm_parms">
+                        </div>
+                        <div class="col-sm-5">
+                            <input type="text" placeholder="数据库连接[userid/password@DB]" class="form-control" name="qm_dbcon">
                         </div>
                     </div>
 
@@ -53,7 +54,7 @@
                         </label>
                         <div class="col-sm-10">
                             <div class="input-group">
-                                <input type="text" class="form-control" placeholder="执行计划">
+                                <input type="text" class="form-control" placeholder="执行计划" name="qm_cron">
                                 <span class="input-group-btn">
                                     <a data-toggle="modal" class="btn btn-primary" href="form_basic.html#modal-form">
                                         Cron向导
@@ -69,17 +70,14 @@
                             任务状态
                         </label>
                         <div class="col-sm-10">
-                            <select class="form-control m-b" name="account">
-                                <option>启用</option>
-                                <option>禁用</option>
-                            </select>
+                            @Html.DropDownList("qm_status",QMExtend.GetTaskStatus(), new { @class = "form-control m-b" })
                         </div>
                     </div>
                     <div class="hr-line-dashed"></div>
                     <div class="form-group">
                         <label class="col-sm-2 control-label">备注信息</label>
                         <div class="col-sm-10">
-                            <textarea class="form-control"></textarea>
+                            <textarea class="form-control" name="qm_remark"></textarea>
                         </div>
                     </div>
                     <div class="hr-line-dashed"></div>
@@ -96,10 +94,14 @@
             @Html.Action("TimePop")
             <!--任务计划结束-->
             <!--邮件设置-->
-            @Html.Action("Mail")
+            <div id="mail_show">
+                @Html.Action("Mail")
+            </div>
             <!--邮件设置结束-->
             <!--FTP-->
-            @Html.Action("Ftp")
+            <div id="ftp_show">
+                @Html.Action("Ftp")
+            </div>
             <!--FTP结束-->
         </div>
     </div>

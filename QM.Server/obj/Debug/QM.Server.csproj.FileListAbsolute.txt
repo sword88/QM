@@ -81,3 +81,14 @@ E:\ASECode\Test\QM.git\QM.Server\obj\Debug\QM.Server.exe
 E:\ASECode\Test\QM.git\QM.Server\obj\Debug\QM.Server.pdb
 E:\ASECode\Test\QM.git\QM.Server\bin\Debug\Config\log4net.config
 E:\ASECode\Test\QM.git\QM.Server\bin\Debug\Config\database.config
+E:\ASECode\Test\QM.git\QM.Server\bin\Debug\System.Web.Mvc.dll
+E:\ASECode\Test\QM.git\QM.Server\bin\Debug\System.Web.Razor.dll
+E:\ASECode\Test\QM.git\QM.Server\bin\Debug\System.Web.WebPages.Razor.dll
+E:\ASECode\Test\QM.git\QM.Server\bin\Debug\System.Web.WebPages.dll
+E:\ASECode\Test\QM.git\QM.Server\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\ASECode\Test\QM.git\QM.Server\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\ASECode\Test\QM.git\QM.Server\bin\Debug\System.Web.Mvc.xml
+E:\ASECode\Test\QM.git\QM.Server\bin\Debug\System.Web.Razor.xml
+E:\ASECode\Test\QM.git\QM.Server\bin\Debug\System.Web.WebPages.Razor.xml
+E:\ASECode\Test\QM.git\QM.Server\bin\Debug\System.Web.WebPages.xml
+E:\ASECode\Test\QM.git\QM.Server\bin\Debug\System.Web.WebPages.Deployment.xml

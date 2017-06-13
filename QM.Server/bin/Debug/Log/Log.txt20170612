@@ -1,0 +1,224 @@
+DEBUG 2017-06-12 04:28:11  123
+INFO  2017-06-12 04:28:18  QM Server 开启服务
+DEBUG 2017-06-12 04:29:06  导出文件QM 文件清单,C:\QM\Files\1.XLS,select * from qm_task where taskstate ='Y'
+DEBUG 2017-06-12 04:29:06  导出成功
+DEBUG 2017-06-12 04:30:11  导出文件QM 文件清单,C:\QM\Files\1.XLS,select * from qm_task where taskstate ='Y'
+DEBUG 2017-06-12 04:30:11  导出成功
+DEBUG 2017-06-12 04:31:00  导出文件QM 文件清单,C:\QM\Files\1.XLS,select * from qm_task where taskstate ='Y'
+DEBUG 2017-06-12 04:31:00  导出成功
+DEBUG 2017-06-12 04:32:00  导出文件QM 文件清单,C:\QM\Files\1.XLS,select * from qm_task where taskstate ='Y'
+DEBUG 2017-06-12 04:32:00  导出成功
+DEBUG 2017-06-12 04:33:06  导出文件QM 文件清单,C:\QM\Files\1.XLS,select * from qm_task where taskstate ='Y'
+DEBUG 2017-06-12 04:33:38  导出成功
+DEBUG 2017-06-12 04:34:00  导出文件QM 文件清单,C:\QM\Files\1.XLS,select * from qm_task where taskstate ='Y'
+DEBUG 2017-06-12 04:34:00  导出成功
+DEBUG 2017-06-12 04:35:00  导出文件QM 文件清单,C:\QM\Files\1.XLS,select * from qm_task where taskstate ='Y'
+DEBUG 2017-06-12 04:35:00  导出成功
+DEBUG 2017-06-12 04:36:00  导出文件QM 文件清单,C:\QM\Files\1.XLS,select * from qm_task where taskstate ='Y'
+DEBUG 2017-06-12 04:36:00  导出成功
+DEBUG 2017-06-12 04:36:00  C:\QM\File\Debug\QM.BAT.exe asy
+DEBUG 2017-06-12 04:37:00  导出文件QM 文件清单,C:\QM\Files\1.XLS,select * from qm_task where taskstate ='Y'
+DEBUG 2017-06-12 04:37:00  导出成功
+DEBUG 2017-06-12 04:38:04  导出文件QM 文件清单,C:\QM\Files\1.XLS,select * from qm_task where taskstate ='Y'
+DEBUG 2017-06-12 04:38:04  导出成功
+DEBUG 2017-06-12 04:40:36  123
+INFO  2017-06-12 04:40:54  QM Server 开启服务
+DEBUG 2017-06-12 04:41:09  导出文件QM 文件清单,C:\QM\Files\1.XLS,select * from qm_task where taskstate ='Y'
+DEBUG 2017-06-12 04:41:10  导出成功
+DEBUG 2017-06-12 04:42:03  导出文件QM 文件清单,C:\QM\Files\1.XLS,select * from qm_task where taskstate ='Y'
+DEBUG 2017-06-12 04:42:03  导出成功
+DEBUG 2017-06-12 04:42:05  C:\QM\File\Debug\QM.BAT.exe asy
+DEBUG 2017-06-12 04:43:00  导出文件QM 文件清单,C:\QM\Files\1.XLS,select * from qm_task where taskstate ='Y'
+DEBUG 2017-06-12 04:43:00  导出成功
+DEBUG 2017-06-12 04:44:00  导出文件QM 文件清单,C:\QM\Files\1.XLS,select * from qm_task where taskstate ='Y'
+DEBUG 2017-06-12 04:44:00  导出成功
+DEBUG 2017-06-12 04:45:38  导出文件QM 文件清单,C:\QM\Files\1.XLS,select * from qm_task where taskstate ='Y'
+DEBUG 2017-06-12 04:45:38  导出成功
+DEBUG 2017-06-12 04:45:38  C:\QM\File\Debug\QM.BAT.exe asy
+DEBUG 2017-06-12 04:45:51  123
+INFO  2017-06-12 04:48:29  QM Server 开启服务
+DEBUG 2017-06-12 04:48:32  导出文件QM 文件清单,C:\QM\Files\1.XLS,select * from qm_task where taskstate ='Y'
+DEBUG 2017-06-12 04:48:32  C:\QM\File\Debug\QM.BAT.exe asy
+DEBUG 2017-06-12 04:48:32  导出成功
+DEBUG 2017-06-12 04:49:00  导出文件QM 文件清单,C:\QM\Files\1.XLS,select * from qm_task where taskstate ='Y'
+DEBUG 2017-06-12 04:49:00  导出成功
+DEBUG 2017-06-12 04:50:00  导出文件QM 文件清单,C:\QM\Files\1.XLS,select * from qm_task where taskstate ='Y'
+DEBUG 2017-06-12 04:50:00  导出成功
+DEBUG 2017-06-12 04:51:13  导出文件QM 文件清单,C:\QM\Files\1.XLS,select * from qm_task where taskstate ='Y'
+DEBUG 2017-06-12 04:51:13  导出成功
+DEBUG 2017-06-12 04:51:14  C:\QM\File\Debug\QM.BAT.exe asy
+DEBUG 2017-06-12 04:52:00  导出文件QM 文件清单,C:\QM\Files\1.XLS,select * from qm_task where taskstate ='Y'
+DEBUG 2017-06-12 04:52:00  导出成功
+DEBUG 2017-06-12 04:53:00  导出文件QM 文件清单,C:\QM\Files\1.XLS,select * from qm_task where taskstate ='Y'
+DEBUG 2017-06-12 04:53:00  导出成功
+DEBUG 2017-06-12 04:54:07  导出文件QM 文件清单,C:\QM\Files\1.XLS,select * from qm_task where taskstate ='Y'
+DEBUG 2017-06-12 04:54:11  导出成功
+DEBUG 2017-06-12 04:55:00  导出文件QM 文件清单,C:\QM\Files\1.XLS,select * from qm_task where taskstate ='Y'
+DEBUG 2017-06-12 04:55:00  导出成功
+DEBUG 2017-06-12 04:56:00  导出文件QM 文件清单,C:\QM\Files\1.XLS,select * from qm_task where taskstate ='Y'
+DEBUG 2017-06-12 04:56:00  导出成功
+DEBUG 2017-06-12 04:57:03  导出文件QM 文件清单,C:\QM\Files\1.XLS,select * from qm_task where taskstate ='Y'
+DEBUG 2017-06-12 04:57:05  导出成功
+DEBUG 2017-06-12 04:58:43  123
+INFO  2017-06-12 04:58:58  QM Server 开启服务
+DEBUG 2017-06-12 04:59:06  导出文件QM 文件清单,C:\QM\Files\1.XLS,select * from qm_task where taskstate ='Y'
+DEBUG 2017-06-12 04:59:06  导出成功
+DEBUG 2017-06-12 05:00:14  C:\QM\File\123.BAT 
+DEBUG 2017-06-12 05:00:14  导出文件QM 文件清单,C:\QM\Files\1.XLS,select * from qm_task where taskstate ='Y'
+DEBUG 2017-06-12 05:00:14  导出成功
+DEBUG 2017-06-12 05:00:25  C:\QM\File\123.BAT 
+DEBUG 2017-06-12 05:00:29  C:\QM\File\123.BAT 
+DEBUG 2017-06-12 05:00:30  C:\QM\File\123.BAT 
+DEBUG 2017-06-12 05:00:30  C:\QM\File\123.BAT 
+DEBUG 2017-06-12 05:00:34  C:\QM\File\123.BAT 
+DEBUG 2017-06-12 05:00:36  C:\QM\File\123.BAT 
+DEBUG 2017-06-12 05:00:48  C:\QM\File\123.BAT 
+DEBUG 2017-06-12 05:00:50  C:\QM\File\123.BAT 
+DEBUG 2017-06-12 05:00:53  C:\QM\File\123.BAT 
+DEBUG 2017-06-12 05:00:53  C:\QM\File\123.BAT 
+DEBUG 2017-06-12 05:00:54  C:\QM\File\123.BAT 
+DEBUG 2017-06-12 05:00:54  C:\QM\File\123.BAT 
+DEBUG 2017-06-12 05:00:54  C:\QM\File\123.BAT 
+DEBUG 2017-06-12 05:00:54  C:\QM\File\123.BAT 
+DEBUG 2017-06-12 05:00:54  C:\QM\File\123.BAT 
+DEBUG 2017-06-12 05:00:54  C:\QM\File\123.BAT 
+DEBUG 2017-06-12 05:00:54  C:\QM\File\123.BAT 
+DEBUG 2017-06-12 05:00:56  C:\QM\File\123.BAT 
+DEBUG 2017-06-12 05:00:56  C:\QM\File\123.BAT 
+DEBUG 2017-06-12 05:00:56  C:\QM\File\123.BAT 
+DEBUG 2017-06-12 05:00:56  C:\QM\File\123.BAT 
+DEBUG 2017-06-12 05:00:56  C:\QM\File\123.BAT 
+DEBUG 2017-06-12 05:00:56  C:\QM\File\123.BAT 
+DEBUG 2017-06-12 05:00:56  C:\QM\File\123.BAT 
+DEBUG 2017-06-12 05:00:56  C:\QM\File\123.BAT 
+DEBUG 2017-06-12 05:00:56  C:\QM\File\123.BAT 
+DEBUG 2017-06-12 05:00:56  C:\QM\File\123.BAT 
+DEBUG 2017-06-12 05:00:57  C:\QM\File\123.BAT 
+DEBUG 2017-06-12 05:00:57  C:\QM\File\123.BAT 
+DEBUG 2017-06-12 05:00:57  C:\QM\File\123.BAT 
+DEBUG 2017-06-12 05:00:57  C:\QM\File\123.BAT 
+DEBUG 2017-06-12 05:00:57  C:\QM\File\123.BAT 
+DEBUG 2017-06-12 05:00:57  C:\QM\File\123.BAT 
+DEBUG 2017-06-12 05:00:57  C:\QM\File\123.BAT 
+DEBUG 2017-06-12 05:00:57  C:\QM\File\123.BAT 
+DEBUG 2017-06-12 05:00:57  C:\QM\File\123.BAT 
+DEBUG 2017-06-12 05:00:57  C:\QM\File\123.BAT 
+DEBUG 2017-06-12 05:00:57  C:\QM\File\123.BAT 
+DEBUG 2017-06-12 05:00:57  C:\QM\File\123.BAT 
+DEBUG 2017-06-12 05:00:57  C:\QM\File\123.BAT 
+DEBUG 2017-06-12 05:00:57  C:\QM\File\123.BAT 
+DEBUG 2017-06-12 05:00:58  C:\QM\File\123.BAT 
+DEBUG 2017-06-12 05:00:58  C:\QM\File\123.BAT 
+DEBUG 2017-06-12 05:00:58  C:\QM\File\123.BAT 
+DEBUG 2017-06-12 05:00:58  C:\QM\File\123.BAT 
+DEBUG 2017-06-12 05:00:58  C:\QM\File\123.BAT 
+DEBUG 2017-06-12 05:00:58  C:\QM\File\123.BAT 
+DEBUG 2017-06-12 05:00:58  C:\QM\File\123.BAT 
+DEBUG 2017-06-12 05:00:58  C:\QM\File\123.BAT 
+DEBUG 2017-06-12 05:00:58  C:\QM\File\123.BAT 
+DEBUG 2017-06-12 05:00:58  C:\QM\File\123.BAT 
+DEBUG 2017-06-12 05:00:58  C:\QM\File\123.BAT 
+DEBUG 2017-06-12 05:00:58  C:\QM\File\123.BAT 
+DEBUG 2017-06-12 05:00:58  C:\QM\File\123.BAT 
+DEBUG 2017-06-12 05:00:58  C:\QM\File\123.BAT 
+DEBUG 2017-06-12 05:00:58  C:\QM\File\123.BAT 
+DEBUG 2017-06-12 05:00:59  C:\QM\File\123.BAT 
+DEBUG 2017-06-12 05:00:59  C:\QM\File\123.BAT 
+DEBUG 2017-06-12 05:00:59  C:\QM\File\123.BAT 
+DEBUG 2017-06-12 05:01:00  导出文件QM 文件清单,C:\QM\Files\1.XLS,select * from qm_task where taskstate ='Y'
+DEBUG 2017-06-12 05:01:00  导出成功
+DEBUG 2017-06-12 05:02:00  导出文件QM 文件清单,C:\QM\Files\1.XLS,select * from qm_task where taskstate ='Y'
+DEBUG 2017-06-12 05:02:00  导出成功
+DEBUG 2017-06-12 05:02:50  123
+INFO  2017-06-12 05:03:01  QM Server 开启服务
+DEBUG 2017-06-12 05:04:09  导出文件QM 文件清单,C:\QM\Files\1.XLS,select * from qm_task where taskstate ='Y'
+DEBUG 2017-06-12 05:04:09  导出成功
+DEBUG 2017-06-12 05:05:00  导出文件QM 文件清单,C:\QM\Files\1.XLS,select * from qm_task where taskstate ='Y'
+DEBUG 2017-06-12 05:05:00  导出成功
+DEBUG 2017-06-12 05:05:20  123
+INFO  2017-06-12 05:05:28  QM Server 开启服务
+FATAL 2017-06-12 05:06:19  任务回调时发生严重错误，QM.Core.Exception.QMException: 系统找不到指定的文件。
+   在 QM.Core.Model.UnStdDll.TryRun() 位置 E:\ASECode\Test\QM.git\QM.Core\Model\UnStdDll.cs:行号 49
+   在 QM.Core.QuartzNet.QMUnStdDllTaskJob.Execute(IJobExecutionContext context) 位置 E:\ASECode\Test\QM.git\QM.Core\QuartzNet\QMUnStdDllTaskJob.cs:行号 34
+DEBUG 2017-06-12 05:06:20  导出文件QM 文件清单,C:\QM\Files\1.XLS,select * from qm_task where taskstate ='Y'
+DEBUG 2017-06-12 05:06:24  导出成功
+DEBUG 2017-06-12 05:07:04  导出文件QM 文件清单,C:\QM\Files\1.XLS,select * from qm_task where taskstate ='Y'
+DEBUG 2017-06-12 05:07:07  导出成功
+FATAL 2017-06-12 05:07:07  任务回调时发生严重错误，QM.Core.Exception.QMException: 系统找不到指定的文件。
+   在 QM.Core.Model.UnStdDll.TryRun() 位置 E:\ASECode\Test\QM.git\QM.Core\Model\UnStdDll.cs:行号 49
+   在 QM.Core.QuartzNet.QMUnStdDllTaskJob.Execute(IJobExecutionContext context) 位置 E:\ASECode\Test\QM.git\QM.Core\QuartzNet\QMUnStdDllTaskJob.cs:行号 34
+FATAL 2017-06-12 05:08:00  任务回调时发生严重错误，QM.Core.Exception.QMException: 系统找不到指定的文件。
+   在 QM.Core.Model.UnStdDll.TryRun() 位置 E:\ASECode\Test\QM.git\QM.Core\Model\UnStdDll.cs:行号 49
+   在 QM.Core.QuartzNet.QMUnStdDllTaskJob.Execute(IJobExecutionContext context) 位置 E:\ASECode\Test\QM.git\QM.Core\QuartzNet\QMUnStdDllTaskJob.cs:行号 34
+DEBUG 2017-06-12 05:08:00  导出文件QM 文件清单,C:\QM\Files\1.XLS,select * from qm_task where taskstate ='Y'
+DEBUG 2017-06-12 05:08:00  导出成功
+DEBUG 2017-06-12 05:09:00  导出文件QM 文件清单,C:\QM\Files\1.XLS,select * from qm_task where taskstate ='Y'
+DEBUG 2017-06-12 05:09:00  导出成功
+DEBUG 2017-06-12 05:09:00  C:\QM\File\Debug\QM.BAT.exe asy
+DEBUG 2017-06-12 05:10:00  导出文件QM 文件清单,C:\QM\Files\1.XLS,select * from qm_task where taskstate ='Y'
+DEBUG 2017-06-12 05:10:00  导出成功
+DEBUG 2017-06-12 05:10:00  C:\QM\File\Debug\QM.BAT.exe asy
+DEBUG 2017-06-12 05:11:00  导出文件QM 文件清单,C:\QM\Files\1.XLS,select * from qm_task where taskstate ='Y'
+DEBUG 2017-06-12 05:11:00  导出成功
+DEBUG 2017-06-12 05:11:00  C:\QM\File\Debug\QM.BAT.exe asy
+DEBUG 2017-06-12 05:12:00  导出文件QM 文件清单,C:\QM\Files\1.XLS,select * from qm_task where taskstate ='Y'
+DEBUG 2017-06-12 05:12:00  导出成功
+DEBUG 2017-06-12 05:12:00  C:\QM\File\Debug\QM.BAT.exe asy
+DEBUG 2017-06-12 05:13:00  导出文件QM 文件清单,C:\QM\Files\1.XLS,select * from qm_task where taskstate ='Y'
+DEBUG 2017-06-12 05:13:00  导出成功
+DEBUG 2017-06-12 05:13:00  C:\QM\File\Debug\QM.BAT.exe asy
+DEBUG 2017-06-12 05:14:00  导出文件QM 文件清单,C:\QM\Files\1.XLS,select * from qm_task where taskstate ='Y'
+DEBUG 2017-06-12 05:14:00  导出成功
+DEBUG 2017-06-12 05:14:00  C:\QM\File\Debug\QM.BAT.exe asy
+DEBUG 2017-06-12 05:15:00  导出文件QM 文件清单,C:\QM\Files\1.XLS,select * from qm_task where taskstate ='Y'
+DEBUG 2017-06-12 05:15:00  导出成功
+DEBUG 2017-06-12 05:15:00  C:\QM\File\Debug\QM.BAT.exe asy
+DEBUG 2017-06-12 05:16:00  导出文件QM 文件清单,C:\QM\Files\1.XLS,select * from qm_task where taskstate ='Y'
+DEBUG 2017-06-12 05:16:00  导出成功
+DEBUG 2017-06-12 05:16:00  C:\QM\File\Debug\QM.BAT.exe asy
+DEBUG 2017-06-12 05:16:14  123
+DEBUG 2017-06-12 05:16:41  123
+INFO  2017-06-12 05:16:48  QM Server 开启服务
+DEBUG 2017-06-12 05:17:00  导出文件QM 文件清单,C:\QM\Files\1.XLS,select * from qm_task where taskstate ='Y'
+DEBUG 2017-06-12 05:17:00  导出成功
+DEBUG 2017-06-12 05:17:00  C:\QM\File\Debug\QM.BAT.exe asy
+DEBUG 2017-06-12 05:18:00  导出文件QM 文件清单,C:\QM\Files\1.XLS,select * from qm_task where taskstate ='Y'
+DEBUG 2017-06-12 05:18:00  导出成功
+DEBUG 2017-06-12 05:18:00  C:\QM\File\Debug\QM.BAT.exe asy
+DEBUG 2017-06-12 06:54:51  123
+DEBUG 2017-06-12 06:56:02  123
+INFO  2017-06-12 06:56:11  QM Server 开启服务
+DEBUG 2017-06-12 06:57:01  C:\QM\File\Debug\QM.BAT.exe asy
+DEBUG 2017-06-12 06:57:01  导出文件QM 文件清单,C:\QM\Files\1.XLS,select * from qm_task where taskstate ='Y'
+DEBUG 2017-06-12 06:57:02  导出成功
+DEBUG 2017-06-12 06:58:01  C:\QM\File\Debug\QM.BAT.exe asy
+DEBUG 2017-06-12 06:58:01  导出文件QM 文件清单,C:\QM\Files\1.XLS,select * from qm_task where taskstate ='Y'
+DEBUG 2017-06-12 06:58:01  导出成功
+DEBUG 2017-06-12 06:59:01  导出文件QM 文件清单,C:\QM\Files\1.XLS,select * from qm_task where taskstate ='Y'
+DEBUG 2017-06-12 06:59:01  导出成功
+DEBUG 2017-06-12 06:59:01  C:\QM\File\Debug\QM.BAT.exe asy
+DEBUG 2017-06-12 07:00:14  123
+INFO  2017-06-12 07:01:53  QM Server 开启服务
+DEBUG 2017-06-12 07:02:10  C:\QM\File\Debug\QM.BAT.exe asy
+DEBUG 2017-06-12 07:02:11  导出文件QM 文件清单,C:\QM\Files\1.XLS,select * from qm_task where taskstate ='Y'
+DEBUG 2017-06-12 07:02:11  导出成功
+DEBUG 2017-06-12 07:03:05  C:\QM\File\Debug\QM.BAT.exe asy
+DEBUG 2017-06-12 07:03:06  导出文件QM 文件清单,C:\QM\Files\1.XLS,select * from qm_task where taskstate ='Y'
+DEBUG 2017-06-12 07:03:06  导出成功
+DEBUG 2017-06-12 07:04:27  导出文件QM 文件清单,C:\QM\Files\1.XLS,select * from qm_task where taskstate ='Y'
+DEBUG 2017-06-12 07:04:27  导出成功
+DEBUG 2017-06-12 07:04:27  C:\QM\File\Debug\QM.BAT.exe asy
+DEBUG 2017-06-12 07:05:18  123
+INFO  2017-06-12 07:05:21  QM Server 开启服务
+DEBUG 2017-06-12 07:07:04  123
+INFO  2017-06-12 07:07:19  QM Server 开启服务
+DEBUG 2017-06-12 07:08:11  123
+INFO  2017-06-12 07:10:55  QM Server 开启服务
+DEBUG 2017-06-12 07:14:24  123
+INFO  2017-06-12 07:14:34  QM Server 开启服务
+DEBUG 2017-06-12 07:15:28  C:\QM\File\123.BAT 
+DEBUG 2017-06-12 07:16:05  C:\QM\File\123.BAT 
+DEBUG 2017-06-12 07:17:01  C:\QM\File\123.BAT 
+DEBUG 2017-06-12 07:18:01  C:\QM\File\123.BAT 
+DEBUG 2017-06-12 07:19:01  C:\QM\File\123.BAT 
+DEBUG 2017-06-12 07:20:01  C:\QM\File\123.BAT 
