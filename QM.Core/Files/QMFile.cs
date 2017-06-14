@@ -6,6 +6,7 @@ using ICSharpCode.SharpZipLib.Zip;
 using System.Text;
 using System.Security.Cryptography;
 using QM.Core.Exception;
+using QM.Core.Common;
 
 namespace QM.Core.Files
 {
@@ -109,6 +110,44 @@ namespace QM.Core.Files
                 }
                 return Path.Combine(AppDomain.CurrentDomain.BaseDirectory, strPath);
             }
+        }
+
+        /// <summary>
+        /// 上传文件
+        /// </summary>
+        /// <returns></returns>
+        public static string UploadFile()
+        {
+            string result = String.Empty;
+            string flocation = QMExtend.GetCurYear() + "/" + QMExtend.GetCurMonth() + "/";
+
+            try
+            {
+                string url = GetMapPath("~/Files/" + flocation);
+                //create folder
+                CreateDir(url);
+                //upload file
+                foreach (string file in HttpContext.Current.Request.Files)
+                {
+                    var filebase = HttpContext.Current.Request.Files[file];
+
+                    if(filebase.ContentLength > 0)
+                    {
+                        if (result != string.Empty)
+                        {
+                            result += ";";
+                        }
+                        result += Path.Combine(url, filebase.FileName);
+                        filebase.SaveAs(Path.Combine(url, filebase.FileName));
+                    }
+                }
+            }
+            catch (QMException ex)
+            {
+                throw ex;
+            }
+
+            return result;
         }
 
         /// <summary>

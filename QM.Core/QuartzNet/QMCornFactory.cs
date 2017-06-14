@@ -13,6 +13,9 @@ namespace QM.Core.QuartzNet
         public static ITrigger CreateTrigger(TaskRuntimeInfo taskinfo)
         {
             TriggerBuilder trigger = null;
+
+            //暂停自定义task category想法
+            /*
             switch (taskinfo.task.taskCategory)
             {
                 case "Cron":
@@ -26,11 +29,16 @@ namespace QM.Core.QuartzNet
                                 .WithIdentity(taskinfo.task.taskName, taskinfo.task.taskCategory)
                                 .WithSimpleSchedule();
                     trigger.StartAt(taskinfo.task.taskCreateTime);
-                    
+
                     trigger.WithDailyTimeIntervalSchedule();
                     break;
             }
-          
+            */
+            //默认cron job
+            trigger = TriggerBuilder.Create()
+                        .WithIdentity(taskinfo.task.taskName, "Cron")
+                        .WithCronSchedule(taskinfo.task.taskCron);
+
             return trigger.Build();
         }
     }

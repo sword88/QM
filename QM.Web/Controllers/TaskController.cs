@@ -6,6 +6,8 @@ using System.Web;
 using System.Web.Mvc;
 using QM.Core.Data;
 using QM.Core.Model;
+using QM.Core.Files;
+using QM.Core.QuartzNet;
 
 namespace QM.Web.Controllers
 {
@@ -85,31 +87,30 @@ namespace QM.Web.Controllers
         {
             Tasks t = new Tasks();
             SequenceData sd = new SequenceData();
-            t.idx = sd.GetIdx();
-            t.taskCategory = "Cron";
-            t.taskCount = "0";
-            t.taskCreateTime = DateTime.Now;
+            t.idx = sd.GetIdx();                        
             t.taskName = fc.GetValue("qm_name").AttemptedValue;
             t.taskParm = fc.GetValue("qm_parms").AttemptedValue;
             t.taskRemark = fc.GetValue("qm_remark").AttemptedValue;
             t.taskCron = fc.GetValue("qm_cron").AttemptedValue;
             t.taskState = fc.GetValue("qm_status").AttemptedValue;
-            t.taskFile = fc.GetValue("qm_file").AttemptedValue;
+            t.taskCreateTime = DateTime.Now;                      
+            t.taskFile = QMFile.UploadFile();
             t.taskType = fc.GetValue("qm_type").AttemptedValue;
             t.taskDBCon = fc.GetValue("qm_dbcon").AttemptedValue;
+            t.taskSendby = fc.GetValue("qm_sendby").AttemptedValue;
             t.taskClsType = "";
-            t.taskErrorCount = 0;
             t.taskExpFile = "";
             
             TaskData td = new TaskData();
             td.Insert(t);
-
+ 
             return View();
         }
 
 
         public ActionResult Edit()
         {
+            QMBaseServer.AddWebTask("9121");
             return View();
         }
 

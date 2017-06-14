@@ -22,7 +22,7 @@ namespace QM.Core.QuartzNet
         /// <summary>
         /// 任务执行计划
         /// </summary>
-        private IScheduler _scheduler = null;
+        private static IScheduler _scheduler = null;
         /// <summary>
         /// 任务锁标记
         /// </summary>
@@ -177,7 +177,7 @@ namespace QM.Core.QuartzNet
         /// </summary>
         /// <param name="taskid"></param>
         /// <returns></returns>
-        public bool PauseJob(string taskid)
+        public static bool PauseJob(string taskid)
         {
             bool result = false;
             try
@@ -205,7 +205,7 @@ namespace QM.Core.QuartzNet
         /// </summary>
         /// <param name="taskid"></param>
         /// <returns></returns>
-        public bool ResumeJob(string taskid)
+        public static bool ResumeJob(string taskid)
         {
             bool result = false;
             try
@@ -242,7 +242,7 @@ namespace QM.Core.QuartzNet
         /// <param name="taskid"></param>
         /// <param name="taskinfo"></param>
         /// <returns></returns>
-        public bool AddTask(string taskid, TaskRuntimeInfo taskinfo) 
+        public static bool AddTask(string taskid, TaskRuntimeInfo taskinfo) 
         {
             lock(_lock)
             {
@@ -250,7 +250,8 @@ namespace QM.Core.QuartzNet
                 {
                     //添加任务
                     JobBuilder jobBuilder = JobBuilder.Create()
-                                            .WithIdentity(taskinfo.task.idx, taskinfo.task.taskCategory);
+                                            .WithIdentity(taskinfo.task.idx);
+                                            //.WithIdentity(taskinfo.task.idx, taskinfo.task.taskCategory);
 
                     switch (taskinfo.task.taskType) {
                         case "SQL-FILE":
@@ -287,7 +288,7 @@ namespace QM.Core.QuartzNet
         /// </summary>
         /// <param name="taskid"></param>
         /// <returns></returns>
-        public bool RemoveTask(string taskid)
+        public static bool RemoveTask(string taskid)
         {
             lock(_lock)
             {
@@ -296,11 +297,14 @@ namespace QM.Core.QuartzNet
                     /*移除任务*/
                     var taskinfo = _taskPool[taskid];
                     //停止触发器  
-                    _scheduler.PauseTrigger(new TriggerKey(taskinfo.task.idx, taskinfo.task.taskCategory));
+                    //_scheduler.PauseTrigger(new TriggerKey(taskinfo.task.idx, taskinfo.task.taskCategory));
+                    _scheduler.PauseTrigger(new TriggerKey(taskinfo.task.idx));
                     //删除触发器
-                    _scheduler.UnscheduleJob(new TriggerKey(taskinfo.task.idx, taskinfo.task.taskCategory));
+                    //_scheduler.UnscheduleJob(new TriggerKey(taskinfo.task.idx, taskinfo.task.taskCategory));
+                    _scheduler.UnscheduleJob(new TriggerKey(taskinfo.task.idx));
                     //删除任务
-                    _scheduler.DeleteJob(new JobKey(taskinfo.task.idx, taskinfo.task.taskCategory));
+                    //_scheduler.DeleteJob(new JobKey(taskinfo.task.idx, taskinfo.task.taskCategory));
+                    _scheduler.DeleteJob(new JobKey(taskinfo.task.idx));
 
                     _taskPool.Remove(taskid);
                     return true;
@@ -334,7 +338,7 @@ namespace QM.Core.QuartzNet
         /// 获得任务池中任务列表
         /// </summary>
         /// <returns></returns>
-        public List<TaskRuntimeInfo> GetTaskList()
+        public static List<TaskRuntimeInfo> GetTaskList()
         {
             return _taskPool.Values.ToList();
         }
@@ -371,6 +375,37 @@ namespace QM.Core.QuartzNet
 
                 AddTask(t.idx, trun);
             }
+        }
+
+        /// <summary>
+        /// 从网站中添加任务
+        /// </summary>
+        /// <param name="taskid">任务id</param>
+        public static void AddWebTask(string taskid)
+        {
+            Data.TaskData td = new Data.TaskData();
+            var t = td.Detail(taskid);
+
+            TaskRuntimeInfo trun = new TaskRuntimeInfo();
+            switch (t.taskType)
+            {
+                case "SQL-FILE":
+                    trun.sqlFileTask = new SqlFileTask(t.taskFile, t.taskDBCon);
+                    break;
+                case "SQL-EXP":
+                    trun.sqlTask = new SqlExpJob(t.taskDBCon, t.taskFile, t.taskParm, t.taskExpFile);
+                    break;
+                case "DLL-STD":
+                    trun.dllTask = new QMAppDomainLoader<DllTask>().Load(t.taskFile, t.taskClsType, out trun.domain);
+                    break;
+                case "DLL-UNSTD":
+                default:
+                    trun.unStdDllTask = new UnStdDll(t.taskFile, t.taskParm);
+                    break;
+            }
+            trun.task = t;
+
+            AddTask(taskid, trun);
         }
     }
 }

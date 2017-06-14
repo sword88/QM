@@ -25,9 +25,13 @@ namespace QM.Core.Model
         /// </summary>
         public string taskType { get; set; }
         /// <summary>
+        /// 发送类型
+        /// </summary>
+        public string taskSendby { get; set; }
+        /// <summary>
         /// 任务分类
         /// </summary>
-        public string taskCategory { get; set; }
+        ///public string taskCategory { get; set; }
         /// <summary>
         /// 任务计划
         /// </summary>

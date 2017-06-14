@@ -32,8 +32,7 @@ namespace QM.Core.Data
                 while (dr.Read())
                 {
                     t = new Tasks();
-                    t.idx = dr["IDX"].ToString();
-                    t.taskCategory = dr["TASKCATEGORY"].ToString();
+                    t.idx = dr["IDX"].ToString();                    
                     t.taskClsType = dr["TASKCLSTYPE"].ToString();
                     t.taskCount = dr["TASKCOUNT"].ToString();
                     t.taskCreateTime = DateTime.Parse(dr["TASKCREATETIME"].ToString());
@@ -62,6 +61,7 @@ namespace QM.Core.Data
                     t.taskState = dr["TASKSTATE"].ToString();
                     t.taskCron = dr["TASKCRON"].ToString();
                     t.taskRemark = dr["TASKREMARK"].ToString();
+                    t.taskSendby = dr["TASKSENDBY"].ToString();
                     task.Add(t);
                 }
             }
@@ -91,8 +91,7 @@ namespace QM.Core.Data
                 while (dr.Read())
                 {
                     t = new Tasks();
-                    t.idx = dr["IDX"].ToString();
-                    t.taskCategory = dr["TASKCATEGORY"].ToString();
+                    t.idx = dr["IDX"].ToString();                    
                     t.taskClsType = dr["TASKCLSTYPE"].ToString();
                     t.taskCount = dr["TASKCOUNT"].ToString();
                     if (dr["TASKLASTSTARTTIME"].ToString() != "")
@@ -120,6 +119,7 @@ namespace QM.Core.Data
                     t.taskState = dr["TASKSTATE"].ToString();
                     t.taskCron = dr["TASKCRON"].ToString();
                     t.taskRemark = dr["TASKREMARK"].ToString();
+                    t.taskSendby = dr["TASKSENDBY"].ToString();
                 }
             }
             catch (QMException ex)
@@ -141,7 +141,7 @@ namespace QM.Core.Data
                 string sql = @"insert into qm_task 
                                     (idx,
                                      taskname,
-                                     taskcategory,
+                                     tasksendby,
                                      taskcron,
                                      taskfile,
                                      taskparm,
@@ -171,7 +171,7 @@ namespace QM.Core.Data
                 {
                     new OleDbParameter("idx",t.idx),
                     new OleDbParameter("taskname",t.taskName),
-                    new OleDbParameter("taskcategory",t.taskCategory),
+                    new OleDbParameter("tasksendby",t.taskSendby),
                     new OleDbParameter("taskcron",t.taskCron),
                     new OleDbParameter("taskfile",t.taskFile),
                     new OleDbParameter("taskparm",t.taskParm),
@@ -202,7 +202,7 @@ namespace QM.Core.Data
             {
                 string sql = @"update qm_task set 
                                      taskname = ?,
-                                     taskcategory = ?,
+                                     tasksendby = ?,
                                      taskcron = ? ,
                                      taskfile = ?,
                                      taskparm = ?,
@@ -218,7 +218,7 @@ namespace QM.Core.Data
                 OleDbParameter[] param = new OleDbParameter[]
                 {
                     new OleDbParameter("taskname",t.taskName),
-                    new OleDbParameter("taskcategory",t.taskCategory),
+                    new OleDbParameter("tasksendby",t.taskSendby),
                     new OleDbParameter("taskcron",t.taskCron),
                     new OleDbParameter("taskfile",t.taskFile),
                     new OleDbParameter("taskparm",t.taskParm),

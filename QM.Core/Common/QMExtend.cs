@@ -133,5 +133,33 @@ namespace QM.Core.Common
 
             return result;
         }
+
+
+        /// <summary>
+        /// 返回当前年
+        /// </summary>
+        /// <returns></returns>
+        public static string GetCurYear()
+        {
+            return DateTime.Now.Year.ToString("0000");
+        }
+
+        /// <summary>
+        /// 返回当前月份
+        /// </summary>
+        /// <returns></returns>
+        public static string GetCurMonth()
+        {
+            return DateTime.Now.Month.ToString("00");
+        }
+
+        /// <summary>
+        /// 返回当前日期
+        /// </summary>
+        /// <returns></returns>
+        public static string GetCurDay()
+        {
+            return DateTime.Now.Day.ToString("00");
+        }
     }
 }
