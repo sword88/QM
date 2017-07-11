@@ -23,3 +23,15 @@ E:\ASECode\Test\QM.git\QM.Demo.Quituser\bin\Debug\Common.Logging.xml
 E:\ASECode\Test\QM.git\QM.Demo.Quituser\obj\Debug\QM.Demo.Quituser.csprojResolveAssemblyReference.cache
 E:\ASECode\Test\QM.git\QM.Demo.Quituser\obj\Debug\QM.Demo.Quituser.dll
 E:\ASECode\Test\QM.git\QM.Demo.Quituser\obj\Debug\QM.Demo.Quituser.pdb
+E:\ASECode\Test\QM.git\QM.Demo.Quituser\bin\Debug\QM.Demo.Quituser.dll.config
+E:\ASECode\Test\QM.git\QM.Demo.Quituser\bin\Debug\System.Web.Mvc.dll
+E:\ASECode\Test\QM.git\QM.Demo.Quituser\bin\Debug\System.Web.Razor.dll
+E:\ASECode\Test\QM.git\QM.Demo.Quituser\bin\Debug\System.Web.WebPages.Razor.dll
+E:\ASECode\Test\QM.git\QM.Demo.Quituser\bin\Debug\System.Web.WebPages.dll
+E:\ASECode\Test\QM.git\QM.Demo.Quituser\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\ASECode\Test\QM.git\QM.Demo.Quituser\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\ASECode\Test\QM.git\QM.Demo.Quituser\bin\Debug\System.Web.Mvc.xml
+E:\ASECode\Test\QM.git\QM.Demo.Quituser\bin\Debug\System.Web.Razor.xml
+E:\ASECode\Test\QM.git\QM.Demo.Quituser\bin\Debug\System.Web.WebPages.Razor.xml
+E:\ASECode\Test\QM.git\QM.Demo.Quituser\bin\Debug\System.Web.WebPages.xml
+E:\ASECode\Test\QM.git\QM.Demo.Quituser\bin\Debug\System.Web.WebPages.Deployment.xml

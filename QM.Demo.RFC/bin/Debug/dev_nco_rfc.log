@@ -1,0 +1,22 @@
+
+**** Log file opened by process 9444 at 2017-07-11 14:08:56 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 32-bit .NET Framework 4.0.30319.42000
+Program: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug\QM.Demo.RFC.vshost.exe
+Working directory: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug
+Operating system: Windows 7 Professional 32-bit Service Pack 1
+Processor: 4x Intel x86
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: IT-LJX-81611, IP address: 10.68.21.79, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2017-07-11 14:08:56.311 [Thread 8]
+SAP.Middleware.Connector.RfcTypeConversionException: PARAMETER GSTRP of FUNCTION ZPP_RFC_PRODORD_CREATE (SETTER): cannot convert String into DATE ---> SAP.Middleware.Connector.RfcTypeConversionException: Cannot convert "2017.07.11" into DATE (yyyyMMdd) ---> System.FormatException: 该字符串未被识别为有效的 DateTime。
+   在 System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   在 SAP.Middleware.Connector.RfcScalarMetadataDate.ConvertString(String value, Object& currentValue)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcScalarMetadataDate.ConvertString(String value, Object& currentValue)
+   在 SAP.Middleware.Connector.RfcDataContainer`1.SetValue(Int32 index, String value)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcDataContainer`1.SetValue(Int32 index, String value)

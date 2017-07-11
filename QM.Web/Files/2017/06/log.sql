@@ -1,47 +1,68 @@
 /***********************************************************************
- æ¨¡æ‹ŸDB æ“ä½œ
-***********************************************************************/ 
+ Ä£ÄâDB ²Ù×÷
+***********************************************************************/
 
---å®šä¹‰åˆ—å
-COLUMN TC NEW_VALUE FileName;
+--¶¨ÒåÁÐÃû
+COLUMN TC NEW_VALUE FILENAME;
 COLUMN STRTIME NEW_VALUE STIME;
 COLUMN ENDTIME NEW_VALUE ETIME;
---å®šä¹‰å˜é‡å
-Variable IDX   VARCHAR2 (100);
-Variable v_SQLERR varchar2(255);
---å®šä¹‰è¾“å‡ºæ—¥å¿—ååŠè·¯å¾„
-SELECT TO_CHAR(SYSDATE,'MMDD_hh24') || '_rpt.txt' TC FROM DUAL;
-spool  c:\qm\&FileName;
---å¯ç”¨DBMS OUTPUT
-set serveroutput on;
---ç¨‹åºå¼€å§‹æ—¶é—´
-select ''''||to_char(sysdate,'mm-dd hh24:mi:ss')||'''' STRTIME from dual;
+--¶¨Òå±äÁ¿Ãû
+VARIABLE IDX   VARCHAR2 (100);
+VARIABLE V_SQLERR VARCHAR2(255);
+--¶¨ÒåÊä³öÈÕÖ¾Ãû¼°Â·¾¶
 
---ç¨‹åºä¸»ä½“
+SELECT TO_CHAR (SYSDATE, 'MMDD_hh24') || '_rpt.txt' TC FROM DUAL;
+
+SPOOL  C:\QM\&FILENAME;
+--ÆôÓÃDBMS OUTPUT
+SET SERVEROUTPUT ON;
+--³ÌÐò¿ªÊ¼Ê±¼ä
+
+SELECT '''' || TO_CHAR (SYSDATE, 'mm-dd hh24:mi:ss') || '''' STRTIME
+  FROM DUAL;
+
+--³ÌÐòÖ÷Ìå
+
 BEGIN
    SELECT IT_SEQ.NEXTVAL INTO :IDX FROM DUAL;
 
-   INSERT INTO QM_TASKLOG 
-        VALUES (:IDX,
+   INSERT INTO QM_TASKLOG
+        VALUES ( :IDX,
                 :IDX || 'ID',
                 'NA',
                 SYSDATE,
                 :IDX || 'MESSAGE');
 
    COMMIT;
-   --æ¨¡æ‹Ÿæ“ä½œï¼Œä¼‘çœ 10ç§’
-   --æ³¨æ„ä½¿ç”¨æƒé™
-   DBMS_LOCK.SLEEP(10);
-   --å¼‚å¸¸è¾“å‡º
-   Exception
-when others then 
-  :v_SQLERR:=substr(sqlerrm,1,255);
-  DBMS_OUTPUT.PUT_LINE(:v_SQLERR);
+   --Ä£Äâ²Ù×÷£¬ÐÝÃß10Ãë
+   --×¢ÒâÊ¹ÓÃÈ¨ÏÞ
+   DBMS_LOCK.SLEEP (1);
+--Òì³£Êä³ö
+EXCEPTION
+   WHEN OTHERS
+   THEN
+      :V_SQLERR := SUBSTR (SQLERRM, 1, 255);
+      DBMS_OUTPUT.PUT_LINE ( :V_SQLERR);
 END;
 /
---ç¨‹åºç»“æŸæ—¶é—´
-select ''''||to_char(sysdate,'mm-dd hh24:mi:ss')||'''' ENDTIME from dual;
-select trunc(to_number(to_date(&etime,'mm-dd hh24:mi:ss')-to_date(&stime,'mm-dd hh24:mi:ss')) * 24 *60 ,2) || 'Mins' total from dual;
-set serveroutput off;
+
+--³ÌÐò½áÊøÊ±¼ä
+
+SELECT '''' || TO_CHAR (SYSDATE, 'mm-dd hh24:mi:ss') || '''' ENDTIME
+  FROM DUAL;
+
+SELECT    TRUNC (
+               TO_NUMBER (
+                    TO_DATE (&ETIME, 'mm-dd hh24:mi:ss')
+                  - TO_DATE (&STIME, 'mm-dd hh24:mi:ss'))
+             * 24
+             * 60,
+             2)
+       || 'Mins'
+          TOTAL
+  FROM DUAL;
+
+SET SERVEROUTPUT OFF;
 SPOOL OFF;
+--³ÌÐòÍË³ö
 EXIT;

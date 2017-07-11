@@ -26,3 +26,14 @@ E:\ASECode\Test\QM.git\QM.Test\bin\Debug\Common.Logging.Core.pdb
 E:\ASECode\Test\QM.git\QM.Test\bin\Debug\Common.Logging.Core.xml
 E:\ASECode\Test\QM.git\QM.Test\bin\Debug\Common.Logging.pdb
 E:\ASECode\Test\QM.git\QM.Test\bin\Debug\Common.Logging.xml
+E:\ASECode\Test\QM.git\QM.Test\bin\Debug\System.Web.Mvc.dll
+E:\ASECode\Test\QM.git\QM.Test\bin\Debug\System.Web.Razor.dll
+E:\ASECode\Test\QM.git\QM.Test\bin\Debug\System.Web.WebPages.Razor.dll
+E:\ASECode\Test\QM.git\QM.Test\bin\Debug\System.Web.WebPages.dll
+E:\ASECode\Test\QM.git\QM.Test\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\ASECode\Test\QM.git\QM.Test\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\ASECode\Test\QM.git\QM.Test\bin\Debug\System.Web.Mvc.xml
+E:\ASECode\Test\QM.git\QM.Test\bin\Debug\System.Web.Razor.xml
+E:\ASECode\Test\QM.git\QM.Test\bin\Debug\System.Web.WebPages.Razor.xml
+E:\ASECode\Test\QM.git\QM.Test\bin\Debug\System.Web.WebPages.xml
+E:\ASECode\Test\QM.git\QM.Test\bin\Debug\System.Web.WebPages.Deployment.xml

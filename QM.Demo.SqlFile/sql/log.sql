@@ -36,7 +36,7 @@ BEGIN
    COMMIT;
    --模拟操作，休眠10秒
    --注意使用权限
-   DBMS_LOCK.SLEEP (10);
+   DBMS_LOCK.SLEEP (1);
 --异常输出
 EXCEPTION
    WHEN OTHERS
