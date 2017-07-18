@@ -17,30 +17,35 @@ namespace QM.Server
 
         static void Main(string[] args)
         {
-
             var host = QMStarter.CreateQMLogger(typeof(Program));
 
-            host.Debug("123");
-
+            host.Debug("QM.Server服务开启");
             //异常捕获
             AppDomain.CurrentDomain.UnhandledException += UnKownError;
 
-            //设置Server信息
-            HostFactory.Run(
-                x =>
-                {
-                    x.SetDescription("ASEWH CIM Schedule Job Server");
-                    x.SetDisplayName("CIM QM Server");
-                    x.SetInstanceName("QM.Server");
-                    x.SetServiceName("QM.Server");
+            try
+            {
+                //设置Server信息
+                HostFactory.Run(
+                    x =>
+                    {
+                        x.SetDescription("ASEWH CIM Schedule Job Server");
+                        x.SetDisplayName("CIM QM Server");
+                        x.SetInstanceName("QM.Server");
+                        x.SetServiceName("QM.Server");
 
-                    x.Service(
-                        s =>
-                        {
-                            var server = new QMServer();
-                            return server;
-                        });
-                });
+                        x.Service(
+                            s =>
+                            {
+                                var server = new QMServer();
+                                return server;
+                            });
+                    });
+            }
+            catch (Exception ex)
+            {
+                host.Fatal(ex.Message);
+            }
         }
 
         /// <summary>
@@ -50,8 +55,7 @@ namespace QM.Server
         /// <param name="e"></param>
         private static void UnKownError(object sender, UnhandledExceptionEventArgs e)
         {
-            var ex = ((Exception)e.ExceptionObject).GetBaseException();
-            //lg.Fatal(string.Format("QMServer未知异常:{0}", ex.Message));
+            var ex = ((Exception)e.ExceptionObject).GetBaseException();            
         }
     }
 }

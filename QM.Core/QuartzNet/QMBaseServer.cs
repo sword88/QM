@@ -56,7 +56,7 @@ namespace QM.Core.QuartzNet
             //存储类型
             _properties["quartz.jobStore.type"] = "Quartz.Impl.AdoJobStore.JobStoreTX, Quartz";
             //表明前缀
-            _properties["quartz.jobStore.tablePrefix"] = "QRTZ_";
+            _properties["quartz.jobStore.tablePrefix"] = "QM_";
             //驱动类型
             _properties["quartz.jobStore.driverDelegateType"] = "Quartz.Impl.AdoJobStore.OracleDelegate, Quartz";
             //数据源名称
@@ -93,7 +93,7 @@ namespace QM.Core.QuartzNet
             _scheduler = _factory.GetScheduler();
             _scheduler.JobFactory = new QMJobFactory();
             _scheduler.Start();
-            InitLoadTaskList();
+            //InitLoadTaskList();
             //TaskRuntimeInfo a = new TaskRuntimeInfo();
 
             //Tasks t = new Tasks();
@@ -316,8 +316,19 @@ namespace QM.Core.QuartzNet
 
                     IJobDetail jobDetail = jobBuilder.Build();
 
-                    ITrigger trigger = QMCornFactory.CreateTrigger(taskinfo);
-                    _scheduler.ScheduleJob(jobDetail, trigger);
+                    //ITrigger trigger = QMCornFactory.CreateTrigger(taskinfo);
+
+                    ITrigger trigger = TriggerBuilder.Create()
+                                        .WithIdentity(taskinfo.task.taskName, "Cron")
+                                        .WithCronSchedule(taskinfo.task.taskCron)
+                                        .ForJob(jobDetail.Key)
+                                        .Build();
+
+                    if (_scheduler.CheckExists(jobDetail.Key))
+                    {
+                        _scheduler.DeleteJob(jobDetail.Key);
+                    }
+                    _scheduler.ScheduleJob(jobDetail, trigger);                                                              
                     
                     _taskPool.Add(taskid, taskinfo);
                     return true;
@@ -373,9 +384,40 @@ namespace QM.Core.QuartzNet
                 }
                 else
                 {
-                    return null;
+                    return GetDbTask(taskid);
                 }
             }
+        }
+
+        /// <summary>
+        /// 从DB中查询任务结果
+        /// </summary>
+        /// <param name="taskid"></param>
+        /// <returns></returns>
+        public TaskRuntimeInfo GetDbTask(string taskid)
+        {
+            Data.TaskData td = new Data.TaskData();
+            var t = td.Detail(taskid);
+            TaskRuntimeInfo trun = new TaskRuntimeInfo();
+            switch (t.taskType)
+            {
+                case "SQL-FILE":
+                    trun.sqlFileTask = new SqlFileTask(t.taskFile, t.taskDBCon);
+                    break;
+                case "SQL-EXP":
+                    trun.sqlTask = new SqlExpJob(t.taskDBCon, t.taskFile, t.taskParm, t.taskExpFile);
+                    break;
+                case "DLL-STD":
+                    trun.dllTask = new QMAppDomainLoader<DllTask>().Load(t.taskFile, t.taskClsType, out trun.domain);
+                    break;
+                case "DLL-UNSTD":
+                default:
+                    trun.unStdDllTask = new UnStdDll(t.taskFile, t.taskParm);
+                    break;
+            }
+            trun.task = t;
+
+            return trun;
         }
 
         /// <summary>
@@ -389,6 +431,7 @@ namespace QM.Core.QuartzNet
 
         /// <summary>
         /// 初始化加载DB中任务
+        /// 【开启数据库持久化后，不可以重复加载】
         /// </summary>
         public void InitLoadTaskList()
         {
@@ -450,6 +493,31 @@ namespace QM.Core.QuartzNet
             trun.task = t;
 
             AddTask(taskid, trun);
+        }
+
+        /// <summary>
+        /// 初始化远程
+        /// </summary>
+        public static void InitRemoteScheduler()
+        {
+            try
+            {
+                NameValueCollection properties = new NameValueCollection();
+                properties["quartz.scheduler.instanceName"] = "RemoteServer";
+
+                properties["quartz.scheduler.proxy"] = "true";
+
+                properties["quartz.scheduler.proxy.address"] = string.Format("{0}://{1}:{2}/QuartzScheduler", "tcp", "127.0.0.1", "555");
+
+                ISchedulerFactory sf = new StdSchedulerFactory(properties);
+
+                _scheduler = sf.GetScheduler();
+            }
+            catch (QMException ex)
+            {
+                log.Fatal(ex.Message);
+            }
+
         }
     }
 }

@@ -1,8 +1,0 @@
-DEBUG 2017-05-02 03:58:48  123
-INFO  2017-05-02 03:58:59  QM Server 开启服务
-DEBUG 2017-05-02 03:59:12  导出文件QM 文件清单,C:\QM\Files\1.XLS,select * from qm_task where taskstate ='Y'
-DEBUG 2017-05-02 03:59:12  导出成功
-DEBUG 2017-05-02 04:00:07  导出文件QM 文件清单,C:\QM\Files\1.XLS,select * from qm_task where taskstate ='Y'
-DEBUG 2017-05-02 04:00:07  导出成功
-DEBUG 2017-05-02 04:01:00  导出文件QM 文件清单,C:\QM\Files\1.XLS,select * from qm_task where taskstate ='Y'
-DEBUG 2017-05-02 04:01:00  导出成功

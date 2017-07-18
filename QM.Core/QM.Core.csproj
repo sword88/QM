@@ -152,6 +152,7 @@
     <Compile Include="Data\QMDBHelper.cs" />
     <Compile Include="Data\SequenceData.cs" />
     <Compile Include="Data\TaskData.cs" />
+    <Compile Include="Data\TaskLogData.cs" />
     <Compile Include="Environments\QMStarter.cs" />
     <Compile Include="Excel\IExcel.cs" />
     <Compile Include="Excel\QMExcel.cs" />

@@ -59,7 +59,7 @@ namespace QM.Demo.RFC
 
             //set parm
             func.SetValue("MATNR", "TI1018ESTRLPBF00");
-            func.SetValue("PSMNG", 10);
+            func.SetValue("PSMNG", 1000);
             func.SetValue("GSTRP", DateTime.Now);
             func.SetValue("KDAUF", "0000001917");
             func.SetValue("KDPOS", "000010");
