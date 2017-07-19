@@ -16,11 +16,11 @@ namespace QM.Core.Data
         /// <summary>
         /// 获得sequence
         /// </summary>
-        /// <param name="prefix">前缀</param>
+        /// <param name="prefix">前缀默认DateTime.Now.ToString("yyyyMMddhhmmss")</param>
         /// <returns></returns>
         public string GetIdx(string prefix = "")
         {
-            string val = prefix;
+            string val = (prefix == "" ? DateTime.Now.ToString("yyyyMMddhhmmss") : prefix);
             try
             {
                 string sql = "select it_seq.nextval from dual";

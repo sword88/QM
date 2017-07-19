@@ -245,8 +245,9 @@ namespace QM.Core.Data
         /// </summary>
         /// <param name="idx">任务id</param>
         /// <param name="state">状态</param>
-        public void UpdateStatus(string idx, string state)
+        public bool UpdateStatus(string idx, string state)
         {
+            bool result = false;
             try
             {
                 string sql = "update qm_task set taskstate = ? where idx = ?";
@@ -258,11 +259,15 @@ namespace QM.Core.Data
                 };                                
 
                 QMDBHelper.ExecuteNonQuery(sql, param);
+
+                result = true;
             }
             catch (QMException ex)
             {
                 throw ex;
             }
+
+            return result;
         }
 
         /// <summary>

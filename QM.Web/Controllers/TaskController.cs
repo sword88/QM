@@ -8,6 +8,8 @@ using QM.Core.Data;
 using QM.Core.Model;
 using QM.Core.Files;
 using QM.Core.QuartzNet;
+using QM.Core.Logisc;
+using QM.Core.Log;
 
 namespace QM.Web.Controllers
 {
@@ -101,9 +103,11 @@ namespace QM.Web.Controllers
             t.taskClsType = "";
             t.taskExpFile = "";
             
-            TaskData td = new TaskData();
-            td.Insert(t);
- 
+            TaskBLL tbl = new TaskBLL();
+            tbl.Insert(t);
+            QMDBLogger.Info(t.idx, JsonConvert.SerializeObject(t));
+
+
             return View();
         }
 

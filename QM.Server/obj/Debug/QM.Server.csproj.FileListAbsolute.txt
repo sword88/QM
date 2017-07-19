@@ -92,3 +92,7 @@ E:\ASECode\Test\QM.git\QM.Server\bin\Debug\System.Web.Razor.xml
 E:\ASECode\Test\QM.git\QM.Server\bin\Debug\System.Web.WebPages.Razor.xml
 E:\ASECode\Test\QM.git\QM.Server\bin\Debug\System.Web.WebPages.xml
 E:\ASECode\Test\QM.git\QM.Server\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\ASECode\Test\QM.git\QM.Server\bin\Debug\QM.Server.exe.manifest
+E:\ASECode\Test\QM.git\QM.Server\bin\Debug\QM.Server.application
+E:\ASECode\Test\QM.git\QM.Server\obj\Debug\QM.Server.exe.manifest
+E:\ASECode\Test\QM.git\QM.Server\obj\Debug\QM.Server.application

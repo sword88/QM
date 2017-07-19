@@ -160,8 +160,11 @@
     <Compile Include="Exception\QMException.cs" />
     <Compile Include="Files\QMFile.cs" />
     <Compile Include="Files\QMFtp.cs" />
+    <Compile Include="Logisc\TaskBLL.cs" />
+    <Compile Include="Logisc\TaskLogBLL.cs" />
     <Compile Include="Log\ILogger.cs" />
     <Compile Include="Log\ILoggerFactory.cs" />
+    <Compile Include="Log\QMDBLogger.cs" />
     <Compile Include="Log\QMLoggerFactory.cs" />
     <Compile Include="Log\QMLogModule.cs" />
     <Compile Include="Mail\IMail.cs" />
