@@ -39,17 +39,18 @@ namespace QM.Core.Model
             try
             {
                 pro.StartInfo = startinfo;
+                log.Debug(string.Format("[UnStdDll][Start] 程序名:{0},参数：{1}", startinfo.FileName, startinfo.Arguments));
                 pro.Start();
-                pro.WaitForExit();
-
-                log.Debug(startinfo.FileName + " " + startinfo.Arguments);
+                pro.WaitForExit();                
             }
             catch (Win32Exception wex)
             {
-                throw new QMException(wex.Message);
+                log.Error(string.Format("[UnStdDll][Start] 程序名:{0},参数：{1},错误：{2}", startinfo.FileName, startinfo.Arguments, wex.Message));
+                throw new QMException(wex.Message);                
             }
             catch (QMException ex)
             {
+                log.Error(string.Format("[UnStdDll][Error] 程序名:{0},参数：{1},错误：{2}", startinfo.FileName, startinfo.Arguments, ex.Message));
                 throw ex;
             }
             finally
@@ -57,6 +58,7 @@ namespace QM.Core.Model
                 if (pro != null)
                 {
                     pro.Close();
+                    log.Debug(string.Format("[UnStdDll][End] 程序名:{0}", startinfo.FileName));
                 }
             }
         }

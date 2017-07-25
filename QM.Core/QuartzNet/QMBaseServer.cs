@@ -12,6 +12,7 @@ using QM.Core.Exception;
 using QM.Core.Log;
 using QM.Core.Environments;
 using System.Configuration;
+using QM.Core.Logisc;
 
 namespace QM.Core.QuartzNet
 {
@@ -93,6 +94,7 @@ namespace QM.Core.QuartzNet
             _scheduler = _factory.GetScheduler();
             _scheduler.JobFactory = new QMJobFactory();
             _scheduler.Start();
+            AddWebTask("9162");
             //InitLoadTaskList();
             //TaskRuntimeInfo a = new TaskRuntimeInfo();
 
@@ -303,7 +305,7 @@ namespace QM.Core.QuartzNet
                             break;
                         case "SQL-EXP":
                         case "SQL":
-                            jobBuilder = jobBuilder.OfType(typeof(QMSqlTaskJob));
+                            jobBuilder = jobBuilder.OfType(typeof(QMSqlExpTaskJob));
                             break;
                         case "DLL-STD":
                             jobBuilder = jobBuilder.OfType(typeof(QMDllTaskJob));
@@ -396,16 +398,18 @@ namespace QM.Core.QuartzNet
         /// <returns></returns>
         public TaskRuntimeInfo GetDbTask(string taskid)
         {
-            Data.TaskData td = new Data.TaskData();
+            TaskBLL td = new TaskBLL();
             var t = td.Detail(taskid);
             TaskRuntimeInfo trun = new TaskRuntimeInfo();
+            trun.parms = td.GetParms(taskid);
+
             switch (t.taskType)
             {
                 case "SQL-FILE":
                     trun.sqlFileTask = new SqlFileTask(t.taskFile, t.taskDBCon);
                     break;
                 case "SQL-EXP":
-                    trun.sqlTask = new SqlExpJob(t.taskDBCon, t.taskFile, t.taskParm, t.taskExpFile);
+                    trun.sqlExpTask = new SqlExpJob(t.taskDBCon, t.taskFile, t.taskParm, trun.parms);
                     break;
                 case "DLL-STD":
                     trun.dllTask = new QMAppDomainLoader<DllTask>().Load(t.taskFile, t.taskClsType, out trun.domain);
@@ -415,7 +419,7 @@ namespace QM.Core.QuartzNet
                     trun.unStdDllTask = new UnStdDll(t.taskFile, t.taskParm);
                     break;
             }
-            trun.task = t;
+            trun.task = t;            
 
             return trun;
         }
@@ -436,19 +440,22 @@ namespace QM.Core.QuartzNet
         public void InitLoadTaskList()
         {
 
-            Data.TaskData td = new Data.TaskData();
+            TaskBLL td = new TaskBLL();
             var tasklist = td.GetList();
             TaskRuntimeInfo trun = null;
+           
             foreach (Tasks t in tasklist)
             {
                 trun = new TaskRuntimeInfo();
+                trun.parms = td.GetParms(t.idx);
+
                 switch (t.taskType)
                 {
                     case "SQL-FILE":                        
                         trun.sqlFileTask = new SqlFileTask(t.taskFile, t.taskDBCon);
                         break;
                     case "SQL-EXP":
-                        trun.sqlTask = new SqlExpJob(t.taskDBCon, t.taskFile, t.taskParm, t.taskExpFile);
+                        trun.sqlExpTask = new SqlExpJob(t.taskDBCon, t.taskFile, t.taskParm, trun.parms);
                         break;
                     case "DLL-STD":
                         trun.dllTask = new QMAppDomainLoader<DllTask>().Load(t.taskFile, t.taskClsType, out trun.domain);
@@ -470,17 +477,18 @@ namespace QM.Core.QuartzNet
         /// <param name="taskid">任务id</param>
         public static void AddWebTask(string taskid)
         {
-            Data.TaskData td = new Data.TaskData();
+            TaskBLL td = new TaskBLL();
             var t = td.Detail(taskid);
 
             TaskRuntimeInfo trun = new TaskRuntimeInfo();
+            trun.parms = td.GetParms(taskid);
             switch (t.taskType)
             {
                 case "SQL-FILE":
                     trun.sqlFileTask = new SqlFileTask(t.taskFile, t.taskDBCon);
                     break;
                 case "SQL-EXP":
-                    trun.sqlTask = new SqlExpJob(t.taskDBCon, t.taskFile, t.taskParm, t.taskExpFile);
+                    trun.sqlExpTask = new SqlExpJob(t.taskDBCon, t.taskFile, t.taskParm, trun.parms);
                     break;
                 case "DLL-STD":
                     trun.dllTask = new QMAppDomainLoader<DllTask>().Load(t.taskFile, t.taskClsType, out trun.domain);

@@ -34,6 +34,7 @@ namespace QM.Core.QuartzNet
                 QMDBLogger.UpdateLastStartTime(taskid, DateTime.Now);
 
                 taskinfo.dllTask.TryRun();
+                taskinfo.dllTask.Dispose();
 
                 QMDBLogger.UpdateLastEndTime(taskid, DateTime.Now);
                 QMDBLogger.Info(taskid, "运行完成");

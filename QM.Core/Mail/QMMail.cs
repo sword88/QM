@@ -294,6 +294,16 @@ namespace QM.Core.Mail
                 string result = e.Message;
                 return false;
             }
+            finally
+            {
+                //一定要释放该对象,否则无法删除附件
+                foreach (Attachment attach in myEmail.Attachments)
+                {
+                    attach.Dispose();   
+                }
+                myEmail.Dispose();
+                smtp.Dispose();
+            }
 
             return true;
         }

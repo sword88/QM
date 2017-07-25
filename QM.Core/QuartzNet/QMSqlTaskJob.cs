@@ -6,15 +6,17 @@ using System.Threading.Tasks;
 using Quartz;
 using QM.Core.Common;
 using QM.Core.Log;
+using QM.Core.Mail;
+using QM.Core.Files;
 using QM.Core.Exception;
 using QM.Core.Data;
 using QM.Core.Environments;
 
 namespace QM.Core.QuartzNet
 {
-    public class QMSqlTaskJob : IJob
+    public class QMSqlExpTaskJob : IJob
     {
-        private static ILogger log = QMStarter.CreateQMLogger(typeof(QMSqlTaskJob));
+        private static ILogger log = QMStarter.CreateQMLogger(typeof(QMSqlExpTaskJob));
 
         public void Execute(IJobExecutionContext context)
         {
@@ -30,8 +32,8 @@ namespace QM.Core.QuartzNet
                 QMDBLogger.Info(taskid, "开始运行");
                 QMDBLogger.UpdateLastStartTime(taskid, DateTime.Now);
 
-                taskinfo.sqlTask.TryRun();
-
+                taskinfo.sqlExpTask.TryRun(taskinfo.task.taskSendby);
+               
                 QMDBLogger.UpdateLastEndTime(taskid, DateTime.Now);
                 QMDBLogger.Info(taskid, "运行完成");
             }

@@ -23,6 +23,11 @@ namespace QM.Core.Model
         public Tasks task;
 
         /// <summary>
+        /// 任务运行参数
+        /// </summary>
+        public IList<TasksN2M> parms;
+
+        /// <summary>
         /// 应用程序域中任务dll实例引用
         /// </summary>
         public DllTask dllTask;
@@ -38,8 +43,8 @@ namespace QM.Core.Model
         public SqlFileTask sqlFileTask;
 
         /// <summary>
-        /// SQL任务
+        /// SQL导出任务
         /// </summary>
-        public SqlExpJob sqlTask;
+        public SqlExpJob sqlExpTask;
     }
 }

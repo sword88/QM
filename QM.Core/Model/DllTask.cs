@@ -26,6 +26,10 @@ namespace QM.Core.Model
             catch (QMException ex)
             {
                 throw ex;
+            }
+            finally
+            {
+                Dispose();
             }            
         }
 

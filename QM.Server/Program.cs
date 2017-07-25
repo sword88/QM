@@ -19,7 +19,6 @@ namespace QM.Server
         {
             var host = QMStarter.CreateQMLogger(typeof(Program));
 
-            host.Debug("QM.Server服务开启");
             //异常捕获
             AppDomain.CurrentDomain.UnhandledException += UnKownError;
 
@@ -34,12 +33,13 @@ namespace QM.Server
                         x.SetInstanceName("QM.Server");
                         x.SetServiceName("QM.Server");
 
-                        x.Service(
+                        x.Service<QMServer>(
                             s =>
-                            {
+                            {                                                                
                                 var server = new QMServer();
                                 return server;
                             });
+                        x.RunAsPrompt();
                     });
             }
             catch (Exception ex)

@@ -9,11 +9,14 @@ using System.Data;
 using System.Data.OleDb;
 using QM.Core.Exception;
 using System.IO;
+using QM.Core.Environments;
+using QM.Core.Log;
 
 namespace QM.Core.Data
 {
     public class TaskLogData
     {
+        private static ILogger log = QMStarter.CreateQMLogger(typeof(TaskLogData));
         private QMDBHelper qmdb = new QMDBHelper(ConfigurationManager.ConnectionStrings["database"].ConnectionString);
 
         /// <summary>
@@ -51,6 +54,7 @@ namespace QM.Core.Data
             catch (QMException ex)
             {
                 throw ex;
+                log.Error(string.Format("TaskLogData=>Insert ERROR:{0}", ex.Message));
             }
         }
     }

@@ -11,6 +11,39 @@ namespace QM.Core.Logisc
     public class TaskBLL
     {
         private TaskData tdal = new TaskData();
+        private TaskN2MData tmdal = new TaskN2MData();
+
+        /// <summary>
+        /// 获得所有任务清单
+        /// </summary>
+        /// <returns></returns>
+        public IList<Tasks> GetList()
+        {
+            return tdal.GetList();
+        }
+
+        /// <summary>
+        /// 获得任务参数
+        /// </summary>
+        /// <param name="taskid"></param>
+        /// <returns></returns>
+        public IList<TasksN2M> GetParms(string taskid)
+        {
+            return tmdal.GetParms(taskid);
+        }
+
+        public TasksN2M GetParm(IList<TasksN2M> parms, string name)
+        {
+            foreach (var item in parms)
+            {
+                if (item.attrname == name)
+                {
+                    return item;
+                }
+            }
+
+            return null;
+        }
 
         /// <summary>
         /// 新的任务

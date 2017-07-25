@@ -3,6 +3,7 @@ using System.Data;
 using System.Collections;
 using System.Data.OleDb;
 using QM.Core.Exception;
+using System.Diagnostics;
 
 namespace QM.Core.Data
 {
@@ -105,6 +106,8 @@ namespace QM.Core.Data
                 AttachParameters(command, commandParameters);
             }
 
+            Debug.Write(command);
+
             return;
         }
 
@@ -134,7 +137,7 @@ namespace QM.Core.Data
                 // create a command and prepare it for execution
                 OleDbCommand cmd = new OleDbCommand();
                 PrepareCommand(cmd, cn, CommandType.Text, commandText, commandParameters);
-
+                
                 // create a reader
                 OleDbDataReader dr;
                 // call ExecuteReader

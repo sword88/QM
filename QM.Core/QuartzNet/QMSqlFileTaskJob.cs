@@ -31,7 +31,7 @@ namespace QM.Core.QuartzNet
                 QMDBLogger.UpdateLastStartTime(taskid, DateTime.Now);
 
                 taskinfo.sqlFileTask.TryRun();
-
+                
                 QMDBLogger.UpdateLastEndTime(taskid, DateTime.Now);
                 QMDBLogger.Info(taskid, "运行完成");
             }

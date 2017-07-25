@@ -74,12 +74,12 @@ namespace QM.Core.Excel
 
                 using (MemoryStream ms = Export(dtSource, strHeader))
                 {
-                    using (FileStream fs = new FileStream(strFileName, FileMode.Create, FileAccess.Write))
-                    {
-                        byte[] data = ms.ToArray();
-                        fs.Write(data, 0, data.Length);
-                        fs.Flush();
-                    }
+                    FileStream fs = new FileStream(strFileName, FileMode.Create, FileAccess.Write,FileShare.ReadWrite);
+                    byte[] data = ms.ToArray();
+                    fs.Write(data, 0, data.Length);
+                    fs.Flush();
+                    //需要及时释放，否则影响后面的使用
+                    fs.Dispose();                   
                 }
 
                 result = true;

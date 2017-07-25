@@ -29,21 +29,32 @@ namespace QM.Core.Model
 
         public void TryRun()
         {
-            try
-            {                
-                ProcessStartInfo startinfo = new ProcessStartInfo();
-                startinfo.FileName = "SqlPlus";
-                startinfo.Arguments = dbconstr + " @ " + taskfile;
-                startinfo.CreateNoWindow = true;
-                startinfo.UseShellExecute = false;
-                Process pro = Process.Start(startinfo);
-                pro.WaitForExit();
+            ProcessStartInfo startinfo = new ProcessStartInfo();
+            startinfo.FileName = "SqlPlus";
+            startinfo.Arguments = dbconstr + " @ " + taskfile;
+            startinfo.CreateNoWindow = true;
+            startinfo.UseShellExecute = false;
+            Process pro = new Process();
 
-                log.Debug(startinfo.FileName + " " + startinfo.Arguments);
+            try
+            {
+                pro.StartInfo = startinfo;
+                log.Debug(string.Format("[SqlFileTask][Start] 程序名:{0},参数：{1}", startinfo.FileName, startinfo.Arguments));
+                pro.Start();
+                pro.WaitForExit();                
             }
             catch (QMException ex)
             {
+                log.Error(string.Format("[SqlFileTask][Error] 程序名:{0},参数：{1},错误：{2}", startinfo.FileName, startinfo.Arguments, ex.Message));
                 throw ex;
+            }
+            finally
+            {
+                if (pro != null)
+                {
+                    pro.Close();
+                    log.Debug(string.Format("[SqlFileTask][End] 程序名:{0}", startinfo.FileName));
+                }
             }            
         }
     }
