@@ -35,7 +35,7 @@ namespace QM.Core.Data
                     sql += "and refname = '" + refname + "'";
                 }
 
-                OleDbDataReader dr = QMDBHelper.ExecuteReader(sql);
+                OleDbDataReader dr = qmdb.ExecuteReader(sql);
                 while (dr.Read())
                 {
                     t = new TasksN2M();

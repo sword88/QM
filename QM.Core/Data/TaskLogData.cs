@@ -49,7 +49,7 @@ namespace QM.Core.Data
                     new OleDbParameter("message",t.message)    
                 };
 
-                QMDBHelper.ExecuteNonQuery(sql, param);
+                qmdb.ExecuteNonQuery(sql, param);
             }
             catch (QMException ex)
             {

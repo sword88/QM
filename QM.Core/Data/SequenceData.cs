@@ -24,7 +24,7 @@ namespace QM.Core.Data
             try
             {
                 string sql = "select it_seq.nextval from dual";
-                object idx = QMDBHelper.ExecuteScalar(sql);
+                object idx = qmdb.ExecuteScalar(sql);
                 val = val + idx.ToString();
             }
             catch (QMException ex)

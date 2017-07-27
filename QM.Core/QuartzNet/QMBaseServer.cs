@@ -94,7 +94,7 @@ namespace QM.Core.QuartzNet
             _scheduler = _factory.GetScheduler();
             _scheduler.JobFactory = new QMJobFactory();
             _scheduler.Start();
-            AddWebTask("9162");
+            
             //InitLoadTaskList();
             //TaskRuntimeInfo a = new TaskRuntimeInfo();
 

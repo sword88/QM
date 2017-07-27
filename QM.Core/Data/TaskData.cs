@@ -28,7 +28,7 @@ namespace QM.Core.Data
             try
             {
                 string sql = "select * from qm_task where taskstate = 'Y'";
-                OleDbDataReader dr = QMDBHelper.ExecuteReader(sql);
+                OleDbDataReader dr = qmdb.ExecuteReader(sql);
                 while (dr.Read())
                 {
                     t = new Tasks();
@@ -87,7 +87,7 @@ namespace QM.Core.Data
                 OleDbParameter[] param = new OleDbParameter[] {
                     new OleDbParameter("idx",idx)
                 };
-                OleDbDataReader dr = QMDBHelper.ExecuteReader(sql,param);
+                OleDbDataReader dr = qmdb.ExecuteReader(sql,param);
                 while (dr.Read())
                 {
                     t = new Tasks();
@@ -184,7 +184,7 @@ namespace QM.Core.Data
                     new OleDbParameter("tasktype", t.taskType)
                 };
 
-                QMDBHelper.ExecuteNonQuery(sql, param);
+                qmdb.ExecuteNonQuery(sql, param);
             }
             catch (QMException ex)
             {
@@ -232,7 +232,7 @@ namespace QM.Core.Data
                     new OleDbParameter("idx",t.idx)                                                                                                                                                                                                        
                 };
 
-                QMDBHelper.ExecuteNonQuery(sql, param);
+                qmdb.ExecuteNonQuery(sql, param);
             }
             catch (QMException ex)
             {
@@ -256,9 +256,9 @@ namespace QM.Core.Data
                     new OleDbParameter("taskstate",state),
                     new OleDbParameter("idx",idx)
                     
-                };                                
+                };
 
-                QMDBHelper.ExecuteNonQuery(sql, param);
+                qmdb.ExecuteNonQuery(sql, param);
 
                 result = true;
             }
@@ -284,9 +284,9 @@ namespace QM.Core.Data
                 {
                     new OleDbParameter("tasklaststarttime",lastStartTime),
                     new OleDbParameter("idx",idx)                    
-                };                                
+                };
 
-                QMDBHelper.ExecuteNonQuery(sql, param);
+                qmdb.ExecuteNonQuery(sql, param);
             }
             catch (QMException ex)
             {
@@ -308,9 +308,9 @@ namespace QM.Core.Data
                 {
                     new OleDbParameter("tasklastendtime",lastEndTime),
                     new OleDbParameter("idx",idx)                  
-                };                                
+                };
 
-                QMDBHelper.ExecuteNonQuery(sql, param);
+                qmdb.ExecuteNonQuery(sql, param);
             }
             catch (QMException ex)
             {
@@ -332,9 +332,9 @@ namespace QM.Core.Data
                 {
                     new OleDbParameter("tasklasterrortime",lastErrorTime),
                     new OleDbParameter("idx",idx)
-                };                              
+                };
 
-                QMDBHelper.ExecuteNonQuery(sql, param);
+                qmdb.ExecuteNonQuery(sql, param);
             }
             catch (QMException ex)
             {

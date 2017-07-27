@@ -52,6 +52,7 @@ namespace QM.Core.Model
         /// <param name="filestr">文件路径/文件名</param>
         public SqlExpJob(string dbstr, string sqlstr, string titlestr,IList<TasksN2M> sparms)
         {
+
             parms = sparms;            
             dbcon = dbstr;
             db = new QMDBHelper(dbstr);
@@ -70,7 +71,7 @@ namespace QM.Core.Model
         {
             try
             {
-                DataSet ds = QMDBHelper.ExecuteDataset(sql);
+                DataSet ds = db.ExecuteDataset(sql);
                 QMExcel ex = new QMExcel(title, filepath);
                 log.Debug(string.Format("[SqlExpJob] 导出文件{0},{1},{2}", title,filepath,sql));
 
@@ -106,7 +107,7 @@ namespace QM.Core.Model
                                             mail.Subject = parm.attrval;
                                             break;
                                         case "BODY":
-                                            mail.Body = parm.attrval;
+                                            mail.AddBody(parm.attrval, "REPORTID");
                                             break;
                                     }
                                 }

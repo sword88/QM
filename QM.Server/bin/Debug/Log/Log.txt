@@ -1,256 +1,269 @@
-INFO  2017-07-25 04:08:52  QM Server 开启服务
-INFO  2017-07-25 04:10:36  QM Server 开启服务
-DEBUG 2017-07-25 04:10:37  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
-DEBUG 2017-07-25 04:10:37  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
-DEBUG 2017-07-25 04:10:39  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
-DEBUG 2017-07-25 04:10:39  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
-INFO  2017-07-25 04:17:32  QM Server 开启服务
-DEBUG 2017-07-25 04:17:33  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
-DEBUG 2017-07-25 04:17:33  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
-DEBUG 2017-07-25 04:17:33  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
-DEBUG 2017-07-25 04:17:33  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
-DEBUG 2017-07-25 04:18:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
-DEBUG 2017-07-25 04:18:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
-DEBUG 2017-07-25 04:18:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
-DEBUG 2017-07-25 04:18:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
-DEBUG 2017-07-25 04:19:24  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
-DEBUG 2017-07-25 04:19:33  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
-DEBUG 2017-07-25 04:19:33  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
-DEBUG 2017-07-25 04:19:33  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
-DEBUG 2017-07-25 04:20:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
-DEBUG 2017-07-25 04:20:01  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
-DEBUG 2017-07-25 04:20:01  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
-DEBUG 2017-07-25 04:20:01  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
-DEBUG 2017-07-25 04:21:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
-DEBUG 2017-07-25 04:21:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
-DEBUG 2017-07-25 04:21:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
-DEBUG 2017-07-25 04:21:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
-DEBUG 2017-07-25 04:22:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
-DEBUG 2017-07-25 04:22:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
-DEBUG 2017-07-25 04:22:01  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
-DEBUG 2017-07-25 04:22:02  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
-DEBUG 2017-07-25 04:23:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
-DEBUG 2017-07-25 04:23:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
-DEBUG 2017-07-25 04:23:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
-DEBUG 2017-07-25 04:23:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
-DEBUG 2017-07-25 04:24:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
-DEBUG 2017-07-25 04:24:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
-DEBUG 2017-07-25 04:24:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
-DEBUG 2017-07-25 04:24:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
-DEBUG 2017-07-25 04:25:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
-DEBUG 2017-07-25 04:25:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
-DEBUG 2017-07-25 04:25:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
-DEBUG 2017-07-25 04:25:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
-DEBUG 2017-07-25 04:26:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
-DEBUG 2017-07-25 04:26:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
-DEBUG 2017-07-25 04:26:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
-DEBUG 2017-07-25 04:26:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
-DEBUG 2017-07-25 04:27:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
-DEBUG 2017-07-25 04:27:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
-DEBUG 2017-07-25 04:27:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
-DEBUG 2017-07-25 04:27:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
-DEBUG 2017-07-25 04:28:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
-DEBUG 2017-07-25 04:28:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
-DEBUG 2017-07-25 04:28:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
-DEBUG 2017-07-25 04:28:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
-DEBUG 2017-07-25 04:29:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
-DEBUG 2017-07-25 04:29:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
-DEBUG 2017-07-25 04:29:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
-DEBUG 2017-07-25 04:29:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
-DEBUG 2017-07-25 04:30:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
-DEBUG 2017-07-25 04:30:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
-DEBUG 2017-07-25 04:30:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
-DEBUG 2017-07-25 04:30:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
-DEBUG 2017-07-25 04:31:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
-DEBUG 2017-07-25 04:31:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
-DEBUG 2017-07-25 04:31:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
-DEBUG 2017-07-25 04:31:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
-DEBUG 2017-07-25 04:41:17  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
-DEBUG 2017-07-25 04:41:18  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
-DEBUG 2017-07-25 04:41:18  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
-INFO  2017-07-25 04:41:18  QM Server 开启服务
-DEBUG 2017-07-25 04:41:18  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
-DEBUG 2017-07-25 04:42:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
-DEBUG 2017-07-25 04:42:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
-DEBUG 2017-07-25 04:48:04  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
-DEBUG 2017-07-25 04:48:05  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
-DEBUG 2017-07-25 04:49:57  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
-DEBUG 2017-07-25 04:49:57  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
-DEBUG 2017-07-25 04:49:57  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
-DEBUG 2017-07-25 04:50:03  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
-INFO  2017-07-25 04:50:03  QM Server 开启服务
-DEBUG 2017-07-25 04:50:11  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
-DEBUG 2017-07-25 04:50:12  [SqlExpJob] 导出文件我是测试啊,C:\QM\MAIL\TEST.XSL,select * from QM_TASK
-DEBUG 2017-07-25 04:50:12  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
-DEBUG 2017-07-25 04:50:16  [SqlExpJob] 导出文件我是测试啊,C:\QM\MAIL\TEST.XSL,select * from QM_TASK
-DEBUG 2017-07-25 04:50:18  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
-DEBUG 2017-07-25 04:50:18  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
-INFO  2017-07-25 04:50:59  QM Server 开启服务
-DEBUG 2017-07-25 04:51:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
-DEBUG 2017-07-25 04:51:02  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
-DEBUG 2017-07-25 04:51:02  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
-DEBUG 2017-07-25 04:51:02  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
-DEBUG 2017-07-25 04:51:59  [SqlExpJob] 导出文件我是测试啊,C:\QM\MAIL\TEST.XSL,select * from QM_TASK
-DEBUG 2017-07-25 04:52:10  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
-DEBUG 2017-07-25 04:52:12  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
-DEBUG 2017-07-25 04:52:39  [SqlExpJob] 导出文件我是测试啊,C:\QM\MAIL\TEST.XSL,select * from QM_TASK
-DEBUG 2017-07-25 04:52:40  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
-DEBUG 2017-07-25 04:52:41  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
-DEBUG 2017-07-25 04:54:07  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
-DEBUG 2017-07-25 04:54:07  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
-INFO  2017-07-25 04:54:31  QM Server 开启服务
-DEBUG 2017-07-25 04:55:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
-DEBUG 2017-07-25 04:55:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
-DEBUG 2017-07-25 04:55:06  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
-DEBUG 2017-07-25 04:55:06  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
-DEBUG 2017-07-25 04:55:06  [SqlExpJob] 导出文件我是测试啊,C:\QM\MAIL\TEST.XLS,select * from QM_TASK
-DEBUG 2017-07-25 04:55:06  [SqlExpJob] 导出成功
-DEBUG 2017-07-25 04:56:10  [SqlExpJob] 导出文件我是测试啊,C:\QM\MAIL\TEST.XLS,select * from QM_TASK
-DEBUG 2017-07-25 04:56:16  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
-DEBUG 2017-07-25 04:56:45  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
-DEBUG 2017-07-25 04:57:20  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
-DEBUG 2017-07-25 04:57:20  [SqlExpJob] 导出文件我是测试啊,C:\QM\MAIL\TEST.XLS,select * from QM_TASK
-DEBUG 2017-07-25 04:57:20  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
-INFO  2017-07-25 04:57:20  QM Server 开启服务
-DEBUG 2017-07-25 04:57:20  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
-DEBUG 2017-07-25 04:57:20  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
-INFO  2017-07-25 04:57:37  QM Server 开启服务
-DEBUG 2017-07-25 04:58:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
-DEBUG 2017-07-25 04:58:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
-DEBUG 2017-07-25 04:58:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
-DEBUG 2017-07-25 04:58:01  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
-DEBUG 2017-07-25 04:58:01  [SqlExpJob] 导出文件我是测试啊,C:\QM\MAIL\TEST.XLS,select * from QM_TASK
-DEBUG 2017-07-25 04:59:00  [SqlExpJob] 导出文件我是测试啊,C:\QM\MAIL\TEST.XLS,select * from QM_TASK
-DEBUG 2017-07-25 04:59:00  [SqlExpJob] 导出成功
-DEBUG 2017-07-25 04:59:04  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
-DEBUG 2017-07-25 04:59:04  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
-DEBUG 2017-07-25 04:59:04  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
-DEBUG 2017-07-25 04:59:04  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
-DEBUG 2017-07-25 05:00:02  [SqlExpJob] 导出文件我是测试啊,C:\QM\MAIL\TEST.XLS,select * from QM_TASK
-DEBUG 2017-07-25 08:32:25  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
-DEBUG 2017-07-25 08:32:25  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
-INFO  2017-07-25 08:32:53  QM Server 开启服务
-DEBUG 2017-07-25 08:33:02  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
-DEBUG 2017-07-25 08:33:02  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
-DEBUG 2017-07-25 08:33:03  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
-DEBUG 2017-07-25 08:33:04  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
-DEBUG 2017-07-25 08:33:05  [SqlExpJob] 导出文件我是测试啊,C:\QM\MAIL\TEST.XLS,select * from QM_TASK
-DEBUG 2017-07-25 08:33:05  [SqlExpJob] 导出成功
-DEBUG 2017-07-25 08:34:01  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
-DEBUG 2017-07-25 08:34:01  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
-DEBUG 2017-07-25 08:34:02  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
-DEBUG 2017-07-25 08:34:02  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
-DEBUG 2017-07-25 08:34:02  [SqlExpJob] 导出文件我是测试啊,C:\QM\MAIL\TEST.XLS,select * from QM_TASK
-DEBUG 2017-07-25 08:34:02  [SqlExpJob] 导出成功
-DEBUG 2017-07-25 08:35:01  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
-DEBUG 2017-07-25 08:35:01  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
-DEBUG 2017-07-25 08:35:03  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
-DEBUG 2017-07-25 08:35:04  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
-DEBUG 2017-07-25 08:35:05  [SqlExpJob] 导出文件我是测试啊,C:\QM\MAIL\TEST.XLS,select * from QM_TASK
-DEBUG 2017-07-25 08:36:01  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
-DEBUG 2017-07-25 08:36:01  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
-DEBUG 2017-07-25 08:36:03  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
-DEBUG 2017-07-25 08:36:04  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
-DEBUG 2017-07-25 08:36:05  [SqlExpJob] 导出文件我是测试啊,C:\QM\MAIL\TEST.XLS,select * from QM_TASK
-DEBUG 2017-07-25 08:39:58  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
-DEBUG 2017-07-25 08:39:58  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
-DEBUG 2017-07-25 08:40:01  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
-DEBUG 2017-07-25 08:40:01  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
-DEBUG 2017-07-25 08:40:02  [SqlExpJob] 导出文件我是测试啊,C:\QM\MAIL\TEST.XLS,select * from QM_TASK
-DEBUG 2017-07-25 08:41:01  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
-DEBUG 2017-07-25 08:41:06  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
-DEBUG 2017-07-25 08:41:07  [SqlExpJob] 导出文件我是测试啊,C:\QM\MAIL\TEST.XLS,select * from QM_TASK
-DEBUG 2017-07-25 08:41:21  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
-DEBUG 2017-07-25 08:41:22  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
-DEBUG 2017-07-25 08:41:24  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
-DEBUG 2017-07-25 08:41:24  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
-DEBUG 2017-07-25 08:41:25  [SqlExpJob] 导出文件我是测试啊,C:\QM\MAIL\TEST.XLS,select * from QM_TASK
-DEBUG 2017-07-25 08:42:59  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
-DEBUG 2017-07-25 08:42:59  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
-DEBUG 2017-07-25 08:43:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
-DEBUG 2017-07-25 08:43:01  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
-DEBUG 2017-07-25 08:43:01  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
-DEBUG 2017-07-25 08:43:01  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
-DEBUG 2017-07-25 08:43:37  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
-DEBUG 2017-07-25 08:43:37  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
-DEBUG 2017-07-25 08:43:38  [SqlExpJob] 导出文件我是测试啊,C:\QM\MAIL\TEST.XLS,select * from QM_TASK
-DEBUG 2017-07-25 08:43:38  [SqlExpJob] 导出成功
-DEBUG 2017-07-25 08:46:32  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
-DEBUG 2017-07-25 08:46:33  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
-DEBUG 2017-07-25 08:46:33  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
-DEBUG 2017-07-25 08:46:33  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
-DEBUG 2017-07-25 08:46:33  [SqlExpJob] 导出文件我是测试啊,C:\QM\MAIL\TEST.XLS,select * from QM_TASK
-DEBUG 2017-07-25 08:46:34  [SqlExpJob] 导出成功
-DEBUG 2017-07-25 08:46:56  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
-INFO  2017-07-25 08:46:56  QM Server 开启服务
-DEBUG 2017-07-25 08:46:56  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
-DEBUG 2017-07-25 08:47:20  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
-DEBUG 2017-07-25 08:47:20  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
-DEBUG 2017-07-25 08:47:58  [SqlExpJob] 导出文件我是测试啊,C:\QM\MAIL\TEST.XLS,select * from QM_TASK
-DEBUG 2017-07-25 08:47:58  [SqlExpJob] 导出成功
-DEBUG 2017-07-25 08:54:25  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
-DEBUG 2017-07-25 08:55:40  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
-DEBUG 2017-07-25 08:55:41  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
-DEBUG 2017-07-25 08:57:48  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
-DEBUG 2017-07-25 08:57:48  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
-DEBUG 2017-07-25 08:57:49  [SqlExpJob] 导出文件我是测试啊,C:\QM\MAIL\TEST.XLS,select * from QM_TASK
-DEBUG 2017-07-25 08:57:49  [SqlExpJob] 导出成功
-DEBUG 2017-07-25 08:58:33  [SqlExpJob] 导出文件我是测试啊,C:\QM\MAIL\TEST.XLS,select * from QM_TASK
-DEBUG 2017-07-25 08:58:33  [SqlExpJob] 导出成功
-DEBUG 2017-07-25 09:00:01  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
-DEBUG 2017-07-25 09:00:02  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
-INFO  2017-07-25 09:00:28  QM Server 开启服务
-DEBUG 2017-07-25 09:00:29  [SqlExpJob] 导出文件我是测试啊,C:\QM\MAIL\TEST.XLS,select * from QM_TASK
-DEBUG 2017-07-25 09:00:29  [SqlExpJob] 导出成功
-DEBUG 2017-07-25 09:00:53  [SqlExpJob] 导出文件我是测试啊,C:\QM\MAIL\TEST.XLS,select * from QM_TASK
-DEBUG 2017-07-25 09:00:53  [SqlExpJob] 导出成功
-DEBUG 2017-07-25 09:01:14  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
-DEBUG 2017-07-25 09:01:14  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
-DEBUG 2017-07-25 09:01:16  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
-DEBUG 2017-07-25 09:01:16  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
-DEBUG 2017-07-25 09:01:18  [SqlExpJob] 导出文件我是测试啊,C:\QM\MAIL\TEST.XLS,select * from QM_TASK
-DEBUG 2017-07-25 09:01:18  [SqlExpJob] 导出成功
-DEBUG 2017-07-25 09:03:53  [SqlExpJob] 导出文件我是测试啊,C:\QM\MAIL\TEST.XLS,select * from QM_TASK
-DEBUG 2017-07-25 09:03:53  [SqlExpJob] 导出成功
-DEBUG 2017-07-25 09:04:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
-DEBUG 2017-07-25 09:04:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
-DEBUG 2017-07-25 09:04:01  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
-DEBUG 2017-07-25 09:04:02  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
-DEBUG 2017-07-25 09:04:04  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
-DEBUG 2017-07-25 09:04:04  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
-DEBUG 2017-07-25 09:04:06  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
-INFO  2017-07-25 09:04:06  QM Server 开启服务
-DEBUG 2017-07-25 09:04:06  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
-DEBUG 2017-07-25 09:04:07  [SqlExpJob] 导出文件我是测试啊,C:\QM\MAIL\TEST.XLS,select * from QM_TASK
-DEBUG 2017-07-25 09:04:07  [SqlExpJob] 导出成功
-DEBUG 2017-07-25 09:05:10  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
-DEBUG 2017-07-25 09:05:10  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
-DEBUG 2017-07-25 09:05:11  [SqlExpJob] 导出文件我是测试啊,C:\QM\MAIL\TEST.XLS,select * from QM_TASK
-DEBUG 2017-07-25 09:05:11  [SqlExpJob] 导出成功
-DEBUG 2017-07-25 09:05:17  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
-INFO  2017-07-25 09:05:17  QM Server 开启服务
-DEBUG 2017-07-25 09:05:17  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
-DEBUG 2017-07-25 09:06:02  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
-DEBUG 2017-07-25 09:06:02  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
-DEBUG 2017-07-25 09:06:03  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
-DEBUG 2017-07-25 09:06:03  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
-DEBUG 2017-07-25 09:06:04  [SqlExpJob] 导出文件我是测试啊,C:\QM\MAIL\TEST.XLS,select * from QM_TASK
-DEBUG 2017-07-25 09:06:04  [SqlExpJob] 导出成功
-DEBUG 2017-07-25 09:07:02  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
-DEBUG 2017-07-25 09:07:02  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
-DEBUG 2017-07-25 09:07:02  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
-DEBUG 2017-07-25 09:07:02  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
-DEBUG 2017-07-25 09:07:03  [SqlExpJob] 导出文件我是测试啊,C:\QM\MAIL\TEST.XLS,select * from QM_TASK
-DEBUG 2017-07-25 09:07:03  [SqlExpJob] 导出成功
-DEBUG 2017-07-25 09:08:01  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
-DEBUG 2017-07-25 09:08:01  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
-DEBUG 2017-07-25 09:08:02  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
-DEBUG 2017-07-25 09:08:03  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
-DEBUG 2017-07-25 09:08:03  [SqlExpJob] 导出文件我是测试啊,C:\QM\MAIL\TEST.XLS,select * from QM_TASK
-DEBUG 2017-07-25 09:08:03  [SqlExpJob] 导出成功
-DEBUG 2017-07-25 09:09:02  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
-DEBUG 2017-07-25 09:09:03  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
-DEBUG 2017-07-25 09:09:03  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
-DEBUG 2017-07-25 09:09:03  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
-DEBUG 2017-07-25 09:09:04  [SqlExpJob] 导出文件我是测试啊,C:\QM\MAIL\TEST.XLS,select * from QM_TASK
-DEBUG 2017-07-25 09:09:04  [SqlExpJob] 导出成功
+INFO  2017-07-27 10:11:05  QM Server 开启服务
+DEBUG 2017-07-27 10:11:05  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
+DEBUG 2017-07-27 10:11:05  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
+DEBUG 2017-07-27 10:11:05  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
+DEBUG 2017-07-27 10:11:06  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
+DEBUG 2017-07-27 10:11:06  [SqlExpJob] 导出文件我是测试啊,C:\QM\MAIL\TEST.XLS,select * from QM_TASK
+DEBUG 2017-07-27 10:11:06  [SqlExpJob] 导出成功
+DEBUG 2017-07-27 10:12:25  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
+DEBUG 2017-07-27 10:12:25  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
+DEBUG 2017-07-27 10:12:25  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
+DEBUG 2017-07-27 10:12:25  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
+INFO  2017-07-27 10:12:39  QM Server 开启服务
+DEBUG 2017-07-27 10:13:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
+DEBUG 2017-07-27 10:13:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
+DEBUG 2017-07-27 10:13:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
+DEBUG 2017-07-27 10:13:01  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
+DEBUG 2017-07-27 10:13:01  [SqlExpJob] 导出文件我是测试啊,C:\QM\MAIL\TEST.XLS,select * from QM_TASK
+DEBUG 2017-07-27 10:13:01  [SqlExpJob] 导出成功
+INFO  2017-07-27 10:15:01  QM Server 开启服务
+DEBUG 2017-07-27 10:15:01  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
+DEBUG 2017-07-27 10:15:01  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
+DEBUG 2017-07-27 10:15:01  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
+DEBUG 2017-07-27 10:15:02  [SqlExpJob] 导出文件我是测试啊,C:\QM\MAIL\TEST.XLS,select * from QM_TASK
+DEBUG 2017-07-27 10:15:02  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
+DEBUG 2017-07-27 10:15:02  [SqlExpJob] 导出成功
+DEBUG 2017-07-27 10:16:25  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
+DEBUG 2017-07-27 10:16:25  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
+DEBUG 2017-07-27 10:16:28  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
+INFO  2017-07-27 10:21:10  QM Server 开启服务
+DEBUG 2017-07-27 10:21:10  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
+DEBUG 2017-07-27 10:21:10  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
+DEBUG 2017-07-27 10:21:10  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
+DEBUG 2017-07-27 10:21:11  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
+INFO  2017-07-27 10:21:24  QM Server 开启服务
+DEBUG 2017-07-27 10:22:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
+DEBUG 2017-07-27 10:22:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
+DEBUG 2017-07-27 10:22:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
+DEBUG 2017-07-27 10:22:01  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
+DEBUG 2017-07-27 10:22:01  [SqlExpJob] 导出文件我是测试啊,C:\QM\MAIL\TEST.XLS,select * from QM_TASK
+DEBUG 2017-07-27 10:22:01  [SqlExpJob] 导出成功
+DEBUG 2017-07-27 10:23:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
+DEBUG 2017-07-27 10:23:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
+DEBUG 2017-07-27 10:23:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
+DEBUG 2017-07-27 10:23:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
+DEBUG 2017-07-27 10:24:47  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
+DEBUG 2017-07-27 10:24:47  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
+DEBUG 2017-07-27 10:24:47  [SqlExpJob] 导出文件我是测试啊,C:\QM\MAIL\TEST.XLS,select * from QM_TASK
+DEBUG 2017-07-27 10:24:47  [SqlExpJob] 导出成功
+DEBUG 2017-07-27 10:24:52  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
+DEBUG 2017-07-27 10:24:52  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
+DEBUG 2017-07-27 10:25:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
+DEBUG 2017-07-27 10:25:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
+DEBUG 2017-07-27 10:25:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
+DEBUG 2017-07-27 10:25:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
+INFO  2017-07-27 10:39:32  QM Server 开启服务
+DEBUG 2017-07-27 10:39:32  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
+DEBUG 2017-07-27 10:39:32  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
+DEBUG 2017-07-27 10:39:33  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
+DEBUG 2017-07-27 10:39:40  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
+DEBUG 2017-07-27 10:40:09  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
+DEBUG 2017-07-27 10:40:09  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
+DEBUG 2017-07-27 10:40:09  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
+DEBUG 2017-07-27 10:40:15  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
+DEBUG 2017-07-27 10:40:15  [SqlExpJob] 导出文件我是测试啊,C:\QM\MAIL\TEST.XLS,select * from QM_TASK
+DEBUG 2017-07-27 10:40:29  [SqlExpJob] 导出文件我是测试啊,C:\QM\MAIL\TEST.XLS,select * from QM_TASK
+DEBUG 2017-07-27 10:40:40  [SqlExpJob] 导出成功
+INFO  2017-07-27 10:49:06  QM Server 开启服务
+DEBUG 2017-07-27 10:49:06  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
+DEBUG 2017-07-27 10:49:06  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
+INFO  2017-07-27 10:50:27  QM Server 开启服务
+DEBUG 2017-07-27 10:50:50  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
+INFO  2017-07-27 10:53:02  QM Server 开启服务
+DEBUG 2017-07-27 10:53:07  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
+DEBUG 2017-07-27 10:53:08  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
+INFO  2017-07-27 01:14:47  QM Server 开启服务
+DEBUG 2017-07-27 01:14:48  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
+DEBUG 2017-07-27 01:14:48  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
+DEBUG 2017-07-27 01:14:49  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
+DEBUG 2017-07-27 01:14:50  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
+DEBUG 2017-07-27 01:14:53  [SqlExpJob] 导出文件我是测试啊,C:\QM\MAIL\TEST.XLS,select * from mesft.WO_PO  where rownum < 1000
+DEBUG 2017-07-27 01:14:54  [SqlExpJob] 导出成功
+DEBUG 2017-07-27 01:15:03  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
+DEBUG 2017-07-27 01:15:06  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
+DEBUG 2017-07-27 01:15:11  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
+DEBUG 2017-07-27 01:15:13  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
+DEBUG 2017-07-27 01:15:13  [SqlExpJob] 导出文件我是测试啊,C:\QM\MAIL\TEST.XLS,select * from mesft.WO_PO  where rownum < 1000
+DEBUG 2017-07-27 01:16:31  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
+DEBUG 2017-07-27 01:16:31  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
+DEBUG 2017-07-27 01:16:32  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
+DEBUG 2017-07-27 01:16:32  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
+DEBUG 2017-07-27 01:16:32  [SqlExpJob] 导出文件我是测试啊,C:\QM\MAIL\TEST.XLS,select * from mesft.WO_PO  where rownum < 1000
+DEBUG 2017-07-27 01:17:28  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
+DEBUG 2017-07-27 01:17:28  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
+DEBUG 2017-07-27 01:17:29  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
+DEBUG 2017-07-27 01:17:29  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
+DEBUG 2017-07-27 01:17:29  [SqlExpJob] 导出文件我是测试啊,C:\QM\MAIL\TEST.XLS,select * from mesft.WO_PO  where rownum < 1000
+DEBUG 2017-07-27 01:19:42  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
+DEBUG 2017-07-27 01:19:42  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
+DEBUG 2017-07-27 01:19:42  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
+DEBUG 2017-07-27 01:19:43  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
+DEBUG 2017-07-27 01:19:43  [SqlExpJob] 导出文件我是测试啊,C:\QM\MAIL\TEST.XLS,select * from mesft.WO_PO  where rownum < 1000
+INFO  2017-07-27 01:27:48  QM Server 开启服务
+DEBUG 2017-07-27 01:27:49  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
+DEBUG 2017-07-27 01:27:49  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
+DEBUG 2017-07-27 01:27:50  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
+DEBUG 2017-07-27 01:27:50  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
+DEBUG 2017-07-27 01:27:50  [SqlExpJob] 导出文件我是测试啊,C:\QM\MAIL\TEST.XLS,select * from mesft.WO_PO  where rownum < 1000
+DEBUG 2017-07-27 01:27:50  [SqlExpJob] 导出成功
+DEBUG 2017-07-27 01:28:58  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
+DEBUG 2017-07-27 01:28:59  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
+DEBUG 2017-07-27 01:29:02  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
+DEBUG 2017-07-27 01:29:03  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
+DEBUG 2017-07-27 01:29:05  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
+DEBUG 2017-07-27 01:29:05  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
+DEBUG 2017-07-27 01:29:05  [SqlExpJob] 导出文件我是测试啊,C:\QM\MAIL\TEST.XLS,select * from mesft.WO_PO  where rownum < 1000
+INFO  2017-07-27 01:43:33  QM Server 开启服务
+DEBUG 2017-07-27 01:43:34  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
+DEBUG 2017-07-27 01:43:34  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
+DEBUG 2017-07-27 01:43:34  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
+DEBUG 2017-07-27 01:43:34  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
+DEBUG 2017-07-27 01:43:35  [SqlExpJob] 导出文件我是测试啊,C:\QM\MAIL\TEST.XLS,select * from mesft.WO_PO  where rownum < 1000
+DEBUG 2017-07-27 01:43:35  [SqlExpJob] 导出成功
+DEBUG 2017-07-27 01:44:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
+DEBUG 2017-07-27 01:44:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
+DEBUG 2017-07-27 01:44:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
+DEBUG 2017-07-27 01:44:01  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
+DEBUG 2017-07-27 01:44:01  [SqlExpJob] 导出文件我是测试啊,C:\QM\MAIL\TEST.XLS,select * from mesft.WO_PO  where rownum < 1000
+INFO  2017-07-27 01:47:41  QM Server 开启服务
+DEBUG 2017-07-27 01:47:41  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
+DEBUG 2017-07-27 01:47:42  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
+DEBUG 2017-07-27 01:47:42  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
+DEBUG 2017-07-27 01:47:42  [SqlExpJob] 导出文件我是测试啊,C:\QM\MAIL\TEST.XLS,select * from mesft.WO_PO  where rownum < 1000
+DEBUG 2017-07-27 01:47:43  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
+DEBUG 2017-07-27 01:47:46  [SqlExpJob] 导出成功
+DEBUG 2017-07-27 01:48:51  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
+DEBUG 2017-07-27 01:48:51  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
+DEBUG 2017-07-27 01:48:51  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
+DEBUG 2017-07-27 01:48:51  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
+DEBUG 2017-07-27 01:48:52  [SqlExpJob] 导出文件我是测试啊,C:\QM\MAIL\TEST.XLS,select * from mesft.WO_PO  where rownum < 1000
+DEBUG 2017-07-27 01:48:52  [SqlExpJob] 导出成功
+DEBUG 2017-07-27 01:49:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
+DEBUG 2017-07-27 01:49:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
+DEBUG 2017-07-27 01:49:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
+DEBUG 2017-07-27 01:49:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
+DEBUG 2017-07-27 01:49:00  [SqlExpJob] 导出文件我是测试啊,C:\QM\MAIL\TEST.XLS,select * from mesft.WO_PO  where rownum < 1000
+DEBUG 2017-07-27 01:49:00  [SqlExpJob] 导出成功
+DEBUG 2017-07-27 01:50:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
+DEBUG 2017-07-27 01:50:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
+DEBUG 2017-07-27 01:50:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
+DEBUG 2017-07-27 01:50:00  [SqlExpJob] 导出文件我是测试啊,C:\QM\MAIL\TEST.XLS,select * from mesft.WO_PO  where rownum < 1000
+DEBUG 2017-07-27 01:50:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
+DEBUG 2017-07-27 01:50:00  [SqlExpJob] 导出成功
+DEBUG 2017-07-27 01:51:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
+DEBUG 2017-07-27 01:51:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
+DEBUG 2017-07-27 01:51:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
+DEBUG 2017-07-27 01:51:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
+DEBUG 2017-07-27 01:51:00  [SqlExpJob] 导出文件我是测试啊,C:\QM\MAIL\TEST.XLS,select * from mesft.WO_PO  where rownum < 1000
+DEBUG 2017-07-27 01:51:00  [SqlExpJob] 导出成功
+DEBUG 2017-07-27 01:52:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
+DEBUG 2017-07-27 01:52:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
+DEBUG 2017-07-27 01:52:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
+DEBUG 2017-07-27 01:52:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
+DEBUG 2017-07-27 01:52:00  [SqlExpJob] 导出文件我是测试啊,C:\QM\MAIL\TEST.XLS,select * from mesft.WO_PO  where rownum < 1000
+DEBUG 2017-07-27 01:52:00  [SqlExpJob] 导出成功
+DEBUG 2017-07-27 01:53:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
+DEBUG 2017-07-27 01:53:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
+DEBUG 2017-07-27 01:53:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
+DEBUG 2017-07-27 01:53:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
+DEBUG 2017-07-27 01:53:00  [SqlExpJob] 导出文件我是测试啊,C:\QM\MAIL\TEST.XLS,select * from mesft.WO_PO  where rownum < 1000
+DEBUG 2017-07-27 01:53:00  [SqlExpJob] 导出成功
+DEBUG 2017-07-27 01:54:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
+DEBUG 2017-07-27 01:54:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
+DEBUG 2017-07-27 01:54:00  [SqlExpJob] 导出文件我是测试啊,C:\QM\MAIL\TEST.XLS,select * from mesft.WO_PO  where rownum < 1000
+DEBUG 2017-07-27 01:54:00  [SqlExpJob] 导出成功
+DEBUG 2017-07-27 01:54:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
+DEBUG 2017-07-27 01:54:01  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
+DEBUG 2017-07-27 01:55:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
+DEBUG 2017-07-27 01:55:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
+DEBUG 2017-07-27 01:55:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
+DEBUG 2017-07-27 01:55:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
+DEBUG 2017-07-27 01:55:00  [SqlExpJob] 导出文件我是测试啊,C:\QM\MAIL\TEST.XLS,select * from mesft.WO_PO  where rownum < 1000
+DEBUG 2017-07-27 01:55:00  [SqlExpJob] 导出成功
+INFO  2017-07-27 04:22:55  QM Server 开启服务
+DEBUG 2017-07-27 04:22:56  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
+DEBUG 2017-07-27 04:22:56  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
+DEBUG 2017-07-27 04:22:56  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
+DEBUG 2017-07-27 04:22:57  [SqlExpJob] 导出文件我是测试啊,C:\QM\MAIL\TEST.XLS,select * from mesft.WO_PO  where rownum < 1000
+DEBUG 2017-07-27 04:22:57  [SqlExpJob] 导出成功
+DEBUG 2017-07-27 04:22:57  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
+DEBUG 2017-07-27 04:23:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
+DEBUG 2017-07-27 04:23:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
+DEBUG 2017-07-27 04:23:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
+DEBUG 2017-07-27 04:23:00  [SqlExpJob] 导出文件我是测试啊,C:\QM\MAIL\TEST.XLS,select * from mesft.WO_PO  where rownum < 1000
+DEBUG 2017-07-27 04:23:00  [SqlExpJob] 导出成功
+DEBUG 2017-07-27 04:23:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
+DEBUG 2017-07-27 04:24:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
+DEBUG 2017-07-27 04:24:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
+DEBUG 2017-07-27 04:24:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
+DEBUG 2017-07-27 04:24:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
+DEBUG 2017-07-27 04:24:00  [SqlExpJob] 导出文件我是测试啊,C:\QM\MAIL\TEST.XLS,select * from mesft.WO_PO  where rownum < 1000
+DEBUG 2017-07-27 04:24:00  [SqlExpJob] 导出成功
+DEBUG 2017-07-27 04:25:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
+DEBUG 2017-07-27 04:25:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
+DEBUG 2017-07-27 04:25:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
+DEBUG 2017-07-27 04:25:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
+DEBUG 2017-07-27 04:25:00  [SqlExpJob] 导出文件我是测试啊,C:\QM\MAIL\TEST.XLS,select * from mesft.WO_PO  where rownum < 1000
+DEBUG 2017-07-27 04:25:00  [SqlExpJob] 导出成功
+DEBUG 2017-07-27 04:26:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
+DEBUG 2017-07-27 04:26:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
+DEBUG 2017-07-27 04:26:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
+DEBUG 2017-07-27 04:26:00  [SqlExpJob] 导出文件我是测试啊,C:\QM\MAIL\TEST.XLS,select * from mesft.WO_PO  where rownum < 1000
+DEBUG 2017-07-27 04:26:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
+DEBUG 2017-07-27 04:26:00  [SqlExpJob] 导出成功
+DEBUG 2017-07-27 04:27:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
+DEBUG 2017-07-27 04:27:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
+DEBUG 2017-07-27 04:27:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
+DEBUG 2017-07-27 04:27:00  [SqlExpJob] 导出文件我是测试啊,C:\QM\MAIL\TEST.XLS,select * from mesft.WO_PO  where rownum < 1000
+DEBUG 2017-07-27 04:27:00  [SqlExpJob] 导出成功
+DEBUG 2017-07-27 04:27:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
+DEBUG 2017-07-27 04:28:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
+DEBUG 2017-07-27 04:28:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
+DEBUG 2017-07-27 04:28:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
+DEBUG 2017-07-27 04:28:00  [SqlExpJob] 导出文件我是测试啊,C:\QM\MAIL\TEST.XLS,select * from mesft.WO_PO  where rownum < 1000
+DEBUG 2017-07-27 04:28:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
+DEBUG 2017-07-27 04:28:00  [SqlExpJob] 导出成功
+DEBUG 2017-07-27 04:29:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
+DEBUG 2017-07-27 04:29:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
+DEBUG 2017-07-27 04:29:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
+DEBUG 2017-07-27 04:29:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
+DEBUG 2017-07-27 04:29:00  [SqlExpJob] 导出文件我是测试啊,C:\QM\MAIL\TEST.XLS,select * from mesft.WO_PO  where rownum < 1000
+DEBUG 2017-07-27 04:29:00  [SqlExpJob] 导出成功
+INFO  2017-07-27 05:17:03  QM Server 开启服务
+DEBUG 2017-07-27 05:17:04  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
+DEBUG 2017-07-27 05:17:04  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
+DEBUG 2017-07-27 05:17:04  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
+DEBUG 2017-07-27 05:17:04  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
+DEBUG 2017-07-27 05:17:04  [SqlExpJob] 导出文件我是测试啊,C:\QM\MAIL\TEST.XLS,select * from mesft.WO_PO  where rownum < 1000
+DEBUG 2017-07-27 05:17:05  [SqlExpJob] 导出成功
+INFO  2017-07-27 05:18:47  QM Server 开启服务
+DEBUG 2017-07-27 05:18:47  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
+DEBUG 2017-07-27 05:18:47  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
+DEBUG 2017-07-27 05:18:48  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
+DEBUG 2017-07-27 05:18:48  [SqlExpJob] 导出文件我是测试啊,C:\QM\MAIL\TEST.XLS,select * from mesft.WO_PO  where rownum < 1000
+DEBUG 2017-07-27 05:18:48  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
+DEBUG 2017-07-27 05:18:48  [SqlExpJob] 导出成功
+DEBUG 2017-07-27 05:19:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
+DEBUG 2017-07-27 05:19:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
+DEBUG 2017-07-27 05:19:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
+DEBUG 2017-07-27 05:19:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
+DEBUG 2017-07-27 05:19:00  [SqlExpJob] 导出文件我是测试啊,C:\QM\MAIL\TEST.XLS,select * from mesft.WO_PO  where rownum < 1000
+DEBUG 2017-07-27 05:19:00  [SqlExpJob] 导出成功
+DEBUG 2017-07-27 05:20:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
+DEBUG 2017-07-27 05:20:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
+DEBUG 2017-07-27 05:20:00  [SqlExpJob] 导出文件我是测试啊,C:\QM\MAIL\TEST.XLS,select * from mesft.WO_PO  where rownum < 1000
+DEBUG 2017-07-27 05:20:00  [SqlExpJob] 导出成功
+DEBUG 2017-07-27 05:20:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
+DEBUG 2017-07-27 05:20:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
+DEBUG 2017-07-27 05:21:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
+DEBUG 2017-07-27 05:21:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
+DEBUG 2017-07-27 05:21:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
+DEBUG 2017-07-27 05:21:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
+DEBUG 2017-07-27 05:21:00  [SqlExpJob] 导出文件我是测试啊,C:\QM\MAIL\TEST.XLS,select * from mesft.WO_PO  where rownum < 1000
+DEBUG 2017-07-27 05:21:00  [SqlExpJob] 导出成功
+DEBUG 2017-07-27 05:22:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
+DEBUG 2017-07-27 05:22:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
+DEBUG 2017-07-27 05:22:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
+DEBUG 2017-07-27 05:22:00  [SqlExpJob] 导出文件我是测试啊,C:\QM\MAIL\TEST.XLS,select * from mesft.WO_PO  where rownum < 1000
+DEBUG 2017-07-27 05:22:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
+DEBUG 2017-07-27 05:22:00  [SqlExpJob] 导出成功

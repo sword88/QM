@@ -12,18 +12,15 @@ namespace QM.Core.Mail
     public class QMMail : IMail
     {
         private string _subject;
-        private string _body;
-        private string _from = "AllianceWH@xxx.COM";
-        private string _fromName;
+        //private string _body;
+        private string _from = "12ljx12@163.COM";
+        private string _fromName = "12ljx12";
         private string _recipientName;
-        private string _mailDomain = "10.68.10.8";
+        private string _mailDomain = "smtp.163.com";
         private int _mailserverport = 25;
-        private string _username;
-        private string _password;
+        private string _username="12ljx12@163.com";
+        private string _password="1111";
         private bool _html;
-        private string _recipient;
-        private string _recipientCC;
-        private string _recipientBCC;
         private string _priority;
         private MailMessage myEmail = new MailMessage();
 
@@ -48,17 +45,17 @@ namespace QM.Core.Mail
         /// <summary>
         /// 邮件正文
         /// </summary>
-        public string Body
-        {
-            get
-            {
-                return this._body;
-            }
-            set
-            {
-                this._body = value;
-            }
-        }
+        //public string Body
+        //{
+        //    get
+        //    {
+        //        return this._body;
+        //    }
+        //    set
+        //    {
+        //        this._body = value ;
+        //    }
+        //}
 
 
         /// <summary>
@@ -100,11 +97,7 @@ namespace QM.Core.Mail
         {
             get
             {
-                return this._recipientName;
-            }
-            set
-            {
-                this._recipientName = value;
+                return this.myEmail.To.ToString();
             }
         }
 
@@ -191,33 +184,48 @@ namespace QM.Core.Mail
             }
         }
 
+        /// <summary>
+        /// 发送优先级
+        /// </summary>
+        public string Priority
+        {
+            get
+            {
+                return this._priority;
+            }
+            set
+            {
+                this._priority = value;
+            }
+        }
+
 
 
         //收件人的邮箱地址
-        public bool AddRecipient(params string[] username)
+        public bool AddRecipient(string username)
         {
-            //this._recipient= null;
-            this._recipient = username[0].Trim();
+            this.myEmail.To.Add(username);
 
             return true;
         }
 
 
         //抄送人的邮箱地址
-        public bool AddRecipientCC(params string[] username)
+        public bool AddRecipientCC(string username)
         {
-            this._recipientCC = username[0].Trim();
+            this.myEmail.CC.Add(username);
 
             return true;
         }
 
         //密送人的邮箱地址
-        public bool AddRecipientBCC(params string[] username)
+        public bool AddRecipientBCC(string username)
         {
-            this._recipientBCC = username[0].Trim();
+            this.myEmail.Bcc.Add(username);
 
             return true;
         }
+       
 
         /// <summary>
         /// 将字符串编码为Base64字符串
@@ -248,11 +256,8 @@ namespace QM.Core.Mail
         {            
             Encoding eEncod = Encoding.GetEncoding("utf-8");
             myEmail.From = new System.Net.Mail.MailAddress(this.From, this.Subject, eEncod);
-            myEmail.To.Add(this._recipient);
-            myEmail.CC.Add(this._recipientCC);
             myEmail.Subject = this.Subject;
             myEmail.IsBodyHtml = true;
-            myEmail.Body = this.Body;
             myEmail.Priority = System.Net.Mail.MailPriority.Normal;
             myEmail.BodyEncoding = Encoding.GetEncoding("utf-8");
             //myEmail.BodyFormat = this.Html?MailFormat.Html:MailFormat.Text; //邮件形式，.Text、.Html 
@@ -274,16 +279,20 @@ namespace QM.Core.Mail
             System.Net.Mail.SmtpClient smtp = new System.Net.Mail.SmtpClient();
             smtp.Host = this.MailDomain;
             smtp.Port = this.MailDomainPort;
-            smtp.Credentials = new System.Net.NetworkCredential(this.MailServerUserName, this.MailServerPassWord);
-            //smtp.UseDefaultCredentials = true;
-            //smtp.DeliveryMethod = System.Net.Mail.SmtpDeliveryMethod.Network;
+            smtp.UseDefaultCredentials = true;
+            smtp.Credentials = new System.Net.NetworkCredential(this.MailServerUserName, this.MailServerPassWord);            
+            smtp.DeliveryMethod = System.Net.Mail.SmtpDeliveryMethod.Network;
 
             //当不是25端口(gmail:587)
             if (this.MailDomainPort != 25)
             {
                 smtp.EnableSsl = true;
             }
-            //System.Web.Mail.SmtpMail.SmtpServer = this.MailDomain;
+            else
+            {
+                smtp.EnableSsl = false;
+            }
+            System.Web.Mail.SmtpMail.SmtpServer = this.MailDomain;
 
             try
             {
@@ -307,5 +316,47 @@ namespace QM.Core.Mail
 
             return true;
         }
+
+
+        /// <summary>
+        /// 邮件整体样式
+        /// </summary>
+        /// <returns></returns>
+        public void AddBody(string body,string reportId)
+        {
+            StringBuilder sb = new StringBuilder();
+            //css
+            sb.Append("<style type=\"text/css\">");
+            sb.Append("html{word-wrap:break-word;}");
+            sb.Append("body{font-size:14px;font-family:arial,verdana,sans-serif;line-height:1.666;padding:10px 8px;margin:0;overflow:auto}");
+            sb.Append("pre {");
+            sb.Append("white-space: pre-wrap;");
+            sb.Append("white-space: -moz-pre-wrap;");
+            sb.Append("white-space: -pre-wrap;");
+            sb.Append("white-space: -o-pre-wrap;");
+            sb.Append("word-wrap: break-word;");
+            sb.Append("} ");
+            sb.Append("html, body {margin: 0; padding: 0; font-size: 12px;font-family:微软雅黑,宋体,Arial;}");
+            sb.Append(".gray{color:#C0C0C0;padding:0 !important;}");
+            sb.Append("#main{padding:5px}");
+            sb.Append("#main div{padding:0 0 30px 0;}");
+            sb.Append("#main .content{text-indent:20px;}");
+            sb.Append("#main #code{color:#FF0000;padding:3px;background-color:#C0C0C0;font-size:16px;}");
+            sb.Append("</style>");
+            //body
+            sb.Append("<div id=\"main\">");
+            sb.Append(body);
+            sb.Append("</div>");
+            //sign
+            sb.Append("  <br>");
+            sb.Append("<div class=\"content gray\">Report ID=" + reportId + "</ div>");
+            sb.Append("<div class=\"content gray\">Please Note:  This message is a System Generated E-Mail.<br/>");
+            sb.Append(" Please don't reply to this sender.<br/>");
+            sb.Append(" If you have any question about this mail, please contact helpdesk.");
+            sb.Append("</ div>");
+
+            myEmail.Body = sb.ToString();
+        }
+
     }
 }
