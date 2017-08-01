@@ -3,6 +3,9 @@ using System.Text;
 using System.Collections.Generic;
 using System.Net.Mime;
 using System.Net.Mail;
+using QM.Core.Exception;
+using QM.Core.Environments;
+using QM.Core.Log;
 
 namespace QM.Core.Mail
 {
@@ -11,6 +14,7 @@ namespace QM.Core.Mail
     /// </summary>
     public class QMMail : IMail
     {
+        private ILogger log = QMStarter.CreateQMLogger(typeof(QMMail));
         private string _subject;
         //private string _body;
         private string _from = "12ljx12@163.COM";
@@ -18,8 +22,8 @@ namespace QM.Core.Mail
         private string _recipientName;
         private string _mailDomain = "smtp.163.com";
         private int _mailserverport = 25;
-        private string _username="12ljx12@163.com";
-        private string _password="1111";
+        private string _username= "12ljx12@163.COM";
+        private string _password="123";
         private bool _html;
         private string _priority;
         private MailMessage myEmail = new MailMessage();
@@ -298,9 +302,14 @@ namespace QM.Core.Mail
             {
                 smtp.Send(myEmail);
             }
-            catch (System.Net.Mail.SmtpException e)
+            catch (SmtpException ex)
             {
-                string result = e.Message;
+                log.Fatal(string.Format("QMMail=>Send发生严重错误，{0}", ex.Message));
+                return false;
+            }
+            catch (QMException ex)
+            {
+                log.Fatal(string.Format("QMMail=>Send发生严重错误，{0}", ex.Message));
                 return false;
             }
             finally
@@ -308,7 +317,7 @@ namespace QM.Core.Mail
                 //一定要释放该对象,否则无法删除附件
                 foreach (Attachment attach in myEmail.Attachments)
                 {
-                    attach.Dispose();   
+                    attach.Dispose();
                 }
                 myEmail.Dispose();
                 smtp.Dispose();

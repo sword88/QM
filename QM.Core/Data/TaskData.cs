@@ -9,6 +9,7 @@ using System.Data;
 using System.Data.OleDb;
 using QM.Core.Exception;
 using System.IO;
+using Oracle.ManagedDataAccess.Client;
 
 namespace QM.Core.Data
 {
@@ -25,14 +26,15 @@ namespace QM.Core.Data
 
             IList<Tasks> task = new List<Tasks>();
             Tasks t = null;
+            OracleDataReader dr;
             try
             {
                 string sql = "select * from qm_task where taskstate = 'Y'";
-                OleDbDataReader dr = qmdb.ExecuteReader(sql);
+                dr = qmdb.ExecuteReader(CommandType.Text,sql);
                 while (dr.Read())
                 {
                     t = new Tasks();
-                    t.idx = dr["IDX"].ToString();                    
+                    t.idx = dr["IDX"].ToString();
                     t.taskClsType = dr["TASKCLSTYPE"].ToString();
                     t.taskCount = dr["TASKCOUNT"].ToString();
                     t.taskCreateTime = DateTime.Parse(dr["TASKCREATETIME"].ToString());
@@ -48,7 +50,7 @@ namespace QM.Core.Data
                     {
                         t.taskLastErrorTime = DateTime.Parse(dr["TASKLASTERRORTIME"].ToString());
                     }
-                    if(dr["TASKERRORCOUNT"].ToString() != "")
+                    if (dr["TASKERRORCOUNT"].ToString() != "")
                     {
                         t.taskErrorCount = int.Parse(dr["TASKERRORCOUNT"].ToString());
                     }
@@ -64,10 +66,15 @@ namespace QM.Core.Data
                     t.taskSendby = dr["TASKSENDBY"].ToString();
                     task.Add(t);
                 }
+                dr.Close();
             }
             catch (QMException ex)
             {
                 throw ex;
+            }
+            finally
+            {
+                qmdb.Disponse();
             }
 
             return task;
@@ -81,17 +88,18 @@ namespace QM.Core.Data
         public Tasks Detail(string idx)
         {
             Tasks t = null;
+            OracleDataReader dr;
             try
             {
-                string sql = "select * from qm_task where idx = ?";
-                OleDbParameter[] param = new OleDbParameter[] {
-                    new OleDbParameter("idx",idx)
+                string sql = "select * from qm_task where idx = :idx";
+                OracleParameter[] param = new OracleParameter[] {
+                    new OracleParameter(":idx",idx)
                 };
-                OleDbDataReader dr = qmdb.ExecuteReader(sql,param);
+                dr = qmdb.ExecuteReader(CommandType.Text,sql, param);
                 while (dr.Read())
                 {
                     t = new Tasks();
-                    t.idx = dr["IDX"].ToString();                    
+                    t.idx = dr["IDX"].ToString();
                     t.taskClsType = dr["TASKCLSTYPE"].ToString();
                     t.taskCount = dr["TASKCOUNT"].ToString();
                     if (dr["TASKLASTSTARTTIME"].ToString() != "")
@@ -121,10 +129,16 @@ namespace QM.Core.Data
                     t.taskRemark = dr["TASKREMARK"].ToString();
                     t.taskSendby = dr["TASKSENDBY"].ToString();
                 }
+
+                dr.Close();
             }
             catch (QMException ex)
             {
                 throw ex;
+            }
+            finally
+            {
+                qmdb.Disponse();
             }
 
             return t;
@@ -153,38 +167,38 @@ namespace QM.Core.Data
                                      taskclstype,
                                      tasktype) 
                             values
-                                    (?,
-                                     ?,
-                                     ?,
-                                     ?,
-                                     ?,
-                                     ?,
-                                     ?,
-                                     ?,
-                                     ?,
-                                     ?,
-                                     ?,
-                                     ?,
-                                     ?)";
+                                    (:idx,
+                                     :taskname,
+                                     :tasksendby,
+                                     :taskcron,
+                                     :taskfile,
+                                     :taskparm,
+                                     :taskcreatetime,
+                                     :taskstate,
+                                     :taskremark,
+                                     :taskdbcon,
+                                     :taskexpfile,
+                                     :taskclstype,
+                                     :tasktype)";
 
-                OleDbParameter[] param = new OleDbParameter[]
+                OracleParameter[] param = new OracleParameter[]
                 {
-                    new OleDbParameter("idx",t.idx),
-                    new OleDbParameter("taskname",t.taskName),
-                    new OleDbParameter("tasksendby",t.taskSendby),
-                    new OleDbParameter("taskcron",t.taskCron),
-                    new OleDbParameter("taskfile",t.taskFile),
-                    new OleDbParameter("taskparm",t.taskParm),
-                    new OleDbParameter("taskcreatetime",t.taskCreateTime),
-                    new OleDbParameter("taskstate",t.taskState),
-                    new OleDbParameter("taskremark",t.taskRemark),
-                    new OleDbParameter("taskdbcon",t.taskDBCon),
-                    new OleDbParameter("taskexpfile",t.taskExpFile),
-                    new OleDbParameter("taskclstype",t.taskClsType),
-                    new OleDbParameter("tasktype", t.taskType)
+                    new OracleParameter(":idx",t.idx),
+                    new OracleParameter(":taskname",t.taskName),
+                    new OracleParameter(":tasksendby",t.taskSendby),
+                    new OracleParameter(":taskcron",t.taskCron),
+                    new OracleParameter(":taskfile",t.taskFile),
+                    new OracleParameter(":taskparm",t.taskParm),
+                    new OracleParameter(":taskcreatetime",t.taskCreateTime),
+                    new OracleParameter(":taskstate",t.taskState),
+                    new OracleParameter(":taskremark",t.taskRemark),
+                    new OracleParameter(":taskdbcon",t.taskDBCon),
+                    new OracleParameter(":taskexpfile",t.taskExpFile),
+                    new OracleParameter(":taskclstype",t.taskClsType),
+                    new OracleParameter(":tasktype", t.taskType)
                 };
 
-                qmdb.ExecuteNonQuery(sql, param);
+                qmdb.ExecuteNonQuery(sql,CommandType.Text, param);
             }
             catch (QMException ex)
             {
@@ -201,38 +215,38 @@ namespace QM.Core.Data
             try
             {
                 string sql = @"update qm_task set 
-                                     taskname = ?,
-                                     tasksendby = ?,
-                                     taskcron = ? ,
-                                     taskfile = ?,
-                                     taskparm = ?,
-                                     taskcreatetime = ?,
-                                     taskstate = ?,
-                                     taskremark = ?,
-                                     taskdbcon = ?,
-                                     taskexpfile = ?,
-                                     taskclstype = ?,
-                                     tasktype = ?
-                                where idx = ?";
+                                     taskname = :taskname,
+                                     tasksendby = :tasksendby,
+                                     taskcron = :taskcron ,
+                                     taskfile = :taskfile,
+                                     taskparm = :taskparm,
+                                     taskcreatetime = :taskcreatetime,
+                                     taskstate = :taskstate,
+                                     taskremark = :taskremark,
+                                     taskdbcon = :taskdbcon,
+                                     taskexpfile = :taskexpfile,
+                                     taskclstype = :taskclstype,
+                                     tasktype = :tasktype
+                                where idx = :idx";
 
-                OleDbParameter[] param = new OleDbParameter[]
+                OracleParameter[] param = new OracleParameter[]
                 {
-                    new OleDbParameter("taskname",t.taskName),
-                    new OleDbParameter("tasksendby",t.taskSendby),
-                    new OleDbParameter("taskcron",t.taskCron),
-                    new OleDbParameter("taskfile",t.taskFile),
-                    new OleDbParameter("taskparm",t.taskParm),
-                    new OleDbParameter("taskcreatetime",t.taskCreateTime),
-                    new OleDbParameter("taskstate",t.taskState),
-                    new OleDbParameter("taskremark",t.taskRemark),
-                    new OleDbParameter("taskdbcon",t.taskDBCon),
-                    new OleDbParameter("taskexpfile",t.taskExpFile),
-                    new OleDbParameter("taskclstype",t.taskClsType),
-                    new OleDbParameter("tasktype", t.taskType),
-                    new OleDbParameter("idx",t.idx)                                                                                                                                                                                                        
+                    new OracleParameter(":taskname",t.taskName),
+                    new OracleParameter(":tasksendby",t.taskSendby),
+                    new OracleParameter(":taskcron",t.taskCron),
+                    new OracleParameter(":taskfile",t.taskFile),
+                    new OracleParameter(":taskparm",t.taskParm),
+                    new OracleParameter(":taskcreatetime",t.taskCreateTime),
+                    new OracleParameter(":taskstate",t.taskState),
+                    new OracleParameter(":taskremark",t.taskRemark),
+                    new OracleParameter(":taskdbcon",t.taskDBCon),
+                    new OracleParameter(":taskexpfile",t.taskExpFile),
+                    new OracleParameter(":taskclstype",t.taskClsType),
+                    new OracleParameter(":tasktype", t.taskType),
+                    new OracleParameter(":idx",t.idx)                                                                                                                                                                                                        
                 };
 
-                qmdb.ExecuteNonQuery(sql, param);
+                qmdb.ExecuteNonQuery(sql,CommandType.Text, param);
             }
             catch (QMException ex)
             {
@@ -250,15 +264,15 @@ namespace QM.Core.Data
             bool result = false;
             try
             {
-                string sql = "update qm_task set taskstate = ? where idx = ?";
-                OleDbParameter[] param = new OleDbParameter[]
+                string sql = "update qm_task set taskstate = :taskstate where idx = :idx";
+                OracleParameter[] param = new OracleParameter[]
                 {
-                    new OleDbParameter("taskstate",state),
-                    new OleDbParameter("idx",idx)
+                    new OracleParameter(":taskstate",state),
+                    new OracleParameter(":idx",idx)
                     
                 };
 
-                qmdb.ExecuteNonQuery(sql, param);
+                qmdb.ExecuteNonQuery(sql,CommandType.Text, param);
 
                 result = true;
             }
@@ -279,14 +293,14 @@ namespace QM.Core.Data
         {
             try
             {
-                string sql = "update qm_task set tasklaststarttime = ? where idx = ?";
-                OleDbParameter[] param = new OleDbParameter[]
+                string sql = "update qm_task set tasklaststarttime = :tasklaststarttime where idx = :idx";
+                OracleParameter[] param = new OracleParameter[]
                 {
-                    new OleDbParameter("tasklaststarttime",lastStartTime),
-                    new OleDbParameter("idx",idx)                    
+                    new OracleParameter(":tasklaststarttime",lastStartTime),
+                    new OracleParameter(":idx",idx)                    
                 };
 
-                qmdb.ExecuteNonQuery(sql, param);
+                qmdb.ExecuteNonQuery(sql, CommandType.Text,param);
             }
             catch (QMException ex)
             {
@@ -303,14 +317,14 @@ namespace QM.Core.Data
         {
             try
             {
-                string sql = "update qm_task set tasklastendtime = ?,taskcount = taskcount + 1  where idx = ?";
-                OleDbParameter[] param = new OleDbParameter[]
+                string sql = "update qm_task set tasklastendtime = :tasklastendtime,taskcount = taskcount + 1  where idx = :idx";
+                OracleParameter[] param = new OracleParameter[]
                 {
-                    new OleDbParameter("tasklastendtime",lastEndTime),
-                    new OleDbParameter("idx",idx)                  
+                    new OracleParameter(":tasklastendtime",lastEndTime),
+                    new OracleParameter(":idx",idx)                  
                 };
 
-                qmdb.ExecuteNonQuery(sql, param);
+                qmdb.ExecuteNonQuery(sql,CommandType.Text, param);               
             }
             catch (QMException ex)
             {
@@ -327,14 +341,14 @@ namespace QM.Core.Data
         {
             try
             {
-                string sql = "update qm_task set tasklasterrortime = ?,taskerrorcount = taskerrorcount + 1  where idx = ?";
-                OleDbParameter[] param = new OleDbParameter[]
+                string sql = "update qm_task set tasklasterrortime = :tasklasterrortime,taskerrorcount = taskerrorcount + 1  where idx = :idx";
+                OracleParameter[] param = new OracleParameter[]
                 {
-                    new OleDbParameter("tasklasterrortime",lastErrorTime),
-                    new OleDbParameter("idx",idx)
+                    new OracleParameter(":tasklasterrortime",lastErrorTime),
+                    new OracleParameter(":idx",idx)
                 };
 
-                qmdb.ExecuteNonQuery(sql, param);
+                qmdb.ExecuteNonQuery(sql,CommandType.Text, param);                
             }
             catch (QMException ex)
             {

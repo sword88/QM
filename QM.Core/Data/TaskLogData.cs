@@ -11,6 +11,7 @@ using QM.Core.Exception;
 using System.IO;
 using QM.Core.Environments;
 using QM.Core.Log;
+using Oracle.ManagedDataAccess.Client;
 
 namespace QM.Core.Data
 {
@@ -34,27 +35,31 @@ namespace QM.Core.Data
                                      createtime,
                                      message) 
                             values
-                                    (?,
-                                     ?,
-                                     ?,
-                                     ?,
-                                     ?)";
+                                    (:idx,
+                                     :taskid,
+                                     :type,
+                                     :createtime,
+                                     :message)";
 
-                OleDbParameter[] param = new OleDbParameter[]
+                OracleParameter[] param = new OracleParameter[]
                 {
-                    new OleDbParameter("idx",t.idx),
-                    new OleDbParameter("taskid",t.taskid),
-                    new OleDbParameter("type",t.type),
-                    new OleDbParameter("createtime",t.createtime),
-                    new OleDbParameter("message",t.message)    
+                    new OracleParameter(":idx",t.idx),
+                    new OracleParameter(":taskid",t.taskid),
+                    new OracleParameter(":type",t.type),
+                    new OracleParameter(":createtime",t.createtime),
+                    new OracleParameter(":message",t.message)
                 };
 
-                qmdb.ExecuteNonQuery(sql, param);
+                qmdb.ExecuteNonQuery(sql, CommandType.Text, param);
             }
             catch (QMException ex)
             {
                 throw ex;
                 log.Error(string.Format("TaskLogData=>Insert ERROR:{0}", ex.Message));
+            }
+            finally
+            {
+                qmdb.Disponse();
             }
         }
     }

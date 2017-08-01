@@ -439,19 +439,60 @@ namespace QM.Core.QuartzNet
         /// </summary>
         public void InitLoadTaskList()
         {
-
-            TaskBLL td = new TaskBLL();
-            var tasklist = td.GetList();
-            TaskRuntimeInfo trun = null;
-           
-            foreach (Tasks t in tasklist)
+            try
             {
-                trun = new TaskRuntimeInfo();
-                trun.parms = td.GetParms(t.idx);
+                TaskBLL td = new TaskBLL();
+                var tasklist = td.GetList();
+                TaskRuntimeInfo trun = null;
 
+                foreach (Tasks t in tasklist)
+                {
+                    trun = new TaskRuntimeInfo();
+                    trun.parms = td.GetParms(t.idx);
+
+                    switch (t.taskType)
+                    {
+                        case "SQL-FILE":
+                            trun.sqlFileTask = new SqlFileTask(t.taskFile, t.taskDBCon);
+                            break;
+                        case "SQL-EXP":
+                            trun.sqlExpTask = new SqlExpJob(t.taskDBCon, t.taskFile, t.taskParm, trun.parms);
+                            break;
+                        case "DLL-STD":
+                            trun.dllTask = new QMAppDomainLoader<DllTask>().Load(t.taskFile, t.taskClsType, out trun.domain);
+                            break;
+                        case "DLL-UNSTD":
+                        default:
+                            trun.unStdDllTask = new UnStdDll(t.taskFile, t.taskParm);
+                            break;
+                    }
+                    trun.task = t;
+
+                    AddTask(t.idx, trun);
+                }
+            }
+            catch (QMException ex)
+            {
+                log.Fatal(ex.Message);
+            }
+        }
+
+        /// <summary>
+        /// 从网站中添加任务
+        /// </summary>
+        /// <param name="taskid">任务id</param>
+        public static void AddWebTask(string taskid)
+        {
+            try
+            {
+                TaskBLL td = new TaskBLL();
+                var t = td.Detail(taskid);
+
+                TaskRuntimeInfo trun = new TaskRuntimeInfo();
+                trun.parms = td.GetParms(taskid);
                 switch (t.taskType)
                 {
-                    case "SQL-FILE":                        
+                    case "SQL-FILE":
                         trun.sqlFileTask = new SqlFileTask(t.taskFile, t.taskDBCon);
                         break;
                     case "SQL-EXP":
@@ -467,40 +508,12 @@ namespace QM.Core.QuartzNet
                 }
                 trun.task = t;
 
-                AddTask(t.idx, trun);
+                AddTask(taskid, trun);
             }
-        }
-
-        /// <summary>
-        /// 从网站中添加任务
-        /// </summary>
-        /// <param name="taskid">任务id</param>
-        public static void AddWebTask(string taskid)
-        {
-            TaskBLL td = new TaskBLL();
-            var t = td.Detail(taskid);
-
-            TaskRuntimeInfo trun = new TaskRuntimeInfo();
-            trun.parms = td.GetParms(taskid);
-            switch (t.taskType)
+            catch (QMException ex)
             {
-                case "SQL-FILE":
-                    trun.sqlFileTask = new SqlFileTask(t.taskFile, t.taskDBCon);
-                    break;
-                case "SQL-EXP":
-                    trun.sqlExpTask = new SqlExpJob(t.taskDBCon, t.taskFile, t.taskParm, trun.parms);
-                    break;
-                case "DLL-STD":
-                    trun.dllTask = new QMAppDomainLoader<DllTask>().Load(t.taskFile, t.taskClsType, out trun.domain);
-                    break;
-                case "DLL-UNSTD":
-                default:
-                    trun.unStdDllTask = new UnStdDll(t.taskFile, t.taskParm);
-                    break;
+                log.Fatal(ex.Message);
             }
-            trun.task = t;
-
-            AddTask(taskid, trun);
         }
 
         /// <summary>

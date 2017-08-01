@@ -174,14 +174,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="QM.Core.dll" size="95744">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Oracle.ManagedDataAccess.dll" size="4021248">
+      <assemblyIdentity name="Oracle.ManagedDataAccess" version="4.121.2.0" publicKeyToken="89B483F429C47342" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>kL4eWyd0YFmxWwTF8Trd3FWi4R1Ygk9/8sbK1UsWyRg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="QM.Core.dll" size="97280">
       <assemblyIdentity name="QM.Core" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>U+zzVT6cGLp/m7thwtpnsKudJodHiZm/b7g3SGfcRA8=</dsig:DigestValue>
+        <dsig:DigestValue>Wka6aM9s32Ebbalz60ZzqyA2guMaErybIKQNuZAaIHA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -193,7 +205,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Bs40eCWN7PoYTPpndiZS4kykyn0Xy3bAuwk5Awnf95E=</dsig:DigestValue>
+        <dsig:DigestValue>AmZOUm8oaDnRhbnuopz2ZxEw/C6/4oh08evoRsjNrz8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -281,13 +293,13 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="QM.Server.exe.config" size="1294">
+  <file name="QM.Server.exe.config" size="1302">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>QlKzIA+hfqgEUCyk24o0IxRPfMH3LybCYileiDxOfAE=</dsig:DigestValue>
+      <dsig:DigestValue>eAtG9I5Lzfm/urogQZSh2EjoHrAFNwVYTo1qwWxu/m0=</dsig:DigestValue>
     </hash>
   </file>
   <file name="shell.ico" size="67646">

@@ -9,6 +9,7 @@ using System.Data;
 using System.Data.OleDb;
 using QM.Core.Exception;
 using System.IO;
+using Oracle.ManagedDataAccess.Client;
 
 namespace QM.Core.Data
 {
@@ -35,7 +36,7 @@ namespace QM.Core.Data
                     sql += "and refname = '" + refname + "'";
                 }
 
-                OleDbDataReader dr = qmdb.ExecuteReader(sql);
+                OracleDataReader dr = qmdb.ExecuteReader(CommandType.Text, sql);
                 while (dr.Read())
                 {
                     t = new TasksN2M();
@@ -43,13 +44,17 @@ namespace QM.Core.Data
                     t.refidx = dr["REFIDX"].ToString();
                     t.refname = dr["REFNAME"].ToString();
                     t.attrname = dr["ATTRNAME"].ToString();
-                    t.attrval = dr["ATTRVAL"].ToString();                    
+                    t.attrval = dr["ATTRVAL"].ToString();
                     task.Add(t);
                 }
             }
             catch (QMException ex)
             {
                 throw ex;
+            }
+            finally
+            {
+                qmdb.Disponse();
             }
 
             return task;

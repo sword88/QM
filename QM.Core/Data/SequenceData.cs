@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
@@ -24,7 +25,7 @@ namespace QM.Core.Data
             try
             {
                 string sql = "select it_seq.nextval from dual";
-                object idx = qmdb.ExecuteScalar(sql);
+                object idx = qmdb.ExecuteScalar(CommandType.Text, sql);
                 val = val + idx.ToString();
             }
             catch (QMException ex)

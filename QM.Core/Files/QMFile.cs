@@ -131,7 +131,7 @@ namespace QM.Core.Files
                 {
                     var filebase = HttpContext.Current.Request.Files[file];
 
-                    if(filebase.ContentLength > 0)
+                    if (filebase.ContentLength > 0)
                     {
                         if (result != string.Empty)
                         {
@@ -158,6 +158,15 @@ namespace QM.Core.Files
         public static bool FileExists(string filename)
         {
             return File.Exists(filename);
+        }
+
+        /// <summary>
+        /// 删除文件
+        /// </summary>
+        /// <param name="filename"></param>
+        public static void Delete(string filename)
+        {
+            File.Delete(filename);
         }
 
 

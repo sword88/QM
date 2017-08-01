@@ -72,8 +72,8 @@ namespace QM.Core.Model
             try
             {
                 DataSet ds = db.ExecuteDataset(sql);
-                QMExcel ex = new QMExcel(title, filepath);
-                log.Debug(string.Format("[SqlExpJob] 导出文件{0},{1},{2}", title,filepath,sql));
+                IExcel ex = new QMExcel(title, filepath);
+                log.Debug(string.Format("[SqlExpJob] 导出文件{0},{1},{2}", title, filepath, sql));
 
                 if (ex.Export(ds.Tables[0], title, filepath, out error) == false)
                 {
@@ -113,6 +113,8 @@ namespace QM.Core.Model
                                 }
                                 mail.Send();
 
+                                QMFile.Delete(filepath);
+
                                 break;
                             case "FTP":
 
@@ -128,6 +130,10 @@ namespace QM.Core.Model
             {
                 log.Debug(string.Format("[SqlExpJob] 异常{0}", ex.Message));
                 throw ex;
+            }
+            finally
+            {
+                db.Disponse();
             }
         }
     }

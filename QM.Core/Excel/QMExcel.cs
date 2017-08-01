@@ -12,7 +12,7 @@ using QM.Core.Exception;
 
 namespace QM.Core.Excel
 {
-    public class QMExcel
+    public class QMExcel : IExcel
     {
         private static SummaryInformation si = PropertySetFactory.CreateSummaryInformation();
         private static DocumentSummaryInformation dsi = PropertySetFactory.CreateDocumentSummaryInformation();
