@@ -12,10 +12,37 @@ namespace QM.Core.Data
     public class QMDBHelper
     {
         private string DbConStr { get; set; }
+        public OracleTransaction p_trans = null;
+        public OracleConnection p_con = null;
 
         public QMDBHelper(string con)
         {
             DbConStr = con;
+        }
+
+        /// <summary>
+        /// 开启事务
+        /// </summary>
+        public void BeginTransaction()
+        {
+            p_con = new OracleConnection(DbConStr);
+            p_trans = p_con.BeginTransaction();
+        }
+
+        /// <summary>
+        /// 提交事务
+        /// </summary>
+        public void Commit()
+        {
+            p_trans.Commit();
+        }
+
+        /// <summary>
+        /// 回滚事务
+        /// </summary>
+        public void Rollback()
+        {
+            p_trans.Rollback();
         }
 
         /// <summary>

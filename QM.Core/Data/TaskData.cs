@@ -21,7 +21,7 @@ namespace QM.Core.Data
         /// 获得所有任务清单
         /// </summary>
         /// <returns>IList[Tasks]()</returns>
-        public IList<Tasks> GetList()
+        public IList<Tasks> GetTaskList()
         {
 
             IList<Tasks> task = new List<Tasks>();
@@ -58,7 +58,7 @@ namespace QM.Core.Data
                     t.taskDBCon = dr["TASKDBCON"].ToString();
                     t.taskParm = dr["TASKPARM"].ToString();
                     t.taskFile = dr["TASKFILE"].ToString();
-                    t.taskExpFile = dr["TASKEXPFILE"].ToString();
+                    //t.taskExpFile = dr["TASKEXPFILE"].ToString();
                     t.taskName = dr["TASKNAME"].ToString();
                     t.taskState = dr["TASKSTATE"].ToString();
                     t.taskCron = dr["TASKCRON"].ToString();
@@ -85,7 +85,7 @@ namespace QM.Core.Data
         /// </summary>
         /// <param name="idx"></param>
         /// <returns></returns>
-        public Tasks Detail(string idx)
+        public Tasks TaskDetail(string idx)
         {
             Tasks t = null;
             OracleDataReader dr;
@@ -144,11 +144,30 @@ namespace QM.Core.Data
             return t;
         }
 
+        public void Insert(Tasks t, IList<TasksN2M> n2m)
+        {
+            qmdb.BeginTransaction();
+            try
+            {
+                InsertTask(t);
+                foreach (var item in n2m)
+                {
+                    InsertParms(item);
+                }
+                qmdb.Commit();
+            }
+            catch (QMException ex)
+            {
+                throw ex;
+                qmdb.Rollback();
+            }
+        }
+
         /// <summary>
         /// 新的任务
         /// </summary>
         /// <param name="t">任务类</param>
-        public void Insert(Tasks t)
+        public void InsertTask(Tasks t)
         {
             try
             {
@@ -163,7 +182,6 @@ namespace QM.Core.Data
                                      taskstate,
                                      taskremark,
                                      taskdbcon,
-                                     taskexpfile,
                                      taskclstype,
                                      tasktype) 
                             values
@@ -177,7 +195,6 @@ namespace QM.Core.Data
                                      :taskstate,
                                      :taskremark,
                                      :taskdbcon,
-                                     :taskexpfile,
                                      :taskclstype,
                                      :tasktype)";
 
@@ -193,12 +210,11 @@ namespace QM.Core.Data
                     new OracleParameter(":taskstate",t.taskState),
                     new OracleParameter(":taskremark",t.taskRemark),
                     new OracleParameter(":taskdbcon",t.taskDBCon),
-                    new OracleParameter(":taskexpfile",t.taskExpFile),
                     new OracleParameter(":taskclstype",t.taskClsType),
                     new OracleParameter(":tasktype", t.taskType)
                 };
 
-                qmdb.ExecuteNonQuery(sql,CommandType.Text, param);
+                qmdb.ExecuteNonQuery(qmdb.p_trans, CommandType.Text, sql, param);
             }
             catch (QMException ex)
             {
@@ -210,7 +226,7 @@ namespace QM.Core.Data
         /// 更新任务
         /// </summary>
         /// <param name="t">任务类</param>
-        public void Update(Tasks t)
+        public void UpdateTask(Tasks t)
         {
             try
             {
@@ -349,6 +365,87 @@ namespace QM.Core.Data
                 };
 
                 qmdb.ExecuteNonQuery(sql,CommandType.Text, param);                
+            }
+            catch (QMException ex)
+            {
+                throw ex;
+            }
+        }
+
+        /// <summary>
+        /// 获得参数
+        /// </summary>
+        /// <param name="taskid">任务Id</param>
+        /// <param name="refname">参数组</param>
+        /// <returns></returns>
+        public IList<TasksN2M> GetParms(string taskid, string refname = "")
+        {
+
+            IList<TasksN2M> task = new List<TasksN2M>();
+            TasksN2M t = null;
+            try
+            {
+                string sql = "select * from qm_task_n2m where refidx = '" + taskid + "'";
+                if (refname != "")
+                {
+                    sql += "and refname = '" + refname + "'";
+                }
+
+                OracleDataReader dr = qmdb.ExecuteReader(CommandType.Text, sql);
+                while (dr.Read())
+                {
+                    t = new TasksN2M();
+                    t.idx = dr["IDX"].ToString();
+                    t.refidx = dr["REFIDX"].ToString();
+                    t.refname = dr["REFNAME"].ToString();
+                    t.attrname = dr["ATTRNAME"].ToString();
+                    t.attrval = dr["ATTRVAL"].ToString();
+                    task.Add(t);
+                }
+            }
+            catch (QMException ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                qmdb.Disponse();
+            }
+
+            return task;
+        }
+
+        /// <summary>
+        /// 新的任务参数
+        /// </summary>
+        /// <param name="n2m">任务参数</param>
+        public void InsertParms(TasksN2M n2m)
+        {
+            try
+            {
+                string sql = @"insert into qm_task_n2m 
+                                    (idx,
+                                     refidx,
+                                     refname,
+                                     attrname,
+                                     attrval) 
+                            values
+                                    (:idx,
+                                     :refidx,
+                                     :refname,
+                                     :attrname,
+                                     :attrval)";
+
+                OracleParameter[] param = new OracleParameter[]
+                {
+                    new OracleParameter(":idx",n2m.idx),
+                    new OracleParameter(":refidx",n2m.refidx),
+                    new OracleParameter(":refname",n2m.refname),
+                    new OracleParameter(":attrname",n2m.attrname),
+                    new OracleParameter(":attrval",n2m.attrval)
+                };
+
+                qmdb.ExecuteNonQuery(sql, CommandType.Text, param);
             }
             catch (QMException ex)
             {

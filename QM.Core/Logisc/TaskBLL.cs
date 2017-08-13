@@ -11,7 +11,6 @@ namespace QM.Core.Logisc
     public class TaskBLL
     {
         private TaskData tdal = new TaskData();
-        private TaskN2MData tmdal = new TaskN2MData();
 
         /// <summary>
         /// 获得所有任务清单
@@ -19,7 +18,7 @@ namespace QM.Core.Logisc
         /// <returns></returns>
         public IList<Tasks> GetList()
         {
-            return tdal.GetList();
+            return tdal.GetTaskList();
         }
 
         /// <summary>
@@ -29,9 +28,15 @@ namespace QM.Core.Logisc
         /// <returns></returns>
         public IList<TasksN2M> GetParms(string taskid)
         {
-            return tmdal.GetParms(taskid);
+            return tdal.GetParms(taskid);
         }
 
+        /// <summary>
+        /// 获得任务参数
+        /// </summary>
+        /// <param name="parms"></param>
+        /// <param name="name"></param>
+        /// <returns></returns>
         public TasksN2M GetParm(IList<TasksN2M> parms, string name)
         {
             foreach (var item in parms)
@@ -49,9 +54,9 @@ namespace QM.Core.Logisc
         /// 新的任务
         /// </summary>
         /// <param name="t"></param>
-        public void Insert(Tasks t)
+        public void Insert(Tasks t,IList<TasksN2M> n2m)
         {
-            tdal.Insert(t);
+            tdal.Insert(t,n2m);
         }
 
         /// <summary>
@@ -61,7 +66,7 @@ namespace QM.Core.Logisc
         /// <returns></returns>
         public Tasks Detail(string idx)
         {
-            return tdal.Detail(idx);
+            return tdal.TaskDetail(idx);
         }
 
         /// <summary>
@@ -70,7 +75,7 @@ namespace QM.Core.Logisc
         /// <param name="t"></param>
         public void Update(Tasks t)
         {
-            tdal.Update(t);
+            tdal.UpdateTask(t);
         }
 
         /// <summary>

@@ -24,7 +24,7 @@ namespace QM.Web.Controllers
         public ActionResult List()
         {
             TaskData td = new TaskData();
-            var task = td.GetList();
+            var task = td.GetTaskList();
             return View(task);
         }
 
@@ -73,8 +73,14 @@ namespace QM.Web.Controllers
             return PartialView();
         }
 
-
+        [ChildActionOnly]
         public ActionResult Ftp()
+        {
+            return PartialView();
+        }
+
+        [ChildActionOnly]
+        public ActionResult SQL()
         {
             return PartialView();
         }
@@ -88,7 +94,7 @@ namespace QM.Web.Controllers
         public ActionResult Add(FormCollection fc)
         {
             Tasks t = new Tasks();
-            SequenceData sd = new SequenceData();
+            SeqBLL sd = new SeqBLL();
             t.idx = sd.GetIdx();                        
             t.taskName = fc.GetValue("qm_name").AttemptedValue;
             t.taskParm = fc.GetValue("qm_parms").AttemptedValue;
@@ -97,16 +103,144 @@ namespace QM.Web.Controllers
             t.taskState = fc.GetValue("qm_status").AttemptedValue;
             t.taskCreateTime = DateTime.Now;                      
             t.taskFile = QMFile.UploadFile();
+            if(t.taskFile == ""){
+                t.taskFile = fc.GetValue("qm_sql").AttemptedValue;
+            }
             t.taskType = fc.GetValue("qm_type").AttemptedValue;
             t.taskDBCon = fc.GetValue("qm_dbcon").AttemptedValue;
             t.taskSendby = fc.GetValue("qm_sendby").AttemptedValue;
-            t.taskClsType = "";
-            t.taskExpFile = "";
+            t.taskClsType = "";            
             
-            TaskBLL tbl = new TaskBLL();
-            tbl.Insert(t);
             QMDBLogger.Info(t.idx, JsonConvert.SerializeObject(t));
 
+            IList<TasksN2M> n2m = null;
+            TasksN2M n = new TasksN2M();
+
+            #region SQL设置
+            if (t.taskType == "SQL-EXP")
+            {
+                //SQL Header
+                n.idx = sd.GetIdx();
+                n.refidx = t.idx;
+                n.refname = "SQL";
+                n.attrname = "HEADER";
+                n.attrval = fc.GetValue("sql_subject").AttemptedValue;
+                QMDBLogger.Info(n.idx, JsonConvert.SerializeObject(n));
+                n2m.Add(n);
+
+                //SQL File
+                n.idx = sd.GetIdx();
+                n.refidx = t.idx;
+                n.refname = "SQL";
+                n.attrname = "EXPFILE";
+                n.attrval = fc.GetValue("sql_filename").AttemptedValue;
+                QMDBLogger.Info(n.idx, JsonConvert.SerializeObject(n));
+                n2m.Add(n);
+
+                //SQL File Type
+                n.idx = sd.GetIdx();
+                n.refidx = t.idx;
+                n.refname = "SQL";
+                n.attrname = "EXPTYPE";
+                n.attrval = fc.GetValue("sql_filetype").AttemptedValue;
+                QMDBLogger.Info(n.idx, JsonConvert.SerializeObject(n));
+                n2m.Add(n);
+            }
+            #endregion
+
+            #region  MAIL设置
+            if (t.taskSendby.Contains("MAIL"))
+            {
+                //Mail to
+                n.idx = sd.GetIdx();
+                n.refidx = t.idx;
+                n.refname = "MAIL";
+                n.attrname = "TO";
+                n.attrval = fc.GetValue("qm_to").AttemptedValue;
+                QMDBLogger.Info(n.idx, JsonConvert.SerializeObject(n));
+                n2m.Add(n);
+
+                //Mail cc
+                n.idx = sd.GetIdx();
+                n.refidx = t.idx;
+                n.refname = "MAIL";
+                n.attrname = "CC";
+                n.attrval = fc.GetValue("qm_cc").AttemptedValue;
+                QMDBLogger.Info(n.idx, JsonConvert.SerializeObject(n));
+                n2m.Add(n);
+
+                //Mail bcc
+                n.idx = sd.GetIdx();
+                n.refidx = t.idx;
+                n.refname = "MAIL";
+                n.attrname = "BCC";
+                n.attrval = fc.GetValue("qm_bcc").AttemptedValue;
+                QMDBLogger.Info(n.idx, JsonConvert.SerializeObject(n));
+                n2m.Add(n);
+
+                //Mail subject
+                n.idx = sd.GetIdx();
+                n.refidx = t.idx;
+                n.refname = "MAIL";
+                n.attrname = "SUBJECT";
+                n.attrval = fc.GetValue("mail_subject").AttemptedValue;
+                QMDBLogger.Info(n.idx, JsonConvert.SerializeObject(n));
+                n2m.Add(n);
+
+                //Mail body
+                n.idx = sd.GetIdx();
+                n.refidx = t.idx;
+                n.refname = "MAIL";
+                n.attrname = "BODY";
+                n.attrval = fc.GetValue("qm_body").AttemptedValue;
+                QMDBLogger.Info(n.idx, JsonConvert.SerializeObject(n));
+                n2m.Add(n);
+            }
+            #endregion
+
+            #region FTP设置
+            if (t.taskSendby.Contains("FTP"))
+            {
+                //ftp server
+                n.idx = sd.GetIdx();
+                n.refidx = t.idx;
+                n.refname = "FTP";
+                n.attrname = "SERVER";
+                n.attrval = fc.GetValue("ftp_server").AttemptedValue;
+                QMDBLogger.Info(n.idx, JsonConvert.SerializeObject(n));
+                n2m.Add(n);
+
+                //ftp account
+                n.idx = sd.GetIdx();
+                n.refidx = t.idx;
+                n.refname = "FTP";
+                n.attrname = "ACCOUNT";
+                n.attrval = fc.GetValue("ftp_account").AttemptedValue;
+                QMDBLogger.Info(n.idx, JsonConvert.SerializeObject(n));
+                n2m.Add(n);
+
+                //ftp password
+                n.idx = sd.GetIdx();
+                n.refidx = t.idx;
+                n.refname = "FTP";
+                n.attrname = "PASSWORD";
+                n.attrval = fc.GetValue("ftp_password").AttemptedValue;
+                QMDBLogger.Info(n.idx, JsonConvert.SerializeObject(n));
+                n2m.Add(n);
+
+                //ftp remote folder
+                n.idx = sd.GetIdx();
+                n.refidx = t.idx;
+                n.refname = "FTP";
+                n.attrname = "RMOTEPATH";
+                n.attrval = fc.GetValue("ftp_remotepath").AttemptedValue;
+                QMDBLogger.Info(n.idx, JsonConvert.SerializeObject(n));
+                n2m.Add(n);
+            }
+            #endregion
+
+            TaskBLL tbl = new TaskBLL();
+            tbl.Insert(t, n2m);
 
             return View();
         }

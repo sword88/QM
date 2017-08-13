@@ -528,7 +528,7 @@ namespace QM.Core.QuartzNet
 
                 properties["quartz.scheduler.proxy"] = "true";
 
-                properties["quartz.scheduler.proxy.address"] = string.Format("{0}://{1}:{2}/QuartzScheduler", "tcp", "127.0.0.1", "555");
+                properties["quartz.scheduler.proxy.address"] = string.Format("{0}://{1}:{2}/QuartzScheduler", "tcp", "10.68.10.57", "555");
 
                 ISchedulerFactory sf = new StdSchedulerFactory(properties);
 

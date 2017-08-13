@@ -308,6 +308,8 @@
     <Content Include="Views\Task\Mail.cshtml" />
     <Content Include="Views\Task\Ftp.cshtml" />
     <Content Include="Views\Task\TimePop.cshtml" />
+    <Content Include="Views\Home\Test.cshtml" />
+    <Content Include="Views\Task\SQL.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -134,6 +134,29 @@ namespace QM.Core.Common
             return result;
         }
 
+        /// <summary>
+        /// 文件类型
+        /// </summary>
+        /// <param name="type"></param>
+        /// <returns></returns>
+        public static IEnumerable<SelectListItem> GetFileType(string type = "XLS")
+        {
+            var result = new List<SelectListItem>();
+            result.Add(new SelectListItem()
+            {
+                Text = "XLS",
+                Value = "XLS",
+                Selected = ("XLS" == type ? true : false)
+            });
+            result.Add(new SelectListItem()
+            {
+                Text = "TXT",
+                Value = "TXT",
+                Selected = ("TXT" == type ? true : false)
+            });
+
+            return result;
+        }
 
         /// <summary>
         /// 返回当前年

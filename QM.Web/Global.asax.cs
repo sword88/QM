@@ -17,7 +17,7 @@ namespace QM.Web
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
-            QM.Core.QuartzNet.QMBaseServer.InitRemoteScheduler();
+            //QM.Core.QuartzNet.QMBaseServer.InitRemoteScheduler();
         }
     }
 }

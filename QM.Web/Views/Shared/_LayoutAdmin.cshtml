@@ -15,14 +15,19 @@
         <!--左侧导航结束-->
         <!--右侧部分开始-->
         <div id="page-wrapper" class="gray-bg dashbard-1">
+            <!--顶部搜索框及消息开始-->
             @Html.Action("Message")
+            <!--顶部搜索框及消息结束-->
+            <!--主要内容开始-->
             @RenderBody()
+            <!--主要内容结束-->
         </div>
         <!--右侧部分结束-->
     </div>
 
+
+    <script type="text/javascript" src="@Url.Content("~/Scripts/jquery-3.1.1.min.js")"></script>
     @Scripts.Render("~/bundles/scripts")
     @RenderSection("scripts", required: false)
-    <script type="text/javascript" src="@Url.Content("~/Scripts/qm.js")"></script>
 </body>
 </html>

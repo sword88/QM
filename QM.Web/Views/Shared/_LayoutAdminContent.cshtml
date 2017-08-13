@@ -13,8 +13,8 @@
         @RenderBody()
     </div>
 
+    <script type="text/javascript" src="@Url.Content("~/Scripts/jquery-3.1.1.min.js")"></script>
     @Scripts.Render("~/bundles/scripts")
-    @RenderSection("scripts", required: false)
-    <script type="text/javascript" src="~/Scripts/qm.js"></script>
+    @RenderSection("scripts", required: false)    
 </body>
 </html>

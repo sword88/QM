@@ -41,8 +41,18 @@
                         currentIndex = i;
                         return false;
                     }
-
                 });
+
+                if (currentIndex == 0)
+                {
+                    $("#menu1 li").each(function (i, li) {
+                        if ($(li).hasClass("active")) {
+                            currentIndex = i;
+                            return false;
+                        }
+                    });
+                }
+
 
                 var start = currentIndex > 3 ? 3 : currentIndex;
                 for (var i = start; i >= 0 ; i--) {
@@ -57,6 +67,11 @@
                 }
 
                 $("#cron").val(item.join(" "));
+            },
+            save: function () {
+                $("input[name='qm_cron']").val($("#cron").val());
+                $("#modal-form").removeClass("in");
+                $("#modal-form").addClass("out");
             },
             everyTime: function (name) {
                 var item = $("input[name=v_" + name + "]");
@@ -164,7 +179,7 @@
 })(jQuery, window);
 
 $(function () {
-    $("#generate,#submit").on("click", function (e) {
+    $("#generate,#submit,#cronsave").on("click", function (e) {
         e.preventDefault();
         var the = $(this);
         if (the.is("#generate")) {
@@ -173,6 +188,9 @@ $(function () {
         }
         if (the.is("#submit")) {
             cron.submit();
+        }
+        if (the.is("#cronsave")) {
+            cron.save();
         }
     });
 

@@ -1,9 +1,4 @@
 ﻿
-//自定义js
-
-//公共配置
-
-
 $(document).ready(function () {
 
     // MetsiMenu
@@ -74,6 +69,56 @@ $(document).ready(function () {
     if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
         $('#content-main').css('overflow-y', 'auto');
     }
+
+    //sendby
+    $("#qm_sendby").change(function () {
+        var sendby = $("#qm_sendby").val();
+
+        if (sendby == "") {
+            $("#mail_show").hide();
+            $("#ftp_show").hide();
+        } else if (sendby == "MAIL") {
+            $("#mail_show").show();
+            $("#ftp_show").hide();
+        } else if (sendby == "FTP") {
+            $("#ftp_show").show();
+            $("#mail_show").hide();
+        } else {
+            $("#mail_show").show();
+            $("#ftp_show").show();
+        }
+    });
+
+    $("#qm_type").change(function () {
+        var type = $("#qm_type").val();
+
+        if (type == "SQL-FILE") {
+            $("input[name='qm_dbcon']").removeAttr("disabled");
+            $("input[name='qm_dbcon']").attr("placeholder", "数据库连接[userid/password@DB]");
+            $("#qm_sendby").attr("disabled", "true");
+            $("#sql_show").hide();
+            $("#qm_file").show();
+            $("#qm_sendby").val('').trigger('change');
+            $("#qm_sql").val('').hide();
+        } else if (type == "SQL-EXP") {
+            $("input[name='qm_dbcon']").removeAttr("disabled");
+            $("input[name='qm_dbcon']").attr("placeholder", "数据库连接[DATA SOURCE=IP:Port/DBNAME;PASSWORD=****;USER ID=****]");
+            $("#qm_sendby").removeAttr("disabled");
+            $("#sql_show").show();
+            $("#qm_file").val('').hide();
+            $("#qm_sql").show();
+        } else {
+            $("input[name='qm_dbcon']").attr("placeholder", "不需要输入");
+            $("input[name='qm_dbcon']").val("");
+            $("input[name='qm_dbcon']").attr("disabled", "true");
+            $("#qm_sendby").attr("disabled", "true");
+            $("#sql_show").hide();
+            $("#qm_sql").val('').hide();
+            $("#qm_sendby").val('').trigger('change');
+            $("#qm_file").show();
+        }
+
+    });
 
 });
 

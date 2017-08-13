@@ -7,7 +7,7 @@
             <label class="col-sm-2 control-label">邮件名称</label>
             <div class="col-sm-10">
 
-                <input type="text" class="form-control" placeholder="邮件名称" name="mail_name">
+                <input type="text" class="form-control" placeholder="邮件名称" name="mail_subject">
             </div>
         </div>
         <div class="hr-line-dashed"></div>
@@ -17,9 +17,8 @@
 
                 <div class="input-group">
                     <select class="form-control" multiple="" id="to_list" name="to_list">
-                        <option value="1">1</option>
-                        <option value="12">12</option>
                     </select>
+                    <input type="hidden" name="qm_to" id="qm_to" value=""/>
                     <span class="input-group-btn">
                         <button type="button" class="btn btn-primary" id="to_remove">
                             移除
@@ -45,6 +44,7 @@
                 <div class="input-group">
                     <select class="form-control" multiple="" id="cc_list" name="cc_list">
                     </select>
+                    <input type="hidden" name="qm_cc" id="qm_cc" value="" />
                     <span class="input-group-btn">
                         <button type="button" class="btn btn-primary" id="cc_remove">
                             移除
@@ -70,6 +70,7 @@
                 <div class="input-group">
                     <select class="form-control" multiple="" id="bcc_list" name="bcc_list">
                     </select>
+                    <input type="hidden" name="qm_bcc" id="qm_bcc" value="" />
                     <span class="input-group-btn">
                         <button type="button" class="btn btn-primary" id="bcc_remove">
                             移除
@@ -91,7 +92,7 @@
         <div class="form-group">
             <label class="col-sm-2 control-label">内容</label>
             <div class="col-sm-10">
-                <textarea class="form-control"></textarea>
+                <textarea class="form-control" name="qm_body"></textarea>
             </div>
         </div>
     </form>

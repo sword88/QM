@@ -4,7 +4,7 @@
             <div class="modal-body">
                 <div class="row">
                     <!--tabs-->
-                    <ul class="nav nav-tabs">
+                    <ul class="nav nav-tabs" id="menu1">
                         <li class="active">
                             <a data-toggle="tab" href="#tab-1"><i class="fa fa-clock-o"></i> 秒</a>
                         </li>
@@ -571,8 +571,10 @@
                             </div>
                         </div>
                         <div class="col-lg-12">
-                            <input type="text" name="cron" id="cron" size="70" style="width: 450px" />
-                            <input type="button" name="generate" id="generate" value="Generate Cron" />
+                            <input type="text" name="cron" id="cron" size="70" style="width: 450px" />       
+                            <button class="btn btn-primary" name="generate" id="generate" type="button">测试</button>
+                            <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true" 
+                                    name="cronsave" id="cronsave" type="button">保存</button>
                         </div>
                         <div class="col-lg-12">计划执行时间:</div>
                         <div class="col-lg-12">

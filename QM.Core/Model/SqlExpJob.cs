@@ -35,6 +35,9 @@ namespace QM.Core.Model
         /// excel内容表头
         /// </summary>
         private string title = "";
+        private string header = "";
+        private string filename = "";
+        private string filetype = "XLS";
         /// <summary>
         /// 文件路径/文件名
         /// </summary>
@@ -59,7 +62,8 @@ namespace QM.Core.Model
             sql = sqlstr;
             title = sparms.FirstOrDefault(p=>p.attrname=="SUBJECT").attrval;
             filepath = sparms.FirstOrDefault(p=>p.attrname=="EXPPATH").attrval +
-                sparms.FirstOrDefault(p => p.attrname == "EXPFILE").attrval;
+                sparms.FirstOrDefault(p => p.attrname == "EXPFILE").attrval + "." +
+                sparms.FirstOrDefault(p => p.attrname == "EXPTYPE").attrval;
 
             QMFile.CreateDir(sparms.FirstOrDefault(p => p.attrname == "EXPPATH").attrval);
         }
@@ -71,13 +75,21 @@ namespace QM.Core.Model
         {
             try
             {
-                DataSet ds = db.ExecuteDataset(sql);
-                IExcel ex = new QMExcel(title, filepath);
-                log.Debug(string.Format("[SqlExpJob] 导出文件{0},{1},{2}", title, filepath, sql));
+                IList<TasksN2M> m_parms = null;
+                m_parms = parms.Where(x => x.refname == "SQL").ToList();
+                header = m_parms.Where(x => x.attrname == "HEADER").FirstOrDefault().attrval;
+                filename = m_parms.Where(x => x.attrname == "EXPFILE").FirstOrDefault().attrval;
+                filetype = m_parms.Where(x => x.attrname == "EXPTYPE").FirstOrDefault().attrval;
 
+                DataSet ds = db.ExecuteDataset(sql);
+
+                log.Debug(string.Format("[SqlExpJob] 导出文件{0},{1},{2},{3},{4}", title, filepath, filename, filetype, sql));
+
+                IExcel ex = new QMExcel(title, filepath);
                 if (ex.Export(ds.Tables[0], title, filepath, out error) == false)
                 {
                     log.Debug(string.Format("[SqlExpJob] 导出文件异常{0}", error));
+                    filepath = "";
                 }
                 else
                 {
@@ -90,7 +102,8 @@ namespace QM.Core.Model
                             case "MAIL":
                                 IMail mail = new QMMail();
                                 mail.AddAttachment(filepath);
-                                foreach (var parm in parms.Where(x => x.refname == "MAIL"))
+                                m_parms = parms.Where(x => x.refname == "MAIL").ToList();
+                                foreach (var parm in m_parms)
                                 {
                                     switch (parm.attrname)
                                     {
@@ -125,6 +138,7 @@ namespace QM.Core.Model
                         }
                     }
                 }
+                               
             }
             catch (QMException ex)
             {

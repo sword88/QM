@@ -17,6 +17,11 @@ $(function () {
                     $("#to_list").append("<option value='" + mail + "'>" + mail + "</option>");
                     $("#to").val("");
                     $("#to").removeClass("error");
+                    if ($("#qm_to").val() == "") {
+                        $("#qm_to").val(mail);
+                    } else {
+                        $("#qm_to").val($("#qm_to").val() + ";" + mail);
+                    }
                 } else {                    
                     $("#to").addClass("error");
                 }
@@ -32,6 +37,8 @@ $(function () {
         $("#to_list").find("option:selected").each(function () {
             var rval = $(this).val();
             $("#to_list > option[value='" + rval + "']").remove();
+            var nval = $("#qm_to").val();
+            $("#qm_to").val($("#qm_to").val().replace(rval + ";", "").replace(rval, ""));
         });                    
     });
 
@@ -50,6 +57,11 @@ $(function () {
                     $("#cc_list").append("<option value='" + mail + "'>" + mail + "</option>");
                     $("#cc").val("");
                     $("#cc").removeClass("error");
+                    if ($("#qm_cc").val() == "") {
+                        $("#qm_cc").val(mail);
+                    } else {
+                        $("#qm_cc").val($("#qm_cc").val() + ";" + mail);                        
+                    }
                 } else {
                     $("#cc").addClass("error");
                 }
@@ -65,6 +77,7 @@ $(function () {
         $("#cc_list").find("option:selected").each(function () {
             var rval = $(this).val();
             $("#cc_list > option[value='" + rval + "']").remove();
+            $("#qm_cc").val($("#qm_cc").val().replace(rval + ";", "").replace(rval, ""));
         });
     });
 
@@ -83,6 +96,11 @@ $(function () {
                     $("#bcc_list").append("<option value='" + mail + "'>" + mail + "</option>");
                     $("#bcc").val("");
                     $("#bcc").removeClass("error");
+                    if ($("#qm_bcc").val() == "") {
+                        $("#qm_bcc").val(mail);
+                    } else {
+                        $("#qm_bcc").val($("#qm_bcc").val() + ";" + mail);
+                    }
                 } else {
                     $("#bcc").addClass("error");
                 }
@@ -98,6 +116,7 @@ $(function () {
         $("#bcc_list").find("option:selected").each(function () {
             var rval = $(this).val();
             $("#bcc_list > option[value='" + rval + "']").remove();
+            $("#qm_bcc").val($("#qm_bcc").val().replace(rval + ";", "").replace(rval, ""));
         });
     });
 
