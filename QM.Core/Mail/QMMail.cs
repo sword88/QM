@@ -17,12 +17,12 @@ namespace QM.Core.Mail
         private ILogger log = QMStarter.CreateQMLogger(typeof(QMMail));
         private string _subject;
         //private string _body;
-        private string _from = "12ljx12@163.COM";
+        private string _from = "allancewh@aseglobal.COM";
         private string _fromName = "12ljx12";
         private string _recipientName;
-        private string _mailDomain = "smtp.163.com";
+        private string _mailDomain = "10.68.10.8";
         private int _mailserverport = 25;
-        private string _username= "12ljx12@163.COM";
+        private string _username= "allancewh@aseglobal.COM";
         private string _password="123";
         private bool _html;
         private string _priority;
@@ -208,7 +208,10 @@ namespace QM.Core.Mail
         //收件人的邮箱地址
         public bool AddRecipient(string username)
         {
-            this.myEmail.To.Add(username);
+            foreach(var item in username.Split(';'))
+            {
+                this.myEmail.To.Add(username);
+            }            
 
             return true;
         }
@@ -217,7 +220,10 @@ namespace QM.Core.Mail
         //抄送人的邮箱地址
         public bool AddRecipientCC(string username)
         {
-            this.myEmail.CC.Add(username);
+            foreach (var item in username.Split(';'))
+            {
+                this.myEmail.CC.Add(username);
+            }            
 
             return true;
         }
@@ -225,7 +231,10 @@ namespace QM.Core.Mail
         //密送人的邮箱地址
         public bool AddRecipientBCC(string username)
         {
-            this.myEmail.Bcc.Add(username);
+            foreach (var item in username.Split(';'))
+            {
+                this.myEmail.Bcc.Add(username);
+            }            
 
             return true;
         }
@@ -257,7 +266,8 @@ namespace QM.Core.Mail
         /// </summary>
         /// <returns></returns>
         public bool Send()
-        {            
+        {
+            bool result = false; 
             Encoding eEncod = Encoding.GetEncoding("utf-8");
             myEmail.From = new System.Net.Mail.MailAddress(this.From, this.Subject, eEncod);
             myEmail.Subject = this.Subject;
@@ -301,16 +311,15 @@ namespace QM.Core.Mail
             try
             {
                 smtp.Send(myEmail);
+                result = true;
             }
             catch (SmtpException ex)
             {
-                log.Fatal(string.Format("QMMail=>Send发生严重错误，{0}", ex.Message));
-                return false;
+                log.Fatal(string.Format("QMMail=>Send发生严重错误，{0}", ex.Message));                
             }
             catch (QMException ex)
             {
-                log.Fatal(string.Format("QMMail=>Send发生严重错误，{0}", ex.Message));
-                return false;
+                log.Fatal(string.Format("QMMail=>Send发生严重错误，{0}", ex.Message));                
             }
             finally
             {
@@ -323,7 +332,7 @@ namespace QM.Core.Mail
                 smtp.Dispose();
             }
 
-            return true;
+            return result;
         }
 
 
@@ -350,6 +359,7 @@ namespace QM.Core.Mail
             sb.Append("#main{padding:5px}");
             sb.Append("#main div{padding:0 0 30px 0;}");
             sb.Append("#main .content{text-indent:20px;}");
+            sb.Append("#main table{font-size:16px;}");
             sb.Append("#main #code{color:#FF0000;padding:3px;background-color:#C0C0C0;font-size:16px;}");
             sb.Append("</style>");
             //body

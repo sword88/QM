@@ -158,6 +158,7 @@
     <Compile Include="Excel\IExcel.cs" />
     <Compile Include="Excel\QMExcel.cs" />
     <Compile Include="Excel\QMExcelAsponse.cs" />
+    <Compile Include="Excel\QMText.cs" />
     <Compile Include="Exception\QMException.cs" />
     <Compile Include="Files\QMFile.cs" />
     <Compile Include="Files\QMFtp.cs" />

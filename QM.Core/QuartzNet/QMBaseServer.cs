@@ -96,87 +96,6 @@ namespace QM.Core.QuartzNet
             _scheduler.Start();
             
             //InitLoadTaskList();
-            //TaskRuntimeInfo a = new TaskRuntimeInfo();
-
-            //Tasks t = new Tasks();
-            //t.idx = "123";
-            //t.taskName = "123";
-            //t.taskType = "DLL-STD";
-            //t.taskCategory = "Cron";
-            //t.taskCreateTime = DateTime.Now;
-            //t.taskCron = "0 0 0/1 * * ? ";
-            //t.taskFile = @"E:\ASECode\Test\QM.git\QM.Demo.Quituser\bin\Debug\QM.Demo.Quituser.dll";
-            //t.taskClsType = "QM.Demo.Quituser.Class1";
-            //var dll = new QMAppDomainLoader<DllTask>().Load(t.taskFile, t.taskClsType, out a.domain);
-            //a.task = t;
-            //a.dllTask = dll;
-            //AddTask("123", a);
-
-
-            //Tasks t1 = new Tasks();
-            //t1.idx = "234";
-            //t1.taskName = "234";
-            //t1.taskType = "SQL";
-            //t1.taskCategory = "Cron";
-            //t1.taskCreateTime = DateTime.Now;
-            //t1.taskCron = "* * * * * ? *";
-            //t1.taskFile = "E:\\ASECode\\Test\\QM.git\\QM.Test\\bin\\Debug\\sql\\1.sql";
-            //a.task = t1;
-            //a.sqlTask = new SqlFileTask(t1.taskFile, "whfront/wh123@whdb");
-            //AddTask("234", a);
-
-
-            //Tasks t2 = new Tasks();
-            //t2.idx = "345";
-            //t2.taskName = "345";
-            //t2.taskType = "SQL";
-            //t2.taskCategory = "Sample";
-            //t2.taskCreateTime = DateTime.Now;
-            //t2.taskCron = "* * * * * ? *";
-            //t2.taskFile = "E:\\ASECode\\Test\\QM.git\\QM.Excel\\bin\\Debug\\QM.Excel.dll";
-            //t2.taskClsType = "QM.Excel.Class1";
-            //var dll1 = new QMAppDomainLoader<DllTask>().Load(t2.taskFile, t2.taskClsType, out a.domain);
-            //a.task = t2;
-            //a.dllTask = dll1;
-            //AddTask("345", a);
-
-            //Tasks t3 = new Tasks();
-            //t3.idx = "345";
-            //t3.taskName = "345";
-            //t3.taskType = "SQL";
-            //t3.taskCategory = "Sample";
-            //t3.taskCreateTime = DateTime.Now;
-            //t3.taskCron = "* * * * * ? *";
-            //SqlJob s = new SqlJob("Provider=MSDAORA.1;Data Source=WHDB;Password=wh123;User ID=whfront", "select * from AF_LOGIN_HIS", "测试标题", "e:\\1.xls");
-            //a.task = t3;
-            //a.sqlTask = s;
-            //AddTask("345", a);
-
-            //Tasks t4 = new Tasks();
-            //t4.idx = "567";
-            //t4.taskName = "567";
-            //t4.taskType = "DLL-UNSTD";
-            //t4.taskCategory = "Cron";
-            //t4.taskCreateTime = DateTime.Now;
-            //t4.taskCron = "0/2 * * * * ? *";
-            //UnStdDll u = new UnStdDll(@"E:\ASECode\Test\QM.git\QM.BAT\BAT\123.BAT", "");
-            //a.task = t4;
-            //a.unStdDllTask = u;
-            //AddTask("567", a);
-
-            //TaskRuntimeInfo a1 = new TaskRuntimeInfo();
-            //Tasks t5 = new Tasks();
-            //t5.idx = "678";
-            //t5.taskName = "678";
-            //t5.taskType = "DLL-UNSTD";
-            //t5.taskCategory = "Cron";
-            //t5.taskCreateTime = DateTime.Now;
-            //t5.taskCron = "0 0/1 * * * ? *";
-            //UnStdDll u1 = new UnStdDll(@"E:\ASECode\Test\QM.git\QM.BAT\bin\Debug\QM.BAT.exe", "asy");
-            //a1.task = t5;
-            //a1.unStdDllTask = u1;
-            //AddTask("678", a1);
-
         }
 
         /// <summary>
@@ -400,8 +319,7 @@ namespace QM.Core.QuartzNet
         {
             TaskBLL td = new TaskBLL();
             var t = td.Detail(taskid);
-            TaskRuntimeInfo trun = new TaskRuntimeInfo();
-            trun.parms = td.GetParms(taskid);
+            TaskRuntimeInfo trun = new TaskRuntimeInfo();            
 
             switch (t.taskType)
             {
@@ -409,7 +327,8 @@ namespace QM.Core.QuartzNet
                     trun.sqlFileTask = new SqlFileTask(t.taskFile, t.taskDBCon);
                     break;
                 case "SQL-EXP":
-                    trun.sqlExpTask = new SqlExpJob(t.taskDBCon, t.taskFile, t.taskParm, trun.parms);
+                    trun.parms = td.GetParms(taskid);
+                    trun.sqlExpTask = new SqlExpJob(t.taskDBCon, t.taskFile, taskid, t.taskParm, trun.parms);
                     break;
                 case "DLL-STD":
                     trun.dllTask = new QMAppDomainLoader<DllTask>().Load(t.taskFile, t.taskClsType, out trun.domain);
@@ -456,7 +375,7 @@ namespace QM.Core.QuartzNet
                             trun.sqlFileTask = new SqlFileTask(t.taskFile, t.taskDBCon);
                             break;
                         case "SQL-EXP":
-                            trun.sqlExpTask = new SqlExpJob(t.taskDBCon, t.taskFile, t.taskParm, trun.parms);
+                            trun.sqlExpTask = new SqlExpJob(t.taskDBCon, t.taskFile, t.idx, t.taskParm, trun.parms);
                             break;
                         case "DLL-STD":
                             trun.dllTask = new QMAppDomainLoader<DllTask>().Load(t.taskFile, t.taskClsType, out trun.domain);
@@ -496,7 +415,7 @@ namespace QM.Core.QuartzNet
                         trun.sqlFileTask = new SqlFileTask(t.taskFile, t.taskDBCon);
                         break;
                     case "SQL-EXP":
-                        trun.sqlExpTask = new SqlExpJob(t.taskDBCon, t.taskFile, t.taskParm, trun.parms);
+                        trun.sqlExpTask = new SqlExpJob(t.taskDBCon, t.taskFile, taskid, t.taskParm, trun.parms);
                         break;
                     case "DLL-STD":
                         trun.dllTask = new QMAppDomainLoader<DllTask>().Load(t.taskFile, t.taskClsType, out trun.domain);

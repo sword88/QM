@@ -157,31 +157,34 @@ namespace QM.Core.Data
             // 创建一个OracleCommand
             OracleCommand cmd = new OracleCommand();
             // 创建一个OracleConnection
-            OracleConnection conn = new OracleConnection(DbConStr);
-            try
-            {
-                //调用静态方法PrepareCommand完成赋值操作
-                PrepareCommand(cmd, conn, null, CommandType.Text, cmdText, commandParameters);
-                //执行查询
-                OracleDataAdapter oda = new OracleDataAdapter(cmd);
-                DataSet ds = new DataSet();
-                //填充dataset的值
-                oda.Fill(ds);
-                //连接关闭
-                conn.Close();
-                //清空参数
-                cmd.Parameters.Clear();
+            using (OracleConnection conn = new OracleConnection(DbConStr))
+            { 
+                try
+                {
+                    //调用静态方法PrepareCommand完成赋值操作
+                    PrepareCommand(cmd, conn, null, CommandType.Text, cmdText, commandParameters);
+                    //执行查询
+                    OracleDataAdapter oda = new OracleDataAdapter(cmd);
+                    DataSet ds = new DataSet();
+                    //填充dataset的值
+                    oda.Fill(ds);
+                    //连接关闭
+                    conn.Close();
+                    //清空参数
+                    cmd.Parameters.Clear();
 
-                //输出datatable内容
-                QMDebug.DebugTable(ds.Tables[0]);
+                    //输出datatable内容
+                    //QMDebug debug = new QMDebug();
+                    //debug.DebugTable(ds.Tables[0]);
 
-                return ds;
-            }
-            catch
-            {
-                //如果发生异常，关闭连接，并且向上抛出异常
-                conn.Close();
-                throw;
+                    return ds;
+                }
+                catch (QMException ex)
+                {
+                    //如果发生异常，关闭连接，并且向上抛出异常
+                    conn.Close();
+                    throw ex;
+                }
             }
         }
 

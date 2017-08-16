@@ -121,8 +121,7 @@ namespace QM.Core.Data
                     t.taskType = dr["TASKTYPE"].ToString();
                     t.taskDBCon = dr["TASKDBCON"].ToString();
                     t.taskParm = dr["TASKPARM"].ToString();
-                    t.taskFile = dr["TASKFILE"].ToString();
-                    t.taskExpFile = dr["TASKEXPFILE"].ToString();
+                    t.taskFile = dr["TASKFILE"].ToString();                    
                     t.taskName = dr["TASKNAME"].ToString();
                     t.taskState = dr["TASKSTATE"].ToString();
                     t.taskCron = dr["TASKCRON"].ToString();
@@ -402,6 +401,7 @@ namespace QM.Core.Data
                     t.attrval = dr["ATTRVAL"].ToString();
                     task.Add(t);
                 }
+                dr.Close();
             }
             catch (QMException ex)
             {

@@ -1,4 +1,5 @@
 ﻿using QM.Core.Common;
+using System;
 using System.Data;
 using System.Linq;
 using System.Collections;
@@ -38,6 +39,9 @@ namespace QM.Core.Model
         private string header = "";
         private string filename = "";
         private string filetype = "XLS";
+        private string body = "";
+        private string inmail = "";
+        private string reportid = "REPORTID";
         /// <summary>
         /// 文件路径/文件名
         /// </summary>
@@ -53,19 +57,21 @@ namespace QM.Core.Model
         /// <param name="sqlstr">sql语句</param>
         /// <param name="titlestr">excel内容表头</param>
         /// <param name="filestr">文件路径/文件名</param>
-        public SqlExpJob(string dbstr, string sqlstr, string titlestr,IList<TasksN2M> sparms)
+        public SqlExpJob(string dbstr, string sqlstr, string repid, string titlestr, IList<TasksN2M> sparms)
         {
 
-            parms = sparms;            
+            parms = sparms;
             dbcon = dbstr;
             db = new QMDBHelper(dbstr);
             sql = sqlstr;
-            title = sparms.FirstOrDefault(p=>p.attrname=="SUBJECT").attrval;
-            filepath = sparms.FirstOrDefault(p=>p.attrname=="EXPPATH").attrval +
+            title = sparms.FirstOrDefault(p => p.attrname == "SUBJECT").attrval;
+            filepath = sparms.FirstOrDefault(p => p.attrname == "EXPPATH").attrval +
                 sparms.FirstOrDefault(p => p.attrname == "EXPFILE").attrval + "." +
                 sparms.FirstOrDefault(p => p.attrname == "EXPTYPE").attrval;
 
             QMFile.CreateDir(sparms.FirstOrDefault(p => p.attrname == "EXPPATH").attrval);
+
+            reportid = repid;
         }
 
         /// <summary>
@@ -80,69 +86,114 @@ namespace QM.Core.Model
                 header = m_parms.Where(x => x.attrname == "HEADER").FirstOrDefault().attrval;
                 filename = m_parms.Where(x => x.attrname == "EXPFILE").FirstOrDefault().attrval;
                 filetype = m_parms.Where(x => x.attrname == "EXPTYPE").FirstOrDefault().attrval;
-
+                inmail = parms.Where(x => x.refname == "MAIL" && x.attrname == "INMAIL").FirstOrDefault().attrval;
                 DataSet ds = db.ExecuteDataset(sql);
 
                 log.Debug(string.Format("[SqlExpJob] 导出文件{0},{1},{2},{3},{4}", title, filepath, filename, filetype, sql));
 
-                IExcel ex = new QMExcel(title, filepath);
-                if (ex.Export(ds.Tables[0], title, filepath, out error) == false)
+                if (filetype == "TXT")
                 {
-                    log.Debug(string.Format("[SqlExpJob] 导出文件异常{0}", error));
-                    filepath = "";
+                    QMText txt = new QMText();
+                    if (inmail == "X")
+                    {
+                        body = txt.Export(ds.Tables[0], header);
+                    }
+                    if (txt.Export(ds.Tables[0], header, filepath, out error) == false)
+                    {
+                        log.Fatal(string.Format("[SqlExpJob] 导出文件异常{0}", error));
+                        //filepath = "";
+                    }
+                    else
+                    {
+                        log.Debug("[SqlExpJob] 导出成功");
+                    }
+                }
+                else if (filetype == "CSV")
+                {
+                    QMText txt = new QMText();
+                    body = txt.Export(ds.Tables[0], header);
+                    if (txt.ExportCSV(ds.Tables[0], header, filepath, out error) == false)
+                    {
+                        log.Fatal(string.Format("[SqlExpJob] 导出文件异常{0}", error));
+                        //filepath = "";
+                    }
+                    else
+                    {
+                        log.Debug("[SqlExpJob] 导出成功");
+                    }
                 }
                 else
                 {
-                    log.Debug("[SqlExpJob] 导出成功");
-
-                    foreach (var item in sendby.Split('+'))
+                    IExcel ex = new QMExcel(title, filepath);
+                    if (ex.Export(ds.Tables[0], title, filepath, out error) == false)
                     {
-                        switch (item)
-                        {
-                            case "MAIL":
-                                IMail mail = new QMMail();
-                                mail.AddAttachment(filepath);
-                                m_parms = parms.Where(x => x.refname == "MAIL").ToList();
-                                foreach (var parm in m_parms)
-                                {
-                                    switch (parm.attrname)
-                                    {
-                                        case "TO":
-                                            mail.AddRecipient(parm.attrval);
-                                            break;
-                                        case "CC":
-                                            mail.AddRecipientCC(parm.attrval);
-                                            break;
-                                        case "BCC":
-                                            mail.AddRecipientBCC(parm.attrval);
-                                            break;
-                                        case "SUBJECT":
-                                            mail.Subject = parm.attrval;
-                                            break;
-                                        case "BODY":
-                                            mail.AddBody(parm.attrval, "REPORTID");
-                                            break;
-                                    }
-                                }
-                                mail.Send();
-
-                                QMFile.Delete(filepath);
-
-                                break;
-                            case "FTP":
-
-                                break;
-                            case "SFTP":
-
-                                break;
-                        }
+                        log.Fatal(string.Format("[SqlExpJob] 导出文件异常{0}", error));
+                        //filepath = "";
+                    }
+                    else
+                    {
+                        log.Debug("[SqlExpJob] 导出成功");
                     }
                 }
-                               
+
+                foreach (var item in sendby.Split('+'))
+                {
+                    switch (item)
+                    {
+                        case "MAIL":
+                            IMail mail = new QMMail();
+                            mail.AddAttachment(filepath);
+                            m_parms = parms.Where(x => x.refname == "MAIL").ToList();
+                            mail.Subject = m_parms.Where(x => x.attrname == "SUBJECT").FirstOrDefault().attrval +
+                                  DateTime.Now.ToString(m_parms.Where(x => x.attrname == "SUBDATE").FirstOrDefault().attrval);
+                            mail.AddBody(m_parms.Where(x => x.attrname == "BODY").FirstOrDefault().attrval + body, reportid);
+
+                            foreach (var parm in m_parms.Where(x => x.attrname == "TO" || x.attrname == "CC" || x.attrname == "BCC"))
+                            {
+                                switch (parm.attrname)
+                                {
+                                    case "TO":
+                                        mail.AddRecipient(parm.attrval);
+                                        break;
+                                    case "CC":
+                                        mail.AddRecipientCC(parm.attrval);
+                                        break;
+                                    case "BCC":
+                                        mail.AddRecipientBCC(parm.attrval);
+                                        break;
+                                }
+                            }
+
+                            mail.Send();
+                            log.Debug("[MAIL] 发送成功");
+                            break;
+                        case "FTP":
+                            QMFtp ftp = new QMFtp();
+                            m_parms = parms.Where(x => x.refname == "FTP").ToList();
+                            ftp.server = m_parms.Where(x => x.attrname == "SERVER").FirstOrDefault().attrval;
+                            ftp.user = m_parms.Where(x => x.attrname == "ACCOUNT").FirstOrDefault().attrval;
+                            ftp.pass = m_parms.Where(x => x.attrname == "PASSWORD").FirstOrDefault().attrval;
+                            string path = m_parms.Where(x => x.attrname == "PATH").FirstOrDefault().attrval;
+                            ftp.ChangeDir(path);
+                            ftp.OpenUpload(filepath,path + '/' + filename + '.' + filetype,true);
+                            long size = ftp.DoUpload();
+                            ftp.Disconnect();
+                            log.Debug("[FTP] 上传成功");
+                            break;
+                        case "SFTP":
+
+                            break;
+                    }
+
+                }
+
+                QMFile.Delete(filepath);
+                log.Debug("[SqlExpJob] 附件删除成功");
+
             }
             catch (QMException ex)
             {
-                log.Debug(string.Format("[SqlExpJob] 异常{0}", ex.Message));
+                log.Fatal(string.Format("[SqlExpJob] 异常{0}", ex.Message));
                 throw ex;
             }
             finally

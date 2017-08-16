@@ -1,13 +1,16 @@
-﻿<div class="ibox-title">
+﻿@using QM.Core.Common;
+<div class="ibox-title">
     <h5>邮件设置 <small>认真填写每项Item</small></h5>
 </div>
 <div class="ibox-content">
     <form method="get" class="form-horizontal">
         <div class="form-group">
             <label class="col-sm-2 control-label">邮件名称</label>
-            <div class="col-sm-10">
-
+            <div class="col-sm-6">
                 <input type="text" class="form-control" placeholder="邮件名称" name="mail_subject">
+            </div>
+            <div class="col-lg-4">
+                @Html.DropDownList("qm_subdate", QMExtend.GetDateFormat(), new { @class = "form-control m-b" })
             </div>
         </div>
         <div class="hr-line-dashed"></div>
@@ -92,7 +95,7 @@
         <div class="form-group">
             <label class="col-sm-2 control-label">内容</label>
             <div class="col-sm-10">
-                <textarea class="form-control" name="qm_body"></textarea>
+                <textarea class="form-control" name="qm_body" placeholder="邮件正文"></textarea>
             </div>
         </div>
     </form>

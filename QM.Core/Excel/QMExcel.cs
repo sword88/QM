@@ -84,6 +84,11 @@ namespace QM.Core.Excel
 
                 result = true;
             }
+            catch (IOException iex)
+            {
+                error = iex.Message;
+                throw iex;
+            }
             catch (QMException ex)
             {
                 error = ex.Message;

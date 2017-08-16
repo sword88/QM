@@ -7,6 +7,8 @@ using System.Text;
 using System.Security.Cryptography;
 using QM.Core.Exception;
 using QM.Core.Common;
+using QM.Core.Environments;
+using QM.Core.Log;
 
 namespace QM.Core.Files
 {
@@ -72,6 +74,8 @@ namespace QM.Core.Files
 
     public class QMFile
     {
+        private static ILogger log = QMStarter.CreateQMLogger(typeof(QMFile));
+
         /// <summary>
         /// 创建目录
         /// </summary>
@@ -166,7 +170,14 @@ namespace QM.Core.Files
         /// <param name="filename"></param>
         public static void Delete(string filename)
         {
-            File.Delete(filename);
+            try
+            {
+                File.Delete(filename);
+            }
+            catch (IOException ex)
+            {
+                log.Fatal(ex.Message);
+            } 
         }
 
 

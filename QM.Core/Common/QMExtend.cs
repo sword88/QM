@@ -150,9 +150,33 @@ namespace QM.Core.Common
             });
             result.Add(new SelectListItem()
             {
+                Text = "CSV",
+                Value = "CSV",
+                Selected = ("CSV" == type ? true : false)
+            });
+            result.Add(new SelectListItem()
+            {
                 Text = "TXT",
                 Value = "TXT",
                 Selected = ("TXT" == type ? true : false)
+            });
+
+            return result;
+        }
+
+        /// <summary>
+        /// 获得日期格式
+        /// </summary>
+        /// <param name="type"></param>
+        /// <returns></returns>
+        public static IEnumerable<SelectListItem> GetDateFormat(string type = "yyyy/MM/dd")
+        {
+            var result = new List<SelectListItem>();
+            result.Add(new SelectListItem()
+            {
+                Text = "yyyy/MM/dd",
+                Value = "yyyy/MM/dd",
+                Selected = ("yyyy/MM/dd" == type ? true : false)
             });
 
             return result;
