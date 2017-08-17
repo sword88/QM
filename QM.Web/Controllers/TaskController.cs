@@ -111,7 +111,7 @@ namespace QM.Web.Controllers
             t.taskSendby = fc.GetValue("qm_sendby").AttemptedValue;
             t.taskClsType = "";            
             
-            QMDBLogger.Info(t.idx, JsonConvert.SerializeObject(t));
+            QMDBLogger.Info(t.idx, QMLogLevel.Debug.ToString(), JsonConvert.SerializeObject(t));
 
             IList<TasksN2M> n2m = null;
             TasksN2M n = new TasksN2M();
@@ -125,7 +125,7 @@ namespace QM.Web.Controllers
                 n.refname = "SQL";
                 n.attrname = "HEADER";
                 n.attrval = fc.GetValue("sql_subject").AttemptedValue;
-                QMDBLogger.Info(n.idx, JsonConvert.SerializeObject(n));
+                QMDBLogger.Info(n.idx, QMLogLevel.Debug.ToString(), JsonConvert.SerializeObject(n));
                 n2m.Add(n);
 
                 //SQL File
@@ -134,7 +134,7 @@ namespace QM.Web.Controllers
                 n.refname = "SQL";
                 n.attrname = "EXPFILE";
                 n.attrval = fc.GetValue("sql_filename").AttemptedValue;
-                QMDBLogger.Info(n.idx, JsonConvert.SerializeObject(n));
+                QMDBLogger.Info(n.idx, QMLogLevel.Debug.ToString(), JsonConvert.SerializeObject(n));
                 n2m.Add(n);
 
                 //SQL File Type
@@ -143,7 +143,7 @@ namespace QM.Web.Controllers
                 n.refname = "SQL";
                 n.attrname = "EXPTYPE";
                 n.attrval = fc.GetValue("sql_filetype").AttemptedValue;
-                QMDBLogger.Info(n.idx, JsonConvert.SerializeObject(n));
+                QMDBLogger.Info(n.idx, QMLogLevel.Debug.ToString(), JsonConvert.SerializeObject(n));
                 n2m.Add(n);
             }
             #endregion
@@ -157,7 +157,7 @@ namespace QM.Web.Controllers
                 n.refname = "MAIL";
                 n.attrname = "TO";
                 n.attrval = fc.GetValue("qm_to").AttemptedValue;
-                QMDBLogger.Info(n.idx, JsonConvert.SerializeObject(n));
+                QMDBLogger.Info(n.idx, QMLogLevel.Debug.ToString(), JsonConvert.SerializeObject(n));
                 n2m.Add(n);
 
                 //Mail cc
@@ -166,7 +166,7 @@ namespace QM.Web.Controllers
                 n.refname = "MAIL";
                 n.attrname = "CC";
                 n.attrval = fc.GetValue("qm_cc").AttemptedValue;
-                QMDBLogger.Info(n.idx, JsonConvert.SerializeObject(n));
+                QMDBLogger.Info(n.idx, QMLogLevel.Debug.ToString(), JsonConvert.SerializeObject(n));
                 n2m.Add(n);
 
                 //Mail bcc
@@ -175,7 +175,7 @@ namespace QM.Web.Controllers
                 n.refname = "MAIL";
                 n.attrname = "BCC";
                 n.attrval = fc.GetValue("qm_bcc").AttemptedValue;
-                QMDBLogger.Info(n.idx, JsonConvert.SerializeObject(n));
+                QMDBLogger.Info(n.idx, QMLogLevel.Debug.ToString(), JsonConvert.SerializeObject(n));
                 n2m.Add(n);
 
                 //Mail subject
@@ -184,7 +184,7 @@ namespace QM.Web.Controllers
                 n.refname = "MAIL";
                 n.attrname = "SUBJECT";
                 n.attrval = fc.GetValue("mail_subject").AttemptedValue;
-                QMDBLogger.Info(n.idx, JsonConvert.SerializeObject(n));
+                QMDBLogger.Info(n.idx, QMLogLevel.Debug.ToString(), JsonConvert.SerializeObject(n));
                 n2m.Add(n);
 
                 //Mail body
@@ -193,7 +193,7 @@ namespace QM.Web.Controllers
                 n.refname = "MAIL";
                 n.attrname = "BODY";
                 n.attrval = fc.GetValue("qm_body").AttemptedValue;
-                QMDBLogger.Info(n.idx, JsonConvert.SerializeObject(n));
+                QMDBLogger.Info(n.idx, QMLogLevel.Debug.ToString(), JsonConvert.SerializeObject(n));
                 n2m.Add(n);
             }
             #endregion
@@ -207,7 +207,7 @@ namespace QM.Web.Controllers
                 n.refname = "FTP";
                 n.attrname = "SERVER";
                 n.attrval = fc.GetValue("ftp_server").AttemptedValue;
-                QMDBLogger.Info(n.idx, JsonConvert.SerializeObject(n));
+                QMDBLogger.Info(n.idx, QMLogLevel.Debug.ToString(), JsonConvert.SerializeObject(n));
                 n2m.Add(n);
 
                 //ftp account
@@ -216,7 +216,7 @@ namespace QM.Web.Controllers
                 n.refname = "FTP";
                 n.attrname = "ACCOUNT";
                 n.attrval = fc.GetValue("ftp_account").AttemptedValue;
-                QMDBLogger.Info(n.idx, JsonConvert.SerializeObject(n));
+                QMDBLogger.Info(n.idx, QMLogLevel.Debug.ToString(), JsonConvert.SerializeObject(n));
                 n2m.Add(n);
 
                 //ftp password
@@ -225,7 +225,7 @@ namespace QM.Web.Controllers
                 n.refname = "FTP";
                 n.attrname = "PASSWORD";
                 n.attrval = fc.GetValue("ftp_password").AttemptedValue;
-                QMDBLogger.Info(n.idx, JsonConvert.SerializeObject(n));
+                QMDBLogger.Info(n.idx, QMLogLevel.Debug.ToString(), JsonConvert.SerializeObject(n));
                 n2m.Add(n);
 
                 //ftp remote folder
@@ -234,7 +234,7 @@ namespace QM.Web.Controllers
                 n.refname = "FTP";
                 n.attrname = "RMOTEPATH";
                 n.attrval = fc.GetValue("ftp_remotepath").AttemptedValue;
-                QMDBLogger.Info(n.idx, JsonConvert.SerializeObject(n));
+                QMDBLogger.Info(n.idx, QMLogLevel.Debug.ToString(), JsonConvert.SerializeObject(n));
                 n2m.Add(n);
             }
             #endregion

@@ -32,12 +32,14 @@ namespace QM.Core.Data
                                     (idx,
                                      taskid,
                                      type,
+                                     server,
                                      createtime,
                                      message) 
                             values
                                     (:idx,
                                      :taskid,
                                      :type,
+                                     :server,
                                      :createtime,
                                      :message)";
 
@@ -46,6 +48,7 @@ namespace QM.Core.Data
                     new OracleParameter(":idx",t.idx),
                     new OracleParameter(":taskid",t.taskid),
                     new OracleParameter(":type",t.type),
+                    new OracleParameter(":server",t.server),
                     new OracleParameter(":createtime",t.createtime),
                     new OracleParameter(":message",t.message)
                 };

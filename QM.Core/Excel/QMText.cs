@@ -14,10 +14,10 @@ namespace QM.Core.Excel
         public string Export(DataTable dt, string header)
         {
             StringBuilder strHTMLBuilder = new StringBuilder();
-            strHTMLBuilder.Append("<table border=\"0\" width=\"100%\" bgcolor=\"#e2e2e2\">");
+            strHTMLBuilder.Append("<table border=\"1\" width=\"100%\">");
 
             #region 表头
-            strHTMLBuilder.Append("<tr >");
+            strHTMLBuilder.Append("<tr class=\"header\">");
             if (header == "")
             {
                 foreach (DataColumn myColumn in dt.Columns)

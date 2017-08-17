@@ -1082,7 +1082,7 @@ namespace QM.Core.Files
             {
                 file = null;
                 errormessage += ex.Message;
-                return false;
+                throw ex;
             }
 
             file_size = file.Length;
@@ -1108,7 +1108,8 @@ namespace QM.Core.Files
                     file.Close();
                     file = null;
                     errormessage += responseStr;
-                    return false;
+                    throw new QMException(errormessage);
+                    //return false;
             }
             ConnectDataSocket();
 
@@ -1263,10 +1264,9 @@ namespace QM.Core.Files
                 CloseDataSocket();
                 ReadResponse();
                 SetBinaryMode(false);
-                //throw ex;
+                throw ex;
                 //当上传中断时
-                errormessage += ex.Message;
-                return -1;
+                //errormessage += ex.Message;
             }
             return bytes_got;
         }

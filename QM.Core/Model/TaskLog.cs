@@ -31,5 +31,9 @@ namespace QM.Core.Model
         /// 日志内容
         /// </summary>
         public string message { get; set; }
+        /// <summary>
+        /// 服务器
+        /// </summary>
+        public string server { get; set; }
     }
 }

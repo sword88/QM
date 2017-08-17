@@ -11,7 +11,7 @@ namespace QM.Web.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            return RedirectToAction("index","task");
         }
 
         public ActionResult Test()

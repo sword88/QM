@@ -20,9 +20,9 @@ namespace QM.Core.Log
         /// </summary>
         /// <param name="taskId"></param>
         /// <param name="result"></param>
-        public static void Info(string taskId,string result)
+        public static void Info(string taskId, string type, string result)
         {
-            Task t = new Task(()=>log.Info(taskId,result));
+            Task t = new Task(()=>log.Info(taskId,type,result));
             t.Start();
         }
 

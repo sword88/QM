@@ -210,7 +210,7 @@ namespace QM.Core.Mail
         {
             foreach(var item in username.Split(';'))
             {
-                this.myEmail.To.Add(username);
+                this.myEmail.To.Add(item);
             }            
 
             return true;
@@ -222,7 +222,7 @@ namespace QM.Core.Mail
         {
             foreach (var item in username.Split(';'))
             {
-                this.myEmail.CC.Add(username);
+                this.myEmail.CC.Add(item);
             }            
 
             return true;
@@ -233,7 +233,7 @@ namespace QM.Core.Mail
         {
             foreach (var item in username.Split(';'))
             {
-                this.myEmail.Bcc.Add(username);
+                this.myEmail.Bcc.Add(item);
             }            
 
             return true;
@@ -315,11 +315,13 @@ namespace QM.Core.Mail
             }
             catch (SmtpException ex)
             {
-                log.Fatal(string.Format("QMMail=>Send发生严重错误，{0}", ex.Message));                
+                log.Fatal(string.Format("QMMail=>Send发生严重错误，{0}", ex.Message));
+                throw ex;                
             }
             catch (QMException ex)
             {
-                log.Fatal(string.Format("QMMail=>Send发生严重错误，{0}", ex.Message));                
+                log.Fatal(string.Format("QMMail=>Send发生严重错误，{0}", ex.Message));
+                throw ex;
             }
             finally
             {
@@ -359,7 +361,7 @@ namespace QM.Core.Mail
             sb.Append("#main{padding:5px}");
             sb.Append("#main div{padding:0 0 30px 0;}");
             sb.Append("#main .content{text-indent:20px;}");
-            sb.Append("#main table{font-size:16px;}");
+            sb.Append("#main table{font-size:12px;border-collapse:collapse;font-family:微软雅黑,宋体,Arial;}  .header{background-color:#F6F8F8;font-size:13px;}");
             sb.Append("#main #code{color:#FF0000;padding:3px;background-color:#C0C0C0;font-size:16px;}");
             sb.Append("</style>");
             //body

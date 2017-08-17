@@ -27,21 +27,21 @@ namespace QM.Core.QuartzNet
                 if (taskinfo == null)
                 {
                     log.Error(string.Format("当前任务信息为空,taskid：{0} - {1}", taskid, new QMException()));
-                    return;       
+                    throw new QMException(string.Format("当前任务信息为空,taskid：{0} - {1}", taskid, new QMException()));
                 }
-                QMDBLogger.Info(taskid, "开始运行");
+                QMDBLogger.Info(taskid, QMLogLevel.Info.ToString(), "开始运行");
                 QMDBLogger.UpdateLastStartTime(taskid, DateTime.Now);
 
                 taskinfo.sqlExpTask.TryRun(taskinfo.task.taskSendby);
                
                 QMDBLogger.UpdateLastEndTime(taskid, DateTime.Now);
-                QMDBLogger.Info(taskid, "运行完成");
+                QMDBLogger.Info(taskid, QMLogLevel.Info.ToString(), "运行完成");
             }
             catch (QMException ex)
             {
                 log.Fatal(string.Format("任务回调时发生严重错误，{0}", ex));
                 QMDBLogger.UpdateLastErrorTime(context.JobDetail.Key.Name, DateTime.Now);
-                QMDBLogger.Info(context.JobDetail.Key.Name, string.Format("任务回调时发生严重错误，{0}", ex));
+                QMDBLogger.Info(context.JobDetail.Key.Name, QMLogLevel.Fatal.ToString(), string.Format("任务回调时发生严重错误，{0}", ex));
             }
         }
     }

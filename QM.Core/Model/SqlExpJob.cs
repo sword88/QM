@@ -39,6 +39,7 @@ namespace QM.Core.Model
         private string header = "";
         private string filename = "";
         private string filetype = "XLS";
+        private string filedate = "";
         private string body = "";
         private string inmail = "";
         private string reportid = "REPORTID";
@@ -65,9 +66,11 @@ namespace QM.Core.Model
             db = new QMDBHelper(dbstr);
             sql = sqlstr;
             title = sparms.FirstOrDefault(p => p.attrname == "SUBJECT").attrval;
+            filename = sparms.Where(x => x.attrname == "EXPFILE").FirstOrDefault().attrval;
+            filetype = sparms.Where(x => x.attrname == "EXPTYPE").FirstOrDefault().attrval;
+            filedate = DateTime.Now.ToString(sparms.Where(x => x.attrname == "EXPDATE").FirstOrDefault().attrval);
             filepath = sparms.FirstOrDefault(p => p.attrname == "EXPPATH").attrval +
-                sparms.FirstOrDefault(p => p.attrname == "EXPFILE").attrval + "." +
-                sparms.FirstOrDefault(p => p.attrname == "EXPTYPE").attrval;
+                filename + filedate + "." + filetype;
 
             QMFile.CreateDir(sparms.FirstOrDefault(p => p.attrname == "EXPPATH").attrval);
 
@@ -84,12 +87,10 @@ namespace QM.Core.Model
                 IList<TasksN2M> m_parms = null;
                 m_parms = parms.Where(x => x.refname == "SQL").ToList();
                 header = m_parms.Where(x => x.attrname == "HEADER").FirstOrDefault().attrval;
-                filename = m_parms.Where(x => x.attrname == "EXPFILE").FirstOrDefault().attrval;
-                filetype = m_parms.Where(x => x.attrname == "EXPTYPE").FirstOrDefault().attrval;
                 inmail = parms.Where(x => x.refname == "MAIL" && x.attrname == "INMAIL").FirstOrDefault().attrval;
                 DataSet ds = db.ExecuteDataset(sql);
 
-                log.Debug(string.Format("[SqlExpJob] 导出文件{0},{1},{2},{3},{4}", title, filepath, filename, filetype, sql));
+                log.Debug(string.Format("[SqlExpJob] 导出文件{0},{1},{2},{3},{4}", title, filepath, filename + filedate, filetype, sql));
 
                 if (filetype == "TXT")
                 {
@@ -141,44 +142,78 @@ namespace QM.Core.Model
                     switch (item)
                     {
                         case "MAIL":
-                            IMail mail = new QMMail();
-                            mail.AddAttachment(filepath);
-                            m_parms = parms.Where(x => x.refname == "MAIL").ToList();
-                            mail.Subject = m_parms.Where(x => x.attrname == "SUBJECT").FirstOrDefault().attrval +
-                                  DateTime.Now.ToString(m_parms.Where(x => x.attrname == "SUBDATE").FirstOrDefault().attrval);
-                            mail.AddBody(m_parms.Where(x => x.attrname == "BODY").FirstOrDefault().attrval + body, reportid);
-
-                            foreach (var parm in m_parms.Where(x => x.attrname == "TO" || x.attrname == "CC" || x.attrname == "BCC"))
+                            try
                             {
-                                switch (parm.attrname)
+                                IMail mail = new QMMail();
+                                mail.AddAttachment(filepath);
+                                m_parms = parms.Where(x => x.refname == "MAIL").ToList();
+                                mail.Subject = m_parms.Where(x => x.attrname == "SUBJECT").FirstOrDefault().attrval +
+                                      DateTime.Now.ToString(m_parms.Where(x => x.attrname == "SUBDATE").FirstOrDefault().attrval);
+                                mail.AddBody(m_parms.Where(x => x.attrname == "BODY").FirstOrDefault().attrval + body, reportid);
+
+                                foreach (var parm in m_parms.Where(x => x.attrname == "TO" || x.attrname == "CC" || x.attrname == "BCC"))
                                 {
-                                    case "TO":
-                                        mail.AddRecipient(parm.attrval);
-                                        break;
-                                    case "CC":
-                                        mail.AddRecipientCC(parm.attrval);
-                                        break;
-                                    case "BCC":
-                                        mail.AddRecipientBCC(parm.attrval);
-                                        break;
+                                    switch (parm.attrname)
+                                    {
+                                        case "TO":
+                                            mail.AddRecipient(parm.attrval);
+                                            break;
+                                        case "CC":
+                                            mail.AddRecipientCC(parm.attrval);
+                                            break;
+                                        case "BCC":
+                                            mail.AddRecipientBCC(parm.attrval);
+                                            break;
+                                    }
+                                }
+
+                                if (mail.Send())
+                                {
+                                    log.Debug("[MAIL] 发送成功");
+                                }
+                                else
+                                {
+                                    log.Fatal("[MAIL] 发送失败");
+                                    throw new QMException("[MAIL] 发送失败");
                                 }
                             }
-
-                            mail.Send();
-                            log.Debug("[MAIL] 发送成功");
+                            catch (QMException ex)
+                            {
+                                log.Fatal(string.Format("[MAIL] 发送失败，{0}", ex.Message));
+                                throw ex;
+                            }
+                           
                             break;
                         case "FTP":
-                            QMFtp ftp = new QMFtp();
-                            m_parms = parms.Where(x => x.refname == "FTP").ToList();
-                            ftp.server = m_parms.Where(x => x.attrname == "SERVER").FirstOrDefault().attrval;
-                            ftp.user = m_parms.Where(x => x.attrname == "ACCOUNT").FirstOrDefault().attrval;
-                            ftp.pass = m_parms.Where(x => x.attrname == "PASSWORD").FirstOrDefault().attrval;
-                            string path = m_parms.Where(x => x.attrname == "PATH").FirstOrDefault().attrval;
-                            ftp.ChangeDir(path);
-                            ftp.OpenUpload(filepath,path + '/' + filename + '.' + filetype,true);
-                            long size = ftp.DoUpload();
-                            ftp.Disconnect();
-                            log.Debug("[FTP] 上传成功");
+                            try
+                            {
+                                QMFtp ftp = new QMFtp();
+                                m_parms = parms.Where(x => x.refname == "FTP").ToList();
+                                ftp.server = m_parms.Where(x => x.attrname == "SERVER").FirstOrDefault().attrval;
+                                ftp.user = m_parms.Where(x => x.attrname == "ACCOUNT").FirstOrDefault().attrval;
+                                ftp.pass = m_parms.Where(x => x.attrname == "PASSWORD").FirstOrDefault().attrval;
+                                string path = m_parms.Where(x => x.attrname == "PATH").FirstOrDefault().attrval;
+                                ftp.ChangeDir(path);
+                                log.Debug("[FTP]目录切换成功");
+                                if (ftp.OpenUpload(filepath, path + '/' + filename + filedate + '.' + filetype, false))
+                                {
+                                    log.Debug(string.Format("[FTP]开始上传{0},{1}", filepath, path + '/' + filename + '.' + filetype));
+                                    long size = ftp.DoUpload();
+                                    log.Debug(string.Format("[FTP]文件大小:{0}", size));
+                                }
+                                else
+                                {
+                                    log.Fatal("[FTP]上传失败");
+                                }
+
+                                ftp.Disconnect();
+                                log.Debug("[FTP] 上传成功");
+                            }
+                            catch (QMException ex)
+                            {
+                                log.Fatal(string.Format("[FTP] 发送失败，{0}", ex.Message));
+                                throw ex;
+                            }
                             break;
                         case "SFTP":
 
