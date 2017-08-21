@@ -9,12 +9,13 @@ using QM.Core.Model;
 using QM.Core.Exception;
 using QM.Core.Log;
 using QM.Core.Data;
+using Oracle.ManagedDataAccess.Client;
 
 namespace QM.Demo.Quituser
 {
     public class Class1 : DllTask
     {
-        private static string dbcon = "Provider=MSDAORA.1;Data Source=WHDB;Password=sfmg1018;User ID=sfmg";
+        private static string dbcon = "DATA SOURCE=10.68.10.18:1521/whdb.asewh.com;PASSWORD=sfmg1018;USER ID=sfmg";
         private static ILogger  log = QMStarter.CreateQMLogger(typeof(Class1));
         public override void Run()
         {
@@ -22,7 +23,7 @@ namespace QM.Demo.Quituser
             {
                 QMDBHelper db = new QMDBHelper(dbcon);
                 string sql = "SELECT EMPNO,REF_EMPNO,TAGID,NAME_CN FROM USER_LIST WHERE QUIT_CHECK IS NULL AND STATUS='N'";
-                DataSet ds = QMDBHelper.ExecuteDataset(sql);
+                DataSet ds = db.ExecuteDataset(sql,null);
                 
                 MsgHandlerService srv = new MsgHandlerService();
 
@@ -53,7 +54,7 @@ namespace QM.Demo.Quituser
                         else
                         {
                             string sqlupdate = "UPDATE USER_LIST SET QUIT_CHECK='Y' WHERE EMPNO ='" + empno + "'";
-                            QMDBHelper.ExecuteNonQuery(sqlupdate);
+                            db.ExecuteNonQuery(sqlupdate,CommandType.Text,null);
                         }
 
                         //log.Info("delete empno " + empno + " finished.");

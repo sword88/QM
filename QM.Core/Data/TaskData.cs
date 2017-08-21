@@ -143,8 +143,15 @@ namespace QM.Core.Data
             return t;
         }
 
-        public void Insert(Tasks t, IList<TasksN2M> n2m)
+        /// <summary>
+        /// 新的任务
+        /// </summary>
+        /// <param name="t"></param>
+        /// <param name="n2m"></param>
+        /// <returns></returns>
+        public bool Insert(Tasks t, IList<TasksN2M> n2m)
         {
+            bool result = false;
             qmdb.BeginTransaction();
             try
             {
@@ -154,12 +161,15 @@ namespace QM.Core.Data
                     InsertParms(item);
                 }
                 qmdb.Commit();
+                result = true;
             }
             catch (QMException ex)
             {
                 throw ex;
                 qmdb.Rollback();
             }
+
+            return result;
         }
 
         /// <summary>
@@ -445,7 +455,7 @@ namespace QM.Core.Data
                     new OracleParameter(":attrval",n2m.attrval)
                 };
 
-                qmdb.ExecuteNonQuery(sql, CommandType.Text, param);
+                qmdb.ExecuteNonQuery(qmdb.p_trans, CommandType.Text, sql, param);
             }
             catch (QMException ex)
             {

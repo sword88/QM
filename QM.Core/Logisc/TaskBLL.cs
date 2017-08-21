@@ -54,9 +54,9 @@ namespace QM.Core.Logisc
         /// 新的任务
         /// </summary>
         /// <param name="t"></param>
-        public void Insert(Tasks t,IList<TasksN2M> n2m)
+        public bool Insert(Tasks t,IList<TasksN2M> n2m)
         {
-            tdal.Insert(t,n2m);
+            return tdal.Insert(t,n2m);
         }
 
         /// <summary>

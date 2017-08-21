@@ -44,7 +44,6 @@ E:\ASECode\Test\QM.git\QM.Web\bin\System.Web.WebPages.dll
 E:\ASECode\Test\QM.git\QM.Web\bin\System.Web.WebPages.Razor.dll
 E:\ASECode\Test\QM.git\QM.Web\bin\WebGrease.dll
 E:\ASECode\Test\QM.git\QM.Web\bin\Quartz.dll
-E:\ASECode\Test\QM.git\QM.Web\bin\log4net.dll
 E:\ASECode\Test\QM.git\QM.Web\bin\Autofac.dll
 E:\ASECode\Test\QM.git\QM.Web\bin\ICSharpCode.SharpZipLib.dll
 E:\ASECode\Test\QM.git\QM.Web\bin\NPOI.dll

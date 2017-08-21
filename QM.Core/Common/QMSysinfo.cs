@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.Win32;
 using System.Diagnostics;
+using System.Management;
 using System.Runtime.InteropServices;
 using QM.Core.Exception;
 
@@ -230,5 +231,55 @@ namespace QM.Core.Common
         {
             return CpuUsage.Create().Query();
         }
+
+        #region 内存使用率
+        private long m_PhysicalMemory = 0;   //物理内存 
+        private long m_FreeUsage = 0;
+        /// <summary>
+        /// 获得物理内存大小
+        /// </summary>
+        /// <returns>返回物理内存大小</returns>
+        private long GetTotalMemory()
+        { 
+            //获得物理内存 
+            ManagementClass mc = new ManagementClass("Win32_ComputerSystem");
+            ManagementObjectCollection moc = mc.GetInstances();
+            foreach (ManagementObject mo in moc)
+            {
+                if (mo["TotalPhysicalMemory"] != null)
+                {
+                    m_PhysicalMemory = long.Parse(mo["TotalPhysicalMemory"].ToString());
+                }
+            }
+            return  m_PhysicalMemory;
+        }
+
+        /// <summary>
+        /// 获得可用物理内存大小
+        /// </summary>
+        /// <returns>返回使用率</returns>
+        private long GetMemoryFree()
+        {            
+            ManagementClass mos = new ManagementClass("Win32_OperatingSystem");
+            foreach (ManagementObject mo in mos.GetInstances())
+            {
+                if (mo["FreePhysicalMemory"] != null)
+                {
+                    m_FreeUsage = 1024 * long.Parse(mo["FreePhysicalMemory"].ToString());
+                }
+            }
+
+            return m_FreeUsage;
+        }
+
+        public long GetMemoryFreeUsage()
+        {
+            long usage = 0;
+            usage = (GetTotalMemory() - GetMemoryFree() / GetTotalMemory());
+
+            return usage;
+        }
+
+        #endregion
     }
 }

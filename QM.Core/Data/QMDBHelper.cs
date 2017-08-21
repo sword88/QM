@@ -14,6 +14,7 @@ namespace QM.Core.Data
         private string DbConStr { get; set; }
         public OracleTransaction p_trans = null;
         public OracleConnection p_con = null;
+        private OracleCommand p_cmd = null;
 
         public QMDBHelper(string con)
         {
@@ -26,7 +27,9 @@ namespace QM.Core.Data
         public void BeginTransaction()
         {
             p_con = new OracleConnection(DbConStr);
-            p_trans = p_con.BeginTransaction();
+            p_con.Open();
+            p_cmd = p_con.CreateCommand();
+            p_trans = p_con.BeginTransaction(IsolationLevel.ReadCommitted);
         }
 
         /// <summary>
@@ -79,14 +82,12 @@ namespace QM.Core.Data
         /// <returns>返回受影响的行数</returns>
         public int ExecuteNonQuery(OracleTransaction trans, CommandType cmdType, string cmdText, params OracleParameter[] commandParameters)
         {
-            // 创建一个OracleCommand
-            OracleCommand cmd = new OracleCommand();
             //调用静态方法PrepareCommand完成赋值操作
-            PrepareCommand(cmd, trans.Connection, trans, cmdType, cmdText, commandParameters);
+            PrepareCommand(p_cmd, trans.Connection, trans, cmdType, cmdText, commandParameters);
             //执行命令返回
-            int val = cmd.ExecuteNonQuery();
+            int val = p_cmd.ExecuteNonQuery();
             //清空参数
-            cmd.Parameters.Clear();
+            p_cmd.Parameters.Clear();
             return val;
         }
 
