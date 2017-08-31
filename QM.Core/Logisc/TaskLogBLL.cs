@@ -30,5 +30,11 @@ namespace QM.Core.Logisc
             Data.TaskLogData tl = new TaskLogData();
             tl.Insert(tlog);
         }
+
+        public IList<TaskLog> LogList(string idx)
+        {
+            TaskLogData log = new TaskLogData();
+            return log.GetLogList(idx);
+        }
     }
 }

@@ -1,2 +1,0 @@
-DEBUG 2017-08-18 09:12:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
-DEBUG 2017-08-18 09:12:01  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT

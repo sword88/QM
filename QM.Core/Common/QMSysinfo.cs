@@ -233,13 +233,13 @@ namespace QM.Core.Common
         }
 
         #region 内存使用率
-        private long m_PhysicalMemory = 0;   //物理内存 
-        private long m_FreeUsage = 0;
+        private float m_PhysicalMemory = 0;   //物理内存 
+        private float m_FreeUsage = 0;
         /// <summary>
         /// 获得物理内存大小
         /// </summary>
         /// <returns>返回物理内存大小</returns>
-        private long GetTotalMemory()
+        private float GetTotalMemory()
         { 
             //获得物理内存 
             ManagementClass mc = new ManagementClass("Win32_ComputerSystem");
@@ -248,7 +248,7 @@ namespace QM.Core.Common
             {
                 if (mo["TotalPhysicalMemory"] != null)
                 {
-                    m_PhysicalMemory = long.Parse(mo["TotalPhysicalMemory"].ToString());
+                    m_PhysicalMemory = float.Parse(mo["TotalPhysicalMemory"].ToString());
                 }
             }
             return  m_PhysicalMemory;
@@ -258,24 +258,23 @@ namespace QM.Core.Common
         /// 获得可用物理内存大小
         /// </summary>
         /// <returns>返回使用率</returns>
-        private long GetMemoryFree()
+        private float GetMemoryFree()
         {            
             ManagementClass mos = new ManagementClass("Win32_OperatingSystem");
             foreach (ManagementObject mo in mos.GetInstances())
             {
                 if (mo["FreePhysicalMemory"] != null)
                 {
-                    m_FreeUsage = 1024 * long.Parse(mo["FreePhysicalMemory"].ToString());
+                    m_FreeUsage = 1024 * float.Parse(mo["FreePhysicalMemory"].ToString());
                 }
             }
 
             return m_FreeUsage;
         }
 
-        public long GetMemoryFreeUsage()
+        public float GetMemoryFreeUsage()
         {
-            long usage = 0;
-            usage = (GetTotalMemory() - GetMemoryFree() / GetTotalMemory());
+            float usage = (GetTotalMemory() - GetMemoryFree()) / GetTotalMemory();
 
             return usage;
         }

@@ -30,7 +30,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="log4net, Version=2.0.7.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a" />
+    <Reference Include="Interop.zkemkeeper">
+      <HintPath>..\..\..\ASE WEB\WEB\security\win\RFGateway_ACC\obj\x86\Debug\Interop.zkemkeeper.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.9.0, Culture=neutral, PublicKeyToken=b32731d11ce58905">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\QM.Core\bin\Debug\log4net.dll</HintPath>
+    </Reference>
     <Reference Include="Oracle.ManagedDataAccess, Version=4.121.2.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\QM.Core\bin\Debug\Oracle.ManagedDataAccess.dll</HintPath>
@@ -48,8 +55,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
-    <Compile Include="MessageHandler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Common.cs" />
+    <Compile Include="ZKSHandler.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\QM.Core\QM.Core.csproj">

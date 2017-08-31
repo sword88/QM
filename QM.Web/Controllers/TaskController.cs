@@ -26,8 +26,8 @@ namespace QM.Web.Controllers
 
         public ActionResult List()
         {
-            TaskData td = new TaskData();
-            var task = td.GetTaskList();
+            TaskBLL tb = new TaskBLL();
+            var task = tb.GetList();
             return View(task);
         }
 
@@ -315,43 +315,32 @@ namespace QM.Web.Controllers
 
         public ActionResult Log(string idx = "")
         {
+            TaskLogBLL tb = new TaskLogBLL();
+            var log = tb.LogList(idx);
 
-            return View();
+            return View(log);
         }
 
         /// <summary>
-        /// cpu利用率
+        /// 性能
         /// </summary>
         /// <returns></returns>
-        public JsonResult Cpu()
+        public JsonResult Performance()
         {
             try
             {
-                var result = QM.Core.Common.QMSysinfo.GetCpuUsage();
+                QM.Core.Common.QMSysinfo sys = new Core.Common.QMSysinfo();
+                var mresult = sys.GetMemoryFreeUsage() * 100;
+                var cresult = QM.Core.Common.QMSysinfo.GetCpuUsage();
 
-                string msg = JsonConvert.SerializeObject(result);
+                string cpu = JsonConvert.SerializeObject(cresult);
+                string memory = JsonConvert.SerializeObject(mresult);
 
-                return Json(new { result = true, msg = msg });
+                return Json(new { result = true, cpu = cpu, memory = memory });
             }
             catch
             {
-                return Json(new { result = false, msg = "" });
-            }
-        }
-
-        public JsonResult Memory()
-        {
-            try
-            {
-                var result = QM.Core.Common.QMSysinfo.GetMemoryFreeUsage();
-
-                string msg = JsonConvert.SerializeObject(result);
-
-                return Json(new { result = true, msg = msg });
-            }
-            catch(QMException ex)
-            {
-                return Json(new { result = false, msg = "" });
+                return Json(new { result = false, cpu = "", memory = "" });
             }
         }
 

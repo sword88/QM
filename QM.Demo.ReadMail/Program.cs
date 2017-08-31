@@ -18,7 +18,7 @@ namespace QM.Demo.ReadMail
         private static string server = "mail.asewh.com";
         private static int port = 143;
         private static string uid = "junxiao_liang@aseglobal.com";
-        private static string pwd = "123*";
+        private static string pwd = "123456789*";
         private static string folder = "B2B";
 
         static void Main(string[] args)

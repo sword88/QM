@@ -162,14 +162,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="QM.Core.dll" size="105984">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="QM.Core.dll" size="108032">
       <assemblyIdentity name="QM.Core" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>9mh76EoNDiGF3dYQ64qYhhIFCnrlmbCJSInML+XDiT0=</dsig:DigestValue>
+        <dsig:DigestValue>UgWKs6LmJdOw3IWyW+7xZDQfZ9N+kuXpdh79LJtYlAE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -181,7 +181,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>J/Li/gBH8TxFaV8b7GEd2McXgE0L9A3w+GnQjMWXQUY=</dsig:DigestValue>
+        <dsig:DigestValue>aAnVoqGTDL+BOj6wlkoty2jpCHgcQL47oY9RVIvXD6M=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

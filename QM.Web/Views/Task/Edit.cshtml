@@ -1,0 +1,144 @@
+﻿@using QM.Core.Common;
+@{
+    Layout = "~/Views/Shared/_LayoutAdminContent.cshtml";
+}
+
+<div class="row">
+    <div class="col-sm-6">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title" style="border-bottom:none;background:#fff;">
+                <h5>内存状态</h5>
+            </div>
+            <div class="ibox-content" style="border-top:none;">
+                <div id="echarts-performance" style="height:240px;">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript" src="@Url.Content("~/Scripts/jquery-3.1.1.min.js")"></script>
+<!-- ECharts -->
+<script src="@Url.Content("~/Scripts/echarts.min.js")"></script>
+<script type="text/javascript">
+
+    var cdate = [];
+    var cdata = [];
+    var mdate = [];
+    var mdata = [];
+    var now = new Date();
+    var memory = echarts.init(document.getElementById("echarts-performance"));
+    memory.setOption({
+        title: {
+            text: '性能监控表'
+        },
+        tooltip: {
+            trigger: 'axis',
+            axisPointer: {
+                type: 'cross',
+                label: {
+                    backgroundColor: '#6a7985'
+                }
+            }
+        },
+        legend: {
+            data: ['CPU', '内存']
+        },
+        toolbox: {
+            feature: {
+                saveAsImage: {}
+            }
+        },
+        grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
+        },
+        xAxis:[ {
+            type: "category",
+            boundaryGap: false,
+            data: cdate
+        }, {
+            type: "category",
+            boundaryGap: false,
+            data: mdate
+        }],
+        yAxis: [{
+            boundaryGap: [0, '20%'],
+            type: 'value'
+        }],
+        series: [
+            {
+                name: 'CPU',
+                type: 'line',
+                smooth: true,
+                symbol: 'none',
+                stack: '总量',
+                areaStyle: {
+                    normal: {}
+                },
+                data: cdata
+            },
+            {
+                name: '内存',
+                type: 'line',
+                smooth: true,
+                symbol: 'none',
+                stack: '总量',
+                areaStyle: {
+                    normal: {}
+                },
+                data: mdata
+            }
+        ]
+    });
+    function add() {
+        $.post("/task/memory", null, function (data) {
+            if (data.result == true) {
+                mnow = [now.getMinutes(), now.getSeconds()].join(":");
+                mdate.push(mnow);
+                mdata.push(data.msg);
+                if (shift) {
+                    console.log(mdata);
+                    mdata.shift();
+                    mdate.shift();
+                }
+            }
+        }, "json");
+
+        $.post("/task/cpu", null, function (data) {
+            if (data.result == true) {
+                cnow = [now.getMinutes(), now.getSeconds()].join(":");
+                cdate.push(cnow);
+                cdata.push(data.msg);
+                if (shift) {
+                    console.log(cdata);
+                    cdate.shift();
+                }
+            }
+        }, "json");
+    }
+
+    for (var i = 0; i < 5; i++) {
+        add();
+    }
+
+    setInterval(function () {
+        add(true);
+        memory.setOption({
+            series: [{
+                type: 'line',
+                areaStyle: { normal: {} },
+                data: cdata
+            }, {
+                type: 'line',
+                areaStyle: { normal: {} },
+                data: mdata
+            }]
+        });
+    }, 1000);
+
+
+</script>

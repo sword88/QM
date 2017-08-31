@@ -29,7 +29,7 @@ namespace QM.Core.Data
             OracleDataReader dr;
             try
             {
-                string sql = "select * from qm_task where taskstate = 'Y'";
+                string sql = "select * from qm_task where taskstate = 'Y' order by taskcreatetime desc";
                 dr = qmdb.ExecuteReader(CommandType.Text,sql);
                 while (dr.Read())
                 {

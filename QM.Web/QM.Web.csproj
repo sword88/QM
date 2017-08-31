@@ -311,6 +311,8 @@
     <Content Include="Views\Task\TimePop.cshtml" />
     <Content Include="Views\Home\Test.cshtml" />
     <Content Include="Views\Task\SQL.cshtml" />
+    <Content Include="Views\Task\Edit.cshtml" />
+    <Content Include="Views\Task\Log.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
