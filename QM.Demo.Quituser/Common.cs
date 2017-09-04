@@ -5,7 +5,6 @@ using System.Linq;
 using System.Data;
 using System.Text;
 using System.Threading.Tasks;
-using QM.Core.Data;
 using Oracle.ManagedDataAccess.Client;
 
 namespace QM.Demo.Quituser

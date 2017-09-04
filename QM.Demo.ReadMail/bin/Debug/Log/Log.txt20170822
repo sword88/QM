@@ -1,0 +1,25 @@
+DEBUG 2017-08-22 08:09:27  程序开始
+FATAL 2017-08-22 08:09:48  出错了,由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 222.175.206.208:143
+DEBUG 2017-08-22 08:10:37  程序开始
+FATAL 2017-08-22 08:10:58  出错了,由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 222.175.206.208:143
+DEBUG 2017-08-22 08:11:21  程序开始
+FATAL 2017-08-22 08:11:50  出错了,由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 222.175.206.208:143
+DEBUG 2017-08-22 08:12:03  程序开始
+DEBUG 2017-08-22 08:12:03  连接服务器成功mail.asewh.com,143
+DEBUG 2017-08-22 08:12:04  登录成功junxiao_liang@aseglobal.com,123456789*
+DEBUG 2017-08-22 08:12:04  选择操作文件夹B2B,邮件数7
+DEBUG 2017-08-22 08:12:13  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20170821_89_T,正文1E728499W07:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 3450                                                                     
+1E730377W05:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+
+DEBUG 2017-08-22 08:12:15  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20170821_59_T,正文1E728499W07:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 3450                                                                     
+1E730377W05:MVOU:5660:WIP181 ERROR - THE QUANTITY OF LOSSES AND BONUSES DOES NOT BALANCE TO THE                                                           
+
+DEBUG 2017-08-22 08:12:18  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20170821_51_T,正文1E728499W07:SPLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 3450                                                                     
+1E728499W07:MRLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 3450                                                                     
+1E730377W05:MRLT:5660:WIP168 ERROR - YOU HAVE ENTERED A LOT NUMBER THAT DOES NOT EXIST.  PLEASE                                                           
+
+DEBUG 2017-08-22 08:12:18  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20170821_49_S,正文1E728499W07:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 3450                                                                     
+
+DEBUG 2017-08-22 08:12:20  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20170821_09_Q,正文VC701048   :MVOU:1017:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+
+DEBUG 2017-08-22 08:12:20  断开连接

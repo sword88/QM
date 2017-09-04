@@ -95,7 +95,7 @@ namespace QM.Core.QuartzNet
             _scheduler.JobFactory = new QMJobFactory();
             _scheduler.Start();
             
-            InitLoadTaskList();
+            //InitLoadTaskList();
         }
 
         /// <summary>
@@ -435,6 +435,7 @@ namespace QM.Core.QuartzNet
             }
         }
 
+
         /// <summary>
         /// 初始化远程
         /// </summary>
@@ -447,7 +448,7 @@ namespace QM.Core.QuartzNet
 
                 properties["quartz.scheduler.proxy"] = "true";
 
-                properties["quartz.scheduler.proxy.address"] = string.Format("{0}://{1}:{2}/QuartzScheduler", "tcp", "10.68.10.57", "555");
+                properties["quartz.scheduler.proxy.address"] = string.Format("{0}://{1}:{2}/QuartzScheduler", "tcp", "127.0.0.1", "555");
 
                 ISchedulerFactory sf = new StdSchedulerFactory(properties);
 
@@ -458,6 +459,15 @@ namespace QM.Core.QuartzNet
                 log.Fatal(ex.Message);
             }
 
+        }
+
+        /// <summary>
+        /// 返回IScheduler
+        /// </summary>
+        /// <returns></returns>
+        public static IScheduler GetScheduler()
+        {
+            return _scheduler;
         }
     }
 }
