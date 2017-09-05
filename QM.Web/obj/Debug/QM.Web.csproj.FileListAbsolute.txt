@@ -77,7 +77,6 @@ E:\ASECode\Test\QM.git\QM.Web\bin\Microsoft.Owin.Security.Twitter.xml
 E:\ASECode\Test\QM.git\QM.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 E:\ASECode\Test\QM.git\QM.Web\bin\Quartz.pdb
 E:\ASECode\Test\QM.git\QM.Web\bin\Quartz.xml
-E:\ASECode\Test\QM.git\QM.Web\bin\log4net.xml
 E:\ASECode\Test\QM.git\QM.Web\bin\Autofac.xml
 E:\ASECode\Test\QM.git\QM.Web\bin\NPOI.xml
 E:\ASECode\Test\QM.git\QM.Web\bin\Aspose.Cells.xml

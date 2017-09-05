@@ -10,6 +10,7 @@ using QM.Core.Exception;
 using QM.Core.Log;
 using QM.Core.Data;
 using Oracle.ManagedDataAccess.Client;
+using System.Runtime.ExceptionServices;
 
 namespace QM.Demo.Quituser
 {
@@ -22,10 +23,19 @@ namespace QM.Demo.Quituser
                 Common.QuitUserByDevice();
                 Common.QuitUser();
             }
+            catch (AccessViolationException aex)
+            {
+                throw new Exception(aex.Message);
+            }
             catch (QMException ex)
             {
                 throw ex;
             }
+        }
+
+        void UnKownError(object sender, UnhandledExceptionEventArgs e)
+        {
+            var ex = ((Exception)e.ExceptionObject).GetBaseException();
         }
     }
 }

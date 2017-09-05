@@ -17,7 +17,7 @@ namespace QM.Excel
         public override void Run()
         {
             QMDBHelper db = new QMDBHelper(dbcon);
-            DataSet ds = QMDBHelper.ExecuteDataset("select * from AF_LOGIN_HIS");
+            DataSet ds = db.ExecuteDataset("select * from AF_LOGIN_HIS",null);
             string title = "测试标题";
             string subject = @"E:\ASECode\Test\QM.git\QM.Excel\bin\Debug\1.xls";
             QMExcel ex = new QMExcel(title,subject);

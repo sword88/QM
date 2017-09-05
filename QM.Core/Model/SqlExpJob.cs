@@ -192,7 +192,7 @@ namespace QM.Core.Model
                                 ftp.server = m_parms.Where(x => x.attrname == "SERVER").FirstOrDefault().attrval;
                                 ftp.user = m_parms.Where(x => x.attrname == "ACCOUNT").FirstOrDefault().attrval;
                                 ftp.pass = m_parms.Where(x => x.attrname == "PASSWORD").FirstOrDefault().attrval;
-                                string path = m_parms.Where(x => x.attrname == "PATH").FirstOrDefault().attrval;
+                                string path = m_parms.Where(x => x.attrname == "RMOTEPATH").FirstOrDefault().attrval;
                                 ftp.ChangeDir(path);
                                 log.Debug("[FTP]目录切换成功");
                                 if (ftp.OpenUpload(filepath, path + '/' + filename + filedate + '.' + filetype, false))

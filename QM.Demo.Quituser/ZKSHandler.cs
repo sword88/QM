@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Collections;
 using log4net;
+using System.Runtime.ExceptionServices;
 
 namespace QM.Demo.Quituser
 {
@@ -62,7 +63,8 @@ namespace QM.Demo.Quituser
         /// </summary>
         /// <param name="ip"></param>
         /// <returns></returns>
-        private bool Connect(string ip)
+        [HandleProcessCorruptedStateExceptions]
+        private bool Connect(string ip,int port = 4370)
         {
             int i = 0;
             bool result = true;
@@ -71,12 +73,12 @@ namespace QM.Demo.Quituser
                 log.Info(string.Format("Try connection to ZK Device ({0})", ip));
 
                 log.Info(string.Format("ZKSoftware API :  axCZKEM1.Connect_Net=>1"));
-                if (!axCZKEM1.Connect_Net(ip, 4370))
+                if (!axCZKEM1.Connect_Net(ip, port))
                 {
-                    for(i=2;i< 4;i++)
+                    for (i = 2; i < 4; i++)
                     {
-                        log.Info(string.Format("ZKSoftware API :  axCZKEM1.Connect_Net=>{0}",i));
-                        if (!axCZKEM1.Connect_Net(ip, 4370))
+                        log.Info(string.Format("ZKSoftware API :  axCZKEM1.Connect_Net=>{0}", i));
+                        if (!axCZKEM1.Connect_Net(ip, port))
                         {
                             result = false;
                         }
@@ -85,7 +87,7 @@ namespace QM.Demo.Quituser
                             break;
                         }
                     }
-                    if(!result)
+                    if (!result)
                     {
                         axCZKEM1.GetLastError(ref ErrorCode);
                         ErrorMessage = "Unable to connect the device,ErrorCode= " + ErrorCode;
@@ -93,17 +95,28 @@ namespace QM.Demo.Quituser
                     }
                 }
 
-                if(result)
+                if (result)
                 {
                     log.Info(string.Format("ZKSoftware API :  axCZKEM1.EnableDevice: false"));
                     axCZKEM1.EnableDevice(iMachineNumber, false);
                     log.Info(string.Format("ZK Device ({0}) is Connected", ip));
                 }
             }
+            catch (AccessViolationException aex)
+            {
+                log.Fatal(aex);
+                result = false;
+                throw new Exception(aex.Message);
+            }
             catch (Exception ex)
             {
                 log.Fatal(ex);
                 result = false;
+                throw ex;
+            }
+            catch
+            {
+                throw;
             }
 
             return result;
@@ -192,35 +205,44 @@ namespace QM.Demo.Quituser
         /// <returns></returns>
         public ResultSet QuitUserByDvc(string device_ip)
         {
-            bool resultAll = true;
-            string messageAll = "";
-            
-            IList<string> userlist = Common.GetUserByGate(device_ip);
-            UserInfo[] user = new UserInfo[userlist.Count()];
-            for (int x = 0; x < userlist.Count(); x++)
+            try
             {
-                UserInfo u = new UserInfo();
-                u.Id = userlist[x].ToString();
-                user[x] = u;
+                bool resultAll = true;
+                string messageAll = "";
+
+                IList<string> userlist = Common.GetUserByGate(device_ip);
+                UserInfo[] user = new UserInfo[userlist.Count()];
+                for (int x = 0; x < userlist.Count(); x++)
+                {
+                    UserInfo u = new UserInfo();
+                    u.Id = userlist[x].ToString();
+                    user[x] = u;
+                }
+
+                if(user.Count() > 0)
+                {
+                    ResultSet result = DeleteUser(device_ip, 1, user);
+
+                    if (result.SeccessFlag == false)
+                    {
+                        resultAll = false;
+                        messageAll += string.Format("IP:{0},ERROR:{1}\r\n", device_ip, result.Description);
+                    }
+                }
+
+                _resultset = new ResultSet
+                {
+                    SeccessFlag = resultAll,
+                    Result = "Delete Complete",
+                    Description = messageAll
+                };
+
+                return _resultset;
             }
-            ResultSet result = DeleteUser(device_ip, 1, user);
-
-
-            if (result.SeccessFlag == false)
+            catch (Exception ex)
             {
-                resultAll = false;
-                messageAll += string.Format("IP:{0},ERROR:{1}\r\n", device_ip, result.Description);
+                throw ex;
             }
-
-
-            _resultset = new ResultSet
-            {
-                SeccessFlag = resultAll,
-                Result = "Delete Complete",
-                Description = messageAll
-            };
-
-            return _resultset;
         }
 
         /// <summary>
@@ -332,6 +354,7 @@ namespace QM.Demo.Quituser
                     Result = ErrorCode.ToString(),
                     Description = string.Format("Try Catched Error {0}", ex.Message)
                 };
+                throw ex;
             }
             finally
             {

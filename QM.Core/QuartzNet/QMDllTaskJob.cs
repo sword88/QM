@@ -11,6 +11,7 @@ using QM.Core.Log;
 using QM.Core.Model;
 using QM.Core.Data;
 using System.Net;
+using System.Runtime.ExceptionServices;
 
 namespace QM.Core.QuartzNet
 {
@@ -18,6 +19,7 @@ namespace QM.Core.QuartzNet
     {
         private static ILog log = LogManager.GetLogger(typeof(QMDllTaskJob));
 
+        [HandleProcessCorruptedStateExceptions]
         public void Execute(IJobExecutionContext context)
         {
             try
@@ -39,11 +41,23 @@ namespace QM.Core.QuartzNet
                 QMDBLogger.UpdateLastEndTime(taskid, DateTime.Now);
                 QMDBLogger.Info(taskid, QMLogLevel.Info.ToString(), "运行完成");
             }
+            catch (AccessViolationException aex)
+            {
+                log.Fatal(string.Format("任务回调时发生严重错误，{0}", aex));
+                QMDBLogger.UpdateLastErrorTime(context.JobDetail.Key.Name, DateTime.Now);
+                QMDBLogger.Info(context.JobDetail.Key.Name, QMLogLevel.Fatal.ToString(), string.Format("任务回调时发生严重错误，{0}", aex));
+            }
             catch (QMException ex)
             {
-                log.Fatal(string.Format("任务回调时发生严重错误，{0}",ex));
+                log.Fatal(string.Format("任务回调时发生严重错误，{0}", ex));
                 QMDBLogger.UpdateLastErrorTime(context.JobDetail.Key.Name, DateTime.Now);
                 QMDBLogger.Info(context.JobDetail.Key.Name, QMLogLevel.Fatal.ToString(), string.Format("任务回调时发生严重错误，{0}", ex));
+            }
+            catch
+            {
+                log.Fatal("任务回调时发生严重错误");
+                QMDBLogger.UpdateLastErrorTime(context.JobDetail.Key.Name, DateTime.Now);
+                QMDBLogger.Info(context.JobDetail.Key.Name, QMLogLevel.Fatal.ToString(), "任务回调时发生严重错误，{0}");
             }
         }
     }

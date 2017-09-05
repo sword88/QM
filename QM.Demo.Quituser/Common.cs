@@ -19,44 +19,58 @@ namespace QM.Demo.Quituser
 
         public static void QuitUser()
         {
-            string sql = "SELECT EMPNO,REF_EMPNO,TAGID,NAME_CN FROM USER_LIST WHERE QUIT_CHECK IS NULL AND STATUS='N'";
-            DataSet ds = db.ExecuteDataset(sql, null);
-            DataTable dt = null;
-            if (ds != null && ds.Tables[0] != null)
+            try
             {
-                dt = ds.Tables[0];
-                int count = dt.Rows.Count;
-                UserInfo[] userInfo = new UserInfo[count];
-                for (int i = 0; i < count; i++)
+                string sql = "SELECT EMPNO,REF_EMPNO,TAGID,NAME_CN FROM USER_LIST WHERE QUIT_CHECK IS NULL AND STATUS='N'";
+                DataSet ds = db.ExecuteDataset(sql, null);
+                DataTable dt = null;
+                if (ds != null && ds.Tables[0] != null)
                 {
-                    string empno = dt.Rows[i]["EMPNO"].ToString();
-  
-                    UserInfo user = new UserInfo();
-                    user.Id = dt.Rows[i]["EMPNO"].ToString();
-                    user.Name = dt.Rows[i]["NAME_CN"].ToString();
-                    user.Enabled = true;
-                    user.Privilege = 1;
-                    userInfo[i] = user;
+                    dt = ds.Tables[0];
+                    int count = dt.Rows.Count;
+                    UserInfo[] userInfo = new UserInfo[count];
+                    for (int i = 0; i < count; i++)
+                    {
+                        string empno = dt.Rows[i]["EMPNO"].ToString();
 
-                    string date = DateTime.Now.AddDays(-1).ToString("yyyyMMdd");
-                    mdb.ExecuteNonQuery("UPDATE FWUSERPROFILE SET EXPIRATIONDATE = '" + date + "' WHERE USERNAME = '" + empno + "'",CommandType.Text,null);
-                    mdb.ExecuteNonQuery("UPDATE FWUSERPROFILE@MESDB1 SET EXPIRATIONDATE = '" + date + "' WHERE USERNAME = '" + empno + "'", CommandType.Text, null);
+                        UserInfo user = new UserInfo();
+                        user.Id = dt.Rows[i]["EMPNO"].ToString();
+                        user.Name = dt.Rows[i]["NAME_CN"].ToString();
+                        user.Enabled = true;
+                        user.Privilege = 1;
+                        userInfo[i] = user;
+
+                        string date = DateTime.Now.AddDays(-1).ToString("yyyyMMdd");
+                        mdb.ExecuteNonQuery("UPDATE FWUSERPROFILE SET EXPIRATIONDATE = '" + date + "' WHERE USERNAME = '" + empno + "'", CommandType.Text, null);
+                        mdb.ExecuteNonQuery("UPDATE FWUSERPROFILE@MESDB1 SET EXPIRATIONDATE = '" + date + "' WHERE USERNAME = '" + empno + "'", CommandType.Text, null);
+                    }
+
+                    zks.QuitUser(userInfo);
                 }
-
-                zks.QuitUser(userInfo);
             }
+            catch (Exception ex)
+            {
+                throw ex;
+            }           
         }
 
         public static void QuitUserByDevice()
         {
-            if (int.Parse(GetQuitCount().ToString()) > 20)
+            try
             {
-                IList<string> lists = Common.GetDeviceList();
-
-                foreach (var item in lists)
+                if (int.Parse(GetQuitCount().ToString()) > 20)
                 {
-                    zks.QuitUserByDvc(item);
+                    IList<string> lists = Common.GetDeviceList();
+
+                    foreach (var item in lists)
+                    {
+                        zks.QuitUserByDvc(item);
+                    }
                 }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
             }
         }
 

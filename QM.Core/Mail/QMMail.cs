@@ -208,7 +208,8 @@ namespace QM.Core.Mail
         //收件人的邮箱地址
         public bool AddRecipient(string username)
         {
-            foreach(var item in username.Split(';'))
+            if (username == "") { return true; }
+            foreach (var item in username.Split(';'))
             {
                 this.myEmail.To.Add(item);
             }            
@@ -220,6 +221,7 @@ namespace QM.Core.Mail
         //抄送人的邮箱地址
         public bool AddRecipientCC(string username)
         {
+            if(username == "") { return true; }
             foreach (var item in username.Split(';'))
             {
                 this.myEmail.CC.Add(item);
@@ -231,6 +233,7 @@ namespace QM.Core.Mail
         //密送人的邮箱地址
         public bool AddRecipientBCC(string username)
         {
+            if (username == "") { return true; }
             foreach (var item in username.Split(';'))
             {
                 this.myEmail.Bcc.Add(item);

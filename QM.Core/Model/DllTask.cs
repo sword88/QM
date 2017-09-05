@@ -23,9 +23,17 @@ namespace QM.Core.Model
             {
                 Run();
             }
+            catch (AccessViolationException aex)
+            {
+                throw new QMException(aex.Message);
+            }
             catch (QMException ex)
             {
                 throw ex;
+            }
+            catch
+            {
+                throw;
             }
             finally
             {

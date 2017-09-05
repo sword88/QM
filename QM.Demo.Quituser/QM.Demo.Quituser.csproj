@@ -30,10 +30,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Interop.zkemkeeper">
-      <HintPath>..\..\..\ASE WEB\WEB\security\win\RFGateway_ACC\obj\x86\Debug\Interop.zkemkeeper.dll</HintPath>
-      <EmbedInteropTypes>True</EmbedInteropTypes>
-    </Reference>
     <Reference Include="log4net, Version=1.2.9.0, Culture=neutral, PublicKeyToken=b32731d11ce58905">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\QM.Core\bin\Debug\log4net.dll</HintPath>
@@ -68,6 +64,17 @@
       <Project>{786b8217-7715-4137-a4dc-6630664c5a70}</Project>
       <Name>QM.Core</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="zkemkeeper">
+      <Guid>{FE9DED34-E159-408E-8490-B720A5E632C7}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
