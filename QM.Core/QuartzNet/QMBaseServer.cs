@@ -95,7 +95,7 @@ namespace QM.Core.QuartzNet
             _scheduler.JobFactory = new QMJobFactory();
             _scheduler.Start();
             
-            //InitLoadTaskList();
+            InitLoadTaskList();
         }
 
         /// <summary>

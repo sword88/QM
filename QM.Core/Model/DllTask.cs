@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using System.Reflection;
 using System.Runtime.Remoting.Lifetime;
 using QM.Core.Exception;
+using QM.Core.Log;
+using QM.Core.Environments;
 
 namespace QM.Core.Model
 {
@@ -14,6 +16,7 @@ namespace QM.Core.Model
     /// </summary>
     public abstract class DllTask : MarshalByRefObject, IDisposable
     {
+        private static ILogger log = QMStarter.CreateQMLogger(typeof(DllTask));
         public DllTask()
         { }
 
@@ -21,7 +24,9 @@ namespace QM.Core.Model
         {
             try
             {
+                log.Debug(string.Format("[StdDll][Start]标准DLL/exe任务"));
                 Run();
+                log.Debug(string.Format("[StdDll][End]标准DLL/exe任务"));
             }
             catch (AccessViolationException aex)
             {

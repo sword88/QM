@@ -13,7 +13,7 @@ VARIABLE V_SQLERR VARCHAR2(255);
 
 SELECT TO_CHAR (SYSDATE, 'MMDD_hh24') || '_rpt.txt' TC FROM DUAL;
 
-SPOOL  C:\QM\&FILENAME;
+SPOOL  C:\QM\FILE\&FILENAME;
 --启用DBMS OUTPUT
 SET SERVEROUTPUT ON;
 --程序开始时间
@@ -31,7 +31,8 @@ BEGIN
                 :IDX || 'ID',
                 'NA',
                 SYSDATE,
-                :IDX || 'MESSAGE');
+                :IDX || 'MESSAGE',
+				'NA');
 
    COMMIT;
    --模拟操作，休眠10秒

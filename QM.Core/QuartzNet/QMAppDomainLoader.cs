@@ -6,6 +6,8 @@ using System.IO;
 using System.Reflection;
 using System.Threading.Tasks;
 using QM.Core.Model;
+using QM.Core.Log;
+using QM.Core.Environments;
 
 namespace QM.Core.QuartzNet
 {
@@ -15,6 +17,7 @@ namespace QM.Core.QuartzNet
     /// <typeparam name="T"></typeparam>
     public class QMAppDomainLoader<T> where T : class
     {
+        private static ILogger log = QMStarter.CreateQMLogger(typeof(QMAppDomainLoader<T>));
         /// <summary>
         /// 加载应用程序域，获取相应实例
         /// </summary>
@@ -23,14 +26,16 @@ namespace QM.Core.QuartzNet
         /// <param name="domain"></param>
         /// <returns></returns>
         public T Load(string dllpath, string classpath, out AppDomain domain)
-        {
+        {            
             AppDomainSetup setup = new AppDomainSetup();
             if (File.Exists(dllpath + ".config"))
             {
                 setup.ConfigurationFile = dllpath + ".config";
+                log.Debug(string.Format("[QMAppDomainLoader] 加载config file:{0}", setup.ConfigurationFile));
             }
             
             setup.ApplicationBase = Path.GetDirectoryName(dllpath);
+            log.Debug(string.Format("[QMAppDomainLoader] 加载目录:{0}", setup.ApplicationBase));
             setup.CachePath = setup.ApplicationBase;
             setup.ShadowCopyFiles = "true";
             //setup.ShadowCopyDirectories = setup.ApplicationBase;
@@ -49,6 +54,7 @@ namespace QM.Core.QuartzNet
         public void UnLoad(AppDomain domain)
         {
             AppDomain.Unload(domain);
+            log.Debug("[QMAppDomainLoader] 卸载应用程序域成功");
             domain = null;
         }
 
