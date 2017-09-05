@@ -14,9 +14,9 @@ namespace QM.Excel
         private static ILogger log;
         private static string dbcon = "Provider=MSDAORA.1;Data Source=WHDB;Password=wh123;User ID=whfront";
         private static string error;
+        private QMDBHelper db = new QMDBHelper(dbcon);
         public override void Run()
         {
-            QMDBHelper db = new QMDBHelper(dbcon);
             DataSet ds = db.ExecuteDataset("select * from AF_LOGIN_HIS",null);
             string title = "测试标题";
             string subject = @"E:\ASECode\Test\QM.git\QM.Excel\bin\Debug\1.xls";
@@ -25,6 +25,12 @@ namespace QM.Excel
             {
                 throw new QMException(error);
             }
+        }
+
+        public override void Dispose()
+        {
+            db.Disponse();
+            base.Dispose();
         }
     }
 }

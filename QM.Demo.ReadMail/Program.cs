@@ -88,5 +88,10 @@ namespace QM.Demo.ReadMail
             log.Debug("程序开始");
             Mail();
         }
+
+        public override void Dispose()
+        {
+            base.Dispose();
+        }
     }
 }

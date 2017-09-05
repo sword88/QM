@@ -49,9 +49,8 @@ namespace QM.Core.Model
         /// <summary>
         /// 系统资源释放
         /// </summary>
-        public void Dispose()
+        public virtual void Dispose()
         {
-            Dispose();
         }
     }
 }

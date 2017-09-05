@@ -14,9 +14,14 @@ using System.Runtime.ExceptionServices;
 
 namespace QM.Demo.Quituser
 {
-    public class Class1 : DllTask
+    public class Program : DllTask
     {
-        public override void Run()
+        static void Main(string[] args)
+        {           
+            quit();
+        }
+
+        public static void quit()
         {
             try
             {
@@ -33,9 +38,14 @@ namespace QM.Demo.Quituser
             }
         }
 
-        void UnKownError(object sender, UnhandledExceptionEventArgs e)
+        public override void Run()
         {
-            var ex = ((Exception)e.ExceptionObject).GetBaseException();
+            quit();
+        }
+
+        public override void Dispose()
+        {
+            base.Dispose();
         }
     }
 }

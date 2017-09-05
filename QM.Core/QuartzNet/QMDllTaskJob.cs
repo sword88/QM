@@ -12,12 +12,13 @@ using QM.Core.Model;
 using QM.Core.Data;
 using System.Net;
 using System.Runtime.ExceptionServices;
+using QM.Core.Environments;
 
 namespace QM.Core.QuartzNet
 {
     public class QMDllTaskJob : IJob
     {
-        private static ILog log = LogManager.GetLogger(typeof(QMDllTaskJob));
+        private static ILog log = QMStarter.CreateQMLogger(typeof(QMDllTaskJob));
 
         [HandleProcessCorruptedStateExceptions]
         public void Execute(IJobExecutionContext context)

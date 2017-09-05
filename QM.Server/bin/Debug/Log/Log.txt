@@ -537,3 +537,59 @@ DEBUG 2017-09-05 02:20:01  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
 DEBUG 2017-09-05 02:20:02  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
 DEBUG 2017-09-05 02:20:02  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
 DEBUG 2017-09-05 02:20:04  [SqlFileTask][Start] 程序名:SqlPlus,参数：whfront/wh123@whdb @ c:\qm\Files\2017\06\log.sql
+INFO  2017-09-05 03:28:35  QM Server 开启服务
+DEBUG 2017-09-05 03:29:01  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
+DEBUG 2017-09-05 03:29:01  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
+DEBUG 2017-09-05 03:30:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
+DEBUG 2017-09-05 03:30:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
+DEBUG 2017-09-05 03:31:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
+DEBUG 2017-09-05 03:31:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
+DEBUG 2017-09-05 03:31:00  [SqlFileTask][Start] 程序名:SqlPlus,参数：whfront/wh123@whdb @ c:\qm\Files\2017\06\log.sql
+DEBUG 2017-09-05 03:31:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
+DEBUG 2017-09-05 03:31:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
+DEBUG 2017-09-05 03:31:00  [SqlFileTask][End] 程序名:SqlPlus
+DEBUG 2017-09-05 03:32:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
+DEBUG 2017-09-05 03:32:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
+DEBUG 2017-09-05 03:32:00  [SqlFileTask][Start] 程序名:SqlPlus,参数：whfront/wh123@whdb @ c:\qm\Files\2017\06\log.sql
+DEBUG 2017-09-05 03:32:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
+DEBUG 2017-09-05 03:32:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
+DEBUG 2017-09-05 03:32:00  [SqlFileTask][End] 程序名:SqlPlus
+DEBUG 2017-09-05 03:33:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
+DEBUG 2017-09-05 03:33:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
+DEBUG 2017-09-05 03:33:00  [SqlFileTask][Start] 程序名:SqlPlus,参数：whfront/wh123@whdb @ c:\qm\Files\2017\06\log.sql
+DEBUG 2017-09-05 03:33:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
+DEBUG 2017-09-05 03:33:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
+DEBUG 2017-09-05 03:33:00  [SqlFileTask][End] 程序名:SqlPlus
+DEBUG 2017-09-05 03:34:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
+DEBUG 2017-09-05 03:34:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
+DEBUG 2017-09-05 03:34:00  [SqlFileTask][Start] 程序名:SqlPlus,参数：whfront/wh123@whdb @ c:\qm\Files\2017\06\log.sql
+DEBUG 2017-09-05 03:34:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
+DEBUG 2017-09-05 03:34:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
+DEBUG 2017-09-05 03:34:00  [SqlFileTask][End] 程序名:SqlPlus
+DEBUG 2017-09-05 03:35:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
+DEBUG 2017-09-05 03:35:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
+DEBUG 2017-09-05 03:35:00  [SqlFileTask][Start] 程序名:SqlPlus,参数：whfront/wh123@whdb @ c:\qm\Files\2017\06\log.sql
+DEBUG 2017-09-05 03:35:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
+DEBUG 2017-09-05 03:35:00  [SqlFileTask][End] 程序名:SqlPlus
+DEBUG 2017-09-05 03:35:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
+INFO  2017-09-05 03:41:56  QM Server 开启服务
+DEBUG 2017-09-05 03:41:57  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
+DEBUG 2017-09-05 03:41:57  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
+DEBUG 2017-09-05 03:41:57  [SqlFileTask][Start] 程序名:SqlPlus,参数：whfront/wh123@whdb @ c:\qm\Files\2017\06\log.sql
+DEBUG 2017-09-05 03:41:57  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
+DEBUG 2017-09-05 03:41:57  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
+DEBUG 2017-09-05 03:41:58  [SqlFileTask][End] 程序名:SqlPlus
+INFO  2017-09-05 03:48:48  QM Server 开启服务
+INFO  2017-09-05 03:49:04  QM Server 开启服务
+DEBUG 2017-09-05 03:49:05  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
+DEBUG 2017-09-05 03:49:05  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
+DEBUG 2017-09-05 03:49:05  [SqlFileTask][Start] 程序名:SqlPlus,参数：whfront/wh123@whdb @ c:\qm\Files\2017\06\log.sql
+DEBUG 2017-09-05 03:49:05  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
+DEBUG 2017-09-05 03:49:05  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
+DEBUG 2017-09-05 03:49:06  [SqlFileTask][End] 程序名:SqlPlus
+DEBUG 2017-09-05 03:50:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
+DEBUG 2017-09-05 03:50:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
+DEBUG 2017-09-05 03:50:00  [SqlFileTask][Start] 程序名:SqlPlus,参数：whfront/wh123@whdb @ c:\qm\Files\2017\06\log.sql
+DEBUG 2017-09-05 03:50:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
+DEBUG 2017-09-05 03:50:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
+DEBUG 2017-09-05 03:50:00  [SqlFileTask][End] 程序名:SqlPlus

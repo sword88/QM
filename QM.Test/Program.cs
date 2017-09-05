@@ -39,5 +39,10 @@ namespace QM.Test
             Console.WriteLine(DateTime.Now.ToString());
             log.Debug(DateTime.Now.ToString());
         }
+
+        public override void Dispose()
+        {
+            base.Dispose();
+        }
     }
 }

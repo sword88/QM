@@ -6,11 +6,13 @@ using System.Data;
 using System.Text;
 using System.Threading.Tasks;
 using Oracle.ManagedDataAccess.Client;
+using log4net;
 
 namespace QM.Demo.Quituser
 {
     public class Common
     {
+        private readonly static ILog log = LogManager.GetLogger(typeof(Common));
         private static string dbcon = "DATA SOURCE=10.68.10.18:1521/whdb.asewh.com;PASSWORD=sfmg1018;USER ID=sfmg";
         private static string mdbcon = "DATA SOURCE=10.68.10.110:1588/mesdb2;PASSWORD=mesbrft00;USER ID=mesbr";
         public static QMDBHelper db = new QMDBHelper(dbcon);
@@ -58,7 +60,10 @@ namespace QM.Demo.Quituser
         {
             try
             {
-                if (int.Parse(GetQuitCount().ToString()) > 20)
+                int cnt = int.Parse(GetQuitCount().ToString());
+                log.Debug(string.Format("离职人员共计{0}",cnt));
+
+                if (cnt > 20)
                 {
                     IList<string> lists = Common.GetDeviceList();
 
