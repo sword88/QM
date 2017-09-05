@@ -9,10 +9,11 @@ using ActiveUp.Net.Mail;
 using log4net;
 using QM.Core;
 using Oracle.ManagedDataAccess.Client;
+using QM.Core.Model;
 
 namespace QM.Demo.ReadMail
 {
-    class Program
+    class Program : DllTask
     {
         private static ILog log = LogManager.GetLogger(typeof(Program));
         private static string server = "mail.asewh.com";
@@ -80,6 +81,12 @@ namespace QM.Demo.ReadMail
             {
                 log.Fatal(string.Format("出错了,{0}", ex.Message));
             }
+        }
+
+        public override void Run()
+        {
+            log.Debug("程序开始");
+            Mail();
         }
     }
 }
