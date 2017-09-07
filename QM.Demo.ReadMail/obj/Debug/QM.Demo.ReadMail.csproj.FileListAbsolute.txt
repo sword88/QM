@@ -5,7 +5,6 @@ E:\ASECode\Test\QM.git\QM.Demo.ReadMail\bin\Debug\log4net.dll
 E:\ASECode\Test\QM.git\QM.Demo.ReadMail\bin\Debug\Oracle.ManagedDataAccess.dll
 E:\ASECode\Test\QM.git\QM.Demo.ReadMail\bin\Debug\QM.Core.dll
 E:\ASECode\Test\QM.git\QM.Demo.ReadMail\bin\Debug\Quartz.dll
-E:\ASECode\Test\QM.git\QM.Demo.ReadMail\bin\Debug\Autofac.dll
 E:\ASECode\Test\QM.git\QM.Demo.ReadMail\bin\Debug\ICSharpCode.SharpZipLib.dll
 E:\ASECode\Test\QM.git\QM.Demo.ReadMail\bin\Debug\NPOI.dll
 E:\ASECode\Test\QM.git\QM.Demo.ReadMail\bin\Debug\Aspose.Cells.dll
@@ -21,7 +20,6 @@ E:\ASECode\Test\QM.git\QM.Demo.ReadMail\bin\Debug\QM.Core.pdb
 E:\ASECode\Test\QM.git\QM.Demo.ReadMail\bin\Debug\log4net.xml
 E:\ASECode\Test\QM.git\QM.Demo.ReadMail\bin\Debug\Quartz.pdb
 E:\ASECode\Test\QM.git\QM.Demo.ReadMail\bin\Debug\Quartz.xml
-E:\ASECode\Test\QM.git\QM.Demo.ReadMail\bin\Debug\Autofac.xml
 E:\ASECode\Test\QM.git\QM.Demo.ReadMail\bin\Debug\NPOI.xml
 E:\ASECode\Test\QM.git\QM.Demo.ReadMail\bin\Debug\Aspose.Cells.xml
 E:\ASECode\Test\QM.git\QM.Demo.ReadMail\bin\Debug\System.Web.Mvc.xml

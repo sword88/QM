@@ -7,7 +7,6 @@ using Topshelf;
 using QM.Core.Log;
 using QM.Core.Model;
 using QM.Core.QuartzNet;
-using QM.Core.Environments;
 
 namespace QM.Server
 {

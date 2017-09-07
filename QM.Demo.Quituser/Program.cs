@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using QM.Core.Environments;
 using QM.Core.Model;
 using QM.Core.Exception;
 using QM.Core.Log;

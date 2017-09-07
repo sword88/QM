@@ -8,7 +8,6 @@ using QM.Core.Common;
 using QM.Core.Log;
 using QM.Core.Exception;
 using QM.Core.Data;
-using QM.Core.Environments;
 using QM.Core.Model;
 using System.Net;
 
@@ -16,7 +15,7 @@ namespace QM.Core.QuartzNet
 {
     public class QMUnStdDllTaskJob : IJob
     {
-        private static ILogger log = QMStarter.CreateQMLogger(typeof(QMUnStdDllTaskJob));
+        private static ILogger log = QMLoggerFactory.GetInstance().CreateLogger(typeof(QMUnStdDllTaskJob));
 
         public void Execute(IJobExecutionContext context)
         {

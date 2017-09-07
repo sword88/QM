@@ -34,14 +34,6 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\dll\Aspose.Cells.dll</HintPath>
     </Reference>
-    <Reference Include="Autofac, Version=4.4.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
-      <HintPath>..\packages\Autofac.4.4.0\lib\net45\Autofac.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Autofac.Configuration, Version=4.0.1.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
-      <HintPath>..\packages\Autofac.Configuration.4.0.1\lib\net45\Autofac.Configuration.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="Common.Logging, Version=3.3.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
       <HintPath>..\packages\Common.Logging.3.3.1\lib\net40\Common.Logging.dll</HintPath>
       <Private>True</Private>
@@ -155,7 +147,6 @@
     <Compile Include="Data\SequenceData.cs" />
     <Compile Include="Data\TaskData.cs" />
     <Compile Include="Data\TaskLogData.cs" />
-    <Compile Include="Environments\QMStarter.cs" />
     <Compile Include="Excel\IExcel.cs" />
     <Compile Include="Excel\QMExcel.cs" />
     <Compile Include="Excel\QMExcelAsponse.cs" />
@@ -170,7 +161,6 @@
     <Compile Include="Log\ILoggerFactory.cs" />
     <Compile Include="Log\QMDBLogger.cs" />
     <Compile Include="Log\QMLoggerFactory.cs" />
-    <Compile Include="Log\QMLogModule.cs" />
     <Compile Include="Mail\IMail.cs" />
     <Compile Include="Mail\QMMail.cs" />
     <Compile Include="Model\TasksN2M.cs" />

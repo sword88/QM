@@ -8,7 +8,6 @@ using QM.Core.Excel;
 using QM.Core.Exception;
 using QM.Core.Log;
 using QM.Core.Data;
-using QM.Core.Environments;
 using System.Collections.Generic;
 using QM.Core.Mail;
 
@@ -19,7 +18,7 @@ namespace QM.Core.Model
     /// </summary>
     public class SqlExpJob
     {
-        private static ILogger log = QMStarter.CreateQMLogger(typeof(SqlExpJob));
+        private static ILogger log = QMLoggerFactory.GetInstance().CreateLogger(typeof(SqlExpJob));
 
         //数据库连接字符串
         private string dbcon = "";

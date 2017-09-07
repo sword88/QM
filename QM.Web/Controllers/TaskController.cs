@@ -11,13 +11,12 @@ using QM.Core.QuartzNet;
 using QM.Core.Logisc;
 using QM.Core.Log;
 using QM.Core.Exception;
-using QM.Core.Environments;
 
 namespace QM.Web.Controllers
 {
     public class TaskController : Controller
     {
-        private static ILogger log = QMStarter.CreateQMLogger(typeof(TaskLogData));
+        private static ILogger log = QMLoggerFactory.GetInstance().CreateLogger(typeof(TaskLogData));
         // GET: Task
         public ActionResult Index()
         {

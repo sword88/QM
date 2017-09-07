@@ -7,7 +7,6 @@ using System.Reflection;
 using System.Runtime.Remoting.Lifetime;
 using System.Diagnostics;
 using QM.Core.Exception;
-using QM.Core.Environments;
 using QM.Core.Log;
 
 namespace QM.Core.Model
@@ -17,7 +16,7 @@ namespace QM.Core.Model
     /// </summary>
     public class SqlFileTask
     {
-        private static ILogger log = QMStarter.CreateQMLogger(typeof(SqlFileTask));
+        private static ILogger log = QMLoggerFactory.GetInstance().CreateLogger(typeof(SqlFileTask));
 
         private string taskfile;
         private string dbconstr;

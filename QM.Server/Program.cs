@@ -7,7 +7,6 @@ using Topshelf;
 using QM.Core;
 using QM.Server;
 using QM.Core.Log;
-using QM.Core.Environments;
 using QM.Core.QuartzNet;
 
 namespace QM.Server
@@ -17,7 +16,7 @@ namespace QM.Server
 
         static void Main(string[] args)
         {
-            var host = QMStarter.CreateQMLogger(typeof(Program));
+            var host = QMLoggerFactory.GetInstance().CreateLogger(typeof(Program));
 
             //异常捕获
             AppDomain.CurrentDomain.UnhandledException += UnKownError;

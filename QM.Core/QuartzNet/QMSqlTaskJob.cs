@@ -10,13 +10,12 @@ using QM.Core.Mail;
 using QM.Core.Files;
 using QM.Core.Exception;
 using QM.Core.Data;
-using QM.Core.Environments;
 
 namespace QM.Core.QuartzNet
 {
     public class QMSqlExpTaskJob : IJob
     {
-        private static ILogger log = QMStarter.CreateQMLogger(typeof(QMSqlExpTaskJob));
+        private static ILogger log = QMLoggerFactory.GetInstance().CreateLogger(typeof(QMSqlExpTaskJob));
 
         public void Execute(IJobExecutionContext context)
         {

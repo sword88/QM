@@ -12,13 +12,12 @@ using QM.Core.Model;
 using QM.Core.Data;
 using System.Net;
 using System.Runtime.ExceptionServices;
-using QM.Core.Environments;
 
 namespace QM.Core.QuartzNet
 {
     public class QMDllTaskJob : IJob
     {
-        private static ILog log = QMStarter.CreateQMLogger(typeof(QMDllTaskJob));
+        private static ILog log = QMLoggerFactory.GetInstance().CreateLogger(typeof(QMDllTaskJob));
 
         [HandleProcessCorruptedStateExceptions]
         public void Execute(IJobExecutionContext context)
@@ -37,7 +36,7 @@ namespace QM.Core.QuartzNet
                 QMDBLogger.UpdateLastStartTime(taskid, DateTime.Now);
 
                 taskinfo.dllTask.TryRun();
-                taskinfo.dllTask.Dispose();
+                //taskinfo.dllTask.Dispose();
 
                 QMDBLogger.UpdateLastEndTime(taskid, DateTime.Now);
                 QMDBLogger.Info(taskid, QMLogLevel.Info.ToString(), "运行完成");
@@ -53,6 +52,12 @@ namespace QM.Core.QuartzNet
                 log.Fatal(string.Format("任务回调时发生严重错误，{0}", ex));
                 QMDBLogger.UpdateLastErrorTime(context.JobDetail.Key.Name, DateTime.Now);
                 QMDBLogger.Info(context.JobDetail.Key.Name, QMLogLevel.Fatal.ToString(), string.Format("任务回调时发生严重错误，{0}", ex));
+            }
+            catch (SystemException sex)
+            {
+                log.Fatal(string.Format("任务回调时发生严重错误，{0}", sex));
+                QMDBLogger.UpdateLastErrorTime(context.JobDetail.Key.Name, DateTime.Now);
+                QMDBLogger.Info(context.JobDetail.Key.Name, QMLogLevel.Fatal.ToString(), string.Format("任务回调时发生严重错误，{0}", sex));
             }
             catch
             {

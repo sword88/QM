@@ -10,7 +10,6 @@ using Quartz.Spi;
 using QM.Core.Model;
 using QM.Core.Exception;
 using QM.Core.Log;
-using QM.Core.Environments;
 using System.Configuration;
 using QM.Core.Logisc;
 
@@ -45,7 +44,7 @@ namespace QM.Core.QuartzNet
         /// <summary>
         /// log
         /// </summary>
-        private static ILogger log = QMStarter.CreateQMLogger(typeof(QMBaseServer));
+        private static ILogger log = QMLoggerFactory.GetInstance().CreateLogger(typeof(QMBaseServer));
 
         /// <summary>
         /// 持久化参数

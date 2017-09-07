@@ -7,7 +7,6 @@ using System.Reflection;
 using System.Runtime.Remoting.Lifetime;
 using QM.Core.Exception;
 using QM.Core.Log;
-using QM.Core.Environments;
 
 namespace QM.Core.Model
 {
@@ -15,8 +14,8 @@ namespace QM.Core.Model
     /// 标准DLL/exe任务
     /// </summary>
     public abstract class DllTask : MarshalByRefObject, IDisposable
-    {
-        private static ILogger log = QMStarter.CreateQMLogger(typeof(DllTask));
+    {        
+        private static ILogger log = QMLoggerFactory.GetInstance().CreateLogger(typeof(DllTask));
         public DllTask()
         { }
 

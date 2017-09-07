@@ -14,9 +14,19 @@ namespace QM.Core.Log
     public class QMLoggerFactory : ILoggerFactory
     {
         public QMLoggerFactory()
+        {      
+        }
+
+        public static QMLoggerFactory GetInstance()
         {
-            FileInfo configFile = new FileInfo(ConfigurationManager.AppSettings["log4net.config"]);
-            XmlConfigurator.Configure(configFile);        
+            string filename = ConfigurationManager.AppSettings["log4net.config"];
+            if (filename != null)
+            {
+                FileInfo configFile = new FileInfo(filename);
+                XmlConfigurator.Configure(configFile);
+            }
+
+            return new QMLoggerFactory();
         }
 
         public ILogger CreateLogger(Type type)

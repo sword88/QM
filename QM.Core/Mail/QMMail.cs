@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using System.Net.Mime;
 using System.Net.Mail;
 using QM.Core.Exception;
-using QM.Core.Environments;
 using QM.Core.Log;
 
 namespace QM.Core.Mail
@@ -14,7 +13,7 @@ namespace QM.Core.Mail
     /// </summary>
     public class QMMail : IMail
     {
-        private ILogger log = QMStarter.CreateQMLogger(typeof(QMMail));
+        private ILogger log = QMLoggerFactory.GetInstance().CreateLogger(typeof(QMMail));
         private string _subject;
         //private string _body;
         private string _from = "allancewh@aseglobal.COM";

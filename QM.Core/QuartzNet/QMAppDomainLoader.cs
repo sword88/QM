@@ -7,7 +7,7 @@ using System.Reflection;
 using System.Threading.Tasks;
 using QM.Core.Model;
 using QM.Core.Log;
-using QM.Core.Environments;
+using QM.Core.Exception;
 
 namespace QM.Core.QuartzNet
 {
@@ -16,8 +16,8 @@ namespace QM.Core.QuartzNet
     /// </summary>
     /// <typeparam name="T"></typeparam>
     public class QMAppDomainLoader<T> where T : class
-    {
-        private static ILogger log = QMStarter.CreateQMLogger(typeof(QMAppDomainLoader<T>));
+    {            
+        private static ILogger log = QMLoggerFactory.GetInstance().CreateLogger(typeof(QMAppDomainLoader<T>));
         /// <summary>
         /// 加载应用程序域，获取相应实例
         /// </summary>

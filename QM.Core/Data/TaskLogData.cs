@@ -9,7 +9,6 @@ using System.Data;
 using System.Data.OleDb;
 using QM.Core.Exception;
 using System.IO;
-using QM.Core.Environments;
 using QM.Core.Log;
 using Oracle.ManagedDataAccess.Client;
 
@@ -17,7 +16,7 @@ namespace QM.Core.Data
 {
     public class TaskLogData
     {
-        private static ILogger log = QMStarter.CreateQMLogger(typeof(TaskLogData));
+        private static ILogger log = QMLoggerFactory.GetInstance().CreateLogger(typeof(TaskLogData));
         private QMDBHelper qmdb = new QMDBHelper(ConfigurationManager.ConnectionStrings["database"].ConnectionString);
 
         /// <summary>
