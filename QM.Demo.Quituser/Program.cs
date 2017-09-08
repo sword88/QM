@@ -10,11 +10,14 @@ using QM.Core.Log;
 using QM.Core.Data;
 using Oracle.ManagedDataAccess.Client;
 using System.Runtime.ExceptionServices;
+using log4net;
 
 namespace QM.Demo.Quituser
 {
     public class Program : DllTask
     {
+        private static ILog log = LogManager.GetLogger(typeof(Program));
+
         static void Main(string[] args)
         {           
             quit();
@@ -24,16 +27,18 @@ namespace QM.Demo.Quituser
         {
             try
             {
+                log.Debug("start");
                 Common.QuitUserByDevice();
                 Common.QuitUser();
+                log.Debug("end");
             }
             catch (AccessViolationException aex)
             {
-                throw new Exception(aex.Message);
+                log.Fatal(aex.Message);
             }
             catch (QMException ex)
             {
-                throw ex;
+                log.Fatal(ex.Message);
             }
         }
 

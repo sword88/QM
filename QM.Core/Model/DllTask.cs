@@ -51,6 +51,16 @@ namespace QM.Core.Model
         public abstract void Run();
 
         /// <summary>
+        /// 重载生命周期策略
+        /// </summary>
+        /// <returns></returns>
+        public override object InitializeLifetimeService()
+        {
+            //return base.InitializeLifetimeService();
+            return null;
+        }
+
+        /// <summary>
         /// 系统资源释放
         /// </summary>
         public virtual void Dispose()

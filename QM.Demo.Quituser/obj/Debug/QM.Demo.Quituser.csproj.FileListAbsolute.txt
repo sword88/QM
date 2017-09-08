@@ -1,4 +1,7 @@
-E:\ASECode\Test\QM.git\QM.Demo.Quituser\obj\Debug\QM.Demo.Quituser.csprojResolveAssemblyReference.cache
+E:\ASECode\Test\QM.git\QM.Demo.Quituser\bin\Debug\QM.Demo.Quituser.exe.config
+E:\ASECode\Test\QM.git\QM.Demo.Quituser\obj\Debug\Interop.zkemkeeper.dll
+E:\ASECode\Test\QM.git\QM.Demo.Quituser\obj\Debug\QM.Demo.Quituser.csproj.ResolveComReference.cache
+E:\ASECode\Test\QM.git\QM.Demo.Quituser\bin\Debug\QM.Demo.Quituser.exe
 E:\ASECode\Test\QM.git\QM.Demo.Quituser\bin\Debug\QM.Demo.Quituser.pdb
 E:\ASECode\Test\QM.git\QM.Demo.Quituser\bin\Debug\log4net.dll
 E:\ASECode\Test\QM.git\QM.Demo.Quituser\bin\Debug\Oracle.ManagedDataAccess.dll
@@ -30,9 +33,6 @@ E:\ASECode\Test\QM.git\QM.Demo.Quituser\bin\Debug\System.Web.Razor.xml
 E:\ASECode\Test\QM.git\QM.Demo.Quituser\bin\Debug\System.Web.WebPages.Razor.xml
 E:\ASECode\Test\QM.git\QM.Demo.Quituser\bin\Debug\System.Web.WebPages.xml
 E:\ASECode\Test\QM.git\QM.Demo.Quituser\bin\Debug\System.Web.WebPages.Deployment.xml
-E:\ASECode\Test\QM.git\QM.Demo.Quituser\obj\Debug\QM.Demo.Quituser.pdb
-E:\ASECode\Test\QM.git\QM.Demo.Quituser\obj\Debug\Interop.zkemkeeper.dll
-E:\ASECode\Test\QM.git\QM.Demo.Quituser\obj\Debug\QM.Demo.Quituser.csproj.ResolveComReference.cache
-E:\ASECode\Test\QM.git\QM.Demo.Quituser\bin\Debug\QM.Demo.Quituser.exe.config
-E:\ASECode\Test\QM.git\QM.Demo.Quituser\bin\Debug\QM.Demo.Quituser.exe
+E:\ASECode\Test\QM.git\QM.Demo.Quituser\obj\Debug\QM.Demo.Quituser.csprojResolveAssemblyReference.cache
 E:\ASECode\Test\QM.git\QM.Demo.Quituser\obj\Debug\QM.Demo.Quituser.exe
+E:\ASECode\Test\QM.git\QM.Demo.Quituser\obj\Debug\QM.Demo.Quituser.pdb

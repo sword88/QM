@@ -70,9 +70,62 @@ namespace QM.Demo.ReadMail
                         box.DeleteMessage(i, true);
                         log.Debug(string.Format("删除邮件,发件人{0},标题{1},正文{2}", msg.From.ToString(), msg.Subject, msg.BodyText.Text));
                     }
+                    else if (msg.From.ToString() == "2575subcon@list.ti.com" && msg.Subject.StartsWith("Invoice Number"))
+                    {
+                        box.UidDeleteMessage(i, true);
+                        box.DeleteMessage(i, true);
+                        log.Debug(string.Format("删除邮件,发件人{0},标题{1},正文{2}", msg.From.ToString(), msg.Subject, msg.BodyText.Text));
+                    }
                 }
 
-                
+                folder = "Oracle";
+                box = client.SelectMailbox(folder);
+                log.Debug(string.Format("选择操作文件夹{0},邮件数{1}", folder, box.MessageCount));
+
+                for (int i = box.MessageCount; i > 0; i--)
+                {
+                    Message msg = box.Fetch.MessageObject(i);
+
+                    box.UidDeleteMessage(i, true);
+                    box.DeleteMessage(i, true);
+                    log.Debug(string.Format("删除邮件,发件人{0},标题{1},正文{2}", msg.From.ToString(), msg.Subject, msg.BodyText.Text));                    
+                }
+
+
+                folder = "[E2open] Inventory report for ASEWH CN (8L)";
+                box = client.SelectMailbox(folder);
+                log.Debug(string.Format("选择操作文件夹{0},邮件数{1}", folder, box.MessageCount));
+
+                for (int i = box.MessageCount; i > 0; i--)
+                {
+                    Message msg = box.Fetch.MessageObject(i);
+
+                    if (msg.From.ToString().Contains("DL-GPNSupport@infineon.com") && msg.Subject.Contains("[E2open] Inventory report for ASEWH CN"))
+                    {
+                        box.UidDeleteMessage(i, true);
+                        box.DeleteMessage(i, true);
+                        log.Debug(string.Format("删除邮件,发件人{0},标题{1},正文{2}", msg.From.ToString(), msg.Subject, msg.BodyText.Text));
+                    }
+                    else if (msg.From.ToString().Contains("obsbtcusr-sp1@list.ti.com") && msg.Subject.Contains("SP1 Subcon Interface Load Report for Plant 2575"))
+                    {
+                        box.UidDeleteMessage(i, true);
+                        box.DeleteMessage(i, true);
+                        log.Debug(string.Format("删除邮件,发件人{0},标题{1},正文{2}", msg.From.ToString(), msg.Subject, msg.BodyText.Text));
+                    }
+                }
+
+                folder = "NOTES";
+                box = client.SelectMailbox(folder);
+                log.Debug(string.Format("选择操作文件夹{0},邮件数{1}", folder, box.MessageCount));
+
+                for (int i = box.MessageCount; i > 0; i--)
+                {
+                    Message msg = box.Fetch.MessageObject(i);
+
+                    box.UidDeleteMessage(i, true);
+                    box.DeleteMessage(i, true);
+                    log.Debug(string.Format("删除邮件,发件人{0},标题{1},正文{2}", msg.From.ToString(), msg.Subject, msg.BodyText.Text));
+                }
 
                 client.Disconnect();
                 log.Debug("断开连接");
