@@ -50,7 +50,7 @@ namespace QM.Core.Model
             finally
             {
                 if (pro != null)
-                {
+                {                
                     pro.Close();
                     log.Debug(string.Format("[SqlFileTask][End] 程序名:{0}", startinfo.FileName));
                 }

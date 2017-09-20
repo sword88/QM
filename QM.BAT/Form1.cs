@@ -35,28 +35,24 @@ namespace QM.BAT
 
         private void test()
         {
-            try
+            string[] dirs = Directory.GetFiles(@"c:\qm\file\", "*.txt");
+
+            if (dirs.Count() > 0)
             {
-                string[] dirs = Directory.GetFiles(@"c:\qm\file\", "*.txt");
+                log.Debug(dirs.Count());
 
-                if (dirs.Count() > 0)
+                foreach (string var in dirs)
                 {
-                    log.Debug(dirs.Count());
-
-                    foreach (string var in dirs)
+                    try
                     {
                         File.Delete(var);
                         log.Debug(var);
                     }
+                    catch (Exception ex)
+                    {
+                        log.Fatal(ex.Message);
+                    }
                 }
-            }
-            catch (Exception ex)
-            {
-                log.Fatal(ex.Message);
-            }
-            catch
-            {
-                throw;
             }
         }
 

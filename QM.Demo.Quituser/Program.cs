@@ -40,6 +40,10 @@ namespace QM.Demo.Quituser
             {
                 log.Fatal(ex.Message);
             }
+            catch (SystemException sex)
+            {
+                log.Fatal(sex.Message);
+            }
         }
 
         public override void Run()

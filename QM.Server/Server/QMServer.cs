@@ -15,7 +15,7 @@ namespace QM.Server
         /// <summary>
         /// 单实例任务管理
         /// </summary>
-        private static QMBaseServer _server = new QMBaseServer();        
+        private static QMBaseServer _server = QMBaseServer.CreateInstance();
 
         /// <summary>
         /// 初始化

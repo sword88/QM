@@ -32,7 +32,7 @@ namespace QM.Core.QuartzNet
                 QMDBLogger.UpdateLastStartTime(taskid, DateTime.Now);
 
                 taskinfo.sqlExpTask.TryRun(taskinfo.task.taskSendby);
-               
+
                 QMDBLogger.UpdateLastEndTime(taskid, DateTime.Now);
                 QMDBLogger.Info(taskid, QMLogLevel.Info.ToString(), "运行完成");
             }
@@ -41,6 +41,18 @@ namespace QM.Core.QuartzNet
                 log.Fatal(string.Format("任务回调时发生严重错误，{0}", ex));
                 QMDBLogger.UpdateLastErrorTime(context.JobDetail.Key.Name, DateTime.Now);
                 QMDBLogger.Info(context.JobDetail.Key.Name, QMLogLevel.Fatal.ToString(), string.Format("任务回调时发生严重错误，{0}", ex));
+            }
+            catch (SystemException sex)
+            {
+                log.Fatal(string.Format("任务回调时发生严重错误，{0}", sex));
+                QMDBLogger.UpdateLastErrorTime(context.JobDetail.Key.Name, DateTime.Now);
+                QMDBLogger.Info(context.JobDetail.Key.Name, QMLogLevel.Fatal.ToString(), string.Format("任务回调时发生严重错误，{0}", sex));
+            }
+            catch
+            {
+                log.Fatal("任务回调时发生严重错误");
+                QMDBLogger.UpdateLastErrorTime(context.JobDetail.Key.Name, DateTime.Now);
+                QMDBLogger.Info(context.JobDetail.Key.Name, QMLogLevel.Fatal.ToString(), "任务回调时发生严重错误，{0}");
             }
         }
     }

@@ -26,6 +26,19 @@ namespace QM.Core.QuartzNet
     }
 
     /// <summary>
+    /// MisFire处理规则
+    /// </summary>
+    public enum QMMisFire
+    {
+        [Description("不触发立即执行，等下次Cron触发频率时执行")]
+        DoNothing = 0,
+        [Description("以错过的第一个频率时间开始执行,重做所有MisFire")]
+        IgnoreMisfires = 1,
+        [Description("以当前时间为触发频率立即执行一次,然后按频率执行")]
+        FireAndProceed = 2
+    }
+
+    /// <summary>
     /// 任务命令
     /// </summary>
     public enum QMTaskCmdEnum

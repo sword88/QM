@@ -36,28 +36,28 @@ namespace QM.Core.QuartzNet
                 QMDBLogger.UpdateLastStartTime(taskid, DateTime.Now);
 
                 taskinfo.dllTask.TryRun();
-                //taskinfo.dllTask.Dispose();
+                taskinfo.dllTask.Dispose();
 
                 QMDBLogger.UpdateLastEndTime(taskid, DateTime.Now);
                 QMDBLogger.Info(taskid, QMLogLevel.Info.ToString(), "运行完成");
             }
             catch (AccessViolationException aex)
             {
-                log.Fatal(string.Format("任务回调时发生严重错误，{0}", aex));
+                log.Fatal(string.Format("任务回调时发生严重错误，{0}", aex.Message));
                 QMDBLogger.UpdateLastErrorTime(context.JobDetail.Key.Name, DateTime.Now);
-                QMDBLogger.Info(context.JobDetail.Key.Name, QMLogLevel.Fatal.ToString(), string.Format("任务回调时发生严重错误，{0}", aex));
+                QMDBLogger.Info(context.JobDetail.Key.Name, QMLogLevel.Fatal.ToString(), string.Format("任务回调时发生严重错误，{0}", aex.Message));
             }
             catch (QMException ex)
             {
-                log.Fatal(string.Format("任务回调时发生严重错误，{0}", ex));
+                log.Fatal(string.Format("任务回调时发生严重错误，{0}", ex.Message));
                 QMDBLogger.UpdateLastErrorTime(context.JobDetail.Key.Name, DateTime.Now);
-                QMDBLogger.Info(context.JobDetail.Key.Name, QMLogLevel.Fatal.ToString(), string.Format("任务回调时发生严重错误，{0}", ex));
+                QMDBLogger.Info(context.JobDetail.Key.Name, QMLogLevel.Fatal.ToString(), string.Format("任务回调时发生严重错误，{0}", ex.Message));
             }
             catch (SystemException sex)
             {
-                log.Fatal(string.Format("任务回调时发生严重错误，{0}", sex));
+                log.Fatal(string.Format("任务回调时发生严重错误，{0}", sex.Message));
                 QMDBLogger.UpdateLastErrorTime(context.JobDetail.Key.Name, DateTime.Now);
-                QMDBLogger.Info(context.JobDetail.Key.Name, QMLogLevel.Fatal.ToString(), string.Format("任务回调时发生严重错误，{0}", sex));
+                QMDBLogger.Info(context.JobDetail.Key.Name, QMLogLevel.Fatal.ToString(), string.Format("任务回调时发生严重错误，{0}", sex.Message));
             }
             catch
             {

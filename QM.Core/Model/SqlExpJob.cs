@@ -178,10 +178,15 @@ namespace QM.Core.Model
                             }
                             catch (QMException ex)
                             {
-                                log.Fatal(string.Format("[MAIL] 发送失败，{0}", ex.Message));
+                                log.Fatal(string.Format("[MAIL] 发送失败，{0}", ex.Message + ex.StackTrace));
                                 throw ex;
                             }
-                           
+                            catch (SystemException sex)
+                            {
+                                log.Fatal(string.Format("[MAIL] 发送失败，{0}", sex.Message + sex.StackTrace));
+                                throw sex;
+                            }
+
                             break;
                         case "FTP":
                             try
@@ -213,6 +218,11 @@ namespace QM.Core.Model
                                 log.Fatal(string.Format("[FTP] 发送失败，{0}", ex.Message));
                                 throw ex;
                             }
+                            catch (SystemException sex)
+                            {
+                                log.Fatal(string.Format("[FTP] 发送失败，{0}", sex.Message + sex.StackTrace));
+                                throw sex;
+                            }
                             break;
                         case "SFTP":
 
@@ -229,6 +239,11 @@ namespace QM.Core.Model
             {
                 log.Fatal(string.Format("[SqlExpJob] 异常{0}", ex.Message));
                 throw ex;
+            }
+            catch (SystemException sex)
+            {
+                log.Fatal(string.Format("[SqlExpJob] 异常{0}", sex.Message));
+                throw sex;
             }
             finally
             {

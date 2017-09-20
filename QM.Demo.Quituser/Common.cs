@@ -43,8 +43,16 @@ namespace QM.Demo.Quituser
                         userInfo[i] = user;
 
                         string date = DateTime.Now.AddDays(-1).ToString("yyyyMMdd");
-                        mdb.ExecuteNonQuery("UPDATE FWUSERPROFILE SET EXPIRATIONDATE = '" + date + "' WHERE USERNAME = '" + empno + "'", CommandType.Text, null);
-                        mdb.ExecuteNonQuery("UPDATE FWUSERPROFILE@MESDB1 SET EXPIRATIONDATE = '" + date + "' WHERE USERNAME = '" + empno + "'", CommandType.Text, null);
+                        int j = mdb.ExecuteNonQuery("UPDATE FWUSERPROFILE SET EXPIRATIONDATE = '" + date + "' WHERE USERNAME = '" + empno + "'", CommandType.Text, null);
+                        if (j > 0)
+                        {
+                            log.Debug(string.Format("MESDB2人员更新:{0}", empno));
+                        }
+                        int p = mdb.ExecuteNonQuery("UPDATE FWUSERPROFILE@MESDB1 SET EXPIRATIONDATE = '" + date + "' WHERE USERNAME = '" + empno + "'", CommandType.Text, null);
+                        if (p > 0)
+                        {
+                            log.Debug(string.Format("MESDB1人员更新:{0}", empno));
+                        }
                     }
 
                     zks.QuitUser(userInfo);

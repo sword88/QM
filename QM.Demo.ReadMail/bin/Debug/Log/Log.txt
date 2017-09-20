@@ -1,8 +1,2 @@
-DEBUG 2017-09-08 03:27:25  程序开始
-DEBUG 2017-09-08 03:27:25  连接服务器成功mail.asewh.com,143
-DEBUG 2017-09-08 03:27:25  登录成功junxiao_liang@aseglobal.com,123456789*
-DEBUG 2017-09-08 03:27:32  选择操作文件夹B2B,邮件数27
-DEBUG 2017-09-08 03:27:35  选择操作文件夹Oracle,邮件数0
-DEBUG 2017-09-08 03:27:35  选择操作文件夹[E2open] Inventory report for ASEWH CN (8L),邮件数0
-DEBUG 2017-09-08 03:27:35  选择操作文件夹NOTES,邮件数0
-DEBUG 2017-09-08 03:27:35  断开连接
+DEBUG 2017-09-18 01:04:08  程序开始
+DEBUG 2017-09-18 01:04:08  连接服务器成功mail.asewh.com,143

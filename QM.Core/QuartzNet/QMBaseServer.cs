@@ -205,8 +205,9 @@ namespace QM.Core.QuartzNet
         /// </summary>
         /// <param name="taskid"></param>
         /// <param name="taskinfo"></param>
+        /// <param name="misfire"></param>
         /// <returns></returns>
-        public static bool AddTask(string taskid, TaskRuntimeInfo taskinfo) 
+        public static bool AddTask(string taskid, TaskRuntimeInfo taskinfo, QMMisFire misfire = QMMisFire.DoNothing) 
         {
             lock(_lock)
             {
@@ -236,13 +237,44 @@ namespace QM.Core.QuartzNet
 
                     IJobDetail jobDetail = jobBuilder.Build();
 
-                    //ITrigger trigger = QMCornFactory.CreateTrigger(taskinfo);
-
-                    ITrigger trigger = TriggerBuilder.Create()
+                    //任务Misfire处理规则
+                    ITrigger trigger;
+                    
+                    if (misfire == QMMisFire.FireAndProceed)        
+                    {
+                        //以当前时间为触发频率立刻触发一次执行
+                        //然后按照Cron频率依次执行        
+                        trigger = TriggerBuilder.Create()
                                         .WithIdentity(taskinfo.task.taskName, "Cron")
-                                        .WithCronSchedule(taskinfo.task.taskCron)
+                                        .WithCronSchedule(taskinfo.task.taskCron,
+                                         x => x.WithMisfireHandlingInstructionFireAndProceed())
                                         .ForJob(jobDetail.Key)
                                         .Build();
+                    }
+                    else if (misfire == QMMisFire.IgnoreMisfires)       
+                    {
+                        //以错过的第一个频率时间立刻开始执行
+                        //重做错过的所有频率周期后
+                        //当下一次触发频率发生时间大于当前时间后，再按照正常的Cron频率依次执行
+                        trigger = TriggerBuilder.Create()
+                                                .WithIdentity(taskinfo.task.taskName, "Cron")
+                                                .WithCronSchedule(taskinfo.task.taskCron,
+                                                 x => x.WithMisfireHandlingInstructionIgnoreMisfires())
+                                                .ForJob(jobDetail.Key)
+                                                .Build();
+                    }
+                    else
+                    {
+                        //不触发立即执行
+                        //等待下次Cron触发频率到达时刻开始按照Cron频率依次执行
+                        trigger = TriggerBuilder.Create()
+                        .WithIdentity(taskinfo.task.taskName, "Cron")
+                        .WithCronSchedule(taskinfo.task.taskCron,
+                         x => x.WithMisfireHandlingInstructionDoNothing())
+                        .ForJob(jobDetail.Key)
+                        .Build();
+                    }                   
+                                                       
 
                     if (_scheduler.CheckExists(jobDetail.Key))
                     {
