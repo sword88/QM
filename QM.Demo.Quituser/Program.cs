@@ -19,8 +19,22 @@ namespace QM.Demo.Quituser
         private static ILog log = LogManager.GetLogger(typeof(Program));
 
         static void Main(string[] args)
-        {           
-            quit();
+        {
+            if (args.Length == 0)
+            {
+                quit();
+            }
+            else
+            {
+                string[] p = args;
+                switch (p[0])
+                {
+                    case "/quit":
+                    default:
+                        quit();
+                        break;
+                }
+            }
         }
 
         public static void quit()

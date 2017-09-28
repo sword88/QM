@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns="urn:schemas-microsoft-com:asm.v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <assemblyIdentity name="QM.Demo.Quituser.exe" version="1.0.0.0" type="win32" />
+  <file name="zkemkeeper.dll" asmv2:size="449536">
+    <hash xmlns="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>d2fg4J/v3vXECNuiEiYwLt/BCOR1x7Skq6qLSy2JuXM=</dsig:DigestValue>
+    </hash>
+    <typelib tlbid="{fe9ded34-e159-408e-8490-b720a5e632c7}" version="1.0" helpdir="" resourceid="0" flags="HASDISKIMAGE" />
+    <comClass clsid="{00853a19-bd51-419b-9269-2dabe57eb61f}" threadingModel="both" tlbid="{fe9ded34-e159-408e-8490-b720a5e632c7}" progid="zkemkeeper.ZKEM.1" description="ZKEM Class" />
+  </file>
+</assembly>

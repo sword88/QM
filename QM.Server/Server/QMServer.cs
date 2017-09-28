@@ -3,14 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Topshelf;
 using QM.Core.Log;
 using QM.Core.Model;
 using QM.Core.QuartzNet;
 
 namespace QM.Server
 {
-    class QMServer : ServiceControl 
+    class QMServer 
     {
         /// <summary>
         /// 单实例任务管理
@@ -28,9 +27,8 @@ namespace QM.Server
         /// <summary>
         /// 开启服务
         /// </summary>
-        /// <param name="hostControl"></param>
         /// <returns></returns>
-        public bool Start(HostControl hostControl)
+        public bool Start()
         {                        
             return _server.Start();
         }
@@ -38,9 +36,8 @@ namespace QM.Server
         /// <summary>
         /// 停止服务
         /// </summary>
-        /// <param name="hostControl"></param>
         /// <returns></returns>
-        public bool Stop(HostControl hostControl)
+        public bool Stop()
         {
             return _server.Stop();
         }

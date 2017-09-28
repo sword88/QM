@@ -7,15 +7,26 @@ using ASEWH.Plugin.Mail;
 using QM.Core;
 using QM.Core.Model;
 using log4net;
-using ASEWH.Plugin.Mail;
 
-namespace QM.Test
+namespace QM.Demo.Dll
 {   
     [Serializable]
     class Program : DllTask
     {
         public static readonly ILog log = LogManager.GetLogger(typeof(Program));
         static void Main(string[] args)
+        {
+            test();          
+        }
+
+        public override void Run()
+        {
+            Console.WriteLine(DateTime.Now.ToString());
+            test();
+            log.Debug(DateTime.Now.ToString());
+        }
+
+        private static void test()
         {
             try
             {
@@ -27,17 +38,12 @@ namespace QM.Test
                 m.AddRecipient("junxiao_liang@aseglobal.com");
                 m.Body = "test";
                 m.Send();
+                log.Debug("done");
             }
             catch (Exception ex)
             {
                 throw ex;
-            }                            
-        }
-
-        public override void Run()
-        {
-            Console.WriteLine(DateTime.Now.ToString());
-            log.Debug(DateTime.Now.ToString());
+            }
         }
 
         public override void Dispose()

@@ -7,8 +7,8 @@
     <ProjectGuid>{D00F6E31-8844-431F-BEE8-B801A2FA1516}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>QM.Test</RootNamespace>
-    <AssemblyName>QM.Test</AssemblyName>
+    <RootNamespace>QM.Demo.Dll</RootNamespace>
+    <AssemblyName>QM.Demo.Dll</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

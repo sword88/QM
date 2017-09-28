@@ -1,5 +1,5 @@
 E:\ASECode\Test\QM.git\QM.Demo.SqlFile\bin\Debug\QM.Demo.SqlFile.dll
 E:\ASECode\Test\QM.git\QM.Demo.SqlFile\bin\Debug\QM.Demo.SqlFile.pdb
+E:\ASECode\Test\QM.git\QM.Demo.SqlFile\obj\Debug\QM.Demo.SqlFile.csprojResolveAssemblyReference.cache
 E:\ASECode\Test\QM.git\QM.Demo.SqlFile\obj\Debug\QM.Demo.SqlFile.dll
 E:\ASECode\Test\QM.git\QM.Demo.SqlFile\obj\Debug\QM.Demo.SqlFile.pdb
-E:\ASECode\Test\QM.git\QM.Demo.SqlFile\obj\Debug\QM.Demo.SqlFile.csprojResolveAssemblyReference.cache

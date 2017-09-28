@@ -1,3 +1,4 @@
+E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug\quartz.config
 E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug\QM.Demo.RFC.exe.config
 E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug\QM.Demo.RFC.exe
 E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug\QM.Demo.RFC.pdb

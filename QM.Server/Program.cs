@@ -16,7 +16,7 @@ namespace QM.Server
 
         static void Main(string[] args)
         {
-            var host = QMLoggerFactory.GetInstance().CreateLogger(typeof(Program));
+            var log = QMLoggerFactory.GetInstance().CreateLogger(typeof(Program));
 
             //异常捕获
             AppDomain.CurrentDomain.UnhandledException += UnKownError;
@@ -34,16 +34,17 @@ namespace QM.Server
 
                         x.Service<QMServer>(
                             s =>
-                            {                                                                
-                                var server = new QMServer();
-                                return server;
+                            {
+                                s.ConstructUsing(name => new QMServer());
+                                s.WhenStarted(tc => tc.Start());
+                                s.WhenStopped(tc => tc.Stop());
                             });
-                        x.RunAsPrompt();
+                        x.RunAsLocalSystem();
                     });
             }
             catch (Exception ex)
             {
-                host.Fatal(ex.Message);
+                log.Fatal(string.Format("QM.Server异常:{0},{1}",ex.Message,ex.StackTrace));
             }
         }
 

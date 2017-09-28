@@ -1,0 +1,54 @@
+DEBUG 2017-09-26 02:29:42  [QMAppDomainLoader] 加载config file:c:\qm\Files\2017\09\mail\QM.Demo.ReadMail.exe.config
+DEBUG 2017-09-26 02:29:42  [QMAppDomainLoader] 加载目录:c:\qm\Files\2017\09\mail
+DEBUG 2017-09-26 02:29:42  [QMAppDomainLoader] 加载config file:c:\qm\Files\2017\09\quit\QM.Demo.Quituser.exe.config
+DEBUG 2017-09-26 02:29:42  [QMAppDomainLoader] 加载目录:c:\qm\Files\2017\09\quit
+DEBUG 2017-09-26 02:29:42  [QMAppDomainLoader] 加载config file:c:\qm\files\2017\09\std\QM.Demo.Dll.exe.config
+DEBUG 2017-09-26 02:29:42  [QMAppDomainLoader] 加载目录:c:\qm\files\2017\09\std
+DEBUG 2017-09-26 02:30:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
+DEBUG 2017-09-26 02:30:00  [SqlFileTask][Start] 程序名:SqlPlus,参数：whfront/wh123@whdb @ c:\qm\Files\2017\06\log.sql
+DEBUG 2017-09-26 02:30:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
+DEBUG 2017-09-26 02:30:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
+DEBUG 2017-09-26 02:30:01  [SqlFileTask][End] 程序名:SqlPlus
+DEBUG 2017-09-26 02:30:01  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
+DEBUG 2017-09-26 02:31:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
+DEBUG 2017-09-26 02:31:00  [SqlFileTask][Start] 程序名:SqlPlus,参数：whfront/wh123@whdb @ c:\qm\Files\2017\06\log.sql
+DEBUG 2017-09-26 02:31:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
+DEBUG 2017-09-26 02:31:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
+DEBUG 2017-09-26 02:31:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
+DEBUG 2017-09-26 02:31:00  [SqlFileTask][End] 程序名:SqlPlus
+DEBUG 2017-09-26 02:32:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
+DEBUG 2017-09-26 02:32:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
+DEBUG 2017-09-26 02:32:00  [SqlFileTask][Start] 程序名:SqlPlus,参数：whfront/wh123@whdb @ c:\qm\Files\2017\06\log.sql
+DEBUG 2017-09-26 02:32:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
+DEBUG 2017-09-26 02:32:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
+DEBUG 2017-09-26 02:32:01  [SqlFileTask][End] 程序名:SqlPlus
+DEBUG 2017-09-26 02:33:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
+DEBUG 2017-09-26 02:33:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
+DEBUG 2017-09-26 02:33:00  [SqlFileTask][Start] 程序名:SqlPlus,参数：whfront/wh123@whdb @ c:\qm\Files\2017\06\log.sql
+DEBUG 2017-09-26 02:33:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
+DEBUG 2017-09-26 02:33:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
+DEBUG 2017-09-26 02:33:00  [SqlFileTask][End] 程序名:SqlPlus
+DEBUG 2017-09-26 02:34:00  [SqlFileTask][Start] 程序名:SqlPlus,参数：whfront/wh123@whdb @ c:\qm\Files\2017\06\log.sql
+DEBUG 2017-09-26 02:34:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
+DEBUG 2017-09-26 02:34:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
+DEBUG 2017-09-26 02:34:00  [SqlFileTask][End] 程序名:SqlPlus
+DEBUG 2017-09-26 02:34:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
+DEBUG 2017-09-26 02:34:01  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
+DEBUG 2017-09-26 02:35:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
+DEBUG 2017-09-26 02:35:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
+DEBUG 2017-09-26 02:35:00  [SqlFileTask][Start] 程序名:SqlPlus,参数：whfront/wh123@whdb @ c:\qm\Files\2017\06\log.sql
+DEBUG 2017-09-26 02:35:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
+DEBUG 2017-09-26 02:35:00  [SqlFileTask][End] 程序名:SqlPlus
+DEBUG 2017-09-26 02:35:01  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
+DEBUG 2017-09-26 02:36:26  [QMAppDomainLoader] 加载config file:c:\qm\Files\2017\09\mail\QM.Demo.ReadMail.exe.config
+DEBUG 2017-09-26 02:36:26  [QMAppDomainLoader] 加载目录:c:\qm\Files\2017\09\mail
+DEBUG 2017-09-26 02:36:26  [QMAppDomainLoader] 加载config file:c:\qm\Files\2017\09\quit\QM.Demo.Quituser.exe.config
+DEBUG 2017-09-26 02:36:26  [QMAppDomainLoader] 加载目录:c:\qm\Files\2017\09\quit
+DEBUG 2017-09-26 02:36:26  [QMAppDomainLoader] 加载config file:c:\qm\files\2017\09\std\QM.Demo.Dll.exe.config
+DEBUG 2017-09-26 02:36:26  [QMAppDomainLoader] 加载目录:c:\qm\files\2017\09\std
+DEBUG 2017-09-26 02:37:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\123.BAT,参数：
+DEBUG 2017-09-26 02:37:00  [UnStdDll][Start] 程序名:c:\qm\Files\2017\06\QM.BAT.exe,参数：asy
+DEBUG 2017-09-26 02:37:00  [SqlFileTask][Start] 程序名:SqlPlus,参数：whfront/wh123@whdb @ c:\qm\Files\2017\06\log.sql
+DEBUG 2017-09-26 02:37:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\123.BAT
+DEBUG 2017-09-26 02:37:00  [UnStdDll][End] 程序名:c:\qm\Files\2017\06\QM.BAT.exe
+DEBUG 2017-09-26 02:37:00  [SqlFileTask][End] 程序名:SqlPlus

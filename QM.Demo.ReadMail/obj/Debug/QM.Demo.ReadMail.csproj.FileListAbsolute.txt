@@ -1,3 +1,4 @@
+E:\ASECode\Test\QM.git\QM.Demo.ReadMail\bin\Debug\quartz.config
 E:\ASECode\Test\QM.git\QM.Demo.ReadMail\bin\Debug\QM.Demo.ReadMail.exe.config
 E:\ASECode\Test\QM.git\QM.Demo.ReadMail\bin\Debug\QM.Demo.ReadMail.exe
 E:\ASECode\Test\QM.git\QM.Demo.ReadMail\bin\Debug\QM.Demo.ReadMail.pdb

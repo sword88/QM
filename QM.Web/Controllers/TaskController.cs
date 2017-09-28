@@ -312,6 +312,12 @@ namespace QM.Web.Controllers
             return View();
         }
 
+        public ActionResult Test()
+        {
+            QMBaseServer.AddWebTask("7777");
+            return View();
+        }
+
         public ActionResult Log(string idx = "")
         {
             TaskLogBLL tb = new TaskLogBLL();

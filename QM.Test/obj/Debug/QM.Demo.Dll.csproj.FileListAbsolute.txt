@@ -1,6 +1,7 @@
-E:\ASECode\Test\QM.git\QM.Test\bin\Debug\QM.Test.exe.config
-E:\ASECode\Test\QM.git\QM.Test\bin\Debug\QM.Test.exe
-E:\ASECode\Test\QM.git\QM.Test\bin\Debug\QM.Test.pdb
+E:\ASECode\Test\QM.git\QM.Test\bin\Debug\quartz.config
+E:\ASECode\Test\QM.git\QM.Test\bin\Debug\QM.Demo.Dll.exe.config
+E:\ASECode\Test\QM.git\QM.Test\bin\Debug\QM.Demo.Dll.exe
+E:\ASECode\Test\QM.git\QM.Test\bin\Debug\QM.Demo.Dll.pdb
 E:\ASECode\Test\QM.git\QM.Test\bin\Debug\ASEWH.Plugin.Mail.dll
 E:\ASECode\Test\QM.git\QM.Test\bin\Debug\log4net.dll
 E:\ASECode\Test\QM.git\QM.Test\bin\Debug\QM.Core.dll
@@ -34,5 +35,5 @@ E:\ASECode\Test\QM.git\QM.Test\bin\Debug\System.Web.WebPages.Razor.xml
 E:\ASECode\Test\QM.git\QM.Test\bin\Debug\System.Web.WebPages.xml
 E:\ASECode\Test\QM.git\QM.Test\bin\Debug\System.Web.WebPages.Deployment.xml
 E:\ASECode\Test\QM.git\QM.Test\obj\Debug\QM.Demo.Dll.csprojResolveAssemblyReference.cache
-E:\ASECode\Test\QM.git\QM.Test\obj\Debug\QM.Test.exe
-E:\ASECode\Test\QM.git\QM.Test\obj\Debug\QM.Test.pdb
+E:\ASECode\Test\QM.git\QM.Test\obj\Debug\QM.Demo.Dll.exe
+E:\ASECode\Test\QM.git\QM.Test\obj\Debug\QM.Demo.Dll.pdb

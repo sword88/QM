@@ -10,6 +10,7 @@ E:\ASECode\Test\QM.git\QM.Web\bin\roslyn\System.Reflection.Metadata.dll
 E:\ASECode\Test\QM.git\QM.Web\bin\roslyn\vbc.exe
 E:\ASECode\Test\QM.git\QM.Web\bin\roslyn\VBCSCompiler.exe
 E:\ASECode\Test\QM.git\QM.Web\bin\roslyn\VBCSCompiler.exe.config
+E:\ASECode\Test\QM.git\QM.Web\bin\quartz.config
 E:\ASECode\Test\QM.git\QM.Web\bin\Config\log4net.config
 E:\ASECode\Test\QM.git\QM.Web\bin\Config\database.config
 E:\ASECode\Test\QM.git\QM.Web\bin\QM.Web.dll.config
@@ -44,10 +45,10 @@ E:\ASECode\Test\QM.git\QM.Web\bin\System.Web.WebPages.dll
 E:\ASECode\Test\QM.git\QM.Web\bin\System.Web.WebPages.Razor.dll
 E:\ASECode\Test\QM.git\QM.Web\bin\WebGrease.dll
 E:\ASECode\Test\QM.git\QM.Web\bin\Quartz.dll
-E:\ASECode\Test\QM.git\QM.Web\bin\Autofac.dll
 E:\ASECode\Test\QM.git\QM.Web\bin\ICSharpCode.SharpZipLib.dll
 E:\ASECode\Test\QM.git\QM.Web\bin\NPOI.dll
 E:\ASECode\Test\QM.git\QM.Web\bin\Aspose.Cells.dll
+E:\ASECode\Test\QM.git\QM.Web\bin\Oracle.ManagedDataAccess.dll
 E:\ASECode\Test\QM.git\QM.Web\bin\Common.Logging.Core.dll
 E:\ASECode\Test\QM.git\QM.Web\bin\Common.Logging.dll
 E:\ASECode\Test\QM.git\QM.Web\bin\QM.Core.pdb
@@ -77,7 +78,6 @@ E:\ASECode\Test\QM.git\QM.Web\bin\Microsoft.Owin.Security.Twitter.xml
 E:\ASECode\Test\QM.git\QM.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 E:\ASECode\Test\QM.git\QM.Web\bin\Quartz.pdb
 E:\ASECode\Test\QM.git\QM.Web\bin\Quartz.xml
-E:\ASECode\Test\QM.git\QM.Web\bin\Autofac.xml
 E:\ASECode\Test\QM.git\QM.Web\bin\NPOI.xml
 E:\ASECode\Test\QM.git\QM.Web\bin\Aspose.Cells.xml
 E:\ASECode\Test\QM.git\QM.Web\bin\Common.Logging.Core.pdb
@@ -87,4 +87,3 @@ E:\ASECode\Test\QM.git\QM.Web\bin\Common.Logging.xml
 E:\ASECode\Test\QM.git\QM.Web\obj\Debug\QM.Web.csprojResolveAssemblyReference.cache
 E:\ASECode\Test\QM.git\QM.Web\obj\Debug\QM.Web.dll
 E:\ASECode\Test\QM.git\QM.Web\obj\Debug\QM.Web.pdb
-E:\ASECode\Test\QM.git\QM.Web\bin\Oracle.ManagedDataAccess.dll

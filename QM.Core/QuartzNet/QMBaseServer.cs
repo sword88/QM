@@ -47,52 +47,14 @@ namespace QM.Core.QuartzNet
         private static ILogger log = QMLoggerFactory.GetInstance().CreateLogger(typeof(QMBaseServer));
 
         /// <summary>
-        /// 持久化参数
-        /// </summary>
-        /// <returns></returns>
-        private NameValueCollection GetProerties()
-        {
-            _properties = new NameValueCollection();
-            //存储类型
-            _properties["quartz.jobStore.type"] = "Quartz.Impl.AdoJobStore.JobStoreTX, Quartz";
-            //表明前缀
-            _properties["quartz.jobStore.tablePrefix"] = "QM_";
-            //驱动类型
-            _properties["quartz.jobStore.driverDelegateType"] = "Quartz.Impl.AdoJobStore.OracleDelegate, Quartz";
-            //数据源名称
-            _properties["quartz.jobStore.dataSource"] = "myDS";
-            //连接字符串
-            _properties["quartz.dataSource.myDS.connectionString"] = @"Data Source=WHDB;Password=wh123;User ID=whfront";
-            //_properties["quartz.dataSource.myDS.connectionString"] = ConfigurationManager.ConnectionStrings["database"].ConnectionString;
-            //oarcle版本
-            _properties["quartz.dataSource.myDS.provider"] = "OracleODP-20";
-
-            _properties["quartz.scheduler.instanceName"] = "RemoteServer";
-
-            _properties["quartz.threadPool.type"] = "Quartz.Simpl.SimpleThreadPool, Quartz";
-
-            _properties["quartz.threadPool.threadCount"] = "5";
-
-            _properties["quartz.threadPool.threadPriority"] = "Normal";
-            _properties["quartz.scheduler.exporter.type"] = "Quartz.Simpl.RemotingSchedulerExporter, Quartz";
-            _properties["quartz.scheduler.exporter.port"] = "555";
-            _properties["quartz.scheduler.exporter.bindName"] = "QuartzScheduler";
-            _properties["quartz.scheduler.exporter.channelType"] = "tcp";
-            _properties["quartz.scheduler.exporter.channelName"] = "httpQuartz";
-            _properties["quartz.scheduler.exporter.rejectRemoteRequests"] = "true";
-
-            return _properties;
-        }
-
-        /// <summary>
         /// 初始化
         /// </summary>
         public QMBaseServer()
         {
-            _factory = new StdSchedulerFactory(GetProerties());
+            _factory = new StdSchedulerFactory();
             _scheduler = _factory.GetScheduler();
             _scheduler.JobFactory = new QMJobFactory();
-            _scheduler.Start();
+            //_scheduler.Start();
             
             InitLoadTaskList();
         }
@@ -336,7 +298,9 @@ namespace QM.Core.QuartzNet
                 }
                 else
                 {
-                    return GetDbTask(taskid);
+                    var taskinfo = GetDbTask(taskid);
+                    _taskPool.Add(taskid, taskinfo);
+                    return _taskPool[taskid];
                 }
             }
         }
@@ -458,7 +422,7 @@ namespace QM.Core.QuartzNet
                 }
                 trun.task = t;
 
-                AddTask(taskid, trun);
+                AddTask(taskid, trun,QMMisFire.FireAndProceed);
             }
             catch (QMException ex)
             {

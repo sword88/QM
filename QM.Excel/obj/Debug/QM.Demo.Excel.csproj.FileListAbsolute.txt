@@ -1,4 +1,4 @@
-E:\ASECode\Test\QM.git\QM.Excel\obj\Debug\QM.Demo.Excel.csprojResolveAssemblyReference.cache
+E:\ASECode\Test\QM.git\QM.Excel\bin\Debug\quartz.config
 E:\ASECode\Test\QM.git\QM.Excel\bin\Debug\QM.Excel.dll.config
 E:\ASECode\Test\QM.git\QM.Excel\bin\Debug\QM.Excel.dll
 E:\ASECode\Test\QM.git\QM.Excel\bin\Debug\QM.Excel.pdb
@@ -32,5 +32,6 @@ E:\ASECode\Test\QM.git\QM.Excel\bin\Debug\System.Web.Razor.xml
 E:\ASECode\Test\QM.git\QM.Excel\bin\Debug\System.Web.WebPages.Razor.xml
 E:\ASECode\Test\QM.git\QM.Excel\bin\Debug\System.Web.WebPages.xml
 E:\ASECode\Test\QM.git\QM.Excel\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\ASECode\Test\QM.git\QM.Excel\obj\Debug\QM.Demo.Excel.csprojResolveAssemblyReference.cache
 E:\ASECode\Test\QM.git\QM.Excel\obj\Debug\QM.Excel.dll
 E:\ASECode\Test\QM.git\QM.Excel\obj\Debug\QM.Excel.pdb
