@@ -1,9 +1,0 @@
-E:\ASECode\Test\QM.git\QM.BAT\bin\Debug\QM.BAT.pdb
-E:\ASECode\Test\QM.git\QM.BAT\obj\Debug\QM.BAT.pdb
-E:\ASECode\Test\QM.git\QM.BAT\bin\Debug\QM.BAT.exe
-E:\ASECode\Test\QM.git\QM.BAT\obj\Debug\QM.BAT.exe
-E:\ASECode\Test\QM.git\QM.BAT\obj\Debug\QM.BAT.Form1.resources
-E:\ASECode\Test\QM.git\QM.BAT\obj\Debug\QM.BAT.csproj.GenerateResource.Cache
-E:\ASECode\Test\QM.git\QM.BAT\bin\Debug\QM.BAT.exe.config
-E:\ASECode\Test\QM.git\QM.BAT\bin\Debug\log4net.dll
-E:\ASECode\Test\QM.git\QM.BAT\bin\Debug\log4net.xml
