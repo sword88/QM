@@ -38,6 +38,8 @@ namespace QM.Server
                                 s.ConstructUsing(name => new QMServer());
                                 s.WhenStarted(tc => tc.Start());
                                 s.WhenStopped(tc => tc.Stop());
+                                s.WhenPaused(tc => tc.Pause());
+                                s.WhenContinued(tc => tc.Resume());
                             });
                         x.RunAsLocalSystem();
                     });

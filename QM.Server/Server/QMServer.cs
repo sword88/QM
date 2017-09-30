@@ -21,6 +21,8 @@ namespace QM.Server
         /// </summary>
         public QMServer()
         {
+            //初始化加载DB
+            _server.InitLoadTaskList();
         }
 
 
@@ -42,5 +44,22 @@ namespace QM.Server
             return _server.Stop();
         }
 
+        /// <summary>
+        /// 暂时所有任务
+        /// </summary>
+        /// <returns></returns>
+        public bool Pause()
+        {
+            return _server.PauseAll();
+        }
+
+        /// <summary>
+        /// 恢复所有任务
+        /// </summary>
+        /// <returns></returns>
+        public bool Resume()
+        {
+            return _server.ResumeAll();
+        }
     }
 }

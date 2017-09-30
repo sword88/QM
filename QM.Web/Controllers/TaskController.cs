@@ -11,6 +11,9 @@ using QM.Core.QuartzNet;
 using QM.Core.Logisc;
 using QM.Core.Log;
 using QM.Core.Exception;
+using Quartz;
+using System.Collections.Specialized;
+using Quartz.Impl;
 
 namespace QM.Web.Controllers
 {
@@ -293,7 +296,21 @@ namespace QM.Web.Controllers
                 TaskBLL tbl = new TaskBLL();
                 if (tbl.Insert(t, n2m))
                 {
-                    QMBaseServer.AddWebTask(t.idx);
+                    string remoteMessage = "";
+                    if (QMBaseServer.InitRemoteScheduler("tcp", "10.68.10.57", "555",out remoteMessage))
+                    {                        
+                        if (!QMBaseServer.AddRemoteTask(t.idx, out remoteMessage))
+                        {
+                            log.Fatal(remoteMessage);
+                            QMDBLogger.Info(t.idx, QMLogLevel.Fatal.ToString(), remoteMessage);
+                        }
+                    }
+                    else
+                    {
+                        log.Fatal(remoteMessage);
+                        QMDBLogger.Info(t.idx, QMLogLevel.Fatal.ToString(), remoteMessage);
+                    }
+                    
                     return RedirectToAction("list");
                 }
             }
@@ -314,7 +331,6 @@ namespace QM.Web.Controllers
 
         public ActionResult Test()
         {
-            QMBaseServer.AddWebTask("7777");
             return View();
         }
 

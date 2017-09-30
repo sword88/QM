@@ -4,6 +4,7 @@ using System.Collections.Specialized;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Runtime.Remoting;
 using Quartz;
 using Quartz.Impl;
 using Quartz.Spi;
@@ -29,6 +30,7 @@ namespace QM.Core.QuartzNet
         /// 任务执行计划
         /// </summary>
         private static IScheduler _scheduler = null;
+        private static IScheduler _remoteScheduler = null;
         /// <summary>
         /// 任务锁标记
         /// </summary>
@@ -54,9 +56,6 @@ namespace QM.Core.QuartzNet
             _factory = new StdSchedulerFactory();
             _scheduler = _factory.GetScheduler();
             _scheduler.JobFactory = new QMJobFactory();
-            //_scheduler.Start();
-            
-            InitLoadTaskList();
         }
 
         /// <summary>
@@ -120,7 +119,32 @@ namespace QM.Core.QuartzNet
             }
             catch (QMException ex)
             {
-                log.Fatal(string.Format("暂停任务失败,错误信息{0}", ex.Message));
+                log.Fatal(string.Format("暂停任务失败,错误信息{0},{1}", ex.Message,ex.StackTrace));
+            }
+
+            return result;
+        }
+
+        /// <summary>
+        /// 暂停所有任务
+        /// </summary>
+        /// <returns></returns>
+        public bool PauseAll()
+        {
+            bool result = false;
+
+            try
+            {
+                if (_scheduler.IsStarted)
+                {
+                    _scheduler.PauseAll();
+                    log.Info("QM Server 暂停所有服务");
+                }
+                result = true;
+            }
+            catch (QMException ex)
+            {
+                log.Fatal(string.Format("暂停所有任务失败,错误信息{0},{1}", ex.Message,ex.StackTrace));
             }
 
             return result;
@@ -129,7 +153,7 @@ namespace QM.Core.QuartzNet
         /// <summary>
         /// 恢复暂时运行的任务
         /// </summary>
-        /// <param name="taskid"></param>
+        /// <param name="taskid">任务id</param>
         /// <returns></returns>
         public static bool ResumeJob(string taskid)
         {
@@ -147,6 +171,31 @@ namespace QM.Core.QuartzNet
             {
                 log.Fatal(string.Format("恢复暂时运行的任务,错误信息{0}", ex.Message));
             }
+            return result;
+        }
+
+        /// <summary>
+        /// 恢复所有暂停服务
+        /// </summary>
+        /// <returns></returns>
+        public bool ResumeAll()
+        {
+            bool result = false;
+
+            try
+            {
+                if (_scheduler.IsStarted)
+                {
+                    _scheduler.ResumeAll();
+                    log.Info("QM Server 恢复暂停所有服务");
+                }
+                result = true;
+            }
+            catch (QMException ex)
+            {
+                log.Fatal(string.Format("恢复暂停所有任务失败,错误信息{0},{1}", ex.Message, ex.StackTrace));
+            }
+
             return result;
         }
 
@@ -255,7 +304,7 @@ namespace QM.Core.QuartzNet
         /// <summary>
         /// 将任务从队列中移除
         /// </summary>
-        /// <param name="taskid"></param>
+        /// <param name="taskid">任务id</param>
         /// <returns></returns>
         public static bool RemoveTask(string taskid)
         {
@@ -286,7 +335,7 @@ namespace QM.Core.QuartzNet
         /// <summary>
         /// 获得任务池中任务的信息
         /// </summary>
-        /// <param name="taskid"></param>
+        /// <param name="taskid">任务id</param>
         /// <returns></returns>
         public TaskRuntimeInfo GetTask(string taskid)
         {
@@ -308,7 +357,7 @@ namespace QM.Core.QuartzNet
         /// <summary>
         /// 从DB中查询任务结果
         /// </summary>
-        /// <param name="taskid"></param>
+        /// <param name="taskid">任务id</param>
         /// <returns></returns>
         public TaskRuntimeInfo GetDbTask(string taskid)
         {
@@ -392,11 +441,14 @@ namespace QM.Core.QuartzNet
         }
 
         /// <summary>
-        /// 从网站中添加任务
+        /// 添加远程任务
         /// </summary>
         /// <param name="taskid">任务id</param>
-        public static void AddWebTask(string taskid)
+        /// <param name="message">返回信息</param>
+        /// <returns>是否成功</returns>
+        public static bool AddRemoteTask(string taskid,out string message)
         {
+            bool result = false;
             try
             {
                 TaskBLL td = new TaskBLL();
@@ -422,38 +474,159 @@ namespace QM.Core.QuartzNet
                 }
                 trun.task = t;
 
-                AddTask(taskid, trun,QMMisFire.FireAndProceed);
+                lock (_lock)
+                {
+                    if (!_taskPool.ContainsKey(taskid))
+                    {
+                        //添加任务
+                        JobBuilder jobBuilder = JobBuilder.Create()
+                                                .WithIdentity(trun.task.idx);
+                        //.WithIdentity(taskinfo.task.idx, taskinfo.task.taskCategory);
+
+                        switch (trun.task.taskType)
+                        {
+                            case "SQL-FILE":
+                                jobBuilder = jobBuilder.OfType(typeof(QMSqlFileTaskJob));
+                                break;
+                            case "SQL-EXP":
+                            case "SQL":
+                                jobBuilder = jobBuilder.OfType(typeof(QMSqlExpTaskJob));
+                                break;
+                            case "DLL-STD":
+                                jobBuilder = jobBuilder.OfType(typeof(QMDllTaskJob));
+                                break;
+                            case "DLL-UNSTD":
+                            default:
+                                jobBuilder = jobBuilder.OfType(typeof(QMUnStdDllTaskJob));
+                                break;
+                        }
+
+                        IJobDetail jobDetail = jobBuilder.Build();
+
+                        //任务Misfire处理规则
+                        //以当前时间为触发频率立刻触发一次执行
+                        //然后按照Cron频率依次执行        
+                        ITrigger trigger = TriggerBuilder.Create()
+                                        .WithIdentity(trun.task.taskName, "Cron")
+                                        .WithCronSchedule(trun.task.taskCron,
+                                            x => x.WithMisfireHandlingInstructionFireAndProceed())
+                                        .ForJob(jobDetail.Key)
+                                        .Build();                       
+
+
+                        if (_remoteScheduler.CheckExists(jobDetail.Key))
+                        {
+                            _remoteScheduler.DeleteJob(jobDetail.Key);
+                        }
+                        _remoteScheduler.ScheduleJob(jobDetail, trigger);
+
+                        _taskPool.Add(taskid, trun);
+                    }
+                }
+
+                message = string.Format("添加远程任务成功:{0}", taskid);
+                result = true;
             }
             catch (QMException ex)
             {
-                log.Fatal(ex.Message);
+                message = string.Format("添加远程任务失败:{0},{1}", ex.Message, ex.StackTrace);
+                log.Fatal(message);                
             }
+
+            return result;
         }
 
+        /// <summary>
+        /// 删除远程任务
+        /// </summary>
+        /// <param name="taskid">任务id</param>
+        /// <param name="message">返回信息</param>
+        /// <returns>是否成功</returns>
+        public static bool DelRemoteTask(string taskid, out string message)
+        {
+            bool result = false;
+            try
+            {
+                lock (_lock)
+                {
+                    if (!_taskPool.ContainsKey(taskid))
+                    {
+                        //任务
+                        JobBuilder jobBuilder = JobBuilder.Create()
+                                                .WithIdentity(taskid);
+
+                        IJobDetail jobDetail = jobBuilder.Build();
+
+                        if (_remoteScheduler.CheckExists(jobDetail.Key))
+                        {
+                            _remoteScheduler.DeleteJob(jobDetail.Key);
+                        }
+
+                        _taskPool.Remove(taskid);
+                    }
+                }
+
+                message = string.Format("删除远程任务成功:{0}", taskid);
+                result = true;
+            }
+            catch (QMException ex)
+            {
+                message = string.Format("删除远程任务失败:{0},{1},{2},{3},{4}", taskid, ex.Message, ex.StackTrace);
+                log.Fatal(message);
+            }
+
+            return result;
+        }
 
         /// <summary>
-        /// 初始化远程
+        /// 初始化远程服务
         /// </summary>
-        public static void InitRemoteScheduler()
+        /// <param name="protocol">协议</param>
+        /// <param name="ip">ip地址</param>
+        /// <param name="port">端口</param>
+        /// <param name="message">返回信息</param>
+        /// <returns>是否成功</returns>
+        public static bool InitRemoteScheduler(string protocol = "tcp",string ip = "127.0.0.1",string port = "555",out string message)
         {
+            bool result = false;
+
             try
             {
                 NameValueCollection properties = new NameValueCollection();
                 properties["quartz.scheduler.instanceName"] = "RemoteServer";
 
-                properties["quartz.scheduler.proxy"] = "true";
+                properties["quartz.scheduler.proxy"] = "false";
 
-                properties["quartz.scheduler.proxy.address"] = string.Format("{0}://{1}:{2}/QuartzScheduler", "tcp", "127.0.0.1", "555");
+                properties["quartz.scheduler.proxy.address"] = string.Format("{0}://{1}:{2}/QuartzScheduler", protocol, ip, port);
 
                 ISchedulerFactory sf = new StdSchedulerFactory(properties);
 
-                _scheduler = sf.GetScheduler();
+                _remoteScheduler = sf.GetScheduler();
+                message = string.Format("初始化远程服务成功:{0},{1},{2}", protocol, ip, port);
+                result = true;
+            }
+            catch (SchedulerException sex)
+            {
+                message = string.Format("初始化远程服务失败:{0},{1},{2},{3},{4}", protocol, ip, port, sex.Message, sex.StackTrace);
+                log.Fatal(message);
+            }
+            catch (RemotingException rex)
+            {
+                message = string.Format("初始化远程服务失败:{0},{1},{2},{3},{4}", protocol, ip, port, rex.Message, rex.StackTrace);
+                log.Fatal(message);
             }
             catch (QMException ex)
             {
-                log.Fatal(ex.Message);
+                message = string.Format("初始化远程服务失败:{0},{1},{2},{3},{4}", protocol, ip, port, ex.Message, ex.StackTrace);
+                log.Fatal(message);
+            }
+            catch (SystemException sex)
+            {
+                message = string.Format("初始化远程服务失败:{0},{1},{2},{3},{4}", protocol, ip, port, sex.Message, sex.StackTrace);
+                log.Fatal(message);
             }
 
+            return result;
         }
 
         /// <summary>
