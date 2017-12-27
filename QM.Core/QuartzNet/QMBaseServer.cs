@@ -586,7 +586,7 @@ namespace QM.Core.QuartzNet
         /// <param name="port">端口</param>
         /// <param name="message">返回信息</param>
         /// <returns>是否成功</returns>
-        public static bool InitRemoteScheduler(string protocol = "tcp",string ip = "127.0.0.1",string port = "555",out string message)
+        public static bool InitRemoteScheduler(string protocol,string ip,string port,out string message)
         {
             bool result = false;
 

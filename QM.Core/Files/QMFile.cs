@@ -153,6 +153,11 @@ namespace QM.Core.Files
             return result;
         }
 
+        public static string MoveFile(string url)
+        {
+            return "";
+        }
+
         /// <summary>
         /// 返回文件是否存在
         /// </summary>

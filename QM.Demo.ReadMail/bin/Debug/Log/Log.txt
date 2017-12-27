@@ -1,2 +1,1340 @@
-DEBUG 2017-09-18 01:04:08  程序开始
-DEBUG 2017-09-18 01:04:08  连接服务器成功mail.asewh.com,143
+DEBUG 2017-10-12 01:33:57  程序开始
+DEBUG 2017-10-12 01:33:57  连接服务器成功mail.asewh.com,143
+DEBUG 2017-10-12 01:34:02  登录成功junxiao_liang@aseglobal.com,123456789*
+DEBUG 2017-10-12 01:34:02  选择操作文件夹B2B,邮件数84
+DEBUG 2017-10-12 01:34:02  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_49_M,正文VC745653W10:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+VC743928W07:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+
+DEBUG 2017-10-12 01:34:02  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_19_M,正文VC735660W12:MVOU:1120:ERROR: ASSM event has not been done, this event cannot proceed!                                                                     
+VC735660W13:MVOU:1120:ERROR: ASSM event has not been done, this event cannot proceed!                                                                     
+
+DEBUG 2017-10-12 01:34:03  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_15_M,正文VC735660W12:ASSM:1120:MAT114 ERROR - THE TRANSACTION CANNOT BE PROCESSED BECAUSE THERE IS NO BILL                                                         
+VC735660W13:ASSM:1120:MAT114 ERROR - THE TRANSACTION CANNOT BE PROCESSED BECAUSE THERE IS NO BILL                                                         
+
+DEBUG 2017-10-12 01:34:03  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_13_M,正文VC735660W12:ADLT:1120:RVLT01 - THE PRODUCT GROUP 1 OF THE NEW PRODUCT IS NOT THE SAME AS THE OLD ONE                                                      
+VC735660W13:ADLT:1120:RVLT01 - THE PRODUCT GROUP 1 OF THE NEW PRODUCT IS NOT THE SAME AS THE OLD ONE                                                      
+
+DEBUG 2017-10-12 01:34:03  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_99_L,正文1E733561W63:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION  120                                                                     
+ZF741107W23:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION  120                                                                     
+ZF742015W03:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION  120                                                                     
+RU740252W11:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION  120                                                                     
+PF742880W28:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION  120                                                                     
+PF745689W18:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION  120                                                                     
+1E733561W62:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION  120                                                                     
+
+DEBUG 2017-10-12 01:34:04  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_89_L,正文1E733561W63:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+ZF741107W23:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+RU740252W11:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+ZF742015W03:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+PF745689W18:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+PF742880W28:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+1E733561W62:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+1E739848W25:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+VE740749WG5:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 3450                                                                     
+VE740749WG3:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 3450                                                                     
+1E740006W21:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+1E740006W19:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+
+DEBUG 2017-10-12 01:34:04  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_89_A,正文1E740799W23:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+ZF724059W62:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+PF733723W14:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+ZF724059W61:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+1E741279W51:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+ZF724059W56:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+PF733723W17:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+1E742108W50:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+1E740799W30:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+ZF724059W52:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+PF742980W22:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+ZF724059W50:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+ZF741107W26:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+ZF739044W20:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+ZF739044W19:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+1E733562W59:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+ZF741107W32:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+RU740253W10:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+PF742882W35:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+1E740799W35:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+1E733561W63:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+RU740252W10:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+VE744457W45:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+PF742980W21:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+1E733561W66:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+VE745800W30:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+PF742882W23:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+1E740797W20:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+VE745800W34:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+PF742880W29:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+ZF724059W55:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+PF742882W37:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+1E733562W72:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+PF745688W14:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+PF745689W15:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+PF722085W09:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+VE741428W07:MVOU:8300:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+PF722085W11:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+PF745689W17:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+
+DEBUG 2017-10-12 01:34:04  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_59_L,正文1E733561W63:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+ZF741107W23:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 8100                                                                     
+RU740252W11:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 8100                                                                     
+ZF742015W03:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 8100                                                                     
+PF745689W18:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 8100                                                                     
+PF742880W28:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 8100                                                                     
+1E733561W62:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 8100                                                                     
+1E739848W25:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+VE740749WG5:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 3450                                                                     
+VE740749WG3:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 3450                                                                     
+1E740006W21:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+1E740006W19:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+
+DEBUG 2017-10-12 01:34:05  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_59_A,正文1E740799W23:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+ZF724059W62:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+PF733723W14:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+ZF724059W61:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+1E741279W51:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+ZF724059W56:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+PF733723W17:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+1E742108W50:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+1E740799W30:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+ZF724059W52:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+PF742980W22:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+ZF724059W50:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+ZF741107W26:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+ZF739044W20:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+ZF739044W19:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+1E733562W59:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+ZF741107W32:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+RU740253W10:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+PF742882W35:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+1E740799W35:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+1E733561W63:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+RU740252W10:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+VE744457W45:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+PF742980W21:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+1E733561W66:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+VE745800W30:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+PF742882W23:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+1E740797W20:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+VE745800W34:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+PF742880W29:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+ZF724059W55:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+PF742882W37:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+1E733562W72:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+PF745688W14:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+PF745689W15:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+PF722085W09:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+VE741428W07:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+PF722085W11:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+PF745689W17:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+
+DEBUG 2017-10-12 01:34:05  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_51_L,正文1E733561W63:SPLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+RU740252W11:SPLT:5660:WIP162 ERROR - YOU CANNOT CREATE THIS LOT NUMBER BECAUSE IT ALREADY EXISTS.                                                         
+1E733561W63:MRLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+ZF741107W23:SPLT:5660:WIP162 ERROR - YOU CANNOT CREATE THIS LOT NUMBER BECAUSE IT ALREADY EXISTS.                                                         
+PF745689W18:SPLT:5660:WIP162 ERROR - YOU CANNOT CREATE THIS LOT NUMBER BECAUSE IT ALREADY EXISTS.                                                         
+ZF742015W03:SPLT:5660:WIP162 ERROR - YOU CANNOT CREATE THIS LOT NUMBER BECAUSE IT ALREADY EXISTS.                                                         
+PF742880W28:SPLT:5660:WIP162 ERROR - YOU CANNOT CREATE THIS LOT NUMBER BECAUSE IT ALREADY EXISTS.                                                         
+ZF741107W23:MRLT:5660:WIP170 ERROR - YOU HAVE ENTERED A LOT THAT HAS BEEN DELETED.  PLEASE CHECK AND                                                      
+RU740252W11:MRLT:5660:WIP170 ERROR - YOU HAVE ENTERED A LOT THAT HAS BEEN DELETED.  PLEASE CHECK AND                                                      
+ZF742015W03:MRLT:5660:WIP170 ERROR - YOU HAVE ENTERED A LOT THAT HAS BEEN DELETED.  PLEASE CHECK AND                                                      
+PF745689W18:MRLT:5660:WIP170 ERROR - YOU HAVE ENTERED A LOT THAT HAS BEEN DELETED.  PLEASE CHECK AND                                                      
+PF742880W28:MRLT:5660:WIP170 ERROR - YOU HAVE ENTERED A LOT THAT HAS BEEN DELETED.  PLEASE CHECK AND                                                      
+1E733561W62:SPLT:5660:WIP162 ERROR - YOU CANNOT CREATE THIS LOT NUMBER BECAUSE IT ALREADY EXISTS.                                                         
+1E733561W62:MRLT:5660:WIP170 ERROR - YOU HAVE ENTERED A LOT THAT HAS BEEN DELETED.  PLEASE CHECK AND                                                      
+1E739848W25:MRLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+VE740749WG3:SPLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 3450                                                                     
+VE740749WG5:MRLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 3450                                                                     
+1E740006W21:SPLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+1E740006W19:SPLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+VE740749WG3:MRLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 3450                                                                     
+1E740006W21:MRLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+1E740006W19:MRLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+
+DEBUG 2017-10-12 01:34:05  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_51_A_1,正文1E740799W23:SPLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+PF733723W14:SPLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+1E741279W51:SPLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+ZF724059W56:SPLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+ZF724059W50:SPLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+1E742108W50:SPLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+ZF724059W52:SPLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+PF733723W17:SPLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+ZF724059W62:SPLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+ZF741107W32:SPLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+1E740799W30:SPLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+ZF724059W61:SPLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+1E740799W35:SPLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+ZF739044W19:SPLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+PF742980W22:SPLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+1E733561W66:SPLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+ZF739044W20:SPLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+1E740799W23:MRLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+ZF741107W26:SPLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+PF742882W35:SPLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+ZF724059W62:MRLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+PF733723W14:MRLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+1E733562W72:SPLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+ZF724059W61:MRLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+VE744457W45:SPLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+1E741279W51:MRLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+RU740253W10:SPLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+1E733561W63:SPLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+ZF724059W56:MRLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+PF742980W21:SPLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+PF733723W17:MRLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+1E742108W50:MRLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+RU740252W11:SPLT:5660:WIP162 ERROR - YOU CANNOT CREATE THIS LOT NUMBER BECAUSE IT ALREADY EXISTS.                                                         
+RU740252W10:SPLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+PF742882W23:SPLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+1E740799W30:MRLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+VE745800W30:SPLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+ZF724059W52:MRLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+PF742980W22:MRLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+ZF724059W50:MRLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+ZF741107W26:MRLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+ZF739044W20:MRLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+PF742880W29:SPLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+VE745800W34:SPLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+ZF739044W19:MRLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+1E740797W20:SPLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+1E733562W59:MRLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+ZF741107W32:MRLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+RU740253W10:MRLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+PF742882W35:MRLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+ZF724059W55:SPLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+PF742882W37:SPLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+1E740799W35:MRLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+1E733561W63:MRLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+RU740252W10:MRLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+VE744457W45:MRLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+PF742980W21:MRLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+PF722085W09:SPLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+1E733561W66:MRLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+VE745800W30:MRLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+PF745688W14:SPLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+PF742882W23:MRLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+1E740797W20:MRLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+PF722085W11:SPLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+PF745689W15:SPLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+VE745800W34:MRLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+PF742880W29:MRLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+ZF724059W55:MRLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+ZF741107W23:SPLT:5660:WIP162 ERROR - YOU CANNOT CREATE THIS LOT NUMBER BECAUSE IT ALREADY EXISTS.                                                         
+PF745689W17:SPLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+PF742882W37:MRLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+1E733562W72:MRLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+PF745689W18:SPLT:5660:WIP162 ERROR - YOU CANNOT CREATE THIS LOT NUMBER BECAUSE IT ALREADY EXISTS.                                                         
+PF745688W14:MRLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+PF745689W15:MRLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+PF722085W09:MRLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+ZF742015W03:SPLT:5660:WIP162 ERROR - YOU CANNOT CREATE THIS LOT NUMBER BECAUSE IT ALREADY EXISTS.                                                         
+VE741428W07:MRLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+ZF742015W04:SPLT:5660:WIP162 ERROR - YOU CANNOT CREATE THIS LOT NUMBER BECAUSE IT ALREADY EXISTS.                                                         
+PF742880W28:SPLT:5660:WIP162 ERROR - YOU CANNOT CREATE THIS LOT NUMBER BECAUSE IT ALREADY EXISTS.                                                         
+PF722085W11:MRLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+ZF739044W31:SPLT:5660:WIP162 ERROR - YOU CANNOT CREATE THIS LOT NUMBER BECAUSE IT ALREADY EXISTS.                                                         
+PF745689W17:MRLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+
+DEBUG 2017-10-12 01:34:06  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_49_A_1,正文RU740253W10:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+ZF741107W32:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+RU740252W11:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+ZF741107W26:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+PF742980W21:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+PF722085W09:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+ZF739044W20:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+PF722085W11:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+PF742880W29:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+ZF739044W19:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+VE745800W30:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+PF733723W17:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+ZF739044W31:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+1E740799W23:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+PF742882W37:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+ZF742015W04:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+ZF741107W23:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+PF745689W15:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+PF733723W14:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+ZF724059W50:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+ZF742015W03:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+1E740799W30:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+PF745688W14:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+ZF724059W52:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+1E733561W63:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+1E741279W51:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+ZF724059W62:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+VE744457W45:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+1E740799W35:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+1E733561W66:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+VE741428W07:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+ZF724059W55:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+PF742980W22:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+VE745800W34:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+RU740252W10:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+1E742108W50:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+ZF724059W61:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+ZF724059W56:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+1E733562W59:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+1E740797W20:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+1E733562W72:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+PF742882W35:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+PF742882W23:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+PF745689W17:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+PF742880W28:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+PF745689W18:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+RU740251W09:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+PF742882W34:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+ZF742012W34:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+ZF738134W37:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+1E740799W32:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+1E733561W62:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+PF742980W24:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+ZF724059W54:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+PF745688W16:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+1E742108W33:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+ZF738134W54:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+RU740252W12:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+1E740797W28:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+PF742882W24:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+PF738967W30:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+VE744457W39:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+ZF724059W83:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+1E742108W43:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+1E740797W29:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+PF742934W07:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+1E733551W58:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+VE741868W06:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+VE741428WM1:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+PF742882W36:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+ZF742012W35:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+VE744457W57:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+PF745719W14:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+1E742414W39:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+1E742108W55:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+1E740007W16:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+
+DEBUG 2017-10-12 01:34:06  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_49_L,正文1E733561W62:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+VE740749WF6:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 3450                                                                     
+1E740006W20:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+VC745633W25:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+VC745633W16:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+VE740749WH1:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 3450                                                                     
+VC745633W32:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+VE740749WF8:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 3450                                                                     
+
+DEBUG 2017-10-12 01:34:06  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_39_L,正文1E740792W16:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+1E740792W17:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+VC745653W27:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+1E740792W18:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+VC744419W28:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+VE745606W19:MVOU:3450:WIP186 ERROR - THE LOT IS CURRENTLY AT THE END OF ITS MANUFACTURING SEQUENCE                                                        
+VC744383W22:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+VC745705W13:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+PF738972W30:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 4600                                                                     
+VE745606W43:MVOU:3450:WIP186 ERROR - THE LOT IS CURRENTLY AT THE END OF ITS MANUFACTURING SEQUENCE                                                        
+VE745606W44:MVOU:3450:WIP186 ERROR - THE LOT IS CURRENTLY AT THE END OF ITS MANUFACTURING SEQUENCE                                                        
+VC744419W24:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+VC745705W09:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+VC744419W21:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+VC745705W08:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+
+DEBUG 2017-10-12 01:34:07  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_41_A,正文RU740253W10:SPLT:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+RU740252W11:SPLT:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+VE741428W07:SPLT:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+RU740252W10:SPLT:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 9996                                                                     
+RU740251W09:SPLT:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+RU740252W12:SPLT:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+VE741868W06:SPLT:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+
+DEBUG 2017-10-12 01:34:07  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_39_A,正文ZF724059W82:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 4600                                                                     
+1E740275W28:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 4600                                                                     
+ZF724059W84:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 4600                                                                     
+PF746932W10:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 4600                                                                     
+1E740797W34:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 4600                                                                     
+PF742980W35:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 4600                                                                     
+PF742882W21:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 4600                                                                     
+PF746931W28:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 4600                                                                     
+PF742980W26:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 4600                                                                     
+PF745688W20:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 4600                                                                     
+1E730694W28:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 4600                                                                     
+1E740275W25:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 4600                                                                     
+PF743337W12:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 4600                                                                     
+ZF740083W46:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 4600                                                                     
+ZF740083W49:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 4600                                                                     
+RU740253W09:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 4600                                                                     
+PF743337W10:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 4600                                                                     
+ZF740083W66:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 4600                                                                     
+RU740254W10:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 4600                                                                     
+PF743291W13:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 4600                                                                     
+PF733760W15:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 4600                                                                     
+VE745800W26:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 4600                                                                     
+PF743291W09:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 4600                                                                     
+VE745800W27:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 4600                                                                     
+VE745800W54:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 4600                                                                     
+1E740007W16:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+
+DEBUG 2017-10-12 01:34:07  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_29_L,正文VC745653W27:MVOU:2450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+1E740792W15:MVOU:2450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+1E740792W16:MVOU:2450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+1E740792W17:MVOU:2450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+
+DEBUG 2017-10-12 01:34:07  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_29_A,正文RU740253W09:MVOU:2450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 4600                                                                     
+RU740254W10:MVOU:2450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 4600                                                                     
+PF745688W20:MVOU:2450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 4600                                                                     
+PF742882W21:MVOU:2450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 4600                                                                     
+PF743337W10:MVOU:2450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 4600                                                                     
+ZF724059W84:MVOU:2450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 4600                                                                     
+PF742980W26:MVOU:2450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 4600                                                                     
+PF743337W12:MVOU:2450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 4600                                                                     
+PF746931W28:MVOU:2450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 4600                                                                     
+1E740797W34:MVOU:2450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 4600                                                                     
+PF742980W35:MVOU:2450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 4600                                                                     
+ZF724059W82:MVOU:2450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 4600                                                                     
+VE745800W26:MVOU:2450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 4600                                                                     
+VE745800W27:MVOU:2450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 4600                                                                     
+ZF740083W46:MVOU:2450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 4600                                                                     
+PF746932W10:MVOU:2450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 4600                                                                     
+1E740275W25:MVOU:2450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 4600                                                                     
+1E730694W28:MVOU:2450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 4600                                                                     
+VE745800W54:MVOU:2450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 4600                                                                     
+1E740275W28:MVOU:2450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 4600                                                                     
+ZF740083W49:MVOU:2450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 4600                                                                     
+ZF740083W66:MVOU:2450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 4600                                                                     
+PF743291W09:MVOU:2450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 4600                                                                     
+PF743291W13:MVOU:2450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 4600                                                                     
+PF733760W15:MVOU:2450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 4600                                                                     
+1E740185W67:MVOU:2450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 3450                                                                     
+1E731667W69:MVOU:2450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 3450                                                                     
+1E740185W90:MVOU:2450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 3450                                                                     
+ZF738007W69:MVOU:2450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 3450                                                                     
+ZF738007W67:MVOU:2450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 3450                                                                     
+ZF740083W75:MVOU:2450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 3450                                                                     
+1E731667W40:MVOU:2450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 3450                                                                     
+1E740007W16:MVOU:2450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+ZF738007W68:MVOU:2450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 3450                                                                     
+PF737866W31:MVOU:2450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 3450                                                                     
+PF746065W14:MVOU:2450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 3450                                                                     
+PF738972W30:MVOU:2450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 3450                                                                     
+ZF736083W30:MVOU:2450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 3450                                                                     
+
+DEBUG 2017-10-12 01:34:08  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_19_L,正文PF742049W24:MVOU:1120:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 2450                                                                     
+PF746065W11:MVOU:1120:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 2450                                                                     
+ZF721064W26:MVOU:1120:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 2450                                                                     
+ZF721064W29:MVOU:1120:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 2450                                                                     
+VE630753W07:MVOU:1120:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 2450                                                                     
+VC745653W27:MVOU:1120:ERROR: ASSM event has not been done, this event cannot proceed!                                                                     
+PF740411W24:MVOU:1120:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 2450                                                                     
+ZF724069W66:MVOU:1120:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 2450                                                                     
+ZF724069W67:MVOU:1120:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 2450                                                                     
+ZF724069W68:MVOU:1120:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 2450                                                                     
+ZF724069W69:MVOU:1120:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 2450                                                                     
+1E740792W15:MVOU:1120:ERROR: ASSM event has not been done, this event cannot proceed!                                                                     
+1E740792W16:MVOU:1120:ERROR: ASSM event has not been done, this event cannot proceed!                                                                     
+1E740792W17:MVOU:1120:ERROR: ASSM event has not been done, this event cannot proceed!                                                                     
+ZF729017W06:MVOU:1120:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 2450                                                                     
+ZF729017W07:MVOU:1120:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 2450                                                                     
+PF731417W16:MVOU:1120:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 2450                                                                     
+PF742049W25:MVOU:1120:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 2450                                                                     
+VE744586W10:MVOU:1120:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 2450                                                                     
+VE741816W18:MVOU:1120:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 2450                                                                     
+VE741816W19:MVOU:1120:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 2450                                                                     
+ZF721064W30:MVOU:1120:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 2450                                                                     
+ZF736083W33:MVOU:1120:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 2450                                                                     
+ZF736083W37:MVOU:1120:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 2450                                                                     
+VC737322W22:MVOU:1120:ERROR: ASSM event has not been done, this event cannot proceed!                                                                     
+VC737322W21:MVOU:1120:ERROR: ASSM event has not been done, this event cannot proceed!                                                                     
+
+DEBUG 2017-10-12 01:34:08  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_15_L,正文VE630753W07:ASSM:1120:ERROR: ASSM EVENT HAS BEEN DONE FOR THIS LOT,ONE ASSM PER LOT IS ALLOWED!                                                           
+VC745653W27:ASSM:1120:MAT114 ERROR - THE TRANSACTION CANNOT BE PROCESSED BECAUSE THERE IS NO BILL                                                         
+1E740792W15:ASSM:1120:MAT114 ERROR - THE TRANSACTION CANNOT BE PROCESSED BECAUSE THERE IS NO BILL                                                         
+1E740792W16:ASSM:1120:MAT114 ERROR - THE TRANSACTION CANNOT BE PROCESSED BECAUSE THERE IS NO BILL                                                         
+1E740792W17:ASSM:1120:MAT114 ERROR - THE TRANSACTION CANNOT BE PROCESSED BECAUSE THERE IS NO BILL                                                         
+VC737322W22:ASSM:1120:MAT114 ERROR - THE TRANSACTION CANNOT BE PROCESSED BECAUSE THERE IS NO BILL                                                         
+VC737322W21:ASSM:1120:MAT114 ERROR - THE TRANSACTION CANNOT BE PROCESSED BECAUSE THERE IS NO BILL                                                         
+
+DEBUG 2017-10-12 01:34:08  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_13_L,正文VE630753W07:ADLT:1120:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 2450                                                                     
+VC745653W27:ADLT:1120:RVLT01 - THE PRODUCT GROUP 1 OF THE NEW PRODUCT IS NOT THE SAME AS THE OLD ONE                                                      
+1E740792W15:ADLT:1120:RVLT01 - THE PRODUCT GROUP 1 OF THE NEW PRODUCT IS NOT THE SAME AS THE OLD ONE                                                      
+1E740792W16:ADLT:1120:RVLT01 - THE PRODUCT GROUP 1 OF THE NEW PRODUCT IS NOT THE SAME AS THE OLD ONE                                                      
+1E740792W17:ADLT:1120:RVLT01 - THE PRODUCT GROUP 1 OF THE NEW PRODUCT IS NOT THE SAME AS THE OLD ONE                                                      
+VC737322W22:ADLT:1120:RVLT01 - THE PRODUCT GROUP 1 OF THE NEW PRODUCT IS NOT THE SAME AS THE OLD ONE                                                      
+VC737322W21:ADLT:1120:RVLT01 - THE PRODUCT GROUP 1 OF THE NEW PRODUCT IS NOT THE SAME AS THE OLD ONE                                                      
+
+DEBUG 2017-10-12 01:34:08  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171010_29_M,正文1E740007W16:MVOU:2450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+
+DEBUG 2017-10-12 01:34:09  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171010_19_M,正文VC745653W27:MVOU:1120:ERROR: ASSM event has not been done, this event cannot proceed!                                                                     
+1E740792W15:MVOU:1120:ERROR: ASSM event has not been done, this event cannot proceed!                                                                     
+1E740792W16:MVOU:1120:ERROR: ASSM event has not been done, this event cannot proceed!                                                                     
+1E740792W17:MVOU:1120:ERROR: ASSM event has not been done, this event cannot proceed!                                                                     
+
+DEBUG 2017-10-12 01:34:09  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171010_15_M,正文VC745653W27:ASSM:1120:MAT114 ERROR - THE TRANSACTION CANNOT BE PROCESSED BECAUSE THERE IS NO BILL                                                         
+1E740792W15:ASSM:1120:MAT114 ERROR - THE TRANSACTION CANNOT BE PROCESSED BECAUSE THERE IS NO BILL                                                         
+1E740792W16:ASSM:1120:MAT114 ERROR - THE TRANSACTION CANNOT BE PROCESSED BECAUSE THERE IS NO BILL                                                         
+1E740792W17:ASSM:1120:MAT114 ERROR - THE TRANSACTION CANNOT BE PROCESSED BECAUSE THERE IS NO BILL                                                         
+
+DEBUG 2017-10-12 01:34:09  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171010_13_M,正文VC745653W27:ADLT:1120:RVLT01 - THE PRODUCT GROUP 1 OF THE NEW PRODUCT IS NOT THE SAME AS THE OLD ONE                                                      
+1E740792W15:ADLT:1120:RVLT01 - THE PRODUCT GROUP 1 OF THE NEW PRODUCT IS NOT THE SAME AS THE OLD ONE                                                      
+1E740792W16:ADLT:1120:RVLT01 - THE PRODUCT GROUP 1 OF THE NEW PRODUCT IS NOT THE SAME AS THE OLD ONE                                                      
+1E740792W17:ADLT:1120:RVLT01 - THE PRODUCT GROUP 1 OF THE NEW PRODUCT IS NOT THE SAME AS THE OLD ONE                                                      
+
+DEBUG 2017-10-12 01:34:10  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_89_K,正文1E739848W24:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+
+DEBUG 2017-10-12 01:34:10  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_59_K,正文1E739848W24:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+
+DEBUG 2017-10-12 01:34:11  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_51_K,正文1E739848W24:MRLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+VE740749WG5:SPLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 3450                                                                     
+
+DEBUG 2017-10-12 01:34:11  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_49_K,正文1E740007W24:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+VE740749WF7:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 3450                                                                     
+
+DEBUG 2017-10-12 01:34:11  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_39_K,正文1E740007W25:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+1E740007W20:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+
+DEBUG 2017-10-12 01:34:12  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_19_K,正文VC737322W20:MVOU:1120:ERROR: ASSM event has not been done, this event cannot proceed!                                                                     
+
+DEBUG 2017-10-12 01:34:12  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_15_K,正文VC737322W20:ASSM:1120:MAT114 ERROR - THE TRANSACTION CANNOT BE PROCESSED BECAUSE THERE IS NO BILL                                                         
+
+DEBUG 2017-10-12 01:34:12  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_13_K,正文VC737322W20:ADLT:1120:RVLT01 - THE PRODUCT GROUP 1 OF THE NEW PRODUCT IS NOT THE SAME AS THE OLD ONE                                                      
+
+DEBUG 2017-10-12 01:34:13  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_89_J,正文1E740006W23:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+1E740006W15:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+1E740006W18:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+1E739848W26:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+1E740006W28:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+1E739848W02:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+1E739848W22:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+
+DEBUG 2017-10-12 01:34:14  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_59_J,正文1E740006W23:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+1E740006W15:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+1E740006W18:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+1E739848W26:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+1E740006W28:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+1E739848W02:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+1E739848W22:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+
+DEBUG 2017-10-12 01:34:15  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_51_J,正文1E740006W23:MRLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+1E739848W26:SPLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+1E740006W18:MRLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+1E740006W28:SPLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+1E739848W26:MRLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+1E740006W28:MRLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+1E739848W02:SPLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+1E739848W22:SPLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+1E739848W02:MRLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+1E739848W24:SPLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+1E739848W25:SPLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+1E739848W22:MRLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+
+DEBUG 2017-10-12 01:34:15  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_49_J,正文1E740006W19:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+1E740006W21:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+VE745606W21:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 3450                                                                     
+1E739848W29:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+VE740749WG1:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 3450                                                                     
+1E740007W16:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+
+DEBUG 2017-10-12 01:34:16  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_39_J,正文VC745653W25:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+VC745705W14:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+ZF721064W30:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+VC744383W17:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+ZF724069W69:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+VE745606W34:MVOU:3450:WIP186 ERROR - THE LOT IS CURRENTLY AT THE END OF ITS MANUFACTURING SEQUENCE                                                        
+VC745705W10:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+
+DEBUG 2017-10-12 01:34:16  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_19_J,正文VC737322W19:MVOU:1120:ERROR: ASSM event has not been done, this event cannot proceed!                                                                     
+
+DEBUG 2017-10-12 01:34:16  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_15_J,正文VC737322W19:ASSM:1120:MAT114 ERROR - THE TRANSACTION CANNOT BE PROCESSED BECAUSE THERE IS NO BILL                                                         
+
+DEBUG 2017-10-12 01:34:17  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_13_J,正文VC737322W19:ADLT:1120:RVLT01 - THE PRODUCT GROUP 1 OF THE NEW PRODUCT IS NOT THE SAME AS THE OLD ONE                                                      
+
+DEBUG 2017-10-12 01:34:17  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_99_I_5,正文VC742282W32:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+VC742282W29:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+VC742282W19:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+VC742282W17:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+VC742282W28:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+VC742282W27:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+VC742282W16:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+1E739847W11:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+1E739849W24:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+VC742282W31:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+RU740255W12:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+VC742282W18:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+
+DEBUG 2017-10-12 01:34:18  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_99_I_4,正文VE745800W27:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 3450                                                                     
+VE740749WG8:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 3450                                                                     
+VE740749WH2:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 3450                                                                     
+VE745606W16:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 3450                                                                     
+1E731667W40:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 2450                                                                     
+1E731667W49:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+VE740373W29:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+VC742282W30:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+VC742282W15:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+ZF739044W22:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+1E740185W90:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 2450                                                                     
+1E740185W80:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+
+DEBUG 2017-10-12 01:34:18  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_99_I_3,正文ZF740083W49:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 3450                                                                     
+ZF740083W71:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+ZF740083W46:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 3450                                                                     
+PF743291W14:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+ZF724059W82:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 3450                                                                     
+VE745800W26:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 3450                                                                     
+VE745800W54:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 3450                                                                     
+ZF724059W76:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+ZF740083W66:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 3450                                                                     
+ZF740083W80:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+ZF724059W84:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 3450                                                                     
+ZF724059W78:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+VC743789W24:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+VE745606W15:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 3450                                                                     
+VE745606W14:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 3450                                                                     
+VE740749WG9:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 3450                                                                     
+
+DEBUG 2017-10-12 01:34:18  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_99_I_2,正文VE732070W08:SHLT:9996:USR011 ERROR - LOT ARE NOT ALLOWED TO SHIP TO THE SPECIFIED FACILITY.                                                               
+1E739849W17:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+PF743291W13:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 3450                                                                     
+PF743337W12:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 3450                                                                     
+PF744406W16:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+PF743291W09:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 3450                                                                     
+PF746932W10:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 3450                                                                     
+RU740253W09:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 3450                                                                     
+PF743337W10:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 3450                                                                     
+PF746931W25:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+PF746931W28:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 3450                                                                     
+
+DEBUG 2017-10-12 01:34:19  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_99_I_1,正文1E739849W23:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+VE740749WG7:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 3450                                                                     
+1E739848W19:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+1E739848W17:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+1E739849W27:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+1E739849W19:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+1E739848W20:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+1E740007W02:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+1E739847W27:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+1E740006W17:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+VE740749WG6:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 3450                                                                     
+
+DEBUG 2017-10-12 01:34:19  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_49_I,正文VE740749WG5:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 3450                                                                     
+VE740749WG3:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 3450                                                                     
+
+DEBUG 2017-10-12 01:34:19  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_39_I,正文VC744419W11:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+VC744383W21:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+
+DEBUG 2017-10-12 01:34:20  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_15_I,正文1E740795W27:ASSM:1120:MAT114 ERROR - THE TRANSACTION CANNOT BE PROCESSED BECAUSE THERE IS NO BILL                                                         
+
+DEBUG 2017-10-12 01:34:20  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_19_I,正文1E740795W27:MVOU:1120:ERROR: ASSM event has not been done, this event cannot proceed!                                                                     
+
+DEBUG 2017-10-12 01:34:20  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_13_I,正文1E740795W27:ADLT:1120:RVLT01 - THE PRODUCT GROUP 1 OF THE NEW PRODUCT IS NOT THE SAME AS THE OLD ONE                                                      
+
+DEBUG 2017-10-12 01:34:20  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_89_H,正文1E739849W24:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+1E739847W11:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+VC742282W31:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+VC742282W18:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+RU740255W12:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+RU740254W10:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 3450                                                                     
+RU740256W12:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+
+DEBUG 2017-10-12 01:34:21  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_59_H,正文1E739849W24:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+1E739847W11:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+VC742282W31:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+VC742282W18:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+RU740255W12:MVOU:5660:WIP181 ERROR - THE QUANTITY OF LOSSES AND BONUSES DOES NOT BALANCE TO THE                                                           
+RU740254W10:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 3450                                                                     
+RU740256W12:MVOU:5660:WIP181 ERROR - THE QUANTITY OF LOSSES AND BONUSES DOES NOT BALANCE TO THE                                                           
+
+DEBUG 2017-10-12 01:34:21  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_51_H,正文1E739849W24:MRLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+1E739847W11:MRLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+VC742282W31:MRLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+VC742282W18:SPLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+RU740254W10:SPLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 3450                                                                     
+VC742282W18:MRLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+RU740255W12:MRLT:5660:WIP168 ERROR - YOU HAVE ENTERED A LOT NUMBER THAT DOES NOT EXIST.  PLEASE                                                           
+RU740254W10:MRLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 3450                                                                     
+RU740256W12:MRLT:5660:WIP168 ERROR - YOU HAVE ENTERED A LOT NUMBER THAT DOES NOT EXIST.  PLEASE                                                           
+1E740006W23:SPLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+1E740006W18:SPLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+
+DEBUG 2017-10-12 01:34:21  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_49_H,正文1E739848W25:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+1E739848W26:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+1E739848W02:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+1E739848W24:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+1E739848W22:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+
+DEBUG 2017-10-12 01:34:22  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_39_H,正文VC745653W26:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+VE740749WH3:MVOU:3450:WIP186 ERROR - THE LOT IS CURRENTLY AT THE END OF ITS MANUFACTURING SEQUENCE                                                        
+
+DEBUG 2017-10-12 01:34:22  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_19_H,正文1E740795W28:MVOU:1120:ERROR: ASSM event has not been done, this event cannot proceed!                                                                     
+1E740795W26:MVOU:1120:ERROR: ASSM event has not been done, this event cannot proceed!                                                                     
+VC737322W17:MVOU:1120:ERROR: ASSM event has not been done, this event cannot proceed!                                                                     
+VC737322W18:MVOU:1120:ERROR: ASSM event has not been done, this event cannot proceed!                                                                     
+
+DEBUG 2017-10-12 01:34:22  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_15_H,正文1E740795W28:ASSM:1120:MAT114 ERROR - THE TRANSACTION CANNOT BE PROCESSED BECAUSE THERE IS NO BILL                                                         
+1E740795W26:ASSM:1120:MAT114 ERROR - THE TRANSACTION CANNOT BE PROCESSED BECAUSE THERE IS NO BILL                                                         
+VC737322W17:ASSM:1120:MAT114 ERROR - THE TRANSACTION CANNOT BE PROCESSED BECAUSE THERE IS NO BILL                                                         
+VC737322W18:ASSM:1120:MAT114 ERROR - THE TRANSACTION CANNOT BE PROCESSED BECAUSE THERE IS NO BILL                                                         
+
+DEBUG 2017-10-12 01:34:23  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_13_H,正文1E740795W28:ADLT:1120:RVLT01 - THE PRODUCT GROUP 1 OF THE NEW PRODUCT IS NOT THE SAME AS THE OLD ONE                                                      
+1E740795W26:ADLT:1120:RVLT01 - THE PRODUCT GROUP 1 OF THE NEW PRODUCT IS NOT THE SAME AS THE OLD ONE                                                      
+VC737322W17:ADLT:1120:RVLT01 - THE PRODUCT GROUP 1 OF THE NEW PRODUCT IS NOT THE SAME AS THE OLD ONE                                                      
+VC737322W18:ADLT:1120:RVLT01 - THE PRODUCT GROUP 1 OF THE NEW PRODUCT IS NOT THE SAME AS THE OLD ONE                                                      
+
+DEBUG 2017-10-12 01:34:24  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_89_G,正文VC742282W27:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+VC742282W16:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+
+DEBUG 2017-10-12 01:34:24  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_59_G,正文VC742282W27:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+VC742282W16:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+
+DEBUG 2017-10-12 01:34:25  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_51_G,正文VC742282W16:SPLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+VC742282W27:MRLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+VC742282W16:MRLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+1E739849W24:SPLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+1E739847W11:SPLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+VC742282W31:SPLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+
+DEBUG 2017-10-12 01:34:25  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_49_G,正文1E740006W15:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+1E740006W28:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+
+DEBUG 2017-10-12 01:34:25  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_39_G,正文VE744586W10:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+1E739848W21:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+ZF721064W29:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+VE745606W20:MVOU:3450:WIP186 ERROR - THE LOT IS CURRENTLY AT THE END OF ITS MANUFACTURING SEQUENCE                                                        
+1E740006W16:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+
+DEBUG 2017-10-12 01:34:26  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_19_G,正文VC737322W02:MVOU:1120:ERROR: ASSM event has not been done, this event cannot proceed!                                                                     
+VC737322W13:MVOU:1120:ERROR: ASSM event has not been done, this event cannot proceed!                                                                     
+VC737322W14:MVOU:1120:ERROR: ASSM event has not been done, this event cannot proceed!                                                                     
+VC737322W15:MVOU:1120:ERROR: ASSM event has not been done, this event cannot proceed!                                                                     
+VC737322W16:MVOU:1120:ERROR: ASSM event has not been done, this event cannot proceed!                                                                     
+
+DEBUG 2017-10-12 01:34:26  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_15_G,正文VC737322W02:ASSM:1120:MAT114 ERROR - THE TRANSACTION CANNOT BE PROCESSED BECAUSE THERE IS NO BILL                                                         
+VC737322W13:ASSM:1120:MAT114 ERROR - THE TRANSACTION CANNOT BE PROCESSED BECAUSE THERE IS NO BILL                                                         
+VC737322W14:ASSM:1120:MAT114 ERROR - THE TRANSACTION CANNOT BE PROCESSED BECAUSE THERE IS NO BILL                                                         
+VC737322W15:ASSM:1120:MAT114 ERROR - THE TRANSACTION CANNOT BE PROCESSED BECAUSE THERE IS NO BILL                                                         
+VC737322W16:ASSM:1120:MAT114 ERROR - THE TRANSACTION CANNOT BE PROCESSED BECAUSE THERE IS NO BILL                                                         
+VE745606WC1:ASSM:1120:MAT114 ERROR - THE TRANSACTION CANNOT BE PROCESSED BECAUSE THERE IS NO BILL                                                         
+
+DEBUG 2017-10-12 01:34:26  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_13_G,正文VC737322W02:ADLT:1120:RVLT01 - THE PRODUCT GROUP 1 OF THE NEW PRODUCT IS NOT THE SAME AS THE OLD ONE                                                      
+VC737322W13:ADLT:1120:RVLT01 - THE PRODUCT GROUP 1 OF THE NEW PRODUCT IS NOT THE SAME AS THE OLD ONE                                                      
+VC737322W14:ADLT:1120:RVLT01 - THE PRODUCT GROUP 1 OF THE NEW PRODUCT IS NOT THE SAME AS THE OLD ONE                                                      
+VC737322W15:ADLT:1120:RVLT01 - THE PRODUCT GROUP 1 OF THE NEW PRODUCT IS NOT THE SAME AS THE OLD ONE                                                      
+VC737322W16:ADLT:1120:RVLT01 - THE PRODUCT GROUP 1 OF THE NEW PRODUCT IS NOT THE SAME AS THE OLD ONE                                                      
+VE745606WC1:ADLT:1120:RVLT01 - THE PRODUCT GROUP 1 OF THE NEW PRODUCT IS NOT THE SAME AS THE OLD ONE                                                      
+
+DEBUG 2017-10-12 01:34:26  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_51_F,正文VC742282W27:SPLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+
+DEBUG 2017-10-12 01:34:27  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_39_F,正文VE745606W22:MVOU:3450:WIP186 ERROR - THE LOT IS CURRENTLY AT THE END OF ITS MANUFACTURING SEQUENCE                                                        
+1E740792W14:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+
+DEBUG 2017-10-12 01:34:27  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_15_F,正文VE745606WB9:ASSM:1120:MAT114 ERROR - THE TRANSACTION CANNOT BE PROCESSED BECAUSE THERE IS NO BILL                                                         
+
+DEBUG 2017-10-12 01:34:27  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_13_F,正文VE745606WB9:ADLT:1120:RVLT01 - THE PRODUCT GROUP 1 OF THE NEW PRODUCT IS NOT THE SAME AS THE OLD ONE                                                      
+
+DEBUG 2017-10-12 01:34:28  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_89_E,正文VC742282W17:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+VC742282W28:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+
+DEBUG 2017-10-12 01:34:28  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_59_E,正文VC742282W17:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+VC742282W28:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+
+DEBUG 2017-10-12 01:34:28  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_51_E,正文VC742282W17:MRLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+VC742282W28:SPLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+VC742282W28:MRLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+
+DEBUG 2017-10-12 01:34:29  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_49_E,正文1E739849W24:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+1E740006W18:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+1E740006W23:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+
+DEBUG 2017-10-12 01:34:29  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_39_E,正文VC745653W08:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+VC745653W27:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+ZF740083W75:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 2450                                                                     
+VC744419W08:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+ZF724069W68:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+VC745653W13:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+1E740007W23:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+
+DEBUG 2017-10-12 01:34:29  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_15_E,正文VE745606WB6:ASSM:1120:MAT114 ERROR - THE TRANSACTION CANNOT BE PROCESSED BECAUSE THERE IS NO BILL                                                         
+VE745606WB7:ASSM:1120:MAT114 ERROR - THE TRANSACTION CANNOT BE PROCESSED BECAUSE THERE IS NO BILL                                                         
+VE745606WB8:ASSM:1120:MAT114 ERROR - THE TRANSACTION CANNOT BE PROCESSED BECAUSE THERE IS NO BILL                                                         
+
+DEBUG 2017-10-12 01:34:30  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_13_E,正文VE745606WB6:ADLT:1120:RVLT01 - THE PRODUCT GROUP 1 OF THE NEW PRODUCT IS NOT THE SAME AS THE OLD ONE                                                      
+VE745606WB7:ADLT:1120:RVLT01 - THE PRODUCT GROUP 1 OF THE NEW PRODUCT IS NOT THE SAME AS THE OLD ONE                                                      
+VE745606WB8:ADLT:1120:RVLT01 - THE PRODUCT GROUP 1 OF THE NEW PRODUCT IS NOT THE SAME AS THE OLD ONE                                                      
+
+DEBUG 2017-10-12 01:34:30  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_49_D,正文1E739847W11:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+
+DEBUG 2017-10-12 01:34:30  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_39_D,正文1E740792W17:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+VE741816W18:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+
+DEBUG 2017-10-12 01:34:30  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_15_D,正文VE745606WB5:ASSM:1120:MAT114 ERROR - THE TRANSACTION CANNOT BE PROCESSED BECAUSE THERE IS NO BILL                                                         
+
+DEBUG 2017-10-12 01:34:31  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_13_D,正文VE745606WB5:ADLT:1120:RVLT01 - THE PRODUCT GROUP 1 OF THE NEW PRODUCT IS NOT THE SAME AS THE OLD ONE                                                      
+
+DEBUG 2017-10-12 01:34:31  选择操作文件夹Oracle,邮件数0
+DEBUG 2017-10-12 01:34:31  选择操作文件夹[E2open] Inventory report for ASEWH CN (8L),邮件数1
+DEBUG 2017-10-12 01:34:32  删除邮件,发件人DL-GPNSupport@infineon.com,标题[E2open] Inventory report for ASEWH CN (8L,正文
+DEBUG 2017-10-12 01:34:32  选择操作文件夹NOTES,邮件数2
+DEBUG 2017-10-12 01:34:32  删除邮件,发件人AsewhSystem@aseglobal.com,标题[ASEWH Account Request] Please review document (A1710013) !,正文
+
+
+Employee: 100969
+Apply Type: New
+
+
+Reason : 请协助开通新员工新系统权限，以下附件内容为详细情况，谢谢！
+
+Please click the yellow icon to review this request! -->    (Document link:
+ASEWH Account Request)
+DEBUG 2017-10-12 01:34:32  删除邮件,发件人Xiaoyan_Li@aseglobal.com,标题SR Notice - SR test is confirmed.,正文
+
+
+Hi Liping Zhang :
+
+          System has been comfirm by user.
+
+          Title : MES FWP020 报表增加测试机号
+
+
+          ok
+
+          B.R
+          Xiaoyan Li
+
+Document Link →(Document link: SR Notice - SR test is confirmed. )
+DEBUG 2017-10-12 01:36:17  程序开始
+DEBUG 2017-10-12 01:36:17  连接服务器成功mail.asewh.com,143
+DEBUG 2017-10-12 01:36:20  登录成功junxiao_liang@aseglobal.com,123456789*
+DEBUG 2017-10-12 01:36:20  选择操作文件夹B2B,邮件数2
+DEBUG 2017-10-12 01:36:21  选择操作文件夹Oracle,邮件数0
+DEBUG 2017-10-12 01:36:21  选择操作文件夹[E2open] Inventory report for ASEWH CN (8L),邮件数0
+DEBUG 2017-10-12 01:36:21  选择操作文件夹NOTES,邮件数0
+DEBUG 2017-10-12 01:38:00  选择操作文件夹Trash,邮件数49
+DEBUG 2017-10-12 01:39:43  程序开始
+DEBUG 2017-10-12 01:39:44  连接服务器成功mail.asewh.com,143
+DEBUG 2017-10-12 01:39:49  登录成功junxiao_liang@aseglobal.com,123456789*
+DEBUG 2017-10-12 01:39:49  选择操作文件夹B2B,邮件数2
+DEBUG 2017-10-12 01:39:51  选择操作文件夹Oracle,邮件数0
+DEBUG 2017-10-12 01:39:52  选择操作文件夹[E2open] Inventory report for ASEWH CN (8L),邮件数0
+DEBUG 2017-10-12 01:39:52  选择操作文件夹NOTES,邮件数0
+DEBUG 2017-10-12 01:39:53  选择操作文件夹Trash,邮件数48
+DEBUG 2017-10-12 01:39:59  删除邮件,发件人IRAD2@INFINEON.COM,标题Build Instruction ASE201709041335 (HEXFET_DPAK,正文*************************************************************
+
+This message was automatically sent by the BI on 04-SEP-17
+
+*************************************************************
+
+Hi All,
+
+
+Please see attached build instruction, for your immediate release.
+
+
+Please acknowledge receipt of this build instruction.
+DEBUG 2017-10-12 01:40:01  删除邮件,发件人"junxiao_liang" <junxiao_liang@aseglobal.com>,标题aa,正文
+DEBUG 2017-10-12 01:40:03  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20170820_13_T,正文1E735924W11:ADLT:1120:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+1E736953W14:ADLT:1120:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+
+DEBUG 2017-10-12 01:40:05  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20170820_15_T,正文1E735924W11:ASSM:1120:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+1E736953W14:ASSM:1120:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+
+DEBUG 2017-10-12 01:40:07  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20170820_19_T_1,正文PF738971W28:MVOU:1120:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 3450                                                                     
+VE646306W11:MVOU:1120:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 3450                                                                     
+VE735212W02:MVOU:1120:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 2450                                                                     
+VE735212W04:MVOU:1120:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 2450                                                                     
+VE735212W07:MVOU:1120:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 2450                                                                     
+ZF733069W05:MVOU:1120:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 3450                                                                     
+VE735212W09:MVOU:1120:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+VE735212W10:MVOU:1120:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 2450                                                                     
+ZF733069W09:MVOU:1120:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+VE734816W14:MVOU:1120:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+PF738044W15:MVOU:1120:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+VE736601W09:MVOU:1120:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+VE736601W10:MVOU:1120:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 2450                                                                     
+ZF726116W24:MVOU:1120:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 2450                                                                     
+VE736895W06:MVOU:1120:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 2450                                                                     
+VE736895W07:MVOU:1120:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 2450                                                                     
+VE736601W11:MVOU:1120:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 2450                                                                     
+VE736601W14:MVOU:1120:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 2450                                                                     
+ZF726116W26:MVOU:1120:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 2450                                                                     
+ZF726116W27:MVOU:1120:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 2450                                                                     
+VE736601W13:MVOU:1120:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 2450                                                                     
+ZF726116W30:MVOU:1120:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 2450                                                                     
+VE736601W16:MVOU:1120:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+VE737073W02:MVOU:1120:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+VE718762W02:MVOU:1120:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 2450                                                                     
+1E735924W11:MVOU:1120:ERROR: ASSM event has not been done, this event cannot proceed!                                                                     
+PF739217W23:MVOU:1120:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+1E736953W14:MVOU:1120:ERROR: ASSM event has not been done, this event cannot proceed!                                                                     
+
+DEBUG 2017-10-12 01:40:10  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20170820_29_T_1,正文PF738971W28:MVOU:2450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 3450                                                                     
+VE646306W11:MVOU:2450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 3450                                                                     
+VE734816W14:MVOU:2450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+ZF733069W05:MVOU:2450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 3450                                                                     
+VE736601W09:MVOU:2450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+ZF733069W09:MVOU:2450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+VE735212W09:MVOU:2450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+VE737073W02:MVOU:2450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+VE736601W16:MVOU:2450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+PF738044W15:MVOU:2450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+PF739217W23:MVOU:2450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+1E735924W11:MVOU:2450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+1E736953W14:MVOU:2450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+
+DEBUG 2017-10-12 01:40:12  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20170820_39_T_1,正文VE736601W09:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+ZF733069W09:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+VE736601W16:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+VE734816W14:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+VE737073W02:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+VE735212W09:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+1E735924W11:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+1E736953W14:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+PF739217W23:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+PF738044W15:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+
+DEBUG 2017-10-12 01:40:14  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20170820_49_T_1,正文1E735924W11:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+VE736601W09:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+ZF733069W09:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+1E736953W14:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+PF739217W23:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+VE736601W16:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+VE734816W14:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+PF738044W15:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+VE737073W02:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+VE735212W09:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+PF739213W04:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 2450                                                                     
+VE735212W12:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 2450                                                                     
+VE736895W08:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 2450                                                                     
+VF716205W04:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+
+DEBUG 2017-10-12 01:40:16  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20170820_51_T_1,正文1E736953W14:SPLT:5660:WIP162 ERROR - YOU CANNOT CREATE THIS LOT NUMBER BECAUSE IT ALREADY EXISTS.                                                         
+1E735924W11:SPLT:5660:WIP162 ERROR - YOU CANNOT CREATE THIS LOT NUMBER BECAUSE IT ALREADY EXISTS.                                                         
+1E736953W14:MRLT:5660:WIP168 ERROR - YOU HAVE ENTERED A LOT NUMBER THAT DOES NOT EXIST.  PLEASE                                                           
+1E735924W11:MRLT:5660:WIP168 ERROR - YOU HAVE ENTERED A LOT NUMBER THAT DOES NOT EXIST.  PLEASE                                                           
+VE736601W09:SPLT:5660:WIP162 ERROR - YOU CANNOT CREATE THIS LOT NUMBER BECAUSE IT ALREADY EXISTS.                                                         
+ZF733069W09:SPLT:5660:WIP162 ERROR - YOU CANNOT CREATE THIS LOT NUMBER BECAUSE IT ALREADY EXISTS.                                                         
+VE736601W16:SPLT:5660:WIP162 ERROR - YOU CANNOT CREATE THIS LOT NUMBER BECAUSE IT ALREADY EXISTS.                                                         
+PF739217W23:SPLT:5660:WIP162 ERROR - YOU CANNOT CREATE THIS LOT NUMBER BECAUSE IT ALREADY EXISTS.                                                         
+PF738044W15:SPLT:5660:WIP208 ERROR - THE CHILD LOT'S QUANTITY MAY NOT BE GREATER THAN THE PARENT                                                          
+VE734816W14:SPLT:5660:WIP208 ERROR - THE CHILD LOT'S QUANTITY MAY NOT BE GREATER THAN THE PARENT                                                          
+VE737073W02:SPLT:5660:WIP162 ERROR - YOU CANNOT CREATE THIS LOT NUMBER BECAUSE IT ALREADY EXISTS.                                                         
+VE735212W09:SPLT:5660:WIP162 ERROR - YOU CANNOT CREATE THIS LOT NUMBER BECAUSE IT ALREADY EXISTS.                                                         
+
+DEBUG 2017-10-12 01:40:18  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20170820_51_T_2,正文PF739304W01:SPLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 2450                                                                     
+PF739213W05:SPLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 2450                                                                     
+PF739304W01:MRLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 2450                                                                     
+PF739213W07:MRLT:5660:WIP168 ERROR - YOU HAVE ENTERED A LOT NUMBER THAT DOES NOT EXIST.  PLEASE                                                           
+
+DEBUG 2017-10-12 01:40:19  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20170820_51_T_3,正文PF739213W04:SPLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 2450                                                                     
+PF739213W04:MRLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 2450                                                                     
+VE735212W12:SPLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 2450                                                                     
+PF739304W04:MRLT:5660:WIP168 ERROR - YOU HAVE ENTERED A LOT NUMBER THAT DOES NOT EXIST.  PLEASE                                                           
+
+DEBUG 2017-10-12 01:40:21  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20170820_59_T_1,正文1E736953W14:MVOU:5660:WIP181 ERROR - THE QUANTITY OF LOSSES AND BONUSES DOES NOT BALANCE TO THE                                                           
+1E735924W11:MVOU:5660:WIP181 ERROR - THE QUANTITY OF LOSSES AND BONUSES DOES NOT BALANCE TO THE                                                           
+PF739304W01:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 2450                                                                     
+PF739213W07:MVOU:5660:WIP181 ERROR - THE QUANTITY OF LOSSES AND BONUSES DOES NOT BALANCE TO THE                                                           
+
+DEBUG 2017-10-12 01:40:22  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20170820_59_T_2,正文PF739213W04:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 2450                                                                     
+PF739304W04:MVOU:5660:WIP181 ERROR - THE QUANTITY OF LOSSES AND BONUSES DOES NOT BALANCE TO THE                                                           
+
+DEBUG 2017-10-12 01:40:24  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20170820_89_T_1,正文1E736953W14:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+1E735924W11:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+PF739304W01:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 2450                                                                     
+PF739213W07:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+
+DEBUG 2017-10-12 01:40:25  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20170820_89_T_2,正文PF739213W04:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 2450                                                                     
+PF739304W04:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+
+DEBUG 2017-10-12 01:40:26  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20170820_99_T,正文1E736953W14:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+1E735924W11:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+
+DEBUG 2017-10-12 01:40:27  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20170820_51_V,正文VE735212W12:MRLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 2450                                                                     
+PF739213W05:MRLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 2450                                                                     
+
+DEBUG 2017-10-12 01:40:28  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20170820_59_V,正文VE735212W12:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 2450                                                                     
+PF739213W05:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 2450                                                                     
+
+DEBUG 2017-10-12 01:40:29  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20170820_89_V,正文VE735212W12:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 2450                                                                     
+PF739213W05:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 2450                                                                     
+
+DEBUG 2017-10-12 01:40:32  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20170820_51_W,正文VE736895W08:SPLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 2450                                                                     
+VE737073W14:MRLT:5660:WIP168 ERROR - YOU HAVE ENTERED A LOT NUMBER THAT DOES NOT EXIST.  PLEASE                                                           
+VE736895W08:MRLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 2450                                                                     
+
+DEBUG 2017-10-12 01:40:33  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20170820_59_W,正文VE737073W14:MVOU:5660:WIP181 ERROR - THE QUANTITY OF LOSSES AND BONUSES DOES NOT BALANCE TO THE                                                           
+VE736895W08:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 2450                                                                     
+
+DEBUG 2017-10-12 01:40:34  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20170820_89_W,正文VE737073W14:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+VE736895W08:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 2450                                                                     
+
+DEBUG 2017-10-12 01:40:35  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20170821_04_B,正文VC737323.01:SPLT:1020:WIP202 ERROR - THE LOT IS CURRENTLY IN TRANSIT.  ONLY THE RECEIVE TRANSACTION                                                       
+VC737323.01:SPLT:1020:WIP202 ERROR - THE LOT IS CURRENTLY IN TRANSIT.  ONLY THE RECEIVE TRANSACTION                                                       
+VC737323.01:SPLT:1020:WIP202 ERROR - THE LOT IS CURRENTLY IN TRANSIT.  ONLY THE RECEIVE TRANSACTION                                                       
+VC737323.01:SPLT:1020:WIP202 ERROR - THE LOT IS CURRENTLY IN TRANSIT.  ONLY THE RECEIVE TRANSACTION                                                       
+VC737323.01:SPLT:1020:WIP202 ERROR - THE LOT IS CURRENTLY IN TRANSIT.  ONLY THE RECEIVE TRANSACTION                                                       
+VC737323.01:SPLT:1020:WIP202 ERROR - THE LOT IS CURRENTLY IN TRANSIT.  ONLY THE RECEIVE TRANSACTION                                                       
+
+DEBUG 2017-10-12 01:40:37  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20170821_09_B,正文VC737323W18:MVOU:1020:WIP168 ERROR - YOU HAVE ENTERED A LOT NUMBER THAT DOES NOT EXIST.  PLEASE                                                           
+VC737323W16:MVOU:1020:WIP168 ERROR - YOU HAVE ENTERED A LOT NUMBER THAT DOES NOT EXIST.  PLEASE                                                           
+VC737323W15:MVOU:1020:WIP168 ERROR - YOU HAVE ENTERED A LOT NUMBER THAT DOES NOT EXIST.  PLEASE                                                           
+VC737323W17:MVOU:1020:WIP168 ERROR - YOU HAVE ENTERED A LOT NUMBER THAT DOES NOT EXIST.  PLEASE                                                           
+VC737323W19:MVOU:1020:WIP168 ERROR - YOU HAVE ENTERED A LOT NUMBER THAT DOES NOT EXIST.  PLEASE                                                           
+VC737323W20:MVOU:1020:WIP168 ERROR - YOU HAVE ENTERED A LOT NUMBER THAT DOES NOT EXIST.  PLEASE                                                           
+
+DEBUG 2017-10-12 01:40:39  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20170821_51_C,正文VE737073W08:MRLT:5660:WIP168 ERROR - YOU HAVE ENTERED A LOT NUMBER THAT DOES NOT EXIST.  PLEASE                                                           
+
+DEBUG 2017-10-12 01:40:40  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20170821_59_C,正文VE737073W08:MVOU:5660:WIP181 ERROR - THE QUANTITY OF LOSSES AND BONUSES DOES NOT BALANCE TO THE                                                           
+
+DEBUG 2017-10-12 01:40:41  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20170821_89_C,正文VE737073W08:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+
+DEBUG 2017-10-12 01:40:43  删除邮件,发件人csmgr@sin.infineon.com,标题Inventory report for ASE,Weihai VF104,正文
+
+
+DEBUG 2017-10-12 01:40:43  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20170821_99_I_3,正文PF739304W01:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 2450                                                                     
+PF739213W07:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+PF739213W04:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 2450                                                                     
+PF739304W04:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+
+DEBUG 2017-10-12 01:40:44  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20170821_99_I_4,正文VE735212W12:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 2450                                                                     
+PF739213W05:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 2450                                                                     
+VE737073W14:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+VE736895W08:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 2450                                                                     
+
+DEBUG 2017-10-12 01:40:45  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20170821_99_I_5,正文VE737073W08:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+
+DEBUG 2017-10-12 01:40:46  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20170821_13_J,正文VC738537W19:ADLT:1120:WIP168 ERROR - YOU HAVE ENTERED A LOT NUMBER THAT DOES NOT EXIST.  PLEASE                                                           
+
+DEBUG 2017-10-12 01:40:47  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20170821_15_J,正文VC738537W19:ASSM:1120:WIP168 ERROR - YOU HAVE ENTERED A LOT NUMBER THAT DOES NOT EXIST.  PLEASE                                                           
+
+DEBUG 2017-10-12 01:40:48  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20170821_19_J,正文VC738537W19:MVOU:1120:WIP168 ERROR - YOU HAVE ENTERED A LOT NUMBER THAT DOES NOT EXIST.  PLEASE                                                           
+VC738537W19:MVOU:1120:WIP168 ERROR - YOU HAVE ENTERED A LOT NUMBER THAT DOES NOT EXIST.  PLEASE                                                           
+
+DEBUG 2017-10-12 01:40:49  删除邮件,发件人csmgr@sin.infineon.com,标题Inventory report for ASE,Weihai VF104,正文
+
+
+DEBUG 2017-10-12 01:40:50  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20170821_09_L,正文1E736953W07:MVOU:1020:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736953W13:MVOU:1020:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+1E736953W02:MVOU:1020:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736953W03:MVOU:1020:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736953W14:MVOU:1020:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+1E736953W15:MVOU:1020:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+
+DEBUG 2017-10-12 01:40:50  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20170821_13_L,正文1E736951W01:ADLT:1120:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736951W02:ADLT:1120:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736951W03:ADLT:1120:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736951W04:ADLT:1120:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736951W05:ADLT:1120:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736951W06:ADLT:1120:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736951W07:ADLT:1120:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736949W14:ADLT:1120:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736951W08:ADLT:1120:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736951W09:ADLT:1120:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736951W10:ADLT:1120:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736953W02:ADLT:1120:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736953W03:ADLT:1120:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736951W11:ADLT:1120:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736951W12:ADLT:1120:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736953W07:ADLT:1120:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736953W13:ADLT:1120:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+1E736953W14:ADLT:1120:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+1E736953W15:ADLT:1120:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+
+DEBUG 2017-10-12 01:40:50  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20170821_15_L,正文1E736951W01:ASSM:1120:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736951W02:ASSM:1120:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736951W03:ASSM:1120:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736951W04:ASSM:1120:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736951W05:ASSM:1120:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736951W06:ASSM:1120:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736951W07:ASSM:1120:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736949W14:ASSM:1120:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736951W08:ASSM:1120:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736951W09:ASSM:1120:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736951W10:ASSM:1120:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736953W02:ASSM:1120:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736953W03:ASSM:1120:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736951W11:ASSM:1120:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736951W12:ASSM:1120:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736953W07:ASSM:1120:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736953W13:ASSM:1120:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+1E736953W14:ASSM:1120:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+1E736953W15:ASSM:1120:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+
+DEBUG 2017-10-12 01:40:51  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20170821_19_L,正文1E736951W01:MVOU:1120:ERROR: ASSM event has not been done, this event cannot proceed!                                                                     
+1E736951W02:MVOU:1120:ERROR: ASSM event has not been done, this event cannot proceed!                                                                     
+1E736951W03:MVOU:1120:ERROR: ASSM event has not been done, this event cannot proceed!                                                                     
+1E736951W04:MVOU:1120:ERROR: ASSM event has not been done, this event cannot proceed!                                                                     
+1E736951W05:MVOU:1120:ERROR: ASSM event has not been done, this event cannot proceed!                                                                     
+1E736951W06:MVOU:1120:ERROR: ASSM event has not been done, this event cannot proceed!                                                                     
+1E736951W07:MVOU:1120:ERROR: ASSM event has not been done, this event cannot proceed!                                                                     
+1E736949W14:MVOU:1120:ERROR: ASSM event has not been done, this event cannot proceed!                                                                     
+1E736951W08:MVOU:1120:ERROR: ASSM event has not been done, this event cannot proceed!                                                                     
+1E736951W09:MVOU:1120:ERROR: ASSM event has not been done, this event cannot proceed!                                                                     
+1E736951W10:MVOU:1120:ERROR: ASSM event has not been done, this event cannot proceed!                                                                     
+1E736953W02:MVOU:1120:ERROR: ASSM event has not been done, this event cannot proceed!                                                                     
+1E736953W03:MVOU:1120:ERROR: ASSM event has not been done, this event cannot proceed!                                                                     
+1E736951W11:MVOU:1120:ERROR: ASSM event has not been done, this event cannot proceed!                                                                     
+1E736951W12:MVOU:1120:ERROR: ASSM event has not been done, this event cannot proceed!                                                                     
+1E736953W07:MVOU:1120:ERROR: ASSM event has not been done, this event cannot proceed!                                                                     
+1E736953W13:MVOU:1120:ERROR: ASSM event has not been done, this event cannot proceed!                                                                     
+1E736953W14:MVOU:1120:ERROR: ASSM event has not been done, this event cannot proceed!                                                                     
+1E736953W15:MVOU:1120:ERROR: ASSM event has not been done, this event cannot proceed!                                                                     
+
+DEBUG 2017-10-12 01:40:51  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20170821_29_L,正文1E736953W02:MVOU:2450:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736953W07:MVOU:2450:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736953W13:MVOU:2450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+1E736953W03:MVOU:2450:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736953W15:MVOU:2450:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736953W14:MVOU:2450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+
+DEBUG 2017-10-12 01:40:52  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20170821_39_L,正文1E736953W02:MVOU:3450:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736953W07:MVOU:3450:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736953W03:MVOU:3450:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736953W13:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+1E736953W15:MVOU:3450:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736953W14:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+
+DEBUG 2017-10-12 01:40:52  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20170821_49_L,正文1E736953W02:MVOU:4600:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736953W07:MVOU:4600:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736953W03:MVOU:4600:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736953W13:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+1E736953W15:MVOU:4600:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736953W14:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 5660                                                                     
+
+DEBUG 2017-10-12 01:40:53  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20170821_51_L,正文1E736951W02:SPLT:5660:WIP202 ERROR - THE LOT IS CURRENTLY IN TRANSIT.  ONLY THE RECEIVE TRANSACTION                                                       
+1E736951W02:MRLT:5660:WIP202 ERROR - THE LOT IS CURRENTLY IN TRANSIT.  ONLY THE RECEIVE TRANSACTION                                                       
+1E736951W05:SPLT:5660:WIP202 ERROR - THE LOT IS CURRENTLY IN TRANSIT.  ONLY THE RECEIVE TRANSACTION                                                       
+1E736951W05:MRLT:5660:WIP202 ERROR - THE LOT IS CURRENTLY IN TRANSIT.  ONLY THE RECEIVE TRANSACTION                                                       
+1E736951W01:SPLT:5660:WIP202 ERROR - THE LOT IS CURRENTLY IN TRANSIT.  ONLY THE RECEIVE TRANSACTION                                                       
+1E736951W01:MRLT:5660:WIP202 ERROR - THE LOT IS CURRENTLY IN TRANSIT.  ONLY THE RECEIVE TRANSACTION                                                       
+1E736951W10:SPLT:5660:WIP202 ERROR - THE LOT IS CURRENTLY IN TRANSIT.  ONLY THE RECEIVE TRANSACTION                                                       
+1E736951W06:SPLT:5660:WIP202 ERROR - THE LOT IS CURRENTLY IN TRANSIT.  ONLY THE RECEIVE TRANSACTION                                                       
+1E736951W12:SPLT:5660:WIP202 ERROR - THE LOT IS CURRENTLY IN TRANSIT.  ONLY THE RECEIVE TRANSACTION                                                       
+1E736951W10:MRLT:5660:WIP202 ERROR - THE LOT IS CURRENTLY IN TRANSIT.  ONLY THE RECEIVE TRANSACTION                                                       
+1E736951W06:MRLT:5660:WIP202 ERROR - THE LOT IS CURRENTLY IN TRANSIT.  ONLY THE RECEIVE TRANSACTION                                                       
+1E736951W12:MRLT:5660:WIP202 ERROR - THE LOT IS CURRENTLY IN TRANSIT.  ONLY THE RECEIVE TRANSACTION                                                       
+1E736951W04:SPLT:5660:WIP202 ERROR - THE LOT IS CURRENTLY IN TRANSIT.  ONLY THE RECEIVE TRANSACTION                                                       
+1E736953W02:SPLT:5660:WIP202 ERROR - THE LOT IS CURRENTLY IN TRANSIT.  ONLY THE RECEIVE TRANSACTION                                                       
+1E736951W07:SPLT:5660:WIP202 ERROR - THE LOT IS CURRENTLY IN TRANSIT.  ONLY THE RECEIVE TRANSACTION                                                       
+1E736951W04:MRLT:5660:WIP202 ERROR - THE LOT IS CURRENTLY IN TRANSIT.  ONLY THE RECEIVE TRANSACTION                                                       
+1E736951W07:MRLT:5660:WIP202 ERROR - THE LOT IS CURRENTLY IN TRANSIT.  ONLY THE RECEIVE TRANSACTION                                                       
+1E736953W02:MRLT:5660:WIP202 ERROR - THE LOT IS CURRENTLY IN TRANSIT.  ONLY THE RECEIVE TRANSACTION                                                       
+1E736951W09:SPLT:5660:WIP202 ERROR - THE LOT IS CURRENTLY IN TRANSIT.  ONLY THE RECEIVE TRANSACTION                                                       
+1E736951W03:SPLT:5660:WIP202 ERROR - THE LOT IS CURRENTLY IN TRANSIT.  ONLY THE RECEIVE TRANSACTION                                                       
+1E736949W14:SPLT:5660:WIP202 ERROR - THE LOT IS CURRENTLY IN TRANSIT.  ONLY THE RECEIVE TRANSACTION                                                       
+1E736951W11:SPLT:5660:WIP202 ERROR - THE LOT IS CURRENTLY IN TRANSIT.  ONLY THE RECEIVE TRANSACTION                                                       
+1E736951W03:MRLT:5660:WIP202 ERROR - THE LOT IS CURRENTLY IN TRANSIT.  ONLY THE RECEIVE TRANSACTION                                                       
+1E736951W09:MRLT:5660:WIP202 ERROR - THE LOT IS CURRENTLY IN TRANSIT.  ONLY THE RECEIVE TRANSACTION                                                       
+1E736951W11:MRLT:5660:WIP202 ERROR - THE LOT IS CURRENTLY IN TRANSIT.  ONLY THE RECEIVE TRANSACTION                                                       
+1E736953W07:SPLT:5660:WIP202 ERROR - THE LOT IS CURRENTLY IN TRANSIT.  ONLY THE RECEIVE TRANSACTION                                                       
+1E736953W07:MRLT:5660:WIP202 ERROR - THE LOT IS CURRENTLY IN TRANSIT.  ONLY THE RECEIVE TRANSACTION                                                       
+1E736949W14:MRLT:5660:WIP202 ERROR - THE LOT IS CURRENTLY IN TRANSIT.  ONLY THE RECEIVE TRANSACTION                                                       
+1E736953W03:SPLT:5660:WIP202 ERROR - THE LOT IS CURRENTLY IN TRANSIT.  ONLY THE RECEIVE TRANSACTION                                                       
+1E736953W03:MRLT:5660:WIP202 ERROR - THE LOT IS CURRENTLY IN TRANSIT.  ONLY THE RECEIVE TRANSACTION                                                       
+1E736953W13:SPLT:5660:WIP162 ERROR - YOU CANNOT CREATE THIS LOT NUMBER BECAUSE IT ALREADY EXISTS.                                                         
+1E736953W15:SPLT:5660:WIP202 ERROR - THE LOT IS CURRENTLY IN TRANSIT.  ONLY THE RECEIVE TRANSACTION                                                       
+1E736953W15:MRLT:5660:WIP202 ERROR - THE LOT IS CURRENTLY IN TRANSIT.  ONLY THE RECEIVE TRANSACTION                                                       
+1E736953W14:SPLT:5660:WIP162 ERROR - YOU CANNOT CREATE THIS LOT NUMBER BECAUSE IT ALREADY EXISTS.                                                         
+1E736951W08:SPLT:5660:WIP202 ERROR - THE LOT IS CURRENTLY IN TRANSIT.  ONLY THE RECEIVE TRANSACTION                                                       
+1E736951W08:MRLT:5660:WIP202 ERROR - THE LOT IS CURRENTLY IN TRANSIT.  ONLY THE RECEIVE TRANSACTION                                                       
+
+DEBUG 2017-10-12 01:40:53  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20170821_59_L,正文1E736951W02:MVOU:5660:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736951W05:MVOU:5660:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736951W01:MVOU:5660:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736951W10:MVOU:5660:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736951W06:MVOU:5660:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736951W12:MVOU:5660:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736951W04:MVOU:5660:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736951W07:MVOU:5660:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736953W02:MVOU:5660:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736951W03:MVOU:5660:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736951W09:MVOU:5660:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736951W11:MVOU:5660:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736953W07:MVOU:5660:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736949W14:MVOU:5660:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736953W03:MVOU:5660:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736953W15:MVOU:5660:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736951W08:MVOU:5660:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+
+DEBUG 2017-10-12 01:40:54  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20170821_89_L,正文1E736951W02:MVOU:8100:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736951W05:MVOU:8100:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736951W01:MVOU:8100:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736951W10:MVOU:8100:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736951W06:MVOU:8100:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736951W12:MVOU:8100:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736951W04:MVOU:8100:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736951W07:MVOU:8100:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736953W02:MVOU:8100:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736951W03:MVOU:8100:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736951W09:MVOU:8100:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736951W11:MVOU:8100:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736953W07:MVOU:8100:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736949W14:MVOU:8100:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736953W03:MVOU:8100:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736953W15:MVOU:8100:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736951W08:MVOU:8100:WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+
+DEBUG 2017-10-12 01:40:54  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20170821_91_L,正文1E736951W02:SLTA:    :WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736951W05:SLTA:    :WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736951W01:SLTA:    :WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736951W10:SLTA:    :WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736951W06:SLTA:    :WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736951W12:SLTA:    :WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736951W04:SLTA:    :WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736951W07:SLTA:    :WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736953W02:SLTA:    :WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736951W03:SLTA:    :WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736951W09:SLTA:    :WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736951W11:SLTA:    :WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736953W07:SLTA:    :WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736949W14:SLTA:    :WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736953W03:SLTA:    :WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736953W15:SLTA:    :WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+1E736951W08:SLTA:    :WIP172 ERROR - THE LOT YOU HAVE SPECIFIED IS NOT CURRENTLY IN THIS FACILITY.                                                        
+
+DEBUG 2017-10-12 01:40:55  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20170821_99_L,正文1E736951W02:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION  547                                                                     
+1E736951W05:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION  547                                                                     
+1E736951W01:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION  547                                                                     
+1E736951W10:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION  547                                                                     
+1E736951W06:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION  547                                                                     
+1E736951W12:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION  547                                                                     
+1E736951W04:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION  547                                                                     
+1E736951W07:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION  547                                                                     
+1E736953W02:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION  547                                                                     
+1E736951W03:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION  547                                                                     
+1E736951W09:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION  547                                                                     
+1E736951W11:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION  547                                                                     
+1E736953W07:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION  547                                                                     
+1E736949W14:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION  547                                                                     
+1E736953W03:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION  547                                                                     
+1E736953W15:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION  547                                                                     
+1E736951W08:SHLT:9996:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION  547                                                                     
+
+DEBUG 2017-10-12 01:40:56  删除邮件,发件人csmgr@sin.infineon.com,标题Inventory report for ASE,Weihai VF104,正文
+
+
+DEBUG 2017-10-12 01:41:24  断开连接
+DEBUG 2017-10-12 01:41:32  程序开始
+DEBUG 2017-10-12 01:41:32  连接服务器成功mail.asewh.com,143
+DEBUG 2017-10-12 01:41:35  登录成功junxiao_liang@aseglobal.com,123456789*
+DEBUG 2017-10-12 01:41:35  选择操作文件夹B2B,邮件数3
+DEBUG 2017-10-12 01:41:36  删除邮件,发件人IRAD2@INFINEON.COM,标题Build Instruction ASE201710121340 (HEXFET_D2PAK,正文*************************************************************
+
+This message was automatically sent by the BI on 12-OCT-17
+
+*************************************************************
+
+Hi All,
+
+
+Please see attached build instruction, for your immediate release.
+
+
+Please acknowledge receipt of this build instruction.
+DEBUG 2017-10-12 01:41:38  选择操作文件夹Oracle,邮件数0
+DEBUG 2017-10-12 01:41:38  选择操作文件夹[E2open] Inventory report for ASEWH CN (8L),邮件数0
+DEBUG 2017-10-12 01:41:38  选择操作文件夹NOTES,邮件数0
+DEBUG 2017-10-12 01:41:48  选择操作文件夹Trash,邮件数0
+DEBUG 2017-10-12 01:41:53  断开连接
+DEBUG 2017-10-12 02:45:03  程序开始
+DEBUG 2017-10-12 02:45:04  连接服务器成功mail.asewh.com,143
+DEBUG 2017-10-12 02:45:11  登录成功junxiao_liang@aseglobal.com,123456789*
+DEBUG 2017-10-12 02:45:11  选择操作文件夹B2B,邮件数13
+DEBUG 2017-10-12 02:45:13  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_89_N,正文VE740749WF7:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 3450                                                                     
+1E740006W20:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+VE740749WF6:MVOU:8100:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 3450                                                                     
+
+DEBUG 2017-10-12 02:45:15  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_59_N,正文VE740749WF7:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 3450                                                                     
+1E740006W20:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+VE740749WF6:MVOU:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 3450                                                                     
+
+DEBUG 2017-10-12 02:45:15  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_51_N,正文VE740749WF7:SPLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 3450                                                                     
+1E740006W20:SPLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+1E739848W29:SPLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+VE740749WF7:MRLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 3450                                                                     
+1E740007W24:SPLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+1E740006W20:MRLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+1E740007W16:SPLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+VE745606W21:SPLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 3450                                                                     
+VE740749WG1:SPLT:5660:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 3450                                                                     
+
+DEBUG 2017-10-12 02:45:17  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_49_N,正文1E740006W26:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+VC745653W14:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+1E739848W27:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+1E739849W28:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+VC743928W06:MVOU:4600:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+
+DEBUG 2017-10-12 02:45:18  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_39_N,正文VC744419W07:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+VC744419W12:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+1E740792W23:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+VC744383W18:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+VC744419W27:MVOU:3450:WIP849 ERROR - THE LOT YOU HAVE SPECIFIED IS AT  OPERATION 1120                                                                     
+
+DEBUG 2017-10-12 02:45:19  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_19_N,正文VC735660W14:MVOU:1120:ERROR: ASSM event has not been done, this event cannot proceed!                                                                     
+VC735660W16:MVOU:1120:ERROR: ASSM event has not been done, this event cannot proceed!                                                                     
+
+DEBUG 2017-10-12 02:45:20  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_15_N,正文VC735660W14:ASSM:1120:MAT114 ERROR - THE TRANSACTION CANNOT BE PROCESSED BECAUSE THERE IS NO BILL                                                         
+VC735660W16:ASSM:1120:MAT114 ERROR - THE TRANSACTION CANNOT BE PROCESSED BECAUSE THERE IS NO BILL                                                         
+
+DEBUG 2017-10-12 02:45:21  删除邮件,发件人csmgr@sin.infineon.com,标题VF104_20171012_13_N,正文VC735660W14:ADLT:1120:RVLT01 - THE PRODUCT GROUP 1 OF THE NEW PRODUCT IS NOT THE SAME AS THE OLD ONE                                                      
+VC735660W16:ADLT:1120:RVLT01 - THE PRODUCT GROUP 1 OF THE NEW PRODUCT IS NOT THE SAME AS THE OLD ONE                                                      
+
+DEBUG 2017-10-12 02:45:25  删除邮件,发件人IRAD2@INFINEON.COM,标题Build Instruction ASE201710121341 (HEXFET_TO220,正文*************************************************************
+
+This message was automatically sent by the BI on 12-OCT-17
+
+*************************************************************
+
+Hi All,
+
+
+Please see attached build instruction, for your immediate release.
+
+
+Please acknowledge receipt of this build instruction.
+DEBUG 2017-10-12 02:45:26  删除邮件,发件人IRAD2@INFINEON.COM,标题Build Instruction ASE201710121340 (HEXFET_DPAK,正文*************************************************************
+
+This message was automatically sent by the BI on 12-OCT-17
+
+*************************************************************
+
+Hi All,
+
+
+Please see attached build instruction, for your immediate release.
+
+
+Please acknowledge receipt of this build instruction.
+DEBUG 2017-10-12 02:45:32  选择操作文件夹Oracle,邮件数0
+DEBUG 2017-10-12 02:45:43  选择操作文件夹[E2open] Inventory report for ASEWH CN (8L),邮件数1
+DEBUG 2017-10-12 02:45:48  删除邮件,发件人DL-GPNSupport@infineon.com,标题[E2open] Inventory report for ASEWH CN (8L,正文
+DEBUG 2017-10-12 02:45:48  选择操作文件夹NOTES,邮件数1
+DEBUG 2017-10-12 02:45:48  删除邮件,发件人AllianceWH@aseglobal.com,标题[60][Low]MISC-FT-资料缺失请尽快添加_2017/10/12,正文请PE 确认 FT MISC 资料。
+请helpdesk 留意是否由于 资料缺失导致issue lot failed。
+
+Report ID=B2B_AWH_CUST-ALERT_D10
+Please Note:  This message is a System Generated E-Mail.
+              Please don't reply to this sender.
+              If you have any question about this file, please contact ASEWH helpdesk(ASEWH_HELPDESK/ASEWH/ASE.)
+
+
+DEBUG 2017-10-12 02:45:54  选择操作文件夹Trash,邮件数0
+DEBUG 2017-10-12 02:45:59  断开连接
+DEBUG 2017-10-12 02:47:18  程序开始
+DEBUG 2017-10-12 02:47:18  连接服务器成功mail.asewh.com,143
+DEBUG 2017-10-12 02:47:35  登录成功junxiao_liang@aseglobal.com,123456789*
+DEBUG 2017-10-12 02:47:36  选择操作文件夹B2B,邮件数3
+DEBUG 2017-10-12 02:47:50  选择操作文件夹Oracle,邮件数0
+DEBUG 2017-10-12 02:47:50  选择操作文件夹[E2open] Inventory report for ASEWH CN (8L),邮件数0
+DEBUG 2017-10-12 02:47:51  选择操作文件夹NOTES,邮件数0
+DEBUG 2017-10-12 02:47:54  选择操作文件夹Trash,邮件数0
+DEBUG 2017-10-12 02:48:03  断开连接
+DEBUG 2017-10-12 02:58:51  程序开始
+DEBUG 2017-10-12 02:58:51  连接服务器成功mail.asewh.com,143
+DEBUG 2017-10-12 02:59:17  程序开始
+DEBUG 2017-10-12 02:59:18  连接服务器成功mail.asewh.com,143
+DEBUG 2017-10-12 02:59:58  登录成功junxiao_liang@aseglobal.com,123456789*
+DEBUG 2017-10-12 02:59:58  选择操作文件夹B2B,邮件数3
+DEBUG 2017-10-12 03:00:01  选择操作文件夹Oracle,邮件数0
+DEBUG 2017-10-12 03:00:01  选择操作文件夹[E2open] Inventory report for ASEWH CN (8L),邮件数0
+DEBUG 2017-10-12 03:00:01  选择操作文件夹NOTES,邮件数3
+DEBUG 2017-10-12 03:00:04  删除邮件,发件人"lot 清单每小时20171012" <allancewh@aseglobal.COM>,标题lot 清单每小时20171012,正文
+DEBUG 2017-10-12 03:00:04  删除邮件,发件人"我是测试啊20171012" <allancewh@aseglobal.COM>,标题我是测试啊20171012,正文
+DEBUG 2017-10-12 03:00:04  删除邮件,发件人"Junxiao Liang" <alliancewh@aseglobal.com>,标题123,正文test
+DEBUG 2017-10-12 03:00:32  选择操作文件夹Trash,邮件数0
+DEBUG 2017-10-12 03:00:35  断开连接

@@ -95,7 +95,7 @@ $(document).ready(function () {
         if (type == "SQL-FILE") {
             $("input[name='qm_dbcon']").removeAttr("disabled");
             $("input[name='qm_dbcon']").attr("placeholder", "数据库连接[userid/password@DB]");
-            $("#qm_sendby").attr("disabled", "true");
+            //$("#qm_sendby").attr("disabled", "true");
             $("#sql_show").hide();
             $("#qm_file").show();
             $("#qm_sendby").val('').trigger('change');
@@ -103,7 +103,7 @@ $(document).ready(function () {
         } else if (type == "SQL-EXP") {
             $("input[name='qm_dbcon']").removeAttr("disabled");
             $("input[name='qm_dbcon']").attr("placeholder", "数据库连接[DATA SOURCE=IP:Port/DBNAME;PASSWORD=****;USER ID=****]");
-            $("#qm_sendby").removeAttr("disabled");
+            //$("#qm_sendby").removeAttr("disabled");
             $("#sql_show").show();
             $("#qm_file").val('').hide();
             $("#qm_sql").show();
@@ -111,7 +111,7 @@ $(document).ready(function () {
             $("input[name='qm_dbcon']").attr("placeholder", "不需要输入");
             $("input[name='qm_dbcon']").val("");
             $("input[name='qm_dbcon']").attr("disabled", "true");
-            $("#qm_sendby").attr("disabled", "true");
+            //$("#qm_sendby").attr("disabled", "true");
             $("#sql_show").hide();
             $("#qm_sql").val('').hide();
             $("#qm_sendby").val('').trigger('change');

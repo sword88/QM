@@ -27,8 +27,8 @@ namespace QM.Server
                 HostFactory.Run(
                     x =>
                     {
-                        x.SetDescription("ASEWH CIM Schedule Job Server");
-                        x.SetDisplayName("CIM QM Server");
+                        x.SetDescription("**ASEWH**队列管理服务");
+                        x.SetDisplayName("QM Server");
                         x.SetInstanceName("QM.Server");
                         x.SetServiceName("QM.Server");
 

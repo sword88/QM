@@ -118,26 +118,6 @@
         yAxis: [{ //Y轴
             type: 'value'
         }],
-        //visualMap: {
-        //    top: 10,
-        //    right: 10,
-        //    pieces: [{
-        //        gt: 0,
-        //        lte: 50,
-        //        color: '#096'
-        //    }, {
-        //        gt: 50,
-        //        lte: 70,
-        //        color: '#ff9933'
-        //    }, {
-        //        gt: 70,
-        //        lte: 100,
-        //        color: '#7e0023'
-        //    }],
-        //    outOfRange: {
-        //        color: '#999'
-        //    }
-        //},
         series: [//系列（内容）列表
             {
                 name: 'CPU',
@@ -152,15 +132,12 @@
                 name: '内存',
                 type: 'line',
                 symbol: 'circle',//设置折线图中表示每个坐标点的符号；emptycircle：空心圆；emptyrect：空心矩形；circle：实心圆；emptydiamond：菱形
-                //areaStyle: {  
-                //    normal: {}
-                //},
                 data: []//数据值通过Ajax动态获取
             }
         ]
     });
     memory.showLoading();//数据加载完之前先显示一段简单的loading动画
-    function add() {
+    function add(shift) {
         $.post("/task/Performance", null, function (data) {
             if (data.result == true) {
                 memory.hideLoading();
@@ -177,7 +154,7 @@
         }, "json");
     }
 
-    for (var i = 0; i < 10; i++) {
+    for (var i = 0; i < 30; i++) {
         add();
     }
 

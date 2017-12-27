@@ -1,0 +1,9 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="QM.Demo.Meal.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="QM_Demo_Meal_com_asewh_web_Services" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://web.asewh.com/meal/services.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

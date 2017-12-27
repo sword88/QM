@@ -1,0 +1,10 @@
+E:\ASECode\Test\QM.git\QM.Demo.Meal\obj\Debug\QM.Demo.Meal.csprojResolveAssemblyReference.cache
+E:\ASECode\Test\QM.git\QM.Demo.Meal\obj\Debug\QM.Demo.Meal.Form1.resources
+E:\ASECode\Test\QM.git\QM.Demo.Meal\obj\Debug\QM.Demo.Meal.Properties.Resources.resources
+E:\ASECode\Test\QM.git\QM.Demo.Meal\obj\Debug\QM.Demo.Meal.csproj.GenerateResource.Cache
+E:\ASECode\Test\QM.git\QM.Demo.Meal\obj\Debug\QM.Demo.Meal.csproj.CoreCompileInputs.cache
+E:\ASECode\Test\QM.git\QM.Demo.Meal\bin\Debug\QM.Demo.Meal.exe.config
+E:\ASECode\Test\QM.git\QM.Demo.Meal\bin\Debug\QM.Demo.Meal.exe
+E:\ASECode\Test\QM.git\QM.Demo.Meal\bin\Debug\QM.Demo.Meal.pdb
+E:\ASECode\Test\QM.git\QM.Demo.Meal\obj\Debug\QM.Demo.Meal.exe
+E:\ASECode\Test\QM.git\QM.Demo.Meal\obj\Debug\QM.Demo.Meal.pdb

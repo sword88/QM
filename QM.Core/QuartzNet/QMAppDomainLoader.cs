@@ -38,7 +38,7 @@ namespace QM.Core.QuartzNet
             log.Debug(string.Format("[QMAppDomainLoader] 加载目录:{0}", setup.ApplicationBase));
             setup.CachePath = setup.ApplicationBase;
             setup.ShadowCopyFiles = "true";
-            //setup.ShadowCopyDirectories = setup.ApplicationBase;
+            setup.ShadowCopyDirectories = setup.ApplicationBase;
             //setup.ApplicationName = "Dynamic";
             domain = AppDomain.CreateDomain(Path.GetFileName(dllpath), null, setup);
             AppDomain.MonitoringIsEnabled = true;
