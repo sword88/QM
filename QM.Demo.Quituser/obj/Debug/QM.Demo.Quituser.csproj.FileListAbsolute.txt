@@ -41,3 +41,4 @@ E:\ASECode\Test\QM.git\QM.Demo.Quituser\bin\Debug\QM.Demo.Quituser.exe.manifest
 E:\ASECode\Test\QM.git\QM.Demo.Quituser\bin\Debug\Interop.zkemkeeper.dll
 E:\ASECode\Test\QM.git\QM.Demo.Quituser\bin\Debug\zkemkeeper.dll
 E:\ASECode\Test\QM.git\QM.Demo.Quituser\obj\Debug\QM.Demo.Quituser.exe.manifest
+E:\ASECode\Test\QM.git\QM.Demo.Quituser\obj\Debug\QM.Demo.Quituser.csproj.CoreCompileInputs.cache

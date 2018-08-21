@@ -8,3 +8,5 @@ E:\ASECode\Test\QM.git\QM.Demo.Meal\bin\Debug\QM.Demo.Meal.exe
 E:\ASECode\Test\QM.git\QM.Demo.Meal\bin\Debug\QM.Demo.Meal.pdb
 E:\ASECode\Test\QM.git\QM.Demo.Meal\obj\Debug\QM.Demo.Meal.exe
 E:\ASECode\Test\QM.git\QM.Demo.Meal\obj\Debug\QM.Demo.Meal.pdb
+E:\ASECode\Test\QM.git\QM.Demo.Meal\bin\Debug\log4net.dll
+E:\ASECode\Test\QM.git\QM.Demo.Meal\bin\Debug\log4net.xml

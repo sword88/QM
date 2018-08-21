@@ -20,3 +20,203 @@ SAP.Middleware.Connector.RfcTypeConversionException: PARAMETER GSTRP of FUNCTION
    在 SAP.Middleware.Connector.RfcDataContainer`1.SetValue(Int32 index, String value)
    --- 内部异常堆栈跟踪的结尾 ---
    在 SAP.Middleware.Connector.RfcDataContainer`1.SetValue(Int32 index, String value)
+
+**** Log file opened by process 14180 at 2018-07-27 14:38:45 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 32-bit .NET Framework 4.0.30319.42000
+Program: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug\QM.Demo.RFC.exe
+Working directory: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug
+Operating system: Windows 7 Professional 32-bit Service Pack 1
+Processor: 4x Intel x86
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: DAVID-PC, IP address: 10.68.21.80, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2018-07-27 14:38:45.279 [Thread 1]
+SAP.Middleware.Connector.RfcTypeConversionException: PARAMETER ORDERS of FUNCTION BAPI_PRODORD_CLOSE (SETTER): cannot convert String into TABLE [STRUCTURE BAPI_ORDER_KEY]
+   在 SAP.Middleware.Connector.RfcDataContainer`1.SetValue(Int32 index, String value)
+
+**** Log file opened by process 12080 at 2018-07-27 14:51:55 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 32-bit .NET Framework 4.0.30319.42000
+Program: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug\QM.Demo.RFC.exe
+Working directory: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug
+Operating system: Windows 7 Professional 32-bit Service Pack 1
+Processor: 4x Intel x86
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: DAVID-PC, IP address: 10.68.21.80, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2018-07-27 14:51:55.746 [Thread 1]
+SAP.Middleware.Connector.RfcTypeConversionException: PARAMETER ORDERS of FUNCTION BAPI_PRODORD_CLOSE (SETTER): cannot convert List`1 into TABLE [STRUCTURE BAPI_ORDER_KEY] ---> System.InvalidCastException: 无法将类型为“System.Collections.Generic.List`1[System.String]”的对象强制转换为类型“SAP.Middleware.Connector.IRfcTable”。
+   在 SAP.Middleware.Connector.RfcDataContainer`1.SetValue(Int32 index, Object value)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcDataContainer`1.SetValue(Int32 index, Object value)
+
+**** Log file opened by process 4696 at 2018-08-20 12:03:03 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 32-bit .NET Framework 4.0.30319.42000
+Program: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug\QM.Demo.RFC.exe
+Working directory: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug
+Operating system: Windows 7 Professional 32-bit Service Pack 1
+Processor: 4x Intel x86
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: DAVID-PC, IP address: 10.68.21.60, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2018-08-20 12:03:03.111 [Thread 1]
+SAP.Middleware.Connector.RfcTypeConversionException: PARAMETER ORDERS of FUNCTION BAPI_PRODORD_CLOSE (SETTER): cannot convert List`1 into TABLE [STRUCTURE BAPI_ORDER_KEY] ---> System.InvalidCastException: 无法将类型为“System.Collections.Generic.List`1[System.String]”的对象强制转换为类型“SAP.Middleware.Connector.IRfcTable”。
+   在 SAP.Middleware.Connector.RfcDataContainer`1.SetValue(Int32 index, Object value)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcDataContainer`1.SetValue(Int32 index, Object value)
+
+**** Log file opened by process 9692 at 2018-08-20 13:32:33 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 32-bit .NET Framework 4.0.30319.42000
+Program: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug\QM.Demo.RFC.exe
+Working directory: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug
+Operating system: Windows 7 Professional 32-bit Service Pack 1
+Processor: 4x Intel x86
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: DAVID-PC, IP address: 10.68.21.60, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2018-08-20 13:32:33.377 [Thread 1]
+SAP.Middleware.Connector.RfcTypeConversionException: PARAMETER RETURN of FUNCTION BAPI_PRODORD_CLOSE (GETTER): cannot convert STRUCTURE BAPIRET2 into String
+   在 SAP.Middleware.Connector.RfcDataContainer`1.GetString(Int32 index)
+
+**** Log file opened by process 13336 at 2018-08-20 15:20:40 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 32-bit .NET Framework 4.0.30319.42000
+Program: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug\QM.Demo.RFC.exe
+Working directory: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug
+Operating system: Windows 7 Professional 32-bit Service Pack 1
+Processor: 4x Intel x86
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: DAVID-PC, IP address: 10.68.21.60, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2018-08-20 15:20:40.780 [Thread 1]
+SAP.Middleware.Connector.RfcTypeConversionException: PARAMETER RETURN of FUNCTION BAPI_PRODORD_CLOSE (GETTER): cannot convert STRUCTURE BAPIRET2 into IRfcTable ---> System.InvalidCastException: 无法将类型为“SAP.Middleware.Connector.RfcStructure”的对象强制转换为类型“SAP.Middleware.Connector.IRfcTable”。
+   在 SAP.Middleware.Connector.RfcDataContainer`1.GetTable(Int32 index, Boolean create)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcDataContainer`1.GetTable(Int32 index, Boolean create)
+>> Error entry 2018-08-20 15:28:08.603 [Thread 1]
+SAP.Middleware.Connector.RfcTypeConversionException: PARAMETER RETURN of FUNCTION BAPI_PRODORD_CLOSE (GETTER): cannot convert STRUCTURE BAPIRET2 into IRfcTable ---> System.InvalidCastException: 无法将类型为“SAP.Middleware.Connector.RfcStructure”的对象强制转换为类型“SAP.Middleware.Connector.IRfcTable”。
+   在 SAP.Middleware.Connector.RfcDataContainer`1.GetTable(Int32 index, Boolean create)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcDataContainer`1.GetTable(Int32 index, Boolean create)
+>> Error entry 2018-08-20 15:28:13.606 [Thread 1]
+SAP.Middleware.Connector.RfcTypeConversionException: PARAMETER RETURN of FUNCTION BAPI_PRODORD_CLOSE (GETTER): cannot convert STRUCTURE BAPIRET2 into IRfcTable ---> System.InvalidCastException: 无法将类型为“SAP.Middleware.Connector.RfcStructure”的对象强制转换为类型“SAP.Middleware.Connector.IRfcTable”。
+   在 SAP.Middleware.Connector.RfcDataContainer`1.GetTable(Int32 index, Boolean create)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcDataContainer`1.GetTable(Int32 index, Boolean create)
+
+**** Log file opened by process 12084 at 2018-08-20 15:44:35 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 32-bit .NET Framework 4.0.30319.42000
+Program: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug\QM.Demo.RFC.exe
+Working directory: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug
+Operating system: Windows 7 Professional 32-bit Service Pack 1
+Processor: 4x Intel x86
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: DAVID-PC, IP address: 10.68.21.60, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2018-08-20 15:44:35.426 [Thread 1]
+SAP.Middleware.Connector.RfcTypeConversionException: PARAMETER RETURN of FUNCTION BAPI_PRODORD_CLOSE (GETTER): cannot convert STRUCTURE BAPIRET2 into IRfcTable ---> System.InvalidCastException: 无法将类型为“SAP.Middleware.Connector.RfcStructure”的对象强制转换为类型“SAP.Middleware.Connector.IRfcTable”。
+   在 SAP.Middleware.Connector.RfcDataContainer`1.GetTable(Int32 index, Boolean create)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcDataContainer`1.GetTable(Int32 index, Boolean create)
+
+**** Log file opened by process 12576 at 2018-08-20 16:22:21 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 32-bit .NET Framework 4.0.30319.42000
+Program: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug\QM.Demo.RFC.exe
+Working directory: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug
+Operating system: Windows 7 Professional 32-bit Service Pack 1
+Processor: 4x Intel x86
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: DAVID-PC, IP address: 10.68.21.60, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2018-08-20 16:22:21.472 [Thread 1]
+SAP.Middleware.Connector.RfcTypeConversionException: PARAMETER DETAIL_RETURN of FUNCTION BAPI_PRODORD_CLOSE (GETTER): cannot convert TABLE [STRUCTURE BAPI_ORDER_RETURN] into IRfcStructure ---> System.InvalidCastException: 无法将类型为“SAP.Middleware.Connector.RfcTable”的对象强制转换为类型“SAP.Middleware.Connector.IRfcStructure”。
+   在 SAP.Middleware.Connector.RfcDataContainer`1.GetStructure(Int32 index, Boolean create)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcDataContainer`1.GetStructure(Int32 index, Boolean create)
+
+**** Log file opened by process 10324 at 2018-08-21 08:09:50 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 32-bit .NET Framework 4.0.30319.42000
+Program: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug\QM.Demo.RFC.exe
+Working directory: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug
+Operating system: Windows 7 Professional 32-bit Service Pack 1
+Processor: 4x Intel x86
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: DAVID-PC, IP address: 10.68.21.90, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2018-08-21 08:09:50.282 [Thread 1]
+SAP.Middleware.Connector.RfcInvalidParameterException: Destination QAS does not exist
+   在 SAP.Middleware.Connector.RfcDestinationManager.GetDestination(String destinationName)
+
+**** Log file opened by process 708 at 2018-08-21 11:14:48 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 32-bit .NET Framework 4.0.30319.42000
+Program: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug\QM.Demo.RFC.exe
+Working directory: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug
+Operating system: Windows 7 Professional 32-bit Service Pack 1
+Processor: 4x Intel x86
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: DAVID-PC, IP address: 10.68.21.90, IP_v6 address: 
+
+Default trace level: None
+
+>> Info entry 2018-08-21 11:14:48.262 [Thread 1]
+Invalid LZ-compressed data block received, ignored.
+>> Error entry 2018-08-21 11:46:20.641 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+
+**** Log file opened by process 15032 at 2018-08-21 16:06:53 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 32-bit .NET Framework 4.0.30319.42000
+Program: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug\QM.Demo.RFC.exe
+Working directory: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug
+Operating system: Windows 7 Professional 32-bit Service Pack 1
+Processor: 4x Intel x86
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: DAVID-PC, IP address: 10.68.21.90, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2018-08-21 16:06:53.130 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)

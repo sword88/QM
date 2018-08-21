@@ -58,10 +58,10 @@ namespace QM.Demo.RFC
             IRfcFunction func = repository.CreateFunction("ZPP_RFC_PRODORD_CREATE");
 
             //set parm
-            func.SetValue("MATNR", "TI1018ESTRLPBF00");
-            func.SetValue("PSMNG", 1000);
+            func.SetValue("MATNR", "TSTL24NM60NV00");
+            func.SetValue("PSMNG", 2500);
             func.SetValue("GSTRP", DateTime.Now);
-            func.SetValue("KDAUF", "0000001917");
+            func.SetValue("KDAUF", "0000263074");
             func.SetValue("KDPOS", "000010");
             //func.SetValue("MATNR", "T9882124400");
             //func.SetValue("PSMNG", 10);

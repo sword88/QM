@@ -35,3 +35,5 @@ E:\ASECode\Test\QM.git\QM.Demo.ReadMail\bin\Debug\System.Web.WebPages.Deployment
 E:\ASECode\Test\QM.git\QM.Demo.ReadMail\obj\Debug\QM.Demo.ReadMail.csprojResolveAssemblyReference.cache
 E:\ASECode\Test\QM.git\QM.Demo.ReadMail\obj\Debug\QM.Demo.ReadMail.exe
 E:\ASECode\Test\QM.git\QM.Demo.ReadMail\obj\Debug\QM.Demo.ReadMail.pdb
+E:\ASECode\Test\QM.git\QM.Demo.ReadMail\bin\Debug\QM.Core.dll.config
+E:\ASECode\Test\QM.git\QM.Demo.ReadMail\obj\Debug\QM.Demo.ReadMail.csproj.CoreCompileInputs.cache

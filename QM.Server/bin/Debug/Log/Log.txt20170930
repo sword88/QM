@@ -1,0 +1,5 @@
+DEBUG 2017-09-30 10:47:17  [QMAppDomainLoader] 加载config file:c:\qm\files\2017\09\std\QM.Demo.Dll.exe.config
+DEBUG 2017-09-30 10:47:17  [QMAppDomainLoader] 加载目录:c:\qm\files\2017\09\std
+DEBUG 2017-09-30 10:47:21  [QMAppDomainLoader] 加载config file:c:\qm\Files\2017\09\mail\QM.Demo.ReadMail.exe.config
+DEBUG 2017-09-30 10:47:21  [QMAppDomainLoader] 加载目录:c:\qm\Files\2017\09\mail
+INFO  2017-09-30 10:47:23  QM Server 开启服务
