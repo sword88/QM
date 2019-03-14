@@ -37,7 +37,7 @@ namespace QM.Core.QuartzNet
             }
             //时间表达式
             ITrigger trigger = TriggerBuilder.Create().WithCronSchedule(CronExpressionString).Build();
-            IList<DateTimeOffset> dates = TriggerUtils.ComputeFireTimes(trigger as IOperableTrigger, null, numTimes);
+            IReadOnlyList<DateTimeOffset> dates = TriggerUtils.ComputeFireTimes(trigger as IOperableTrigger, null, numTimes);
 
             List<string> list = new List<string>();
             foreach (DateTimeOffset dtf in dates)

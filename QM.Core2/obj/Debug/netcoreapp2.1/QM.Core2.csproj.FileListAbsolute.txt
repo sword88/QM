@@ -1,0 +1,6 @@
+E:\ASECode\Test\QM.git\QM.Core2\bin\Debug\netcoreapp2.1\QM.Core2.deps.json
+E:\ASECode\Test\QM.git\QM.Core2\bin\Debug\netcoreapp2.1\QM.Core2.dll
+E:\ASECode\Test\QM.git\QM.Core2\obj\Debug\netcoreapp2.1\QM.Core2.csprojAssemblyReference.cache
+E:\ASECode\Test\QM.git\QM.Core2\obj\Debug\netcoreapp2.1\QM.Core2.csproj.CoreCompileInputs.cache
+E:\ASECode\Test\QM.git\QM.Core2\obj\Debug\netcoreapp2.1\QM.Core2.AssemblyInfoInputs.cache
+E:\ASECode\Test\QM.git\QM.Core2\obj\Debug\netcoreapp2.1\QM.Core2.AssemblyInfo.cs

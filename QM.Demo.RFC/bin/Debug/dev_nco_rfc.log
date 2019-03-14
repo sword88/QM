@@ -220,3 +220,1439 @@ SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when stori
    在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
    在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
    在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+
+**** Log file opened by process 18108 at 2018-08-21 17:19:35 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 32-bit .NET Framework 4.0.30319.42000
+Program: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug\QM.Demo.RFC.exe
+Working directory: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug
+Operating system: Windows 7 Professional 32-bit Service Pack 1
+Processor: 4x Intel x86
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: DAVID-PC, IP address: 10.68.21.90, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2018-08-21 17:19:35.635 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-21 17:28:56.064 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-21 17:59:31.754 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-21 21:11:42.429 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-21 22:50:56.165 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-22 00:34:17.623 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-22 04:50:11.983 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-22 05:34:58.673 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-22 06:03:19.784 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-22 06:23:40.754 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-22 07:47:21.850 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-22 08:00:06.024 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-22 08:27:59.522 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcCommunicationException: no SAP ErrInfo available
+   在 SAP.Middleware.Connector.CpicConnection.CpicReceive(Int32 timeout)
+   在 SAP.Middleware.Connector.CpicConnection.Read(Byte* buffer, Int32 offset, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-22 08:51:32.558 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-22 09:46:37.922 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-22 09:56:26.997 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-22 10:21:04.957 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-22 10:27:55.378 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Info entry 2018-08-22 10:36:14.958 [Thread 1]
+Invalid LZ-compressed data block received, ignored.
+
+**** Log file opened by process 9032 at 2018-08-22 11:25:21 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 32-bit .NET Framework 4.0.30319.42000
+Program: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug\QM.Demo.RFC.exe
+Working directory: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug
+Operating system: Windows 7 Professional 32-bit Service Pack 1
+Processor: 4x Intel x86
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: DAVID-PC, IP address: 10.68.21.90, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2018-08-22 11:25:21.391 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Info entry 2018-08-22 11:27:23.845 [Thread 1]
+Invalid LZ-compressed data block received, ignored.
+>> Error entry 2018-08-22 11:34:48.307 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-22 11:53:45.338 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-22 12:05:34.019 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-22 12:32:47.052 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-22 12:43:29.932 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-22 13:26:18.612 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-22 13:55:33.403 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-22 14:30:02.839 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-22 15:02:29.663 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-22 15:31:11.934 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-22 15:48:33.011 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+
+**** Log file opened by process 23144 at 2018-08-22 16:56:49 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 32-bit .NET Framework 4.0.30319.42000
+Program: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug\QM.Demo.RFC.exe
+Working directory: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug
+Operating system: Windows 7 Professional 32-bit Service Pack 1
+Processor: 4x Intel x86
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: DAVID-PC, IP address: 10.68.21.90, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2018-08-22 16:56:49.560 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-22 17:16:53.795 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-22 17:23:32.849 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-22 17:26:30.764 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-22 17:27:45.750 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-22 17:28:24.080 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-22 17:35:14.483 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-22 17:37:36.611 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-22 18:14:29.391 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-22 18:24:33.265 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-22 18:27:48.184 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-22 18:29:22.617 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-22 18:30:11.760 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-22 18:42:06.250 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-22 18:46:30.787 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-22 19:02:32.563 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-22 19:08:12.049 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-22 19:16:56.801 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-22 19:21:09.977 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-22 19:22:48.670 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-22 19:23:30.193 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-22 19:23:53.494 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-22 19:38:18.520 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-22 19:46:18.626 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-22 19:50:50.715 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcCommunicationException: 
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       connection to partner '10.68.10.61:3300' broken
+TIME        Wed Aug 22 19:50:50 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=10.68.10.61:3300; L=10.68.21.90:58962
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     29
+
+   在 SAP.Middleware.Connector.CpicConnection.CpicReceive(Int32 timeout)
+   在 SAP.Middleware.Connector.CpicConnection.Read(Byte* buffer, Int32 offset, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+
+**** Log file opened by process 20532 at 2018-08-23 08:01:50 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 32-bit .NET Framework 4.0.30319.42000
+Program: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug\QM.Demo.RFC.exe
+Working directory: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug
+Operating system: Windows 7 Professional 32-bit Service Pack 1
+Processor: 4x Intel x86
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: DAVID-PC, IP address: 10.68.21.90, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2018-08-23 08:01:50.085 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-23 08:15:13.451 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-23 08:17:21.507 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+
+**** Log file opened by process 7196 at 2018-08-23 08:35:03 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 32-bit .NET Framework 4.0.30319.42000
+Program: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug\QM.Demo.RFC.exe
+Working directory: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug
+Operating system: Windows 7 Professional 32-bit Service Pack 1
+Processor: 4x Intel x86
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: DAVID-PC, IP address: 10.68.21.90, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2018-08-23 08:35:03.870 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-23 08:36:51.629 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-23 08:37:39.751 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-23 08:37:53.614 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-23 08:42:21.956 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-23 08:50:37.560 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-23 08:54:13.901 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-23 08:58:51.606 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-23 09:23:28.326 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-23 09:33:36.878 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-23 09:37:45.037 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-23 09:39:39.383 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-23 09:40:16.604 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-23 09:56:50.028 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-23 10:02:02.917 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-23 10:04:09.357 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-23 10:05:12.814 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-23 10:05:43.735 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+
+**** Log file opened by process 9652 at 2018-08-23 10:54:31 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 32-bit .NET Framework 4.0.30319.42000
+Program: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug\QM.Demo.RFC.exe
+Working directory: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug
+Operating system: Windows 7 Professional 32-bit Service Pack 1
+Processor: 4x Intel x86
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: DAVID-PC, IP address: 10.68.21.90, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2018-08-23 10:54:31.066 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-23 11:28:58.457 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+
+**** Log file opened by process 12060 at 2018-08-23 12:15:10 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 32-bit .NET Framework 4.0.30319.42000
+Program: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug\QM.Demo.RFC.exe
+Working directory: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug
+Operating system: Windows 7 Professional 32-bit Service Pack 1
+Processor: 4x Intel x86
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: DAVID-PC, IP address: 10.68.21.90, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2018-08-23 12:15:10.533 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-23 12:19:21.309 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+
+**** Log file opened by process 6528 at 2018-08-23 15:11:22 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 32-bit .NET Framework 4.0.30319.42000
+Program: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug\QM.Demo.RFC.exe
+Working directory: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug
+Operating system: Windows 7 Professional 32-bit Service Pack 1
+Processor: 4x Intel x86
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: DAVID-PC, IP address: 10.68.21.90, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2018-08-23 15:11:22.319 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Info entry 2018-08-23 15:18:32.594 [Thread 1]
+Invalid LZ-compressed data block received, ignored.
+
+**** Log file opened by process 13352 at 2018-08-23 16:11:13 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 32-bit .NET Framework 4.0.30319.42000
+Program: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug\QM.Demo.RFC.exe
+Working directory: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug
+Operating system: Windows 7 Professional 32-bit Service Pack 1
+Processor: 4x Intel x86
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: DAVID-PC, IP address: 10.68.21.90, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2018-08-23 16:11:13.369 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-23 16:14:58.219 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-23 16:22:12.033 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-23 16:24:11.065 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2018-08-23 16:32:45.489 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Info entry 2018-08-23 16:56:32.668 [Thread 1]
+Invalid LZ-compressed data block received, ignored.
+>> Info entry 2018-08-23 17:42:25.540 [Thread 1]
+Invalid LZ-compressed data block received, ignored.
+>> Info entry 2018-08-24 03:06:39.566 [Thread 1]
+Invalid LZ-compressed data block received, ignored.
+>> Info entry 2018-08-24 05:25:31.789 [Thread 1]
+Invalid LZ-compressed data block received, ignored.
+>> Info entry 2018-08-24 08:07:09.750 [Thread 1]
+Invalid LZ-compressed data block received, ignored.
+>> Error entry 2018-08-24 09:44:00.929 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcCommunicationException: no SAP ErrInfo available
+   在 SAP.Middleware.Connector.CpicConnection.CpicReceive(Int32 timeout)
+   在 SAP.Middleware.Connector.CpicConnection.Read(Byte* buffer, Int32 offset, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+
+**** Log file opened by process 18588 at 2018-08-24 09:53:38 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 32-bit .NET Framework 4.0.30319.42000
+Program: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug\QM.Demo.RFC.exe
+Working directory: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug
+Operating system: Windows 7 Professional 32-bit Service Pack 1
+Processor: 4x Intel x86
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: DAVID-PC, IP address: 10.68.41.153, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2018-08-24 09:53:38.574 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcAbapRuntimeException: SAP paging overflow when storing data in the ABAP/4 memory.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+
+**** Log file opened by process 13804 at 2018-08-24 16:01:29 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 32-bit .NET Framework 4.0.30319.42000
+Program: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug\QM.Demo.RFC.exe
+Working directory: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug
+Operating system: Windows 7 Professional 32-bit Service Pack 1
+Processor: 4x Intel x86
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: DAVID-PC, IP address: 10.68.41.153, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2018-08-24 16:01:29.810 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcCommunicationException: 
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       connection to partner '10.68.10.61:3300' broken
+TIME        Fri Aug 24 16:01:29 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=10.68.10.61:3300; L=10.68.41.153:59397
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     6
+
+   在 SAP.Middleware.Connector.CpicConnection.CpicReceive(Int32 timeout)
+   在 SAP.Middleware.Connector.CpicConnection.Read(Byte* buffer, Int32 offset, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+
+**** Log file opened by process 19264 at 2018-08-24 16:56:52 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 32-bit .NET Framework 4.0.30319.42000
+Program: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug\QM.Demo.RFC.exe
+Working directory: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug
+Operating system: Windows 7 Professional 32-bit Service Pack 1
+Processor: 4x Intel x86
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: DAVID-PC, IP address: 10.68.21.90, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2018-08-24 16:56:52.870 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.61 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=PRD]
+SAP.Middleware.Connector.RfcCommunicationException: 
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       connection to partner '10.68.10.61:3300' broken
+TIME        Fri Aug 24 16:56:52 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=10.68.10.61:3300; L=10.68.21.90:61618
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     6
+
+   在 SAP.Middleware.Connector.CpicConnection.CpicReceive(Int32 timeout)
+   在 SAP.Middleware.Connector.CpicConnection.Read(Byte* buffer, Int32 offset, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+
+**** Log file opened by process 12852 at 2018-08-27 11:56:09 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 32-bit .NET Framework 4.0.30319.42000
+Program: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug\QM.Demo.RFC.exe
+Working directory: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug
+Operating system: Windows 7 Professional 32-bit Service Pack 1
+Processor: 4x Intel x86
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: DAVID-PC, IP address: 10.68.21.103, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2018-08-27 11:56:09.211 [Thread 1]
+SAP.Middleware.Connector.RfcInvalidStateException: Hard-coded logon parameters not allowed when using a DestinationConfiguration
+   在 SAP.Middleware.Connector.RfcDestinationManager.GetDestination(RfcConfigParameters parameters)
+
+**** Log file opened by process 8324 at 2018-08-27 11:56:47 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 32-bit .NET Framework 4.0.30319.42000
+Program: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug\QM.Demo.RFC.exe
+Working directory: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug
+Operating system: Windows 7 Professional 32-bit Service Pack 1
+Processor: 4x Intel x86
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: DAVID-PC, IP address: 10.68.21.103, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2018-08-27 11:56:47.364 [Thread 1]
+SAP.Middleware.Connector.RfcInvalidStateException: Hard-coded logon parameters not allowed when using a DestinationConfiguration
+   在 SAP.Middleware.Connector.RfcDestinationManager.GetDestination(RfcConfigParameters parameters)
+>> Error entry 2018-08-27 11:56:47.437 [Thread 1]
+SAP.Middleware.Connector.RfcInvalidStateException: Hard-coded logon parameters not allowed when using a DestinationConfiguration
+   在 SAP.Middleware.Connector.RfcDestinationManager.GetDestination(RfcConfigParameters parameters)
+>> Error entry 2018-08-27 11:56:47.469 [Thread 1]
+SAP.Middleware.Connector.RfcInvalidStateException: Hard-coded logon parameters not allowed when using a DestinationConfiguration
+   在 SAP.Middleware.Connector.RfcDestinationManager.GetDestination(RfcConfigParameters parameters)
+>> Error entry 2018-08-27 11:56:47.499 [Thread 1]
+SAP.Middleware.Connector.RfcInvalidStateException: Hard-coded logon parameters not allowed when using a DestinationConfiguration
+   在 SAP.Middleware.Connector.RfcDestinationManager.GetDestination(RfcConfigParameters parameters)
+>> Error entry 2018-08-27 11:56:47.524 [Thread 1]
+SAP.Middleware.Connector.RfcInvalidStateException: Hard-coded logon parameters not allowed when using a DestinationConfiguration
+   在 SAP.Middleware.Connector.RfcDestinationManager.GetDestination(RfcConfigParameters parameters)
+>> Error entry 2018-08-27 11:56:47.549 [Thread 1]
+SAP.Middleware.Connector.RfcInvalidStateException: Hard-coded logon parameters not allowed when using a DestinationConfiguration
+   在 SAP.Middleware.Connector.RfcDestinationManager.GetDestination(RfcConfigParameters parameters)
+>> Error entry 2018-08-27 11:56:47.576 [Thread 1]
+SAP.Middleware.Connector.RfcInvalidStateException: Hard-coded logon parameters not allowed when using a DestinationConfiguration
+   在 SAP.Middleware.Connector.RfcDestinationManager.GetDestination(RfcConfigParameters parameters)
+>> Error entry 2018-08-27 11:56:47.604 [Thread 1]
+SAP.Middleware.Connector.RfcInvalidStateException: Hard-coded logon parameters not allowed when using a DestinationConfiguration
+   在 SAP.Middleware.Connector.RfcDestinationManager.GetDestination(RfcConfigParameters parameters)
+>> Error entry 2018-08-27 11:56:47.637 [Thread 1]
+SAP.Middleware.Connector.RfcInvalidStateException: Hard-coded logon parameters not allowed when using a DestinationConfiguration
+   在 SAP.Middleware.Connector.RfcDestinationManager.GetDestination(RfcConfigParameters parameters)
+>> Error entry 2018-08-27 11:56:47.673 [Thread 1]
+SAP.Middleware.Connector.RfcInvalidStateException: Hard-coded logon parameters not allowed when using a DestinationConfiguration
+   在 SAP.Middleware.Connector.RfcDestinationManager.GetDestination(RfcConfigParameters parameters)
+
+**** Log file opened by process 13540 at 2018-08-27 11:58:16 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 32-bit .NET Framework 4.0.30319.42000
+Program: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug\QM.Demo.RFC.exe
+Working directory: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug
+Operating system: Windows 7 Professional 32-bit Service Pack 1
+Processor: 4x Intel x86
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: DAVID-PC, IP address: 10.68.21.103, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2018-08-27 11:58:16.449 [Thread 1]
+SAP.Middleware.Connector.RfcInvalidStateException: Hard-coded logon parameters not allowed when using a DestinationConfiguration
+   在 SAP.Middleware.Connector.RfcDestinationManager.GetDestination(RfcConfigParameters parameters)
+>> Error entry 2018-08-27 11:58:16.506 [Thread 1]
+SAP.Middleware.Connector.RfcInvalidStateException: Hard-coded logon parameters not allowed when using a DestinationConfiguration
+   在 SAP.Middleware.Connector.RfcDestinationManager.GetDestination(RfcConfigParameters parameters)
+>> Error entry 2018-08-27 11:58:16.537 [Thread 1]
+SAP.Middleware.Connector.RfcInvalidStateException: Hard-coded logon parameters not allowed when using a DestinationConfiguration
+   在 SAP.Middleware.Connector.RfcDestinationManager.GetDestination(RfcConfigParameters parameters)
+>> Error entry 2018-08-27 11:58:16.565 [Thread 1]
+SAP.Middleware.Connector.RfcInvalidStateException: Hard-coded logon parameters not allowed when using a DestinationConfiguration
+   在 SAP.Middleware.Connector.RfcDestinationManager.GetDestination(RfcConfigParameters parameters)
+>> Error entry 2018-08-27 11:58:16.594 [Thread 1]
+SAP.Middleware.Connector.RfcInvalidStateException: Hard-coded logon parameters not allowed when using a DestinationConfiguration
+   在 SAP.Middleware.Connector.RfcDestinationManager.GetDestination(RfcConfigParameters parameters)
+>> Error entry 2018-08-27 11:58:16.620 [Thread 1]
+SAP.Middleware.Connector.RfcInvalidStateException: Hard-coded logon parameters not allowed when using a DestinationConfiguration
+   在 SAP.Middleware.Connector.RfcDestinationManager.GetDestination(RfcConfigParameters parameters)
+>> Error entry 2018-08-27 11:58:16.647 [Thread 1]
+SAP.Middleware.Connector.RfcInvalidStateException: Hard-coded logon parameters not allowed when using a DestinationConfiguration
+   在 SAP.Middleware.Connector.RfcDestinationManager.GetDestination(RfcConfigParameters parameters)
+>> Error entry 2018-08-27 11:58:16.680 [Thread 1]
+SAP.Middleware.Connector.RfcInvalidStateException: Hard-coded logon parameters not allowed when using a DestinationConfiguration
+   在 SAP.Middleware.Connector.RfcDestinationManager.GetDestination(RfcConfigParameters parameters)
+>> Error entry 2018-08-27 11:58:16.712 [Thread 1]
+SAP.Middleware.Connector.RfcInvalidStateException: Hard-coded logon parameters not allowed when using a DestinationConfiguration
+   在 SAP.Middleware.Connector.RfcDestinationManager.GetDestination(RfcConfigParameters parameters)
+>> Error entry 2018-08-27 11:58:16.736 [Thread 1]
+SAP.Middleware.Connector.RfcInvalidStateException: Hard-coded logon parameters not allowed when using a DestinationConfiguration
+   在 SAP.Middleware.Connector.RfcDestinationManager.GetDestination(RfcConfigParameters parameters)
+
+**** Log file opened by process 7264 at 2018-08-27 11:59:44 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 32-bit .NET Framework 4.0.30319.42000
+Program: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug\QM.Demo.RFC.exe
+Working directory: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug
+Operating system: Windows 7 Professional 32-bit Service Pack 1
+Processor: 4x Intel x86
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: DAVID-PC, IP address: 10.68.21.103, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2018-08-27 11:59:44.553 [Thread 1]
+SAP.Middleware.Connector.RfcInvalidStateException: Hard-coded logon parameters not allowed when using a DestinationConfiguration
+   在 SAP.Middleware.Connector.RfcDestinationManager.GetDestination(RfcConfigParameters parameters)
+
+**** Log file opened by process 12988 at 2018-08-27 12:02:00 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 32-bit .NET Framework 4.0.30319.42000
+Program: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug\QM.Demo.RFC.exe
+Working directory: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug
+Operating system: Windows 7 Professional 32-bit Service Pack 1
+Processor: 4x Intel x86
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: DAVID-PC, IP address: 10.68.21.103, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2018-08-27 12:02:00.803 [Thread 1]
+SAP.Middleware.Connector.RfcInvalidStateException: Hard-coded logon parameters not allowed when using a DestinationConfiguration
+   在 SAP.Middleware.Connector.RfcDestinationManager.GetDestination(RfcConfigParameters parameters)

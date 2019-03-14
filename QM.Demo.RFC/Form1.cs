@@ -8,11 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using SAP.Middleware.Connector;
+using log4net;
 
 namespace QM.Demo.RFC
 {
     public partial class Form1 : Form
     {
+        private readonly static ILog log = LogManager.GetLogger(typeof(Form1));
+
         public Form1()
         {
             InitializeComponent();
@@ -45,16 +48,16 @@ namespace QM.Demo.RFC
 
         public RfcDestination GetDestination()
         {
-            RfcConfigParameters configParams = GetConfigParams();
-            RfcDestination dest = RfcDestinationManager.GetDestination(configParams);
+            //RfcConfigParameters configParams = GetConfigParams();
+            //RfcDestination dest = RfcDestinationManager.GetDestination(configParams);
+
+            RfcDestination dest = RfcDestinationManager.GetDestination("QAS");
 
             return dest;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        public async Task<string> ZPP_RFC_PRODORD_CREATE(RfcRepository repository, RfcDestination dest)
         {
-            RfcDestination dest = GetDestination();
-            RfcRepository repository = dest.Repository;
             IRfcFunction func = repository.CreateFunction("ZPP_RFC_PRODORD_CREATE");
 
             //set parm
@@ -63,24 +66,30 @@ namespace QM.Demo.RFC
             func.SetValue("GSTRP", DateTime.Now);
             func.SetValue("KDAUF", "0000263074");
             func.SetValue("KDPOS", "000010");
-            //func.SetValue("MATNR", "T9882124400");
-            //func.SetValue("PSMNG", 10);
-            //func.SetValue("GSTRP", DateTime.Now);
-            //func.SetValue("KDAUF", "0000073112");
-            //func.SetValue("KDPOS", "000010");
 
             //call function
             func.Invoke(dest);
 
-            //get result
-            string po = func.GetString("AUFNR");
-            string ok = func.GetString("ZRESULT");
-            string msg = func.GetString("ERMSG");
+            string result = func.GetString("AUFNR") + func.GetString("ZRESULT") + func.GetString("ERMSG");
+            log.Debug(result);
 
-            textBox1.Text =  po  + " \n " 
-                          +  ok  + " \n " 
-                          +  msg + " \n " 
-                          +  textBox1.Text;            
+            return result;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            RfcDestination dest = GetDestination();
+            RfcRepository repository = dest.Repository;
+            for (int i = 0; i < 10; i++)
+            {
+                log.Debug(i);
+                var result = ZPP_RFC_PRODORD_CREATE(repository,dest);
+                result.Wait();
+                log.Debug(i);
+            }
+      
+            textBox1.Text =  "done";
+            log.Debug("done");
 
         }
     }

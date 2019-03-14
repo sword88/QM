@@ -17,7 +17,7 @@ namespace QM.Core.QuartzNet
     {
         private static ILogger log = QMLoggerFactory.GetInstance().CreateLogger(typeof(QMSqlExpTaskJob));
 
-        public void Execute(IJobExecutionContext context)
+        public async Task Execute(IJobExecutionContext context)
         {
             try
             {

@@ -26,25 +26,47 @@ namespace QM.Core.QuartzNet
         /// <param name="domain"></param>
         /// <returns></returns>
         public T Load(string dllpath, string classpath, out AppDomain domain)
-        {            
-            AppDomainSetup setup = new AppDomainSetup();
-            if (File.Exists(dllpath + ".config"))
+        {
+            try
             {
-                setup.ConfigurationFile = dllpath + ".config";
-                log.Debug(string.Format("[QMAppDomainLoader] 加载config file:{0}", setup.ConfigurationFile));
-            }
-            
-            setup.ApplicationBase = Path.GetDirectoryName(dllpath);
-            log.Debug(string.Format("[QMAppDomainLoader] 加载目录:{0}", setup.ApplicationBase));
-            setup.CachePath = setup.ApplicationBase;
-            setup.ShadowCopyFiles = "true";
-            setup.ShadowCopyDirectories = setup.ApplicationBase;
-            //setup.ApplicationName = "Dynamic";
-            domain = AppDomain.CreateDomain(Path.GetFileName(dllpath), null, setup);
-            AppDomain.MonitoringIsEnabled = true;
-            T obj = (T)domain.CreateInstanceFromAndUnwrap(dllpath, classpath);
+                if (File.Exists(dllpath))
+                {
+                    AppDomainSetup setup = new AppDomainSetup();
+                    if (File.Exists(dllpath + ".config"))
+                    {
+                        setup.ConfigurationFile = dllpath + ".config";
+                        log.Debug(string.Format("[QMAppDomainLoader] 加载config file:{0}", setup.ConfigurationFile));
+                    }
 
-            return obj;
+                    setup.ApplicationBase = Path.GetDirectoryName(dllpath);
+                    log.Debug(string.Format("[QMAppDomainLoader] 加载目录:{0}", setup.ApplicationBase));
+
+
+
+                    setup.CachePath = setup.ApplicationBase;
+                    setup.ShadowCopyFiles = "true";
+                    setup.ShadowCopyDirectories = setup.ApplicationBase;
+                    //setup.ApplicationName = "Dynamic";
+                    domain = AppDomain.CreateDomain(Path.GetFileName(dllpath), null, setup);
+                    AppDomain.MonitoringIsEnabled = true;
+                    T obj = (T)domain.CreateInstanceFromAndUnwrap(dllpath, classpath);
+
+                    return obj;
+                }
+                else
+                {
+                    log.Error(string.Format("[QMAppDomainLoader] 加载 file 不存在!:{0}", dllpath));
+                }
+
+            }
+            catch (QMException ex)
+            {
+                log.Error(ex.Message);
+            }
+
+            domain = null;
+            T obj1 = null;
+            return obj1;
         }
 
         /// <summary>

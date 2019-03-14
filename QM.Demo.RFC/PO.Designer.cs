@@ -60,6 +60,7 @@
             this.edate.Name = "edate";
             this.edate.Size = new System.Drawing.Size(200, 21);
             this.edate.TabIndex = 2;
+            this.edate.Visible = false;
             // 
             // PO
             // 

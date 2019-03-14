@@ -50,7 +50,7 @@ namespace QM.Server
         /// <returns></returns>
         public bool Pause()
         {
-            return _server.PauseAll();
+            return _server.PauseAll().Result;
         }
 
         /// <summary>
@@ -59,7 +59,7 @@ namespace QM.Server
         /// <returns></returns>
         public bool Resume()
         {
-            return _server.ResumeAll();
+            return _server.ResumeAll().Result;
         }
     }
 }

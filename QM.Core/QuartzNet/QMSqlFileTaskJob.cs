@@ -16,7 +16,7 @@ namespace QM.Core.QuartzNet
     {
         private static ILog log = LogManager.GetLogger(typeof(QMDllTaskJob));
 
-        public void Execute(IJobExecutionContext context)
+        public async Task Execute(IJobExecutionContext context)
         {
             try
             {
@@ -42,5 +42,6 @@ namespace QM.Core.QuartzNet
                 QMDBLogger.Info(context.JobDetail.Key.Name, QMLogLevel.Fatal.ToString(), string.Format("任务回调时发生严重错误，{0}", ex));
             }
         }
+
     }
 }

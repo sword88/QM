@@ -20,7 +20,7 @@ namespace QM.Core.QuartzNet
         private static ILog log = QMLoggerFactory.GetInstance().CreateLogger(typeof(QMDllTaskJob));
 
         [HandleProcessCorruptedStateExceptions]
-        public void Execute(IJobExecutionContext context)
+        public async Task Execute(IJobExecutionContext context)
         {
             try
             {

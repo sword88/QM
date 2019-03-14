@@ -16,7 +16,7 @@ namespace QM.Demo.RFC
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PO());
+            Application.Run(new Form1());
         }
     }
 }

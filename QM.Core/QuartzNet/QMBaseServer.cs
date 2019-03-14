@@ -53,8 +53,13 @@ namespace QM.Core.QuartzNet
         /// </summary>
         public QMBaseServer()
         {
+            InitQMBase();
+        }
+
+        public async void InitQMBase()
+        {
             _factory = new StdSchedulerFactory();
-            _scheduler = _factory.GetScheduler();
+            _scheduler = await _factory.GetScheduler();
             _scheduler.JobFactory = new QMJobFactory();
         }
 
@@ -102,16 +107,16 @@ namespace QM.Core.QuartzNet
         /// </summary>
         /// <param name="taskid"></param>
         /// <returns></returns>
-        public static bool PauseJob(string taskid)
+        public static async Task<bool> PauseJob(string taskid)
         {
             bool result = false;
             try
             {
                 JobKey jk = new JobKey(taskid);
 
-                if (!_scheduler.CheckExists(jk))
+                if (!await _scheduler.CheckExists(jk))
                 {                    
-                    _scheduler.PauseJob(jk);
+                    await _scheduler.PauseJob(jk);
                     log.Info(string.Format("暂停任务{0}",taskid));
                 }
 
@@ -129,7 +134,7 @@ namespace QM.Core.QuartzNet
         /// 暂停所有任务
         /// </summary>
         /// <returns></returns>
-        public bool PauseAll()
+        public async Task<bool> PauseAll()
         {
             bool result = false;
 
@@ -137,7 +142,7 @@ namespace QM.Core.QuartzNet
             {
                 if (_scheduler.IsStarted)
                 {
-                    _scheduler.PauseAll();
+                    await _scheduler.PauseAll();
                     log.Info("QM Server 暂停所有服务");
                 }
                 result = true;
@@ -155,17 +160,19 @@ namespace QM.Core.QuartzNet
         /// </summary>
         /// <param name="taskid">任务id</param>
         /// <returns></returns>
-        public static bool ResumeJob(string taskid)
+        public static async Task<bool> ResumeJob(string taskid)
         {
             bool result = false;
             try
             {
                 JobKey jk = new JobKey(taskid);
-                if (_scheduler.CheckExists(jk))
+                if (await _scheduler.CheckExists(jk))
                 {
-                    _scheduler.ResumeJob(jk);
+                    await _scheduler.ResumeJob(jk);
                     log.Info(string.Format("恢复暂时运行的任务{0}", taskid));
                 }
+
+                result = true;
             }
             catch (QMException ex)
             {
@@ -178,7 +185,7 @@ namespace QM.Core.QuartzNet
         /// 恢复所有暂停服务
         /// </summary>
         /// <returns></returns>
-        public bool ResumeAll()
+        public async Task<bool> ResumeAll()
         {
             bool result = false;
 
@@ -186,7 +193,7 @@ namespace QM.Core.QuartzNet
             {
                 if (_scheduler.IsStarted)
                 {
-                    _scheduler.ResumeAll();
+                    await _scheduler.ResumeAll();
                     log.Info("QM Server 恢复暂停所有服务");
                 }
                 result = true;
@@ -202,11 +209,11 @@ namespace QM.Core.QuartzNet
         /// <summary>
         /// 资源释放
         /// </summary>
-        public void Dispose()
+        public async void Dispose()
         {
             if (!_scheduler.IsShutdown) 
             {
-                _scheduler.Shutdown();
+                await _scheduler.Shutdown();
                 log.Info("QM Server 停止服务&资源释放");
             }
         }
@@ -218,87 +225,84 @@ namespace QM.Core.QuartzNet
         /// <param name="taskinfo"></param>
         /// <param name="misfire"></param>
         /// <returns></returns>
-        public static bool AddTask(string taskid, TaskRuntimeInfo taskinfo, QMMisFire misfire = QMMisFire.DoNothing) 
+        public static async Task<bool> AddTask(string taskid, TaskRuntimeInfo taskinfo, QMMisFire misfire = QMMisFire.DoNothing) 
         {
-            lock(_lock)
+            if (!_taskPool.ContainsKey(taskid))
             {
-                if (!_taskPool.ContainsKey(taskid))
-                {
-                    //添加任务
-                    JobBuilder jobBuilder = JobBuilder.Create()
-                                            .WithIdentity(taskinfo.task.idx);
-                                            //.WithIdentity(taskinfo.task.idx, taskinfo.task.taskCategory);
+                //添加任务
+                JobBuilder jobBuilder = JobBuilder.Create()
+                                        .WithIdentity(taskinfo.task.idx);
+                                        //.WithIdentity(taskinfo.task.idx, taskinfo.task.taskCategory);
 
-                    switch (taskinfo.task.taskType) {
-                        case "SQL-FILE":
-                            jobBuilder = jobBuilder.OfType(typeof(QMSqlFileTaskJob));
-                            break;
-                        case "SQL-EXP":
-                        case "SQL":
-                            jobBuilder = jobBuilder.OfType(typeof(QMSqlExpTaskJob));
-                            break;
-                        case "DLL-STD":
-                            jobBuilder = jobBuilder.OfType(typeof(QMDllTaskJob));
-                            break;
-                        case "DLL-UNSTD":
-                        default:
-                            jobBuilder = jobBuilder.OfType(typeof(QMUnStdDllTaskJob));
-                            break;
-                    }
-
-                    IJobDetail jobDetail = jobBuilder.Build();
-
-                    //任务Misfire处理规则
-                    ITrigger trigger;
-                    
-                    if (misfire == QMMisFire.FireAndProceed)        
-                    {
-                        //以当前时间为触发频率立刻触发一次执行
-                        //然后按照Cron频率依次执行        
-                        trigger = TriggerBuilder.Create()
-                                        .WithIdentity(taskinfo.task.taskName, "Cron")
-                                        .WithCronSchedule(taskinfo.task.taskCron,
-                                         x => x.WithMisfireHandlingInstructionFireAndProceed())
-                                        .ForJob(jobDetail.Key)
-                                        .Build();
-                    }
-                    else if (misfire == QMMisFire.IgnoreMisfires)       
-                    {
-                        //以错过的第一个频率时间立刻开始执行
-                        //重做错过的所有频率周期后
-                        //当下一次触发频率发生时间大于当前时间后，再按照正常的Cron频率依次执行
-                        trigger = TriggerBuilder.Create()
-                                                .WithIdentity(taskinfo.task.taskName, "Cron")
-                                                .WithCronSchedule(taskinfo.task.taskCron,
-                                                 x => x.WithMisfireHandlingInstructionIgnoreMisfires())
-                                                .ForJob(jobDetail.Key)
-                                                .Build();
-                    }
-                    else
-                    {
-                        //不触发立即执行
-                        //等待下次Cron触发频率到达时刻开始按照Cron频率依次执行
-                        trigger = TriggerBuilder.Create()
-                        .WithIdentity(taskinfo.task.taskName, "Cron")
-                        .WithCronSchedule(taskinfo.task.taskCron,
-                         x => x.WithMisfireHandlingInstructionDoNothing())
-                        .ForJob(jobDetail.Key)
-                        .Build();
-                    }                   
-                                                       
-
-                    if (_scheduler.CheckExists(jobDetail.Key))
-                    {
-                        _scheduler.DeleteJob(jobDetail.Key);
-                    }
-                    _scheduler.ScheduleJob(jobDetail, trigger);                                                              
-                    
-                    _taskPool.Add(taskid, taskinfo);
-                    return true;
+                switch (taskinfo.task.taskType) {
+                    case "SQL-FILE":
+                        jobBuilder = jobBuilder.OfType(typeof(QMSqlFileTaskJob));
+                        break;
+                    case "SQL-EXP":
+                    case "SQL":
+                        jobBuilder = jobBuilder.OfType(typeof(QMSqlExpTaskJob));
+                        break;
+                    case "DLL-STD":
+                        jobBuilder = jobBuilder.OfType(typeof(QMDllTaskJob));
+                        break;
+                    case "DLL-UNSTD":
+                    default:
+                        jobBuilder = jobBuilder.OfType(typeof(QMUnStdDllTaskJob));
+                        break;
                 }
 
-                return false;
+                IJobDetail jobDetail = jobBuilder.Build();
+
+                //任务Misfire处理规则
+                ITrigger trigger;
+                    
+                if (misfire == QMMisFire.FireAndProceed)        
+                {
+                    //以当前时间为触发频率立刻触发一次执行
+                    //然后按照Cron频率依次执行        
+                    trigger = TriggerBuilder.Create()
+                                    .WithIdentity(taskinfo.task.taskName, "Cron")
+                                    .WithCronSchedule(taskinfo.task.taskCron,
+                                        x => x.WithMisfireHandlingInstructionFireAndProceed())
+                                    .ForJob(jobDetail.Key)
+                                    .Build();
+                }
+                else if (misfire == QMMisFire.IgnoreMisfires)       
+                {
+                    //以错过的第一个频率时间立刻开始执行
+                    //重做错过的所有频率周期后
+                    //当下一次触发频率发生时间大于当前时间后，再按照正常的Cron频率依次执行
+                    trigger = TriggerBuilder.Create()
+                                            .WithIdentity(taskinfo.task.taskName, "Cron")
+                                            .WithCronSchedule(taskinfo.task.taskCron,
+                                                x => x.WithMisfireHandlingInstructionIgnoreMisfires())
+                                            .ForJob(jobDetail.Key)
+                                            .Build();
+                }
+                else
+                {
+                    //不触发立即执行
+                    //等待下次Cron触发频率到达时刻开始按照Cron频率依次执行
+                    trigger = TriggerBuilder.Create()
+                    .WithIdentity(taskinfo.task.taskName, "Cron")
+                    .WithCronSchedule(taskinfo.task.taskCron,
+                        x => x.WithMisfireHandlingInstructionDoNothing())
+                    .ForJob(jobDetail.Key)
+                    .Build();
+                }                   
+                                                       
+
+                if (await _scheduler.CheckExists(jobDetail.Key))
+                {
+                    await _scheduler.DeleteJob(jobDetail.Key);
+                }
+                await _scheduler.ScheduleJob(jobDetail, trigger);                                                              
+                    
+                _taskPool.Add(taskid, taskinfo);
+                return true;
             }
+
+            return false;            
         }
 
         /// <summary>
@@ -474,55 +478,54 @@ namespace QM.Core.QuartzNet
                 }
                 trun.task = t;
 
-                lock (_lock)
+
+                if (!_taskPool.ContainsKey(taskid))
                 {
-                    if (!_taskPool.ContainsKey(taskid))
+                    //添加任务
+                    JobBuilder jobBuilder = JobBuilder.Create()
+                                            .WithIdentity(trun.task.idx);
+                    //.WithIdentity(taskinfo.task.idx, taskinfo.task.taskCategory);
+
+                    switch (trun.task.taskType)
                     {
-                        //添加任务
-                        JobBuilder jobBuilder = JobBuilder.Create()
-                                                .WithIdentity(trun.task.idx);
-                        //.WithIdentity(taskinfo.task.idx, taskinfo.task.taskCategory);
-
-                        switch (trun.task.taskType)
-                        {
-                            case "SQL-FILE":
-                                jobBuilder = jobBuilder.OfType(typeof(QMSqlFileTaskJob));
-                                break;
-                            case "SQL-EXP":
-                            case "SQL":
-                                jobBuilder = jobBuilder.OfType(typeof(QMSqlExpTaskJob));
-                                break;
-                            case "DLL-STD":
-                                jobBuilder = jobBuilder.OfType(typeof(QMDllTaskJob));
-                                break;
-                            case "DLL-UNSTD":
-                            default:
-                                jobBuilder = jobBuilder.OfType(typeof(QMUnStdDllTaskJob));
-                                break;
-                        }
-
-                        IJobDetail jobDetail = jobBuilder.Build();
-
-                        //任务Misfire处理规则
-                        //以当前时间为触发频率立刻触发一次执行
-                        //然后按照Cron频率依次执行        
-                        ITrigger trigger = TriggerBuilder.Create()
-                                        .WithIdentity(trun.task.taskName, "Cron")
-                                        .WithCronSchedule(trun.task.taskCron,
-                                            x => x.WithMisfireHandlingInstructionFireAndProceed())
-                                        .ForJob(jobDetail.Key)
-                                        .Build();                       
-
-
-                        if (_remoteScheduler.CheckExists(jobDetail.Key))
-                        {
-                            _remoteScheduler.DeleteJob(jobDetail.Key);
-                        }
-                        _remoteScheduler.ScheduleJob(jobDetail, trigger);
-
-                        _taskPool.Add(taskid, trun);
+                        case "SQL-FILE":
+                            jobBuilder = jobBuilder.OfType(typeof(QMSqlFileTaskJob));
+                            break;
+                        case "SQL-EXP":
+                        case "SQL":
+                            jobBuilder = jobBuilder.OfType(typeof(QMSqlExpTaskJob));
+                            break;
+                        case "DLL-STD":
+                            jobBuilder = jobBuilder.OfType(typeof(QMDllTaskJob));
+                            break;
+                        case "DLL-UNSTD":
+                        default:
+                            jobBuilder = jobBuilder.OfType(typeof(QMUnStdDllTaskJob));
+                            break;
                     }
+
+                    IJobDetail jobDetail = jobBuilder.Build();
+
+                    //任务Misfire处理规则
+                    //以当前时间为触发频率立刻触发一次执行
+                    //然后按照Cron频率依次执行        
+                    ITrigger trigger = TriggerBuilder.Create()
+                                    .WithIdentity(trun.task.taskName, "Cron")
+                                    .WithCronSchedule(trun.task.taskCron,
+                                        x => x.WithMisfireHandlingInstructionFireAndProceed())
+                                    .ForJob(jobDetail.Key)
+                                    .Build();                       
+
+
+                    if (_remoteScheduler.CheckExists(jobDetail.Key).Result)
+                    {
+                        _remoteScheduler.DeleteJob(jobDetail.Key);
+                    }
+                    _remoteScheduler.ScheduleJob(jobDetail, trigger);
+
+                    _taskPool.Add(taskid, trun);
                 }
+                
 
                 message = string.Format("添加远程任务成功:{0}", taskid);
                 result = true;
@@ -542,31 +545,30 @@ namespace QM.Core.QuartzNet
         /// <param name="taskid">任务id</param>
         /// <param name="message">返回信息</param>
         /// <returns>是否成功</returns>
-        public static bool DelRemoteTask(string taskid, out string message)
+        public static async Task<bool> DelRemoteTask(string taskid)
         {
             bool result = false;
+            string message = "";
             try
             {
-                lock (_lock)
+                if (!_taskPool.ContainsKey(taskid))
                 {
-                    if (!_taskPool.ContainsKey(taskid))
+                    //任务
+                    JobBuilder jobBuilder = JobBuilder.Create()
+                                            .WithIdentity(taskid);
+
+                    IJobDetail jobDetail = jobBuilder.Build();
+
+                    if (_remoteScheduler.CheckExists(jobDetail.Key).Result)
                     {
-                        //任务
-                        JobBuilder jobBuilder = JobBuilder.Create()
-                                                .WithIdentity(taskid);
-
-                        IJobDetail jobDetail = jobBuilder.Build();
-
-                        if (_remoteScheduler.CheckExists(jobDetail.Key))
-                        {
-                            _remoteScheduler.DeleteJob(jobDetail.Key);
-                        }
-
-                        _taskPool.Remove(taskid);
+                        _remoteScheduler.DeleteJob(jobDetail.Key);
                     }
-                }
+
+                    _taskPool.Remove(taskid);
+                }                
 
                 message = string.Format("删除远程任务成功:{0}", taskid);
+                log.Debug(message);
                 result = true;
             }
             catch (QMException ex)
@@ -586,9 +588,10 @@ namespace QM.Core.QuartzNet
         /// <param name="port">端口</param>
         /// <param name="message">返回信息</param>
         /// <returns>是否成功</returns>
-        public static bool InitRemoteScheduler(string protocol,string ip,string port,out string message)
+        public static async Task<bool> InitRemoteScheduler(string protocol,string ip,string port)
         {
             bool result = false;
+            string message = "";
 
             try
             {
@@ -601,8 +604,9 @@ namespace QM.Core.QuartzNet
 
                 ISchedulerFactory sf = new StdSchedulerFactory(properties);
 
-                _remoteScheduler = sf.GetScheduler();
+                _remoteScheduler = await sf.GetScheduler();
                 message = string.Format("初始化远程服务成功:{0},{1},{2}", protocol, ip, port);
+                log.Debug(message);
                 result = true;
             }
             catch (SchedulerException sex)

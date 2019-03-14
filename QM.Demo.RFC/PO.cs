@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using SAP.Middleware.Connector;
 using log4net;
 using System.Configuration;
+using Oracle.ManagedDataAccess.Client;
 
 namespace QM.Demo.RFC
 {
@@ -17,7 +18,9 @@ namespace QM.Demo.RFC
     {
         private readonly static ILog log = LogManager.GetLogger(typeof(PO));
         private static string dbcon = ConfigurationManager.ConnectionStrings["database"].ConnectionString;
+        private static string dbcon2 = ConfigurationManager.ConnectionStrings["whdb"].ConnectionString;
         public static QMDBHelper db = new QMDBHelper(dbcon);
+        public static QMDBHelper db2 = new QMDBHelper(dbcon2);
 
         public PO()
         {
@@ -26,7 +29,8 @@ namespace QM.Demo.RFC
 
         public RfcDestination GetDestination()
         {
-            RfcDestination dest = RfcDestinationManager.GetDestination("PRD");
+            //RfcDestination dest = RfcDestinationManager.GetDestination("PRD");
+            RfcDestination dest = RfcDestinationManager.GetDestination("QAS");
 
             return dest;
         }
@@ -35,10 +39,6 @@ namespace QM.Demo.RFC
         {
             try
             {
-                RfcDestination dest = GetDestination();
-                RfcRepository repository = dest.Repository;
-                IRfcFunction func = repository.CreateFunction("BAPI_PRODORD_CLOSE");
-
                 StringBuilder sb = new StringBuilder();
                 sb.Append("SELECT A.AUFNR ");
                 sb.Append("FROM SAPSR3.AUFK A, SAPSR3.JEST B ");
@@ -52,14 +52,14 @@ namespace QM.Demo.RFC
                 sb.Append("and B.INACT = ' ' ");
                 sb.Append("and B.MANDT = '100' ");
                 sb.Append("AND A.ERNAM = 'MESINT' ");
-                sb.Append("AND A.ERDAT = '" + date + "' ");
+                sb.Append("AND A.ERDAT < '" + date + "' ");
 
                 log.Debug(sb.ToString());
                 DataSet ds = db.ExecuteDataset(sb.ToString(), null);
                 DataTable dt = null;
+                IList<string> vs = new List<string>();
 
-                IRfcStructure rfcStruct = null;
-                IRfcTable rfcTable = func.GetTable("ORDERS");
+
 
                 if (ds != null && ds.Tables[0] != null)
                 {
@@ -69,47 +69,88 @@ namespace QM.Demo.RFC
 
                     if (count > 0)
                     {
+                        int j = 0;
                         for (int i = 0; i < count; i++)
                         {
                             log.Debug(dt.Rows[i][0].ToString());
-                            //set parm
-                            rfcStruct = repository.GetStructureMetadata("BAPI_ORDER_KEY").CreateStructure();
-                            rfcStruct.SetValue("ORDER_NUMBER", dt.Rows[i][0].ToString());
-                            rfcTable.Insert(rfcStruct);
+                            vs.Add(dt.Rows[i][0].ToString());
+
+                            j++;
+                            if (j == 1000)
+                            {
+                                var result = BAPI_PRODORD_CLOSE(vs);
+                                result.Wait();
+                                j = 0;
+                            }
                         }
 
-                        //call function
-                        log.Debug("BAPI_PRODORD_CLOSE => Start");
-                        func.Invoke(dest);
-                        log.Debug("BAPI_PRODORD_CLOSE => Done");
-
-                        //log result
-                        IRfcTable result = func.GetTable("DETAIL_RETURN");
-                        for (int i = 0; i < result.RowCount; i++)
+                        if (j > 0)
                         {
-                            IRfcStructure stru = result[i];
-                            log.Debug(string.Format("SYSTEM:{0},PPNUMBER:{1},Type:{2},Message:{3}", stru.GetValue("SYSTEM").ToString(),
-                                stru.GetValue("ORDER_NUMBER").ToString(), stru.GetValue("TYPE").ToString(), stru.GetValue("MESSAGE").ToString())
-                            );
-                        }
+                            var result = BAPI_PRODORD_CLOSE(vs);
+                            result.Wait();
+                            j = 0;
+                        }                        
                     }
                 }
             }
             catch (Exception ex)
             {
+                OracleParameter[] param = null;
+                string sql = string.Format("insert into po_errlog values ('{0}','{1}')", date, ex.Message);
+                db2.ExecuteNonQuery(sql, CommandType.Text , param);
                 log.Fatal(date + "  " + ex.Message);
             }
         }
 
+
+        public async Task BAPI_PRODORD_CLOSE(IList<string> dt)
+        {
+            RfcDestination dest = GetDestination();
+            RfcRepository repository = dest.Repository;
+            IRfcFunction func = repository.CreateFunction("BAPI_PRODORD_CLOSE");
+
+            IRfcStructure rfcStruct = null;
+            IRfcTable rfcTable = func.GetTable("ORDERS");
+
+            IRfcStructure stru;
+            IRfcTable result;
+
+            //set parm
+            rfcStruct = repository.GetStructureMetadata("BAPI_ORDER_KEY").CreateStructure();
+            foreach (var item in dt)
+            {
+                rfcStruct.SetValue("ORDER_NUMBER", item);
+            }            
+            rfcTable.Insert(rfcStruct);
+
+            //call function
+            log.Debug("BAPI_PRODORD_CLOSE => Start");
+            func.Invoke(dest);
+            log.Debug("BAPI_PRODORD_CLOSE => Done");
+
+            //log result
+            result = func.GetTable("DETAIL_RETURN");
+            for (int k = 0; k < result.RowCount; k++)
+            {
+                stru = result[k];
+                log.Debug(string.Format("SYSTEM:{0},PPNUMBER:{1},Type:{2},Message:{3}", stru.GetValue("SYSTEM").ToString(),
+                    stru.GetValue("ORDER_NUMBER").ToString(), stru.GetValue("TYPE").ToString(), stru.GetValue("MESSAGE").ToString())
+                );
+            }
+            rfcTable.Clear();
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
-            string date = "";
-            for (int i = 0; i <= (edate.Value - sdate.Value).Days; i++)
-            {
-                date = sdate.Value.AddDays(i).ToString("yyyyMMdd");
-                log.Debug(date);
-                ClosePO(date);
-            }
+            //string date = "";
+            //for (int i = 0; i <= (edate.Value - sdate.Value).Days; i++)
+            //{
+            //    date = sdate.Value.AddDays(i).ToString("yyyyMMdd");
+            //    log.Debug(date);
+            //    ClosePO(date);
+            //}
+
+            ClosePO(sdate.Value.ToString("yyyyMMdd"));
         }
     }
 }
