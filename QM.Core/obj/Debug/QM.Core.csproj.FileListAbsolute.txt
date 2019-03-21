@@ -70,7 +70,6 @@ E:\ASECode\Test\QM.git\QM.Core\bin\Debug\Autofac.xml
 E:\ASECode\Test\QM.git\QM.Core\bin\Debug\Autofac.Configuration.xml
 E:\ASECode\Test\QM.git\QM.Core\bin\Debug\EntityFramework.SqlServer.xml
 E:\ASECode\Test\QM.git\QM.Core\bin\Debug\ICSharpCode.SharpZipLib.xml
-E:\ASECode\Test\QM.git\QM.Core\obj\Debug\QM.Core.csprojAssemblyReference.cache
 E:\ASECode\Test\QM.git\QM.Core\bin\Debug\Newtonsoft.Json.dll
 E:\ASECode\Test\QM.git\QM.Core\bin\Debug\Quartz.Jobs.dll
 E:\ASECode\Test\QM.git\QM.Core\bin\Debug\Quartz.Serialization.Json.dll
@@ -80,3 +79,4 @@ E:\ASECode\Test\QM.git\QM.Core\bin\Debug\Quartz.Jobs.pdb
 E:\ASECode\Test\QM.git\QM.Core\bin\Debug\Quartz.Jobs.xml
 E:\ASECode\Test\QM.git\QM.Core\bin\Debug\Quartz.Serialization.Json.pdb
 E:\ASECode\Test\QM.git\QM.Core\bin\Debug\Quartz.Serialization.Json.xml
+E:\ASECode\Test\QM.git\QM.Core\obj\Debug\QM.Core.csprojAssemblyReference.cache

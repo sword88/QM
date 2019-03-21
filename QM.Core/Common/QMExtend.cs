@@ -5,10 +5,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data;
+using System.Collections;
+using System.Reflection;
 
 namespace QM.Core.Common
 {
-    public class QMExtend
+    public static class QMExtend
     {
         /// <summary>
         /// 任务类型
@@ -207,6 +210,130 @@ namespace QM.Core.Common
         public static string GetCurDay()
         {
             return DateTime.Now.Day.ToString("00");
+        }
+
+        /// <summary>    
+        /// 将集合类转换成DataTable    
+        /// </summary>    
+        /// <param name="list">集合</param>    
+        /// <returns></returns>    
+        public static DataTable ToDataTableTow(IList list)
+        {
+            DataTable result = new DataTable();
+            if (list.Count > 0)
+            {
+                PropertyInfo[] propertys = list[0].GetType().GetProperties();
+
+                foreach (PropertyInfo pi in propertys)
+                {
+                    result.Columns.Add(pi.Name, pi.PropertyType);
+                }
+                foreach (object t in list)
+                {
+                    ArrayList tempList = new ArrayList();
+                    foreach (PropertyInfo pi in propertys)
+                    {
+                        object obj = pi.GetValue(t, null);
+                        tempList.Add(obj);
+                    }
+                    object[] array = tempList.ToArray();
+                    result.LoadDataRow(array, true);
+                }
+            }
+            return result;
+        }
+
+        /// <summary>
+        /// Convert a List{T} to a DataTable.    
+        /// </summary>
+        public static DataTable ToDataTable<T>(IList<T> items)
+        {
+            var tb = new DataTable(typeof(T).Name);
+
+            PropertyInfo[] props = typeof(T).GetProperties(BindingFlags.Public | BindingFlags.Instance);
+
+            foreach (PropertyInfo prop in props)
+            {
+                Type t = GetCoreType(prop.PropertyType);
+                tb.Columns.Add(prop.Name, t);
+            }
+
+            foreach (T item in items)
+            {
+                var values = new object[props.Length];
+
+                for (int i = 0; i < props.Length; i++)
+                {
+                    values[i] = props[i].GetValue(item, null);
+                }
+                tb.Rows.Add(values);            
+            }
+
+            return tb;
+        }
+
+        /// <summary>
+        /// Determine of specified type is nullable
+        /// </summary>
+        public static bool IsNullable(Type t)
+        {
+            return !t.IsValueType || (t.IsGenericType && t.GetGenericTypeDefinition() == typeof(Nullable<>));
+        }
+
+
+        /// <summary>
+        /// Return underlying type if type is Nullable otherwise return the type
+        /// </summary>
+        public static Type GetCoreType(Type t)
+        {
+            if (t != null && IsNullable(t))
+            {            
+                if (!t.IsValueType)
+                {
+                    return t;
+                }
+                else
+                {
+                    return Nullable.GetUnderlyingType(t);
+                }            
+            }
+            else        
+            {
+                return t;
+            }
+        }
+
+        /// <summary>    
+        /// DataTable 转换为List 集合    
+        /// </summary>    
+        /// <typeparam name="TResult">类型</typeparam>    
+        /// <param name="dt">DataTable</param>    
+        /// <returns></returns>    
+        public static List<T> ToList<T>(this DataTable dt) where T : class, new()
+        {
+            //创建一个属性的列表    
+            List<PropertyInfo> prlist = new List<PropertyInfo>();
+            //获取TResult的类型实例  反射的入口    
+
+            Type t = typeof(T);
+
+            //获得TResult 的所有的Public 属性 并找出TResult属性和DataTable的列名称相同的属性(PropertyInfo) 并加入到属性列表     
+            Array.ForEach<PropertyInfo>(t.GetProperties(), p => { if (dt.Columns.IndexOf(p.Name) != -1) prlist.Add(p); });
+
+            //创建返回的集合    
+
+            List<T> oblist = new List<T>();
+
+            foreach (DataRow row in dt.Rows)
+            {
+                //创建TResult的实例    
+                T ob = new T();
+                //找到对应的数据  并赋值    
+                prlist.ForEach(p => { if (row[p.Name] != DBNull.Value) p.SetValue(ob, row[p.Name], null); });
+                //放入到返回的集合中.    
+                oblist.Add(ob);
+            }
+            return oblist;
         }
     }
 }

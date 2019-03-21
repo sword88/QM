@@ -19,7 +19,7 @@ namespace QM.Web.Controllers
 {
     public class TaskController : Controller
     {
-        private static ILogger log = QMLoggerFactory.GetInstance().CreateLogger(typeof(TaskLogData));
+        //private static ILogger log = QMLoggerFactory.GetInstance().CreateLogger(typeof(TaskLogData));
         // GET: Task
         public ActionResult Index()
         {
@@ -297,17 +297,17 @@ namespace QM.Web.Controllers
                 if (tbl.Insert(t, n2m))
                 {
                     string remoteMessage = "";
-                    if (QMBaseServer.InitRemoteScheduler("tcp", "10.68.10.57", "555",out remoteMessage))
+                    if (QMBaseServer.InitRemoteScheduler("tcp", "10.68.10.57", "555").Result)
                     {                        
                         if (!QMBaseServer.AddRemoteTask(t.idx, out remoteMessage))
                         {
-                            log.Fatal(remoteMessage);
+                            //log.Log(remoteMessage);
                             QMDBLogger.Info(t.idx, QMLogLevel.Fatal.ToString(), remoteMessage);
                         }
                     }
                     else
                     {
-                        log.Fatal(remoteMessage);
+                        //log.Fatal(remoteMessage);
                         QMDBLogger.Info(t.idx, QMLogLevel.Fatal.ToString(), remoteMessage);
                     }
                     
@@ -316,7 +316,7 @@ namespace QM.Web.Controllers
             }
             catch (QMException ex)
             {
-                log.Log(QMLogLevel.Fatal, ex, "新增任务出错", null);
+                //log.Log(QMLogLevel.Fatal, ex, "新增任务出错", null);
                 QMDBLogger.Info("NA", QMLogLevel.Fatal.ToString(), ex.Message);
             }
 

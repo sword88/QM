@@ -289,14 +289,14 @@ namespace QM.Core.QuartzNet
                         x => x.WithMisfireHandlingInstructionDoNothing())
                     .ForJob(jobDetail.Key)
                     .Build();
-                }                   
-                                                       
-
-                if (await _scheduler.CheckExists(jobDetail.Key))
-                {
-                    await _scheduler.DeleteJob(jobDetail.Key);
                 }
-                await _scheduler.ScheduleJob(jobDetail, trigger);                                                              
+
+
+                if (!await _scheduler.CheckExists(jobDetail.Key))
+                {
+                    //await _scheduler.DeleteJob(jobDetail.Key);
+                    await _scheduler.ScheduleJob(jobDetail, trigger);
+                }                                                                              
                     
                 _taskPool.Add(taskid, taskinfo);
                 return true;
@@ -359,6 +359,16 @@ namespace QM.Core.QuartzNet
         }
 
         /// <summary>
+        /// 从DB中查询长时间未执行完成的任务清单
+        /// </summary>
+        /// <param name="maxSeconds">超时秒数</param>
+        /// <returns></returns>
+        public IList<TaskRuntimeInfo> GetRunTimeOutTask(int maxSeconds)
+        {
+            return null;
+        }
+
+        /// <summary>
         /// 从DB中查询任务结果
         /// </summary>
         /// <param name="taskid">任务id</param>
@@ -402,9 +412,8 @@ namespace QM.Core.QuartzNet
 
         /// <summary>
         /// 初始化加载DB中任务
-        /// 【开启数据库持久化后，不可以重复加载】
         /// </summary>
-        public void InitLoadTaskList()
+        public async void InitLoadTaskList()
         {
             try
             {
@@ -435,13 +444,35 @@ namespace QM.Core.QuartzNet
                     }
                     trun.task = t;
 
-                    AddTask(t.idx, trun);
+                    await AddTask(t.idx, trun,QMMisFire.IgnoreMisfires);
                 }
+
+                //附加监控任务
+                InitMonitorTask();
             }
             catch (QMException ex)
             {
                 log.Fatal(ex.Message);
             }
+        }
+
+        /// <summary>
+        /// 系统默认任务健康检查
+        /// </summary>
+        public async void InitMonitorTask()
+        {
+            TaskRuntimeInfo trun = new TaskRuntimeInfo();
+            trun.task = new Tasks()
+            {
+                idx = "MONITOR",
+                taskName = "任务健康检查-超时监控",
+                taskType = "DLL-STD",
+                taskCron = "0 0/1 * * * ? ",
+                taskClsType = "QM.Core.Model.Monitor",
+                taskFile = System.Environment.CurrentDirectory + "\\" + "QM.Core.dll"
+            };
+            trun.dllTask = new QMAppDomainLoader<DllTask>().Load(trun.task.taskFile, trun.task.taskClsType, out trun.domain);
+            await AddTask(trun.task.idx, trun);
         }
 
         /// <summary>

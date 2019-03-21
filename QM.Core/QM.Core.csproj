@@ -59,6 +59,7 @@
     </Reference>
     <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
       <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="Microsoft.Extensions.Configuration, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Extensions.Configuration.1.0.0\lib\netstandard1.1\Microsoft.Extensions.Configuration.dll</HintPath>
@@ -190,6 +191,7 @@
     <Compile Include="QuartzNet\QMSqlFileTaskJob.cs" />
     <Compile Include="QuartzNet\QMSqlTaskJob.cs" />
     <Compile Include="QuartzNet\QMTaskEnums.cs" />
+    <Compile Include="QuartzNet\QMMonitorTaskJob.cs" />
     <Compile Include="QuartzNet\QMUnStdDllTaskJob.cs" />
   </ItemGroup>
   <ItemGroup>

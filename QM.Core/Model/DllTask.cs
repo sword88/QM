@@ -35,9 +35,9 @@ namespace QM.Core.Model
             {
                 throw ex;
             }
-            catch
+            catch(System.Exception sex)
             {
-                throw;
+                throw sex; 
             }
             finally
             {

@@ -22,6 +22,16 @@ namespace QM.Core.Logisc
         }
 
         /// <summary>
+        /// 获得所有任务超时清单
+        /// </summary>
+        /// <param name="maxSeconds"></param>
+        /// <returns></returns>
+        public IList<Tasks> GetTimeOutList(int maxSeconds = 3600)
+        {
+            return tdal.GetTimeOutList(maxSeconds);
+        }
+
+        /// <summary>
         /// 获得任务参数
         /// </summary>
         /// <param name="taskid"></param>

@@ -81,6 +81,73 @@ namespace QM.Core.Data
         }
 
         /// <summary>
+        /// 获得所有超时任务清单
+        /// </summary>
+        /// <param name="maxSeconds">超时秒数</param>
+        /// <returns></returns>
+        public IList<Tasks> GetTimeOutList(int maxSeconds = 3600)
+        {
+            IList<Tasks> task = new List<Tasks>();
+            Tasks t = null;
+            OracleDataReader dr;
+            try
+            {
+                string sql = "select * from qm_task where taskstate = 'Y' "
+                    + " and tasklastendtime < tasklaststarttime and ceil(sysdate-tasklaststarttime)*24*60 > :time";
+                OracleParameter[] param = new OracleParameter[] {
+                    new OracleParameter(":time",maxSeconds)
+                };
+                dr = qmdb.ExecuteReader(CommandType.Text, sql, param);
+                while (dr.Read())
+                {
+                    t = new Tasks();
+                    t.idx = dr["IDX"].ToString();
+                    t.taskClsType = dr["TASKCLSTYPE"].ToString();
+                    t.taskCount = dr["TASKCOUNT"].ToString();
+                    t.taskCreateTime = DateTime.Parse(dr["TASKCREATETIME"].ToString());
+                    if (dr["TASKLASTSTARTTIME"].ToString() != "")
+                    {
+                        t.taskLastStartTime = DateTime.Parse(dr["TASKLASTSTARTTIME"].ToString());
+                    }
+                    if (dr["TASKLASTENDTIME"].ToString() != "")
+                    {
+                        t.taskLastEndTime = DateTime.Parse(dr["TASKLASTENDTIME"].ToString());
+                    }
+                    if (dr["TASKLASTERRORTIME"].ToString() != "")
+                    {
+                        t.taskLastErrorTime = DateTime.Parse(dr["TASKLASTERRORTIME"].ToString());
+                    }
+                    if (dr["TASKERRORCOUNT"].ToString() != "")
+                    {
+                        t.taskErrorCount = int.Parse(dr["TASKERRORCOUNT"].ToString());
+                    }
+                    t.taskType = dr["TASKTYPE"].ToString();
+                    t.taskDBCon = dr["TASKDBCON"].ToString();
+                    t.taskParm = dr["TASKPARM"].ToString();
+                    t.taskFile = dr["TASKFILE"].ToString();
+                    //t.taskExpFile = dr["TASKEXPFILE"].ToString();
+                    t.taskName = dr["TASKNAME"].ToString();
+                    t.taskState = dr["TASKSTATE"].ToString();
+                    t.taskCron = dr["TASKCRON"].ToString();
+                    t.taskRemark = dr["TASKREMARK"].ToString();
+                    t.taskSendby = dr["TASKSENDBY"].ToString();
+                    task.Add(t);
+                }
+                dr.Close();
+            }
+            catch (QMException ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                qmdb.Disponse();
+            }
+
+            return task;
+        }
+
+        /// <summary>
         /// 任务详细信息
         /// </summary>
         /// <param name="idx"></param>
