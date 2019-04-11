@@ -50,7 +50,7 @@ namespace QM.Demo.ReadMail
                 {
                     Message msg = box.Fetch.MessageObject(i);
 
-                    if (msg.From.ToString() == "csmgr@sin.infineon.com" && msg.Subject.StartsWith("VF104_"))
+                    if (msg.From.ToString() == "csmgr@sin.infineon.com" && msg.Subject.Contains("VF104"))
                     {
                         dt.Rows.Add(msg.Subject);
                         dt.Rows.Add(msg.BodyText.Text);
@@ -100,7 +100,7 @@ namespace QM.Demo.ReadMail
                 {
                     Message msg = box.Fetch.MessageObject(i);
 
-                    if (msg.From.ToString().Contains("DL-GPNSupport@infineon.com") && msg.Subject.Contains("[E2open] Inventory report for ASEWH CN"))
+                    if (msg.From.ToString().Contains("@infineon.com") && msg.Subject.Contains("[E2open] Inventory report for ASEWH CN"))
                     {
                         box.UidDeleteMessage(i, true);
                         box.DeleteMessage(i, true);

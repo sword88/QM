@@ -31,25 +31,35 @@ namespace QM.Core.Model
             TaskBLL td = new TaskBLL();
             IList<Tasks> t = td.GetTimeOutList(MaxSeconds);
 
-            DataTable dt = QMExtend.ToDataTable<Tasks>(t);
-            QMText txt = new QMText();
-            string body = txt.Export(dt, "任务超时清单");
-
-            IMail mail = new QMMail();
-            mail.Subject = "任务超时清单";
-            mail.AddBody(body, "MONITOR");
-            mail.AddRecipient("12ljx12@163.com");
-
-
-            if (mail.Send())
+            if (t.Count > 0)
             {
-                log.Debug("[MAIL] 发送成功");
+                log.Debug(string.Format("发现超时任务{0}",t.Count));
+
+                DataTable dt = QMExtend.ToDataTable<Tasks>(t);
+                QMText txt = new QMText();
+                string body = txt.Export(dt, "任务超时清单");
+
+                IMail mail = new QMMail();
+                mail.Subject = "任务超时清单";
+                mail.AddBody(body, "MONITOR");
+                mail.AddRecipient("junxiao_liang@aseglobal.com");
+
+
+                if (mail.Send())
+                {
+                    log.Debug("[MAIL] 发送成功");
+                }
+                else
+                {
+                    log.Fatal("[MAIL] 发送失败");
+                    throw new QMException("[MAIL] 发送失败");
+                }
             }
             else
             {
-                log.Fatal("[MAIL] 发送失败");
-                throw new QMException("[MAIL] 发送失败");
+                log.Debug("未发现超时任务");
             }
+
         }
 
         public override void Dispose()
