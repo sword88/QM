@@ -1,0 +1,11 @@
+E:\ASECode\Test\QM.git\QM.Demo.RabbitMQ_Client1\bin\Debug\netcoreapp2.1\QM.Demo.RabbitMQ_Client1.deps.json
+E:\ASECode\Test\QM.git\QM.Demo.RabbitMQ_Client1\bin\Debug\netcoreapp2.1\QM.Demo.RabbitMQ_Client1.runtimeconfig.json
+E:\ASECode\Test\QM.git\QM.Demo.RabbitMQ_Client1\bin\Debug\netcoreapp2.1\QM.Demo.RabbitMQ_Client1.runtimeconfig.dev.json
+E:\ASECode\Test\QM.git\QM.Demo.RabbitMQ_Client1\bin\Debug\netcoreapp2.1\QM.Demo.RabbitMQ_Client1.dll
+E:\ASECode\Test\QM.git\QM.Demo.RabbitMQ_Client1\obj\Debug\netcoreapp2.1\QM.Demo.RabbitMQ_Client1.csprojAssemblyReference.cache
+E:\ASECode\Test\QM.git\QM.Demo.RabbitMQ_Client1\obj\Debug\netcoreapp2.1\QM.Demo.RabbitMQ_Client1.csproj.CoreCompileInputs.cache
+E:\ASECode\Test\QM.git\QM.Demo.RabbitMQ_Client1\obj\Debug\netcoreapp2.1\QM.Demo.RabbitMQ_Client1.AssemblyInfoInputs.cache
+E:\ASECode\Test\QM.git\QM.Demo.RabbitMQ_Client1\obj\Debug\netcoreapp2.1\QM.Demo.RabbitMQ_Client1.AssemblyInfo.cs
+E:\ASECode\Test\QM.git\QM.Demo.RabbitMQ_Client1\bin\Debug\netcoreapp2.1\QM.Demo.RabbitMQ_Client1.pdb
+E:\ASECode\Test\QM.git\QM.Demo.RabbitMQ_Client1\obj\Debug\netcoreapp2.1\QM.Demo.RabbitMQ_Client1.dll
+E:\ASECode\Test\QM.git\QM.Demo.RabbitMQ_Client1\obj\Debug\netcoreapp2.1\QM.Demo.RabbitMQ_Client1.pdb

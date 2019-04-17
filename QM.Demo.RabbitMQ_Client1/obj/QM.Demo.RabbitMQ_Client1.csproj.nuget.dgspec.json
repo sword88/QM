@@ -1,0 +1,67 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\ASECode\\Test\\QM.git\\QM.Demo.RabbitMQ_Client1\\QM.Demo.RabbitMQ_Client1.csproj": {}
+  },
+  "projects": {
+    "E:\\ASECode\\Test\\QM.git\\QM.Demo.RabbitMQ_Client1\\QM.Demo.RabbitMQ_Client1.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\ASECode\\Test\\QM.git\\QM.Demo.RabbitMQ_Client1\\QM.Demo.RabbitMQ_Client1.csproj",
+        "projectName": "QM.Demo.RabbitMQ_Client1",
+        "projectPath": "E:\\ASECode\\Test\\QM.git\\QM.Demo.RabbitMQ_Client1\\QM.Demo.RabbitMQ_Client1.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "E:\\ASECode\\Test\\QM.git\\QM.Demo.RabbitMQ_Client1\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            },
+            "Oracle.ManagedDataAccess.Core": {
+              "target": "Package",
+              "version": "[2.18.6, )"
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[5.1.0, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
