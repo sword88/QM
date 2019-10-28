@@ -1,0 +1,41 @@
+﻿@model  IEnumerable<QM.Core.Model.TaskLog>
+@{
+    Layout = "~/Views/Shared/_LayoutAdminContent.cshtml";
+}
+
+<div class="row">
+    <div class="col-sm-12">
+        <div class="ibox">
+            <div class="ibox-title">
+                <h5>日志清单</h5>
+            </div>
+            <div class="ibox-content">
+                <div class="project-list">
+                    <table class="table table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th>排序</th>
+                                <th>执行器</th>
+                                <th>类型</th>
+                                <th>创建日期</th>
+                                <th>日志</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>@item.idx</td>
+                                    <td>@item.server</td>
+                                    <td>@item.type</td>
+                                    <td>@item.createtime</td>
+                                    <td>@item.message</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

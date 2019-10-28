@@ -310,30 +310,29 @@ namespace QM.Core.QuartzNet
         /// </summary>
         /// <param name="taskid">任务id</param>
         /// <returns></returns>
-        public static bool RemoveTask(string taskid)
+        public static async Task<bool> RemoveTask(string taskid)
         {
-            lock(_lock)
+            if (_taskPool.ContainsKey(taskid))
             {
-                if (_taskPool.ContainsKey(taskid))
-                {
-                    /*移除任务*/
-                    var taskinfo = _taskPool[taskid];
-                    //停止触发器  
-                    //_scheduler.PauseTrigger(new TriggerKey(taskinfo.task.idx, taskinfo.task.taskCategory));
-                    _scheduler.PauseTrigger(new TriggerKey(taskinfo.task.idx));
-                    //删除触发器
-                    //_scheduler.UnscheduleJob(new TriggerKey(taskinfo.task.idx, taskinfo.task.taskCategory));
-                    _scheduler.UnscheduleJob(new TriggerKey(taskinfo.task.idx));
-                    //删除任务
-                    //_scheduler.DeleteJob(new JobKey(taskinfo.task.idx, taskinfo.task.taskCategory));
-                    _scheduler.DeleteJob(new JobKey(taskinfo.task.idx));
+                /*移除任务*/
+                var taskinfo = _taskPool[taskid];
 
-                    _taskPool.Remove(taskid);
-                    return true;
-                }
+                var jobKey = new TriggerKey(taskinfo.task.idx);
+                //停止触发器  
+                //_scheduler.PauseTrigger(new TriggerKey(taskinfo.task.idx, taskinfo.task.taskCategory));
+                await _scheduler.PauseTrigger(new TriggerKey(taskinfo.task.idx));
+                //删除触发器
+                //_scheduler.UnscheduleJob(new TriggerKey(taskinfo.task.idx, taskinfo.task.taskCategory));
+                await _scheduler.UnscheduleJob(new TriggerKey(taskinfo.task.idx));
+                //删除任务
+                //_scheduler.DeleteJob(new JobKey(taskinfo.task.idx, taskinfo.task.taskCategory));
+                await _scheduler.DeleteJob(new JobKey(taskinfo.task.idx));
 
-                return false;
+                _taskPool.Remove(taskid);
+                return true;
             }
+
+            return false;
         }
 
         /// <summary>

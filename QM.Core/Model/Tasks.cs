@@ -31,7 +31,7 @@ namespace QM.Core.Model
         /// <summary>
         /// 任务分类
         /// </summary>
-        ///public string taskCategory { get; set; }
+        public string taskCategory { get; set; }
         /// <summary>
         /// 任务计划
         /// </summary>

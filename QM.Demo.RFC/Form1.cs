@@ -51,7 +51,7 @@ namespace QM.Demo.RFC
             //RfcConfigParameters configParams = GetConfigParams();
             //RfcDestination dest = RfcDestinationManager.GetDestination(configParams);
 
-            RfcDestination dest = RfcDestinationManager.GetDestination("QAS");
+            RfcDestination dest = RfcDestinationManager.GetDestination("DEV");
 
             return dest;
         }
@@ -76,19 +76,52 @@ namespace QM.Demo.RFC
             return result;
         }
 
+        public async Task<String> ZMM_RFC_GOODSMVT_CREATE(RfcRepository repository, RfcDestination dest)
+        {
+            IRfcFunction func = repository.CreateFunction("ZMM_RFC_GOODSMVT_CREATE");
+
+            //set parm
+            func.SetValue("MATNR", "17WHP03058A007");
+            func.SetValue("WERKS", "1016");
+            func.SetValue("LGORT_S", "2100");
+            func.SetValue("LGORT_T", "5340");
+            func.SetValue("GSTRP", "20190521");
+            func.SetValue("BWART", "311");
+            func.SetValue("SGTXT", "IT TEST");
+            func.SetValue("BRGEW", "10");
+            func.SetValue("MEINS", "KPC");
+            func.SetValue("CHARG", "0000013755");
+            //func.SetValue("EBELN", "4500000068");
+            //func.SetValue("EBELP", "00010");
+            //func.SetValue("MVT_IND", "B");
+            func.SetValue("CODE", "04");            
+
+
+            //call function
+            func.Invoke(dest);
+
+            string result = func.GetString("ZRESULT") + func.GetString("ZERMSG") + func.GetString("MBLNR");
+            log.Debug(result);
+
+            return result;
+        }
+
+
         private void button1_Click(object sender, EventArgs e)
         {
             RfcDestination dest = GetDestination();
             RfcRepository repository = dest.Repository;
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < 1; i++)
             {
                 log.Debug(i);
-                var result = ZPP_RFC_PRODORD_CREATE(repository,dest);
+                //var result = ZPP_RFC_PRODORD_CREATE(repository,dest);
+                var result = ZMM_RFC_GOODSMVT_CREATE(repository, dest);
                 result.Wait();
                 log.Debug(i);
+                textBox1.Text += result.Result;
             }
       
-            textBox1.Text =  "done";
+            textBox1.Text +=  "done";
             log.Debug("done");
 
         }

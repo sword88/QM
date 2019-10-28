@@ -10,6 +10,11 @@ namespace QM.Core.QuartzNet
 {
     public class QMCornFactory
     {
+        /// <summary>
+        /// 创建触发器
+        /// </summary>
+        /// <param name="taskinfo"></param>
+        /// <returns></returns>
         public static ITrigger CreateTrigger(TaskRuntimeInfo taskinfo)
         {
             TriggerBuilder trigger = null;
@@ -37,7 +42,8 @@ namespace QM.Core.QuartzNet
             //默认cron job
             trigger = TriggerBuilder.Create()
                         .WithIdentity(taskinfo.task.taskName, "Cron")
-                        .WithCronSchedule(taskinfo.task.taskCron);
+                        .WithCronSchedule(taskinfo.task.taskCron)
+                        .ForJob(taskinfo.task.taskName,taskinfo.task.taskCategory);
 
             return trigger.Build();
         }

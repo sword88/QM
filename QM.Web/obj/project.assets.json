@@ -11875,7 +11875,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Administrator\\.nuget\\packages\\": {},
+    "D:\\Nuget\\.nuget\\packages": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -11884,7 +11884,7 @@
       "projectUniqueName": "E:\\ASECode\\Test\\QM.git\\QM.Web\\QM.Web.csproj",
       "projectName": "QM.Web",
       "projectPath": "E:\\ASECode\\Test\\QM.git\\QM.Web\\QM.Web.csproj",
-      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+      "packagesPath": "D:\\Nuget\\.nuget\\packages",
       "outputPath": "E:\\ASECode\\Test\\QM.git\\QM.Web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
@@ -11892,7 +11892,8 @@
       ],
       "configFilePaths": [
         "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\NuGet.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"
@@ -11927,16 +11928,23 @@
             "version": "[2.1.0, )"
           },
           "Microsoft.NETCore.App": {
+            "suppressParent": "All",
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true
           }
         },
         "imports": [
-          "net461"
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
         ],
         "assetTargetFallback": true,
-        "warn": true
+        "warn": true,
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   },

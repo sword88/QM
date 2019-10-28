@@ -10,7 +10,7 @@
         "projectUniqueName": "E:\\ASECode\\Test\\QM.git\\QM.Demo.RabbitMQ_Client1\\QM.Demo.RabbitMQ_Client1.csproj",
         "projectName": "QM.Demo.RabbitMQ_Client1",
         "projectPath": "E:\\ASECode\\Test\\QM.git\\QM.Demo.RabbitMQ_Client1\\QM.Demo.RabbitMQ_Client1.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "packagesPath": "D:\\Nuget\\.nuget\\packages",
         "outputPath": "E:\\ASECode\\Test\\QM.git\\QM.Demo.RabbitMQ_Client1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
@@ -18,7 +18,8 @@
         ],
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\NuGet.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.1"
@@ -42,6 +43,7 @@
         "netcoreapp2.1": {
           "dependencies": {
             "Microsoft.NETCore.App": {
+              "suppressParent": "All",
               "target": "Package",
               "version": "[2.1.0, )",
               "autoReferenced": true
@@ -56,10 +58,16 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

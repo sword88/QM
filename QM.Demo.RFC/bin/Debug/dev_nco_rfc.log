@@ -1656,3 +1656,659 @@ Default trace level: None
 >> Error entry 2018-08-27 12:02:00.803 [Thread 1]
 SAP.Middleware.Connector.RfcInvalidStateException: Hard-coded logon parameters not allowed when using a DestinationConfiguration
    在 SAP.Middleware.Connector.RfcDestinationManager.GetDestination(RfcConfigParameters parameters)
+
+**** Log file opened by process 25504 at 2019-05-21 13:36:32 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 32-bit .NET Framework 4.0.30319.42000
+Program: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug\QM.Demo.RFC.exe
+Working directory: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug
+Operating system: Windows 8 Enterprise 64-bit 
+Processor: 8x AMD64 (or x64)
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: IT-LJX-81611, IP address: 10.0.75.1, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2019-05-21 13:36:32.099 [Thread 1]
+Failure to create pool for destination DEV (ORIGINAL) [USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.63 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=DEV]
+SAP.Middleware.Connector.RfcLogonException: Client 100 is not available in this system ---> SAP.Middleware.Connector.RfcAbapMessageException: Client 100 is not available in this system
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcConnection.ConnectAsClient(RfcDestination destination, Boolean forRepository)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcConnection.ConnectAsClient(RfcDestination destination, Boolean forRepository)
+   在 SAP.Middleware.Connector.RfcConnectionPool..ctor(RfcDestination destination, Boolean forRepositoryCalls)
+>> Error entry 2019-05-21 13:36:32.104 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.63 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=DEV]
+SAP.Middleware.Connector.RfcLogonException: Client 100 is not available in this system ---> SAP.Middleware.Connector.RfcAbapMessageException: Client 100 is not available in this system
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcConnection.ConnectAsClient(RfcDestination destination, Boolean forRepository)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcConnection.ConnectAsClient(RfcDestination destination, Boolean forRepository)
+   在 SAP.Middleware.Connector.RfcConnectionPool..ctor(RfcDestination destination, Boolean forRepositoryCalls)
+   在 SAP.Middleware.Connector.RfcConnectionPool.GetPool(RfcDestination destination, Boolean forRepository, Boolean create)
+   在 SAP.Middleware.Connector.RfcDestination.GetClient(Boolean forRepository)
+   在 SAP.Middleware.Connector.RfcDestination.SetAttributeValues(RfcSystemAttributes attribs)
+>> Error entry 2019-05-21 13:36:32.104 [Thread 1]
+SAP.Middleware.Connector.RfcLogonException: Client 100 is not available in this system ---> SAP.Middleware.Connector.RfcAbapMessageException: Client 100 is not available in this system
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcConnection.ConnectAsClient(RfcDestination destination, Boolean forRepository)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcConnection.ConnectAsClient(RfcDestination destination, Boolean forRepository)
+   在 SAP.Middleware.Connector.RfcConnectionPool..ctor(RfcDestination destination, Boolean forRepositoryCalls)
+   在 SAP.Middleware.Connector.RfcConnectionPool.GetPool(RfcDestination destination, Boolean forRepository, Boolean create)
+   在 SAP.Middleware.Connector.RfcDestination.GetClient(Boolean forRepository)
+   在 SAP.Middleware.Connector.RfcDestination.SetAttributeValues(RfcSystemAttributes attribs)
+   在 SAP.Middleware.Connector.RfcDestination.get_SystemAttributes()
+   在 SAP.Middleware.Connector.RfcRepository.GetRepositoryForDestination(RfcDestination destination)
+>> Error entry 2019-05-21 13:36:44.306 [Thread 1]
+Failure to create pool for destination DEV (ORIGINAL) [USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.63 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=DEV]
+SAP.Middleware.Connector.RfcLogonException: Client 100 is not available in this system ---> SAP.Middleware.Connector.RfcAbapMessageException: Client 100 is not available in this system
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcConnection.ConnectAsClient(RfcDestination destination, Boolean forRepository)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcConnection.ConnectAsClient(RfcDestination destination, Boolean forRepository)
+   在 SAP.Middleware.Connector.RfcConnectionPool..ctor(RfcDestination destination, Boolean forRepositoryCalls)
+>> Error entry 2019-05-21 13:36:44.307 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.63 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=DEV]
+SAP.Middleware.Connector.RfcLogonException: Client 100 is not available in this system ---> SAP.Middleware.Connector.RfcAbapMessageException: Client 100 is not available in this system
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcConnection.ConnectAsClient(RfcDestination destination, Boolean forRepository)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcConnection.ConnectAsClient(RfcDestination destination, Boolean forRepository)
+   在 SAP.Middleware.Connector.RfcConnectionPool..ctor(RfcDestination destination, Boolean forRepositoryCalls)
+   在 SAP.Middleware.Connector.RfcConnectionPool.GetPool(RfcDestination destination, Boolean forRepository, Boolean create)
+   在 SAP.Middleware.Connector.RfcDestination.GetClient(Boolean forRepository)
+   在 SAP.Middleware.Connector.RfcDestination.SetAttributeValues(RfcSystemAttributes attribs)
+>> Error entry 2019-05-21 13:36:44.307 [Thread 1]
+SAP.Middleware.Connector.RfcLogonException: Client 100 is not available in this system ---> SAP.Middleware.Connector.RfcAbapMessageException: Client 100 is not available in this system
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcConnection.ConnectAsClient(RfcDestination destination, Boolean forRepository)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcConnection.ConnectAsClient(RfcDestination destination, Boolean forRepository)
+   在 SAP.Middleware.Connector.RfcConnectionPool..ctor(RfcDestination destination, Boolean forRepositoryCalls)
+   在 SAP.Middleware.Connector.RfcConnectionPool.GetPool(RfcDestination destination, Boolean forRepository, Boolean create)
+   在 SAP.Middleware.Connector.RfcDestination.GetClient(Boolean forRepository)
+   在 SAP.Middleware.Connector.RfcDestination.SetAttributeValues(RfcSystemAttributes attribs)
+   在 SAP.Middleware.Connector.RfcDestination.get_SystemAttributes()
+   在 SAP.Middleware.Connector.RfcRepository.GetRepositoryForDestination(RfcDestination destination)
+
+**** Log file opened by process 12768 at 2019-05-21 13:37:09 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 32-bit .NET Framework 4.0.30319.42000
+Program: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug\QM.Demo.RFC.exe
+Working directory: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug
+Operating system: Windows 8 Enterprise 64-bit 
+Processor: 8x AMD64 (or x64)
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: IT-LJX-81611, IP address: 10.0.75.1, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2019-05-21 13:37:09.613 [Thread 1]
+Failure to create pool for destination DEV (ORIGINAL) [USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.63 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=DEV]
+SAP.Middleware.Connector.RfcLogonException: Client 100 is not available in this system ---> SAP.Middleware.Connector.RfcAbapMessageException: Client 100 is not available in this system
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcConnection.ConnectAsClient(RfcDestination destination, Boolean forRepository)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcConnection.ConnectAsClient(RfcDestination destination, Boolean forRepository)
+   在 SAP.Middleware.Connector.RfcConnectionPool..ctor(RfcDestination destination, Boolean forRepositoryCalls)
+>> Error entry 2019-05-21 13:37:09.617 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.63 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=DEV]
+SAP.Middleware.Connector.RfcLogonException: Client 100 is not available in this system ---> SAP.Middleware.Connector.RfcAbapMessageException: Client 100 is not available in this system
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcConnection.ConnectAsClient(RfcDestination destination, Boolean forRepository)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcConnection.ConnectAsClient(RfcDestination destination, Boolean forRepository)
+   在 SAP.Middleware.Connector.RfcConnectionPool..ctor(RfcDestination destination, Boolean forRepositoryCalls)
+   在 SAP.Middleware.Connector.RfcConnectionPool.GetPool(RfcDestination destination, Boolean forRepository, Boolean create)
+   在 SAP.Middleware.Connector.RfcDestination.GetClient(Boolean forRepository)
+   在 SAP.Middleware.Connector.RfcDestination.SetAttributeValues(RfcSystemAttributes attribs)
+>> Error entry 2019-05-21 13:37:09.617 [Thread 1]
+SAP.Middleware.Connector.RfcLogonException: Client 100 is not available in this system ---> SAP.Middleware.Connector.RfcAbapMessageException: Client 100 is not available in this system
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcConnection.ConnectAsClient(RfcDestination destination, Boolean forRepository)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcConnection.ConnectAsClient(RfcDestination destination, Boolean forRepository)
+   在 SAP.Middleware.Connector.RfcConnectionPool..ctor(RfcDestination destination, Boolean forRepositoryCalls)
+   在 SAP.Middleware.Connector.RfcConnectionPool.GetPool(RfcDestination destination, Boolean forRepository, Boolean create)
+   在 SAP.Middleware.Connector.RfcDestination.GetClient(Boolean forRepository)
+   在 SAP.Middleware.Connector.RfcDestination.SetAttributeValues(RfcSystemAttributes attribs)
+   在 SAP.Middleware.Connector.RfcDestination.get_SystemAttributes()
+   在 SAP.Middleware.Connector.RfcRepository.GetRepositoryForDestination(RfcDestination destination)
+>> Error entry 2019-05-21 13:37:13.655 [Thread 1]
+Failure to create pool for destination DEV (ORIGINAL) [USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.63 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=DEV]
+SAP.Middleware.Connector.RfcLogonException: Client 100 is not available in this system ---> SAP.Middleware.Connector.RfcAbapMessageException: Client 100 is not available in this system
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcConnection.ConnectAsClient(RfcDestination destination, Boolean forRepository)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcConnection.ConnectAsClient(RfcDestination destination, Boolean forRepository)
+   在 SAP.Middleware.Connector.RfcConnectionPool..ctor(RfcDestination destination, Boolean forRepositoryCalls)
+>> Error entry 2019-05-21 13:37:13.656 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.63 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=DEV]
+SAP.Middleware.Connector.RfcLogonException: Client 100 is not available in this system ---> SAP.Middleware.Connector.RfcAbapMessageException: Client 100 is not available in this system
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcConnection.ConnectAsClient(RfcDestination destination, Boolean forRepository)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcConnection.ConnectAsClient(RfcDestination destination, Boolean forRepository)
+   在 SAP.Middleware.Connector.RfcConnectionPool..ctor(RfcDestination destination, Boolean forRepositoryCalls)
+   在 SAP.Middleware.Connector.RfcConnectionPool.GetPool(RfcDestination destination, Boolean forRepository, Boolean create)
+   在 SAP.Middleware.Connector.RfcDestination.GetClient(Boolean forRepository)
+   在 SAP.Middleware.Connector.RfcDestination.SetAttributeValues(RfcSystemAttributes attribs)
+>> Error entry 2019-05-21 13:37:19.701 [Thread 1]
+Failure to create pool for destination DEV (ORIGINAL) [USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.63 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=DEV]
+SAP.Middleware.Connector.RfcLogonException: Client 100 is not available in this system ---> SAP.Middleware.Connector.RfcAbapMessageException: Client 100 is not available in this system
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcConnection.ConnectAsClient(RfcDestination destination, Boolean forRepository)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcConnection.ConnectAsClient(RfcDestination destination, Boolean forRepository)
+   在 SAP.Middleware.Connector.RfcConnectionPool..ctor(RfcDestination destination, Boolean forRepositoryCalls)
+>> Error entry 2019-05-21 13:37:19.701 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.63 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=DEV]
+SAP.Middleware.Connector.RfcLogonException: Client 100 is not available in this system ---> SAP.Middleware.Connector.RfcAbapMessageException: Client 100 is not available in this system
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcConnection.ConnectAsClient(RfcDestination destination, Boolean forRepository)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcConnection.ConnectAsClient(RfcDestination destination, Boolean forRepository)
+   在 SAP.Middleware.Connector.RfcConnectionPool..ctor(RfcDestination destination, Boolean forRepositoryCalls)
+   在 SAP.Middleware.Connector.RfcConnectionPool.GetPool(RfcDestination destination, Boolean forRepository, Boolean create)
+   在 SAP.Middleware.Connector.RfcDestination.GetClient(Boolean forRepository)
+   在 SAP.Middleware.Connector.RfcDestination.SetAttributeValues(RfcSystemAttributes attribs)
+>> Error entry 2019-05-21 13:37:19.703 [Thread 1]
+SAP.Middleware.Connector.RfcLogonException: Client 100 is not available in this system ---> SAP.Middleware.Connector.RfcAbapMessageException: Client 100 is not available in this system
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcConnection.ConnectAsClient(RfcDestination destination, Boolean forRepository)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcConnection.ConnectAsClient(RfcDestination destination, Boolean forRepository)
+   在 SAP.Middleware.Connector.RfcConnectionPool..ctor(RfcDestination destination, Boolean forRepositoryCalls)
+   在 SAP.Middleware.Connector.RfcConnectionPool.GetPool(RfcDestination destination, Boolean forRepository, Boolean create)
+   在 SAP.Middleware.Connector.RfcDestination.GetClient(Boolean forRepository)
+   在 SAP.Middleware.Connector.RfcDestination.SetAttributeValues(RfcSystemAttributes attribs)
+   在 SAP.Middleware.Connector.RfcDestination.get_SystemAttributes()
+   在 SAP.Middleware.Connector.RfcRepository.GetRepositoryForDestination(RfcDestination destination)
+>> Error entry 2019-05-21 13:37:20.164 [Thread 1]
+Failure to create pool for destination DEV (ORIGINAL) [USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.63 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=DEV]
+SAP.Middleware.Connector.RfcLogonException: Client 100 is not available in this system ---> SAP.Middleware.Connector.RfcAbapMessageException: Client 100 is not available in this system
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcConnection.ConnectAsClient(RfcDestination destination, Boolean forRepository)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcConnection.ConnectAsClient(RfcDestination destination, Boolean forRepository)
+   在 SAP.Middleware.Connector.RfcConnectionPool..ctor(RfcDestination destination, Boolean forRepositoryCalls)
+>> Error entry 2019-05-21 13:37:20.165 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.63 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=DEV]
+SAP.Middleware.Connector.RfcLogonException: Client 100 is not available in this system ---> SAP.Middleware.Connector.RfcAbapMessageException: Client 100 is not available in this system
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcConnection.ConnectAsClient(RfcDestination destination, Boolean forRepository)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcConnection.ConnectAsClient(RfcDestination destination, Boolean forRepository)
+   在 SAP.Middleware.Connector.RfcConnectionPool..ctor(RfcDestination destination, Boolean forRepositoryCalls)
+   在 SAP.Middleware.Connector.RfcConnectionPool.GetPool(RfcDestination destination, Boolean forRepository, Boolean create)
+   在 SAP.Middleware.Connector.RfcDestination.GetClient(Boolean forRepository)
+   在 SAP.Middleware.Connector.RfcDestination.SetAttributeValues(RfcSystemAttributes attribs)
+>> Error entry 2019-05-21 13:37:20.165 [Thread 1]
+SAP.Middleware.Connector.RfcLogonException: Client 100 is not available in this system ---> SAP.Middleware.Connector.RfcAbapMessageException: Client 100 is not available in this system
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcConnection.ConnectAsClient(RfcDestination destination, Boolean forRepository)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcConnection.ConnectAsClient(RfcDestination destination, Boolean forRepository)
+   在 SAP.Middleware.Connector.RfcConnectionPool..ctor(RfcDestination destination, Boolean forRepositoryCalls)
+   在 SAP.Middleware.Connector.RfcConnectionPool.GetPool(RfcDestination destination, Boolean forRepository, Boolean create)
+   在 SAP.Middleware.Connector.RfcDestination.GetClient(Boolean forRepository)
+   在 SAP.Middleware.Connector.RfcDestination.SetAttributeValues(RfcSystemAttributes attribs)
+   在 SAP.Middleware.Connector.RfcDestination.get_SystemAttributes()
+   在 SAP.Middleware.Connector.RfcRepository.GetRepositoryForDestination(RfcDestination destination)
+>> Error entry 2019-05-21 13:37:20.801 [Thread 1]
+Failure to create pool for destination DEV (ORIGINAL) [USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.63 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=DEV]
+SAP.Middleware.Connector.RfcLogonException: Client 100 is not available in this system ---> SAP.Middleware.Connector.RfcAbapMessageException: Client 100 is not available in this system
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcConnection.ConnectAsClient(RfcDestination destination, Boolean forRepository)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcConnection.ConnectAsClient(RfcDestination destination, Boolean forRepository)
+   在 SAP.Middleware.Connector.RfcConnectionPool..ctor(RfcDestination destination, Boolean forRepositoryCalls)
+>> Error entry 2019-05-21 13:37:20.801 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=100 LANG=EN ASHOST=10.68.10.63 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=DEV]
+SAP.Middleware.Connector.RfcLogonException: Client 100 is not available in this system ---> SAP.Middleware.Connector.RfcAbapMessageException: Client 100 is not available in this system
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcConnection.ConnectAsClient(RfcDestination destination, Boolean forRepository)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcConnection.ConnectAsClient(RfcDestination destination, Boolean forRepository)
+   在 SAP.Middleware.Connector.RfcConnectionPool..ctor(RfcDestination destination, Boolean forRepositoryCalls)
+   在 SAP.Middleware.Connector.RfcConnectionPool.GetPool(RfcDestination destination, Boolean forRepository, Boolean create)
+   在 SAP.Middleware.Connector.RfcDestination.GetClient(Boolean forRepository)
+   在 SAP.Middleware.Connector.RfcDestination.SetAttributeValues(RfcSystemAttributes attribs)
+>> Error entry 2019-05-21 13:37:20.802 [Thread 1]
+SAP.Middleware.Connector.RfcLogonException: Client 100 is not available in this system ---> SAP.Middleware.Connector.RfcAbapMessageException: Client 100 is not available in this system
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcConnection.ConnectAsClient(RfcDestination destination, Boolean forRepository)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcConnection.ConnectAsClient(RfcDestination destination, Boolean forRepository)
+   在 SAP.Middleware.Connector.RfcConnectionPool..ctor(RfcDestination destination, Boolean forRepositoryCalls)
+   在 SAP.Middleware.Connector.RfcConnectionPool.GetPool(RfcDestination destination, Boolean forRepository, Boolean create)
+   在 SAP.Middleware.Connector.RfcDestination.GetClient(Boolean forRepository)
+   在 SAP.Middleware.Connector.RfcDestination.SetAttributeValues(RfcSystemAttributes attribs)
+   在 SAP.Middleware.Connector.RfcDestination.get_SystemAttributes()
+   在 SAP.Middleware.Connector.RfcRepository.GetRepositoryForDestination(RfcDestination destination)
+
+**** Log file opened by process 12752 at 2019-05-21 13:37:56 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 32-bit .NET Framework 4.0.30319.42000
+Program: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug\QM.Demo.RFC.exe
+Working directory: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug
+Operating system: Windows 8 Enterprise 64-bit 
+Processor: 8x AMD64 (or x64)
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: IT-LJX-81611, IP address: 10.0.75.1, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2019-05-21 13:37:56.819 [Thread 1]
+SAP.Middleware.Connector.RfcTypeConversionException: PARAMETER GSTRP of FUNCTION ZMM_RFC_GOODSMVT_CREATE (SETTER): cannot convert String into DATE ---> SAP.Middleware.Connector.RfcTypeConversionException: Cannot convert "2019.05.21" into DATE (yyyyMMdd) ---> System.FormatException: 该字符串未被识别为有效的 DateTime。
+   在 System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   在 SAP.Middleware.Connector.RfcScalarMetadataDate.ConvertString(String value, Object& currentValue)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcScalarMetadataDate.ConvertString(String value, Object& currentValue)
+   在 SAP.Middleware.Connector.RfcDataContainer`1.SetValue(Int32 index, String value)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcDataContainer`1.SetValue(Int32 index, String value)
+
+**** Log file opened by process 24180 at 2019-05-21 13:45:03 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 32-bit .NET Framework 4.0.30319.42000
+Program: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug\QM.Demo.RFC.exe
+Working directory: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug
+Operating system: Windows 8 Enterprise 64-bit 
+Processor: 8x AMD64 (or x64)
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: IT-LJX-81611, IP address: 10.0.75.1, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2019-05-21 13:45:03.868 [Thread 1]
+SAP.Middleware.Connector.RfcTypeConversionException: PARAMETER GSTRP of FUNCTION ZMM_RFC_GOODSMVT_CREATE (SETTER): cannot convert String into DATE ---> SAP.Middleware.Connector.RfcTypeConversionException: Cannot convert "2019.05.21" into DATE (yyyyMMdd) ---> System.FormatException: 该字符串未被识别为有效的 DateTime。
+   在 System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   在 SAP.Middleware.Connector.RfcScalarMetadataDate.ConvertString(String value, Object& currentValue)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcScalarMetadataDate.ConvertString(String value, Object& currentValue)
+   在 SAP.Middleware.Connector.RfcDataContainer`1.SetValue(Int32 index, String value)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcDataContainer`1.SetValue(Int32 index, String value)
+
+**** Log file opened by process 26364 at 2019-05-21 13:45:43 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 32-bit .NET Framework 4.0.30319.42000
+Program: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug\QM.Demo.RFC.exe
+Working directory: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug
+Operating system: Windows 8 Enterprise 64-bit 
+Processor: 8x AMD64 (or x64)
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: IT-LJX-81611, IP address: 10.0.75.1, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2019-05-21 13:45:43.277 [Thread 1]
+SAP.Middleware.Connector.RfcTypeConversionException: PARAMETER GSTRP of FUNCTION ZMM_RFC_GOODSMVT_CREATE (SETTER): cannot convert String into DATE ---> SAP.Middleware.Connector.RfcTypeConversionException: Cannot convert "2019.05.21" into DATE (yyyyMMdd) ---> System.FormatException: 该字符串未被识别为有效的 DateTime。
+   在 System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   在 SAP.Middleware.Connector.RfcScalarMetadataDate.ConvertString(String value, Object& currentValue)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcScalarMetadataDate.ConvertString(String value, Object& currentValue)
+   在 SAP.Middleware.Connector.RfcDataContainer`1.SetValue(Int32 index, String value)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcDataContainer`1.SetValue(Int32 index, String value)
+
+**** Log file opened by process 26032 at 2019-05-21 13:46:32 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 32-bit .NET Framework 4.0.30319.42000
+Program: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug\QM.Demo.RFC.exe
+Working directory: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug
+Operating system: Windows 8 Enterprise 64-bit 
+Processor: 8x AMD64 (or x64)
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: IT-LJX-81611, IP address: 10.0.75.1, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2019-05-21 13:46:32.578 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=320 LANG=EN ASHOST=10.68.10.63 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=DEV]
+SAP.Middleware.Connector.RfcAbapRuntimeException: The function module "ZMM_RFC_GOODSMVT_CREATE" cannot be used for 'remote' calls.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+
+**** Log file opened by process 3044 at 2019-05-21 14:03:57 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 32-bit .NET Framework 4.0.30319.42000
+Program: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug\QM.Demo.RFC.exe
+Working directory: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug
+Operating system: Windows 8 Enterprise 64-bit 
+Processor: 8x AMD64 (or x64)
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: IT-LJX-81611, IP address: 10.0.75.1, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2019-05-21 14:03:57.657 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=320 LANG=EN ASHOST=10.68.10.63 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=DEV]
+SAP.Middleware.Connector.RfcAbapRuntimeException: The function module "ZMM_RFC_GOODSMVT_CREATE" cannot be used for 'remote' calls.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+
+**** Log file opened by process 11912 at 2019-05-23 17:08:28 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 32-bit .NET Framework 4.0.30319.42000
+Program: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug\QM.Demo.RFC.exe
+Working directory: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug
+Operating system: Windows 8 Enterprise 64-bit 
+Processor: 8x AMD64 (or x64)
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: IT-LJX-81611, IP address: 10.0.75.1, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2019-05-23 17:08:28.257 [Thread 1]
+SAP.Middleware.Connector.RfcTypeConversionException: PARAMETER WERKS of FUNCTION ZMM_RFC_GOODSMVT_CREATE (SETTER): cannot convert String into STRUCTURE WERKS
+   在 SAP.Middleware.Connector.RfcDataContainer`1.SetValue(Int32 index, String value)
+
+**** Log file opened by process 30520 at 2019-05-23 17:10:44 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 32-bit .NET Framework 4.0.30319.42000
+Program: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug\QM.Demo.RFC.exe
+Working directory: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug
+Operating system: Windows 8 Enterprise 64-bit 
+Processor: 8x AMD64 (or x64)
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: IT-LJX-81611, IP address: 10.0.75.1, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2019-05-23 17:10:44.378 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=320 LANG=EN ASHOST=10.68.10.63 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=DEV]
+SAP.Middleware.Connector.RfcAbapRuntimeException: Screen output without connection to user.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+
+**** Log file opened by process 23936 at 2019-05-23 17:11:03 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 32-bit .NET Framework 4.0.30319.42000
+Program: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug\QM.Demo.RFC.exe
+Working directory: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug
+Operating system: Windows 8 Enterprise 64-bit 
+Processor: 8x AMD64 (or x64)
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: IT-LJX-81611, IP address: 10.0.75.1, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2019-05-23 17:11:03.701 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=320 LANG=EN ASHOST=10.68.10.63 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=DEV]
+SAP.Middleware.Connector.RfcAbapRuntimeException: Screen output without connection to user.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+
+**** Log file opened by process 18160 at 2019-05-23 17:11:26 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 32-bit .NET Framework 4.0.30319.42000
+Program: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug\QM.Demo.RFC.exe
+Working directory: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug
+Operating system: Windows 8 Enterprise 64-bit 
+Processor: 8x AMD64 (or x64)
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: IT-LJX-81611, IP address: 10.0.75.1, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2019-05-23 17:11:26.010 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=320 LANG=EN ASHOST=10.68.10.63 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=DEV]
+SAP.Middleware.Connector.RfcAbapRuntimeException: Screen output without connection to user.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+
+**** Log file opened by process 24860 at 2019-05-23 17:12:23 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 32-bit .NET Framework 4.0.30319.42000
+Program: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug\QM.Demo.RFC.exe
+Working directory: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug
+Operating system: Windows 8 Enterprise 64-bit 
+Processor: 8x AMD64 (or x64)
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: IT-LJX-81611, IP address: 10.0.75.1, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2019-05-23 17:12:23.033 [Thread 1]
+[USER=104218 PASSWD=******** CLIENT=320 LANG=EN ASHOST=10.68.10.63 SYSNR=00 MAX_POOL_SIZE=10 IDLE_TIMEOUT=10 NAME=DEV]
+SAP.Middleware.Connector.RfcAbapRuntimeException: Screen output without connection to user.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+
+**** Log file opened by process 177576 at 2019-10-28 13:13:50 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 32-bit .NET Framework 4.0.30319.42000
+Program: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug\QM.Demo.RFC.exe
+Working directory: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug
+Operating system: Windows 8 Enterprise 64-bit 
+Processor: 8x AMD64 (or x64)
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: IT-LJX-81611, IP address: 10.0.75.1, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2019-10-28 13:13:50.522 [Thread 1]
+SAP.Middleware.Connector.RfcTypeConversionException: PARAMETER GOODSMVT_CODE of FUNCTION BAPI_GOODSMVT_CREATE (GETTER): cannot convert STRUCTURE BAPI2017_GM_CODE into IRfcTable ---> System.InvalidCastException: 无法将类型为“SAP.Middleware.Connector.RfcStructure”的对象强制转换为类型“SAP.Middleware.Connector.IRfcTable”。
+   在 SAP.Middleware.Connector.RfcDataContainer`1.GetTable(Int32 index, Boolean create)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcDataContainer`1.GetTable(Int32 index, Boolean create)
+>> Error entry 2019-10-28 13:14:20.655 [Thread 1]
+SAP.Middleware.Connector.RfcTypeConversionException: PARAMETER GOODSMVT_CODE of FUNCTION BAPI_GOODSMVT_CREATE (GETTER): cannot convert STRUCTURE BAPI2017_GM_CODE into IRfcTable ---> System.InvalidCastException: 无法将类型为“SAP.Middleware.Connector.RfcStructure”的对象强制转换为类型“SAP.Middleware.Connector.IRfcTable”。
+   在 SAP.Middleware.Connector.RfcDataContainer`1.GetTable(Int32 index, Boolean create)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcDataContainer`1.GetTable(Int32 index, Boolean create)
+
+**** Log file opened by process 177148 at 2019-10-28 13:15:27 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 32-bit .NET Framework 4.0.30319.42000
+Program: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug\QM.Demo.RFC.exe
+Working directory: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug
+Operating system: Windows 8 Enterprise 64-bit 
+Processor: 8x AMD64 (or x64)
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: IT-LJX-81611, IP address: 10.0.75.1, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2019-10-28 13:15:27.322 [Thread 1]
+SAP.Middleware.Connector.RfcTypeConversionException: PARAMETER GOODSMVT_CODE of FUNCTION BAPI_GOODSMVT_CREATE (GETTER): cannot convert STRUCTURE BAPI2017_GM_CODE into IRfcTable ---> System.InvalidCastException: 无法将类型为“SAP.Middleware.Connector.RfcStructure”的对象强制转换为类型“SAP.Middleware.Connector.IRfcTable”。
+   在 SAP.Middleware.Connector.RfcDataContainer`1.GetTable(Int32 index, Boolean create)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcDataContainer`1.GetTable(Int32 index, Boolean create)
+
+**** Log file opened by process 178648 at 2019-10-28 13:20:06 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 32-bit .NET Framework 4.0.30319.42000
+Program: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug\QM.Demo.RFC.exe
+Working directory: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug
+Operating system: Windows 8 Enterprise 64-bit 
+Processor: 8x AMD64 (or x64)
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: IT-LJX-81611, IP address: 10.0.75.1, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2019-10-28 13:20:06.145 [Thread 1]
+SAP.Middleware.Connector.RfcTypeConversionException: PARAMETER GOODSMVT_HEADER of FUNCTION BAPI_GOODSMVT_CREATE (GETTER): cannot convert STRUCTURE BAPI2017_GM_HEAD_01 into IRfcTable ---> System.InvalidCastException: 无法将类型为“SAP.Middleware.Connector.RfcStructure”的对象强制转换为类型“SAP.Middleware.Connector.IRfcTable”。
+   在 SAP.Middleware.Connector.RfcDataContainer`1.GetTable(Int32 index, Boolean create)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcDataContainer`1.GetTable(Int32 index, Boolean create)
+
+**** Log file opened by process 173372 at 2019-10-28 13:35:21 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 32-bit .NET Framework 4.0.30319.42000
+Program: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug\QM.Demo.RFC.exe
+Working directory: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug
+Operating system: Windows 8 Enterprise 64-bit 
+Processor: 8x AMD64 (or x64)
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: IT-LJX-81611, IP address: 10.0.75.1, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2019-10-28 13:35:21.846 [Thread 1]
+SAP.Middleware.Connector.RfcTypeConversionException: PARAMETER RETURN of FUNCTION BAPI_GOODSMVT_CREATE (GETTER): cannot convert TABLE [STRUCTURE BAPIRET2] into IRfcStructure ---> System.InvalidCastException: 无法将类型为“SAP.Middleware.Connector.RfcTable”的对象强制转换为类型“SAP.Middleware.Connector.IRfcStructure”。
+   在 SAP.Middleware.Connector.RfcDataContainer`1.GetStructure(Int32 index, Boolean create)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcDataContainer`1.GetStructure(Int32 index, Boolean create)
+
+**** Log file opened by process 181096 at 2019-10-28 13:51:17 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 32-bit .NET Framework 4.0.30319.42000
+Program: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug\QM.Demo.RFC.exe
+Working directory: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug
+Operating system: Windows 8 Enterprise 64-bit 
+Processor: 8x AMD64 (or x64)
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: IT-LJX-81611, IP address: 10.0.75.1, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2019-10-28 13:51:17.201 [Thread 1]
+SAP.Middleware.Connector.RfcTypeConversionException: PARAMETER GOODSMVT_CODE of FUNCTION BAPI_GOODSMVT_CREATE (GETTER): cannot convert STRUCTURE BAPI2017_GM_CODE into IRfcTable ---> System.InvalidCastException: 无法将类型为“SAP.Middleware.Connector.RfcStructure”的对象强制转换为类型“SAP.Middleware.Connector.IRfcTable”。
+   在 SAP.Middleware.Connector.RfcDataContainer`1.GetTable(Int32 index, Boolean create)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcDataContainer`1.GetTable(Int32 index, Boolean create)
+
+**** Log file opened by process 182380 at 2019-10-28 14:42:08 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 32-bit .NET Framework 4.0.30319.42000
+Program: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug\QM.Demo.RFC.exe
+Working directory: E:\ASECode\Test\QM.git\QM.Demo.RFC\bin\Debug
+Operating system: Windows 8 Enterprise 64-bit 
+Processor: 8x AMD64 (or x64)
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: IT-LJX-81611, IP address: 10.0.75.1, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2019-10-28 14:42:08.047 [Thread 1]
+SAP.Middleware.Connector.RfcTypeConversionException: PARAMETER RETURN of FUNCTION BAPI_TRANSACTION_COMMIT (GETTER): cannot convert STRUCTURE BAPIRET2 into IRfcTable ---> System.InvalidCastException: 无法将类型为“SAP.Middleware.Connector.RfcStructure”的对象强制转换为类型“SAP.Middleware.Connector.IRfcTable”。
+   在 SAP.Middleware.Connector.RfcDataContainer`1.GetTable(Int32 index, Boolean create)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcDataContainer`1.GetTable(Int32 index, Boolean create)

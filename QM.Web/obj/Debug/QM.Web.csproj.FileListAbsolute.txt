@@ -1,0 +1,2 @@
+E:\ASECode\Test\QM.git\QM.Web\obj\Debug\QM.Web.csprojAssemblyReference.cache
+E:\ASECode\Test\QM.git\QM.Web\obj\Debug\QM.Web.csproj.CoreCompileInputs.cache

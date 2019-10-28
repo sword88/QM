@@ -15,7 +15,7 @@ namespace QM.Demo.RabbitMQ_Client1
         public static void Main()
         {
             QMDBHelper db = new QMDBHelper("DATA SOURCE=10.68.10.143:1537/db2dev;PASSWORD=mesft;USER ID=mesft");
-            var factory = new ConnectionFactory() { HostName = "localhost" };
+            var factory = new ConnectionFactory() { HostName = "10.68.10.59", UserName = "admin", Password = "it00" };
 
             var connection = factory.CreateConnection();
             var channel = connection.CreateModel();

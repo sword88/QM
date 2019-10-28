@@ -9,6 +9,7 @@ using System.Diagnostics;
 using QM.Core.Log;
 using QM.Core.Exception;
 using System.ComponentModel;
+using System.Runtime.InteropServices;
 
 namespace QM.Core.Model
 {

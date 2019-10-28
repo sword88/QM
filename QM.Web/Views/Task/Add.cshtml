@@ -1,0 +1,117 @@
+﻿@using QM.Core.Common;
+@{
+    Layout = "~/Views/Shared/_LayoutAdminContent.cshtml";
+}
+
+<div class="row">
+    <form method="post" enctype="multipart/form-data" class="form-horizontal">
+        <div class="col-sm-12">
+            <div class="ibox float-e-margins">
+                <!--基本信息-->
+                <div class="ibox-title">
+                    <h5>基本信息设置 <small>认真填写每项Item</small></h5>
+                </div>
+                <div class="ibox-content">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">任务名称</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" placeholder="任务名称" name="qm_name">
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">任务类型</label>
+                        <div class="col-sm-5">
+                            @Html.DropDownList("qm_type", QMExtend.GetTaskType(), new { @class = "form-control m-b" })
+                        </div>
+                        <div class="col-sm-5">
+                            @Html.DropDownList("qm_sendby", QMExtend.GetSendBy(), new { @class = "form-control m-b" })
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">任务文件</label>
+                        <div class="col-sm-10">
+                            <input type="file" placeholder="任务文件" class="form-control" name="qm_file" id="qm_file">
+                            <textarea class="form-control" placeholder="SQL Statement" name="qm_sql" id="qm_sql" style="display:none;"></textarea>
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">任务参数</label>
+                        <div class="col-sm-5">
+                            <input type="text" placeholder="任务参数" class="form-control" name="qm_parms" id="qm_parms">
+                        </div>
+                        <div class="col-sm-5">
+                            <input type="text" placeholder="不需要输入" disabled="disabled" class="form-control" name="qm_dbcon">
+                        </div>
+                    </div>
+
+
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">
+                            执行计划
+                        </label>
+                        <div class="col-sm-10">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="执行计划" name="qm_cron">
+                                <span class="input-group-btn">
+                                    <a data-toggle="modal" class="btn btn-primary" href="#modal-form">
+                                        Cron向导
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">
+                            任务状态
+                        </label>
+                        <div class="col-sm-10">
+                            @Html.DropDownList("qm_status", QMExtend.GetTaskStatus(), new { @class = "form-control m-b" })
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">备注信息</label>
+                        <div class="col-sm-10">
+                            <textarea class="form-control" placeholder="备注信息" name="qm_remark"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <!--基本信息结束-->
+                <!--任务计划-->
+                @Html.Action("TimePop")
+                <!--任务计划结束-->
+                <!--Cust SQL开始-->
+                <div id="sql_show" style="display:none;">
+                    @Html.Action("SQL")
+                </div>
+                <!--Cust SQL结束-->
+                <!--邮件设置-->
+                <div id="mail_show" style="display:none;">
+                    @Html.Action("Mail")
+                </div>
+                <!--邮件设置结束-->
+                <!--FTP-->
+                <div id="ftp_show" style="display:none;">
+                    @Html.Action("Ftp")
+                </div>
+                <!--FTP结束-->
+
+                <!--save-->
+                <div class="ibox-content">
+                    <div class="col-sm-offset-2">
+                        <button class="btn btn-primary" type="submit">保存内容</button>
+                        <button class="btn btn-white" type="submit">取消</button>
+                    </div>
+                </div>
+                <!--save-->
+
+            </div>
+        </div>
+    </form>
+</div>
